@@ -1,0 +1,12 @@
+# Source PDFs (symlink to Rule Books, don't track)
+source
+
+# Extracted text files
+*.txt
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
