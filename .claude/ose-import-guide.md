@@ -18,7 +18,7 @@ OSE (Old-School Essentials) Classic Fantasy 是 B/X D&D 的忠实复刻，由 Ne
 
 | 文件 | 版本 | 页数 |
 |------|------|------|
-| `/Users/jack/Projects/Rule Books/OSE/OSE Classic/OSE Classic Fantasy Rules Tome v1.4.pdf` | v1.4 | 297 页 |
+| `/Users/jack/Projects/trpg-projects/Rule Books/OSE/OSE Classic/OSE Classic Fantasy Rules Tome v1.4.pdf` | v1.4 | 297 页 |
 
 已提取 txt：`output/OSE/ose-classic-rules-tome-raw.txt`
 

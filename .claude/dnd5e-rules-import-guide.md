@@ -48,7 +48,7 @@
 
 ## 2. 源文件
 
-三本中文 PDF（都是社区翻译的高质量数字版），位于 `/Users/jack/Projects/Rule Books/D&D 5e/Core/`：
+三本中文 PDF（都是社区翻译的高质量数字版），位于 `/Users/jack/Projects/trpg-projects/Rule Books/D&D 5e/Core/`：
 
 | 文件 | 版本 |
 |------|------|

@@ -5,13 +5,13 @@
 
 用法：
   # 转换指定目录下所有 PDF
-  python3 convert_pdfs.py "/Users/jack/Projects/Rule Books/CoC"
+  python3 convert_pdfs.py "/Users/jack/Projects/trpg-projects/Rule Books/CoC"
 
   # 转换单个文件
-  python3 convert_pdfs.py "/Users/jack/Projects/Rule Books/OSE/OSE Basic Rules.pdf"
+  python3 convert_pdfs.py "/Users/jack/Projects/trpg-projects/Rule Books/OSE/OSE Basic Rules.pdf"
 
   # 指定输出目录
-  python3 convert_pdfs.py "/Users/jack/Projects/Rule Books/Cairn" -o /tmp/cairn_txt
+  python3 convert_pdfs.py "/Users/jack/Projects/trpg-projects/Rule Books/Cairn" -o /tmp/cairn_txt
 """
 
 import pymupdf

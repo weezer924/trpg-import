@@ -6,10 +6,10 @@
 
 示例：
   # 提取全部页面到 txt
-  python3 pdf_extract.py "/Users/jack/Projects/Rule Books/CoC/克苏鲁的呼唤40周年纪念版.pdf"
+  python3 pdf_extract.py "/Users/jack/Projects/trpg-projects/Rule Books/CoC/克苏鲁的呼唤40周年纪念版.pdf"
 
   # 提取指定页码范围
-  python3 pdf_extract.py "/Users/jack/Projects/Rule Books/D&D 5e/Core/5eDnD_PHB_中译v1.72版.pdf" --pages 10-30
+  python3 pdf_extract.py "/Users/jack/Projects/trpg-projects/Rule Books/D&D 5e/Core/5eDnD_PHB_中译v1.72版.pdf" --pages 10-30
 
   # 提取多个范围
   python3 pdf_extract.py some.pdf --pages 1-5,10-20,50-60
