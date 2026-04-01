@@ -10,12 +10,15 @@
 |------|------|------|------------|---------|
 | D&D 5e (2014) | Dnd5e | 已完成 | `D&D 5e/Core/` | `output/Dnd5e/` |
 | D&D 5e 模组 | — | 部分完成 | `D&D 5e/Modules/` | `output/Dnd5e/campaign/` |
-| Call of Cthulhu 7e | CoC | 待导入 | `CoC/` | `output/CoC/` |
-| Old-School Essentials | OSE | 待导入 | `OSE/` | `output/OSE/` |
+| D&D 5.5e (2024) | — | 待导入 | `D&D 5.5e/Core/` | `output/Dnd5e2024/` |
+| D&D 3.5e | — | 待导入 | `D&D 3.5e/` | `output/Dnd35e/` |
+| AD&D 1e | ADnD1e | 导入中 | `AD&D 1st edition/` | `output/ADnD1e/` |
+| AD&D 2e | ADnD2e | 待导入 | `AD&D 2nd edition/` | `output/ADnD2e/` |
+| D&D Classic (Mentzer/RC) | DnDClassic | 部分完成 | `D&D Classic/` | `output/DnDClassic/` |
+| Old-School Essentials | OSE | 已完成 | `OSE/` | `output/OSE/` |
+| Call of Cthulhu 7e | CoC | 待导入 | `Call of Cthulhu/` | `output/CoC/` |
 | Cairn (1e & 2e) | Cairn | 待导入 | `Cairn/` | `output/Cairn/` |
-| AD&D 2e | ADnD2e | 待导入 | `AD&D 2e/` | `output/ADnD2e/` |
-| D&D Mentzer Classic Basic | MentzerBasic | 待导入 | `D&D Mentzer Classic Basic/` | `output/MentzerBasic/` |
-| D&D Rules Cyclopedia | DnDRC | 待导入 | `D&D RC/` | `output/DnDRC/` |
+| OSR 相关 | — | 参考 | `OSR related/` | — |
 | 其他系统 | — | 按需添加 | `{System}/` | `output/{System}/` |
 
 **战役模组/战役设定**导入到各系统输出目录下的 `campaign/` 子目录，详见各系统的战役导入指南。
@@ -25,29 +28,36 @@
 ## 2. 项目结构
 
 ```
-/Users/jack/Projects/Rule Books/   # 源 PDF 文件（所有系统）
+/Users/jack/Projects/trpg-projects/Rule Books/   # 源 PDF 文件（所有系统）
   ├── D&D 5e/
   │   ├── Core/                    # PHB, MM, DMG 中译
-  │   └── Modules/                 # 战役模组（中译为主）
-  ├── CoC/                         # 克苏鲁的呼唤 7e
-  ├── OSE/                         # Old-School Essentials
+  │   ├── Modules/                 # 战役模组（中译为主）
+  │   └── Supplements/             # 补充规则
+  ├── D&D 5.5e/
+  │   └── Core/                    # 2024 修订版核心书
+  ├── D&D 3.5e/                    # 3.5e 补充书
+  ├── AD&D 1st edition/            # AD&D 1e 核心书 + 模组（T1-4, GDQ1-7, Dragonlance 等）
+  ├── AD&D 2nd edition/            # AD&D 2e 核心书 + PHBR/DMGR 系列 + Dragonlance + FR
+  ├── D&D Classic/                 # Mentzer BECMI 全套 + Rules Cyclopedia + 模组
+  │   └── Modules/                 # B/X 系列模组
+  ├── OSE/                         # Old-School Essentials (B/X 复刻)
+  ├── Call of Cthulhu/             # 克苏鲁的呼唤 7e
   ├── Cairn/                       # Cairn 1e & 2e
-  ├── AD&D 2e/                     # AD&D 2e + campaign settings
-  ├── D&D Mentzer Classic Basic/   # 红盒基本版
-  └── D&D RC/                      # Rules Cyclopedia
+  │   ├── Cairn 1st/
+  │   └── Cairn 2e/
+  ├── OSR related/                 # OSR 相关参考资料
+  └── Todos/                       # 待整理
 
 output/                            # 输出目录，按系统分子目录
-  ├── Dnd5e/                       # D&D 5e 已完成
-  │   ├── 5e-phb.md
-  │   ├── 5e-spells.md
-  │   ├── 5e-mm.md
-  │   ├── 5e-dmg.md
-  │   ├── 5e-dmg-campaign.md
-  │   └── campaign/world/          # D&D 战役模组输出
-  ├── CoC/
-  ├── OSE/
-  ├── Cairn/
-  ├── ADnD2e/
+  ├── Dnd5e/                       # D&D 5e
+  │   ├── rules/                   # 规则书输出
+  │   └── campaign/                # 战役模组输出
+  ├── ADnD1e/                      # AD&D 1e
+  │   └── campaign/                # 战役模组输出
+  ├── DnDClassic/                  # D&D Classic (Mentzer/RC)
+  ├── OSE/                         # Old-School Essentials
+  │   ├── rules/                   # 规则书输出
+  │   └── campaign/                # 战役模组输出
   └── ...
 pdf_extract.py                     # PDF 文本提取工具（pymupdf）
 ```
@@ -98,13 +108,14 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf）
 
 每个游戏系统有独立的详细导入指南，包含：输出文件列表、章节优先级、格式模板、分对话计划、版本注意事项等。
 
-| 系统 | 指南文件 | 说明 |
-|------|---------|------|
-| D&D 5e 规则书 | `.claude/dnd5e-rules-import-guide.md` | 三本核心书 → 5 个输出文件 |
-| D&D 战役模组 | `.claude/dnd-campaign-import-guide.md` | 模组 PDF → output/Dnd5e/campaign/world/ 多文件结构 |
-| OSE 规则书 | `.claude/ose-import-guide.md` | OSE Classic/Advanced 规则书导入 |
-| OSE 战役模组 | `.claude/ose-campaign-import-guide.md` | B 系列模组 → output/OSE/campaign/ 多文件结构 |
-| CoC | `.claude/coc-import-guide.md` | 待创建 |
+| 系统             | 指南文件                                  | 说明                                               |
+| ---------------- | ----------------------------------------- | -------------------------------------------------- |
+| D&D 5e 规则书    | `.claude/dnd5e-rules-import-guide.md`     | 三本核心书 → 5 个输出文件                          |
+| D&D 战役模组     | `.claude/dnd-campaign-import-guide.md`    | 模组 PDF → output/Dnd5e/campaign/world/ 多文件结构 |
+| OSE 规则书       | `.claude/ose-import-guide.md`             | OSE Classic/Advanced 规则书导入                    |
+| OSE 战役模组     | `.claude/ose-campaign-import-guide.md`    | B 系列模组 → output/OSE/campaign/ 多文件结构       |
+| AD&D 1e 战役模组 | `.claude/adnd1e-campaign-import-guide.md` | T1-4 等模组 → output/ADnD1e/campaign/ 多文件结构   |
+| CoC              | `.claude/coc-import-guide.md`             | 待创建                                             |
 
 **导入新系统时**：先创建该系统的专属导入指南（参考 dnd5e 指南的结构），再按指南逐步执行。
 
