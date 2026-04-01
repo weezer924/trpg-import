@@ -52,7 +52,7 @@ All unique and standard monsters appearing in the dungeon, sorted alphabetically
 
 | Monster | AC | HD | HP | Att | THAC0 | MV | SV | ML | AL | XP | Area |
 |---------|----|----|-----|-----|-------|----|----|----|----|-----|------|
-| Black Skeletons | 7 [12] | 2 | 9 | 1 × sword (1d8) | 18 [+1] | 120' (40') | D12 W13 P14 B15 S16 (2) | 12 | N | 20 | 24, 34, 36, 38, 46 |
+| Black Skeletons | 7 [12] | 2 | 9 | 1 × sword (1d8) | 18 [+1] | 120' (40') | D12 W13 P14 B15 S16 (2) | 12 | N | 20 | 34, 36, 38, 46 |
 | Caged Mutants | 9 [10] | 1 | 1,3,5,6 | 1 × bite (1d4) | 19 [0] | 120' (40') | D12 W13 P14 B15 S16 (1) | 7 | C | 10 | 25 |
 | Demi-Ghoul | 8 [11] | 1 | 5 | 1 × bite (1d3), 1 × claw (1d3) | 19 [0] | 30' (10') | D12 W13 P14 B15 S16 (1) | 10 | C | 10 | 19 |
 | Enchanted Sheep Skulls | 8 [11] | 1 | 2,4,4,6 | 1 × butt (1d6) | 19 [0] | 120' (40') fly | D12 W13 P14 B15 S16 (1) | 12 | N | 10 | 9 |
@@ -110,4 +110,4 @@ All unique and standard monsters appearing in the dungeon, sorted alphabetically
 | 58 | Gribbl (Priestess) | 1 | 25 | 25 |
 | 59 | Pet Giant Rat | 1 | 5 | 5 |
 | 60 | Evil Tree Stump | 1 | 500 | 500 |
-| Various | Black Skeletons (if activated) | ~8 | 20 | 160 |
+| Various | Black Skeletons (if activated) | 7 | 20 | 140 |
