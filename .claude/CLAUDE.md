@@ -102,8 +102,9 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf）
 |------|---------|------|
 | D&D 5e 规则书 | `.claude/dnd5e-rules-import-guide.md` | 三本核心书 → 5 个输出文件 |
 | D&D 战役模组 | `.claude/dnd-campaign-import-guide.md` | 模组 PDF → output/Dnd5e/campaign/world/ 多文件结构 |
+| OSE 规则书 | `.claude/ose-import-guide.md` | OSE Classic/Advanced 规则书导入 |
+| OSE 战役模组 | `.claude/ose-campaign-import-guide.md` | B 系列模组 → output/OSE/campaign/ 多文件结构 |
 | CoC | `.claude/coc-import-guide.md` | 待创建 |
-| OSE | `.claude/ose-import-guide.md` | 待创建 |
 
 **导入新系统时**：先创建该系统的专属导入指南（参考 dnd5e 指南的结构），再按指南逐步执行。
 
