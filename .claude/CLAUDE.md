@@ -50,14 +50,23 @@
 
 output/                            # 输出目录，按系统分子目录
   ├── Dnd5e/                       # D&D 5e
-  │   ├── rules/                   # 规则书输出
+  │   ├── rules/                   # 规则书输出（PHB, MM, DMG, Spells）
   │   └── campaign/                # 战役模组输出
+  │       └── thessalhydra/        # Thessalhydra 自作模组
   ├── ADnD1e/                      # AD&D 1e
   │   └── campaign/                # 战役模组输出
+  │       ├── ravenloft/           # I6 Ravenloft（完成）
+  │       └── temple-of-elemental-evil/  # T1-4（计划中）
   ├── DnDClassic/                  # D&D Classic (Mentzer/RC)
+  │   └── campaign/
   ├── OSE/                         # Old-School Essentials
-  │   ├── rules/                   # 规则书输出
-  │   └── campaign/                # 战役模组输出
+  │   ├── rules/                   # 规则书输出（Classic + Advanced）
+  │   ├── campaign/                # 战役模组输出（含 B/X 经典模组，按 OSE 格式导入）
+  │   │   ├── keep-on-the-borderlands/   # B2
+  │   │   ├── nights-dark-terror/        # B10
+  │   │   ├── the-hole-in-the-oak/       # OSE 原创
+  │   │   └── the-lost-city/             # B4
+  │   └── supplements/             # 补充（necromancer）
   └── ...
 pdf_extract.py                     # PDF 文本提取工具（pymupdf）
 ```
@@ -111,7 +120,7 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf）
 | 系统             | 指南文件                                  | 说明                                               |
 | ---------------- | ----------------------------------------- | -------------------------------------------------- |
 | D&D 5e 规则书    | `.claude/dnd5e-rules-import-guide.md`     | 三本核心书 → 5 个输出文件                          |
-| D&D 战役模组     | `.claude/dnd-campaign-import-guide.md`    | 模组 PDF → output/Dnd5e/campaign/world/ 多文件结构 |
+| D&D 战役模组     | `.claude/dnd-campaign-import-guide.md`    | 模组 PDF → output/Dnd5e/campaign/ 多文件结构       |
 | OSE 规则书       | `.claude/ose-import-guide.md`             | OSE Classic/Advanced 规则书导入                    |
 | OSE 战役模组     | `.claude/ose-campaign-import-guide.md`    | B 系列模组 → output/OSE/campaign/ 多文件结构       |
 | AD&D 1e 战役模组 | `.claude/adnd1e-campaign-import-guide.md` | T1-4 等模组 → output/ADnD1e/campaign/ 多文件结构   |
