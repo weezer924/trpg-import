@@ -6,7 +6,7 @@
 
 ## 1. 输出结构
 
-每个模组输出到 `output/Dnd5e/campaign/world/{module-name}/` 目录下，包含以下文件：
+每个模组输出到 `output/Dnd5e/campaign/{module-name}/` 目录下，包含以下文件：
 
 | 文件 | 用途 | 必须 |
 |------|------|------|
