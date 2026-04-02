@@ -58,14 +58,14 @@ output/                            # 输出目录，按系统分子目录
   │       ├── ravenloft/           # I6 Ravenloft（完成）
   │       └── temple-of-elemental-evil/  # T1-4（计划中）
   ├── DnDClassic/                  # D&D Classic (Mentzer/RC)
-  │   └── campaign/
+  │   └── campaign/                # B/X 经典模组（按 OSE 格式导入）
+  │       ├── keep-on-the-borderlands/   # B2
+  │       ├── nights-dark-terror/        # B10
+  │       └── the-lost-city/             # B4
   ├── OSE/                         # Old-School Essentials
   │   ├── rules/                   # 规则书输出（Classic + Advanced）
-  │   ├── campaign/                # 战役模组输出（含 B/X 经典模组，按 OSE 格式导入）
-  │   │   ├── keep-on-the-borderlands/   # B2
-  │   │   ├── nights-dark-terror/        # B10
-  │   │   ├── the-hole-in-the-oak/       # OSE 原创
-  │   │   └── the-lost-city/             # B4
+  │   ├── campaign/                # OSE 原创模组
+  │   │   └── the-hole-in-the-oak/
   │   └── supplements/             # 补充（necromancer）
   └── ...
 pdf_extract.py                     # PDF 文本提取工具（pymupdf）
