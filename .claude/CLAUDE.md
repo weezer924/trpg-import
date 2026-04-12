@@ -18,6 +18,7 @@
 | Old-School Essentials | OSE | 已完成 | `OSE/` | `output/OSE/` |
 | Call of Cthulhu 7e | CoC | 待导入 | `Call of Cthulhu/` | `output/CoC/` |
 | Cairn (1e & 2e) | Cairn | 待导入 | `Cairn/` | `output/Cairn/` |
+| Mörk Borg (Bare Bones) | MorkBorg | 已完成 | `Mork Borg/` | `output/MorkBorg/` |
 | OSR 相关 | — | 参考 | `OSR related/` | — |
 | 其他系统 | — | 按需添加 | `{System}/` | `output/{System}/` |
 

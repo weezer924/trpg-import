@@ -7,7 +7,7 @@
 ## Index
 
 1. [Creatures](#creatures) — 12 iconic foes
-2. [Outcasts](#outcasts) — 4 hostile NPC types
+2. [Outcasts](#outcasts-followers) — 4 hostile NPC types
 
 ---
 
