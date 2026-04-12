@@ -180,3 +180,144 @@ Illustrating this, the Game Master (GM) rolls a die each dawn. A result of 1 act
 - **7:7** All praise Yetsabu-Nech, the underworld's nightmare, the black disk which stands before the sun! All praise Verhu, beaming with delight! All praise the fire which burns all! And the darkness shall swallow the darkness.
 
 ---
+
+## Reference Tables
+
+Drop-in random tables for flavour and gameplay.
+
+### Name Table (d6 × d8)
+
+*Man? Woman? Lost souls all.*
+
+| d6 | d8 | Name |
+|---:|---:|------|
+| 1 | 1 | Aerg-Tval |
+| 1 | 2 | Agn |
+| 1 | 3 | Arvant |
+| 1 | 4 | Belsum |
+| 1 | 5 | Belum |
+| 1 | 6 | Brint |
+| 1 | 7 | Börda |
+| 1 | 8 | Daeru |
+| 2 | 1 | Eldar |
+| 2 | 2 | Felban |
+| 2 | 3 | Gotven |
+| 2 | 4 | Graft |
+| 2 | 5 | Grin |
+| 2 | 6 | Grittr |
+| 2 | 7 | Haerü |
+| 2 | 8 | Hargha |
+| 3 | 1 | Harmug |
+| 3 | 2 | Jotna |
+| 3 | 3 | Karg |
+| 3 | 4 | Karva |
+| 3 | 5 | Katla |
+| 3 | 6 | Keftar |
+| 3 | 7 | Klort |
+| 3 | 8 | Kratar |
+| 4 | 1 | Kutz |
+| 4 | 2 | Kvetin |
+| 4 | 3 | Lygan |
+| 4 | 4 | Margar |
+| 4 | 5 | Merkari |
+| 4 | 6 | Nagl |
+| 4 | 7 | Niduk |
+| 4 | 8 | Nifehl |
+| 5 | 1 | Prügl |
+| 5 | 2 | Qillnach |
+| 5 | 3 | Risten |
+| 5 | 4 | Svind |
+| 5 | 5 | Theras |
+| 5 | 6 | Therg |
+| 5 | 7 | Torvul |
+| 5 | 8 | Törn |
+| 6 | 1 | Urm |
+| 6 | 2 | Urvarg |
+| 6 | 3 | Vagal |
+| 6 | 4 | Vatan |
+| 6 | 5 | Von |
+| 6 | 6 | Vrakh |
+| 6 | 7 | Vresi |
+| 6 | 8 | Wemut |
+
+### Occult Treasures (d10)
+
+| d10 | Result |
+|----:|--------|
+| 1 | **Ash-grey ring** a finger-width wide. All that passes through is obliterated. |
+| 2 | The keening music of this small, **vile flute** animates a fetus-sized meat golem in a nearby corpse. **HP** 5 · **Morale** – · **No armor** · **Bite** d4 · *immune to Powers*. |
+| 3 | A note explains: one taste from this **famine spoon** means death from slow starvation. |
+| 4 | The image of a being in this malevolently-accurate **mirror** shows only the shameful truth of their soul. |
+| 5 | **Vampiric phurba.** Heals you as it harms your target (d3), but beware: after stealing a total of 6 HP, test Presence dr14 or become addicted — you must then test Presence dr12 daily. Fail and you must stab someone with the knife before next sunrise. Or wither to ash and die as the sun rises. |
+| 6 | A black **pearl**. If dropped in darkness it rolls towards the nearest exit to day. |
+| 7 | This **torch** burns for an immortal hour. Hold it and live. You can lose limbs and enter negative HP but won't die unless you drop the torch or it burns out. |
+| 8 | Silver **bird cage** slays whatever is placed behind its bars, slowly, over one long night. That which is killed reanimates twice as strong, as a raging uncontrollable undead. |
+| 9 | **Black crown of the crippled king.** Wearing this crooks your body as you become aware that you and every creature within 100 yards gain +10 to attack rolls but −10 to defence rolls. Rolls that go above 20 count as crits, and below 1 as fumbles. The worn crown can only be removed in the pale light of a full moon. |
+| 10 | Anyone wearing this ancient **blindfold** becomes invisible to those who breathe though the undead attack them obsessively and nearby corpses awaken in moaning, unholy wrath. |
+
+### Traps and Devilry (d12)
+
+| d12 | Result |
+|----:|--------|
+| 1 | Well dressed corpse, booby trapped. |
+| 2 | Wall-holes shoot poisonous arrows. |
+| 3 | Bells and marbles on the floor. |
+| 4 | Scorpion-filled basket poised to fall. |
+| 5 | Fish hooks hanging at eye level. |
+| 6 | Chest marked with explosive runes. |
+| 7 | Lock trapped with vial of poison gas. |
+| 8 | Jewel removal leads to roof collapse. |
+| 9 | Slanted floor, translucent oil, pit. |
+| 10 | Snake-cages on collapsing ceiling tiles. |
+| 11 | Evil urns release cold ghosts. |
+| 12 | Coins coated in grime and poison. |
+
+### Weather (d12)
+
+| d12 | Result |
+|----:|--------|
+| 1 | Lifeless grey. |
+| 2 | Hammering rain. |
+| 3 | Piercing wind. |
+| 4 | Deafening storm. |
+| 5 | Black as night. |
+| 6 | Dead quiet. |
+| 7 | Cloudburst. |
+| 8 | Soup-thick mist. |
+| 9 | Crackling frost. |
+| 10 | Irritating drizzle. |
+| 11 | Roaring thunder. |
+| 12 | Gravelike cold. |
+
+### Corpse Plundering (d66)
+
+Roll two d6: the first die is the tens digit, the second the ones.
+
+| d66 | Result |
+|----:|--------|
+| 11–16 | The remains of something worthless crumbles in your hands. |
+| 21 | Pot filled with extremely potent itching ointment. |
+| 22 | Necklace of human teeth. |
+| 23 | Bag of angry, venomous moths. Test Toughness dr6 or die. |
+| 24 | Pocket full of broken glass, PC takes d2 damage. |
+| 25 | Mad manifesto. If read, test Presence dr12 or lose 1 Presence permanently from confusion. |
+| 26 | Key to nearby locked door. Stolen. |
+| 31 | Map to a weak but wealthy family's house. |
+| 32 | A hopeless amount of spiders. |
+| 33 | Metal cylinder with gunpowder and fuse. Roll a d6. 1–2 you lose a hand. 3–6 3d10 damage wherever it lands. |
+| 34 | Known and liked/despised witch-hunter's face. Flayed. |
+| 35 | Note with PC's names. One is crossed out. |
+| 36 | Tortured pixie with torn-off wings and gouged out eyes. |
+| 41 | Map to a place that cannot possibly exist. |
+| 42 | Unmarked bottle with a liquid that shifts between red and green. |
+| 43 | Bond. A local potentate owes the holder a sizable amount. |
+| 44 | Death mask of one of the PCs. |
+| 45 | The 'Water of Life.' Heals d8. Test Toughness dr10 or go blind. Highly alcoholic. |
+| 46 | There was something very wrong with this one. Hands covered with something lukewarm, brown and acidic. Take d2+1 damage and smell terrible for d4 days. |
+| 51 | Black Kergüs dagger. 2d4 damage. |
+| 52 | Labelled poison bottle. Test Toughness dr12 or lower random ability by d4. The ability can be increased when your character is improved. |
+| 53 | Scalp with long black hair. |
+| 54 | Golden ball with an invisible seam, twists open. |
+| 55 | Bloodstained knuckle-duster. |
+| 56 | Two weighted dice. |
+| 61–66 | The result in silver. |
