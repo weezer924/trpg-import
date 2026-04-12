@@ -452,3 +452,354 @@ Roll d20 when the text, the GM or the Basilisk demands a rare and specific thing
 | 19 | The rear molar of the Gluttonous |
 | 20 | Gems from overflowing pockets |
 
+
+---
+
+## Optional Rules: Omens
+
+*"järtecken"*
+
+Clearly the eyes of other powers are upon you, Eldritch watchers or the tangled Fates of alternate worlds. Call it luck if you like. Every class gains a number of Omens. If you play without classes every character begins with d2 Omens. When depleted, roll the class' designated die (d2 if playing without classes) and regain that many Omens after resting at least six hours.
+
+Use an Omen to:
+
+- Deal maximum damage with an attack
+- Reroll a dice roll (yours or someone else's)
+- Lower damage dealt to you by d6
+- Neutralize a Crit or Fumble
+- Lower one test's dr by -4
+
+---
+
+## Optional Tables
+
+Trauma, a bad childhood, hidden history or a twisted fate attending your birth already shaped you.
+
+### Terrible Traits (d20, roll twice)
+
+| d20 | Result |
+|----:|--------|
+| 1 | Endlessly aggravated |
+| 2 | Inferiority complex |
+| 3 | Problems with authority |
+| 4 | Loud mouth |
+| 5 | Cruel |
+| 6 | Egocentric |
+| 7 | Nihilistic |
+| 8 | Prone to substance abuse |
+| 9 | Conflicted |
+| 10 | Shrewd |
+| 11 | Vindictive |
+| 12 | Cowardly |
+| 13 | Lazy |
+| 14 | Suspicious |
+| 15 | Ruthless |
+| 16 | Worried |
+| 17 | Bitter |
+| 18 | Deceitful |
+| 19 | Wasteful |
+| 20 | Arrogant |
+
+### Broken Bodies (d20)
+
+| d20 | Result |
+|----:|--------|
+| 1 | Staring manic gaze. |
+| 2 | Covered in (for some) blasphemous tattoos. |
+| 3 | Rotting face. Wears a mask. |
+| 4 | Lost three toes, limps. |
+| 5 | Starved: gaunt and pale. |
+| 6 | One hand replaced with rusting hook (d6 damage). |
+| 7 | Decaying teeth. |
+| 8 | Hauntingly beautiful, unnervingly clean. |
+| 9 | Hands caked with sores. |
+| 10 | Cataracts slowly but surely spreading in both eyes. |
+| 11 | Long tangled hair, at least one cockroach in residence. |
+| 12 | Broken, crushed ears. |
+| 13 | Juddering and stuttering from nerve damage or stress. |
+| 14 | Corpulent, ravenous, drooling. |
+| 15 | One hand lacks thumb and index finger, grips like a lobster. |
+| 16 | Red, swollen alcoholic's nose. |
+| 17 | Resting maniac face, making friends is hard. |
+| 18 | Chronic athlete's foot. Stinks. |
+| 19 | Recently slashed and stinking eye covered with a patch. |
+| 20 | Nails cracked and black, maybe about to drop off. |
+
+### Bad Habits (d20)
+
+| d20 | Result |
+|----:|--------|
+| 1 | Obsessively collect small sharp stones. |
+| 2 | Won't use a blade without testing it on your own flesh. Arms knitted with scars. |
+| 3 | Can't stop drinking once you start. |
+| 4 | Gambling addict. Must bet every day. If you lose, raise and bet again. |
+| 5 | Cannot tolerate criticism of any kind. Results in rage and weeping. |
+| 6 | Unable to get to the point. Have never actually finished a story. |
+| 7 | Best friend is a skull. Carry it with you, tell it everything, you trust no one more. |
+| 8 | You pick your nose so deep it bleeds. |
+| 9 | Laugh hysterically at your own jokes which you then explain in detail. |
+| 10 | A nihilist. You insist on telling everyone you are a nihilist and explaining why. |
+| 11 | Inveterate bug eater. |
+| 12 | Stress response is aesthetic display. The worse things get the fancier you need to be. |
+| 13 | Permanent phlegm deposit in throat. Continuously cough, snort, spit and swallow. |
+| 14 | Pyromaniac. |
+| 15 | Consistently lose important items and forget vital facts. |
+| 16 | Insecure shit-stirrer. Will talk about whoever just left the room. |
+| 17 | You stutter when lying. |
+| 18 | You giggle insanely at the worst possible times. |
+| 19 | You whistle while trying to hide. You will deny this. Whistle when 5, 7, 9, 11 or 13 is rolled on a d20. |
+| 20 | You make jewelry from the teeth of the dead. *If this can be considered a bad habit.* |
+
+### Troubling Tales (d20)
+
+The whole group can share the same backstory, or groups within the group can share a tale. Or the GM can quickly give history to a seemingly mundane character.
+
+| d20 | Result |
+|----:|--------|
+| 1 | Pursued for manslaughter. There is a bounty. |
+| 2 | In massive debt. The debt is being traded to successively more ruthless groups. |
+| 3 | Have a rare, sought after item. |
+| 4 | Have a cursed never healing wound. |
+| 5 | Had an illegal, immoral and secret affair with a member of the royal family. Has proof. |
+| 6 | Escaped cult member. Terrified and paranoid. Other cultists are everywhere. |
+| 7 | An identity thief who recently killed and replaced this person. |
+| 8 | Banished and disowned for unspecified deeds. Can never go home. |
+| 9 | Deserted military after witnessing a massacre, bounty on head. Hunted by former friends. |
+| 10 | Very recently murdered a close relative. Very recently. |
+| 11 | A puzzle cube has been calibrated incorrectly (or has it?), awakening a slumbering abomination. |
+| 12 | Evil creatures love the scent of your spoor and are drawn to it, bringing disaster in your wake. |
+| 13 | A battle wound left a shard of metal slowly inching closer to your heart. Every day there is a 2% chance it reaches it. |
+| 14 | Violence forced you into the wilderness. You think waving trees are whispering. You talk to, scream at, attack trees. |
+| 15 | Cursed to share the nightmares of others, you sleep far, far away. |
+| 16 | At permanent war with all corvids. No contact without some violence. You carry a sling. |
+| 17 | After dreaming of an underground temple to a forgotten god you understand the songs of insects and worms. |
+| 18 | Being tracked and observed by a golem after an agreement which you know has been wiped from your mind. |
+| 19 | *"Burn or be burned"* is the fate you accept. |
+| 20 | Your flesh heals twice as fast, but your companions twice as slow. You see a many-eyed "guardian angel." |
+
+---
+
+## Arcane Catastrophes
+
+**YOU READ IT WRONG YOU ILLITERATE FOOL!**
+
+*Effects in italic are things the caster might not immediately realize.*
+
+A caster who rolls the same result twice explodes in screaming black fire in which the faces of the dead are seen. D6 damage each round. Water only feeds this fire.
+
+### Arcane Catastrophes (d20)
+
+| d20 | Result |
+|----:|--------|
+| 1 | One by one your teeth fall out. Long, brittle fingernails replace them in your gums. *Your smile is horrific and you find it hard to eat.* |
+| 2 | You feel fine. It's **fine**. *You pustulate with a magical STD. Those intimate with you will die of plague within d4 days then rise as woeful weeping zombies who track you down in your dreams before finding you in reality.* |
+| 3 | Your skeleton is possessed by some unearthly force and will do anything to kill you and escape. Drowning or piercing is preferred so the bones are not damaged. Test Strength dr10 in stressful situations or take d4 damage. *When you die, you become a zombie.* |
+| 4 | The illusion of the celestial sphere is lifted, you now see what dwells beyond. And it sees you. Gazing upon a clear night sky drives you mad with fear. |
+| 5 | Around you falls an unending snow of black ash which only you and the mad can perceive. *Water sickens you from this day on. Only ash, soot or burnt remains can quench your thirst.* |
+| 6 | The earth decays around you like wet flesh. You sink 3 feet and cannot climb out without help. Clinging to you, screaming and biting are d4 translucent, crayfish-like children with your face. **HP** 3 · **Morale** – · **No armor** · **Bite/pinch** d4 |
+| 7 | Your skin tatters like paper, your flesh melts like wax and your intestines bloat like balloons, bursting and falling out until all that is left is a walking, talking skeleton. |
+| 8 | A gnashing gap-toothed mouth splits open on your neck. It spits out your secrets and inner thoughts *and can be silenced to sleep only with blood.* |
+| 9 | The sky warps and stars spin like wheels. Thrown one day into the future, you arrive vomiting Time as evaporating silver bile. *A Misery is fulfilled.* |
+| 10 | Light itself despises you. If you gaze upon a candle, lamp or torch it goes out. |
+| 11 | *Within d4 days a vile cocoon heaves from the ground, soon bursting and spawning your exact clone. It is unintelligent and begins to spread mischief and suffering. This happens every couple of days until the ground is cleansed with holy water or fire.* |
+| 12 | Your eyes burn with insufferable agony, bleeding heavily before loosening and falling from their gory pits. You continue to see through them wherever they are. |
+| 13 | You and a random nearby creature pass out. *When you wake up, your souls have switched. Welcome to your new flesh.* |
+| 14 | Five twisted, skeletal arms burst from your back. The hands are mischievous, violent and terribly cruel. |
+| 15 | Your skin pales then begins to emit a sickly greenish light. *Living things held close to you slowly fall ill. They weaken, their teeth and bones become brittle, their teeth and hair fall out.* |
+| 16 | The Power works, but fate or a demonic force perverts its effects to your precise disadvantage. |
+| 17 | The scroll crumbles to tendrils of fine black powder which reach for your nose and mouth. Make a dr14 Toughness test or lose d10 hp. |
+| 18 | The Power pierces you like a knife, feeding on your anima. You are permanently gaunt and drawn, insatiably hungry. *When resting you restore only half of the rolled hp.* |
+| 19 | You fall through Refva into the esoteric dimension of Cube-Violet, a place of mythical obscurity. The walls are smooth, iridescent and cold. Above, an endless inferno. **To leave (d4):** 1. Slay riddling Kulvan (strong goblin, page 58) who holds three colorless pearls. 2. Poison a close friend with crumbled Sict-Shroom (Toughness dr16 or -d6 hp and hallucinations). They are found only within the cube. 3. Reach up through the fire to the golden key above. d4 fingers burn to ash. 4. The cube is perfect, and empty. You can only wait in maddening timeless silence until another fool arrives. |
+| 20 | Perhaps it's for the best. HE emerges from the shadows. At least your suffering is short, almost instantaneous, as the two-headed basilisk devours you. |
+
+---
+
+## Optional Classes
+
+Roll d6 (or choose) to pick one of six optional classes. Each brings its own starting silver, Omen die, HP formula, background tables, and starting gear or specialty. Replace the default character-creation steps with the class' rules.
+
+### 1. Fanged Deserter
+
+You have thirty or so friends who never let you down: YOUR TEETH. Disloyal, deranged or simply uncontrollable, any group that didn't boot you out you left anyway. But your parliament of teeth—enormous, protruding, thick and sharp—have always been your allies.
+
+**Bite attack:** dr10 to attack, d6 damage. You must be close to your target. 1–2 on d6 chance the enemy gets a free attack.
+
+**Begins with** 2d6 × 10s and d2 Omens. **hp:** Toughness + d10
+
+**Abilities:** **Built like a bull**, roll 3d6+2 for Strength. **Not a bright spark**, roll 3d6-1 for Agility and Presence. Normal Agility tests are dr14 instead of dr12, excluding defence. **Illiterate**; you are incapable of understanding scrolls. If you begin with one then reroll, eat it or use it as toilet paper.
+
+#### Earliest Memories (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1 | A burnt-black building in Sarkash. Your home? |
+| 2 | A derelict rotting ship rolling endlessly across a grey sea. |
+| 3 | A brothel in Schleswig. Quite a friendly environment. |
+| 4 | Sleeping with dogs in the corner of an inn, waiting for someone to return. |
+| 5 | Following an army in eastern Wästland. |
+| 6 | Suckling a wolf in the wild of Bergen Chrypt. |
+
+#### You also begin with one of the following (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1 | **Crumpled monster mask:** Strikes primitive fear into lesser creatures like goblins, gnoums and children. While worn, they check Morale every round. |
+| 2 | **The brown scimitar of Galgenbeck:** A stinking sword you pulled from a military shit-ditch. D6 damage. dr10 attack and defence while you wield it. 1 in 6 chance a wounded enemy is smitten with potent sepsis, dying in 10 minutes. |
+| 3 | **Wizard teeth:** Four weird teeth rattle within a blackened pouch. Before battle roll a d6 for each one. For every 6 one of your attacks deals maximum damage. |
+| 4 | **Old Sigûrd's sling:** Sigûrd was the strongest man whose throat you ever gnawed. Woven from his long grey hair, this sling has never failed you. 2d4 damage, requires fist-sized rocks which, perhaps regrettably, are everywhere. |
+| 5 | **Ancient gore-hound:** Asthmatic, deluded and on its last legs, this wizened creature still has a superb nose and can sniffle up treasure in the most disgusting debris. Attacks with dr10 (bite d6). Defends with dr12, 10 hp. Becomes frenzied around goblins and berserkers. |
+| 6 | **The shoe of Death's horse:** It looks normal but since finding it in an obscure crypt you are convinced this shoe came from the horse of Death himself. In your hands it hits with dr10, d4 damage. 1 in 6 chance the shoe smashes the skull, instantly killing small-to-medium sized creatures. The shoe returns to your hand like a boomerang. |
+
+### 2. Gutterborn Scum
+
+An ill star smiled upon your birth. Poverty, crime and bad parenting didn't help either. In your community an honest day's work was never an option. Not that you ever tried, what are you, some kind of mug? A razor blade and a moonless night are worth a week of chump-work.
+
+**Begins with** 1d6×10s and d2 Omens. **hp:** Toughness + d6
+
+**Abilities:** **Small**, roll 3d6-2 for Strength. **Stealthy**, all Presence and Agility tests have their dr reduced by 2 (normal tests are dr10 instead of dr12). Roll d6 on the weapon table and d2 on the armor table.
+
+#### Bad Birth (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1 | Dumped onto a moving shit-cart still in your birth caul. |
+| 2 | Mother hanged from a tree outside of Galgenbeck, you fell from the corpse. |
+| 3 | Raised by rats in the gutters of Grift. |
+| 4 | Kicked and beaten beneath a baker's table in Schleswig. |
+| 5 | Escaped the Tvelandian orphanarium. |
+| 6 | Educated by outlaws in a hovel south of Alliáns. |
+
+#### You also begin with one specialty (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1 | **Coward's jab:** When attacking by surprise test Agility dr10. On a success you automatically hit once with a light one-handed weapon, dealing normal damage +3. |
+| 2 | **Filthy fingersmith:** Your snaky little digits get into pockets and pick locks with a dr8 Agility test. You also begin with lockpicks! |
+| 3 | **Abominable gob lobber:** Your phlegm is viscous, lumpy, vile and ballistically accurate at short range. You can spit d2 times during a fight. Roll a dr8 Presence test for accuracy. Targets are blinded, retching and vomiting for d4 rounds. Anyone witnessing this—friend and foe—must make a Toughness test to not also vomit. PCs test dr10 and enemies dr12. |
+| 4 | **Escaping fate:** Every time you use an omen there is a 50% chance it is not spent. |
+| 5 | **Excretal stealth:** You have an astounding, almost preternatural ability to hide in muck, debris and filth. When hidden in these conditions a dr16 Presence test is required to notice you. |
+| 6 | **Dodging Death:** You are so unpleasant, irrelevant, disgusting and vile even Death would rather avoid you if it can. On death, if there is even the slightest possibility that you survived, there is a 50% chance that you did. If successful, after 10 rounds you pop back up with d4 hp and an unlikely explanation of your escape. |
+
+The first time the Scum gets better (see Getting Better) another specialty is rolled. From the second time the Scum gets better it's possible to reroll these two specialities or just one.
+
+### 3. Esoteric Hermit
+
+The stone of your cave is one with the stars. Silence and perfection. Now the chaos of a fallen world disturbs your rituals and the caul of night grows blacker than your cavern's gloom. Irritating!
+
+**Begins with** 1d6×10s and d4 Omens. **hp:** Toughness + d4
+
+**Abilities:** **Wise**, roll 3d6+2 for Presence. **Weak**, roll 3d6-2 for Strength. Ordinary starting equipment plus one random scroll (sacred or unclean). Roll a d4 on the weapons table and d2 on the armor table.
+
+#### Eldritch Origins (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1 | Awakening, adult, in a ritual circle underneath the northern bridge to Grift. |
+| 2 | Wandered, memoryless, from the mouth of a cavern at the cliffs of Terion. |
+| 3 | Single child survivor of an incident in the Valley of the Unfortunate Undead. |
+| 4 | Dying of plague in a Bergen Chrypt hovel, you touched something from outside. |
+| 5 | An average individual until you encountered something in a dim glade in Sarkash. |
+| 6 | Raised on a lonely island in Lake Onda. No one else has ever heard of this island and you can't return. |
+
+#### You also begin with one of the following (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1 | **Master of fate:** What use are maps when the substance of causality itself is open to you? You know the right way with a dr8 Presence test. |
+| 2 | **Book of boiling blood:** You may open and read from this book once a day. Your enemy must make a dr12 test to prevent this. If they fail D2 Berserker-slayers (see page 59) appear from the depths of a forgotten dimension of blood. Roll a D6. On a 1–4 these creatures fight alongside you. On a 5–6 they turn on you, attempting to kill you and destroy the book. After the battle they return to their imprisonment. |
+| 3 | **Speaker of truths:** Twice per day use your wisdom, knowledge, advice and inner calm to bring clarity to a creature of your choice. The dr of the next test they undertake is lowered by 4. |
+| 4 | **Initiate of the Invisible College:** Once per day you may summon D2 scrolls, whose power can be used only once. Roll a d4, on a 1–2 the scrolls are sacred, on a 3–4, unclean. If the scrolls are not used before sunrise they turn to ash. |
+| 5 | **Bard of the undying:** You learnt your melodies in the Otherworld. The music of your Harp gives +D4 on reaction rolls. |
+| 6 | **Hawk as weapon:** Your crafty almost-intelligent hawk is loyal only to you. Even without shared language, you understand its cries as it keeps watch, scouts and swoops to attack foes. **Attacks/defence** dr10 (claws/bite D4) · **HP** 8. |
+
+### 4. Wretched Royalty
+
+Bowed down only by the memories of your own lost glory, you could never submit to anyone else. Not you, of noble blood! *(Not that you expect these peons to understand the depths of your sorrow.)*
+
+**Begins with** 4d6 × 10s and d2 Omens. **hp:** Toughness + d6
+
+**Abilities:** **Painfully average**, you adjust no abilities. Roll a D8 on the weapons table. Roll a D4 on the armor table but reroll if you receive heavy armor.
+
+#### Things were going so well, until… (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1 | your Wästland palace was reduced to rubble. |
+| 2 | your caravan kingdom of Tveland fell into penury. |
+| 3 | King Fathmu IX's brother Zigmund, your father, was murdered. |
+| 4 | the southern empire of Südglans sank into the sea. |
+| 5 | Anthelia demanded a gift of noble blood. |
+| 6 | two young princes were kidnapped west of Bergen Chrypt and disappeared into the black crevasse of the eastern slopes. |
+
+#### You begin with two of the following (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1 | **The blade of your ancestors:** This magnificent and clearly magical talking sword is foppish, unreliable and quietly despises you. It taunts your failures and, if continually disappointed, develops a 1 in 6 chance to 'accidentally' attack you or your companions. Deals D6+1 damage. Attack/Defence dr is 10. |
+| 2 | **'Poltroon' the Court Jester:** While practically useless, personally irritating and an emotional drain, Poltroon's capering actually makes enemies lose their focus in combat. For the first two rounds you and your allies get +2 on attack/defence. |
+| 3 | **Barbarister the incredible horse:** Barbarister is magical, intelligent, arrogant and vain. He can also talk. If you can persuade him to care, Barbarister occasionally adds +2 to Presence tests involving logic and intellect. The horse may be smarter than you and is quite aware of this. |
+| 4 | **Hamfund the squire:** This intensely cowardly servant acts only as guardian for the scabbard of the cursed sword Eurekia. Once per combat, if Ham can be found, Eurekia may be drawn. The sword does 2D6 damage, and for every swing of Eurekia roll a D6. On a 1 the squire is slain and Eurekia vanishes forever. |
+| 5 | **The snake-skin gift:** An expensive sandalwood box bound in snakeskin. It contains a seemingly ordinary dagger, wrapped in silk. The dagger does D4 damage but on a 1 the target dies immediately of deadly poison weeping from the blade. |
+| 6 | **Horn of the Schleswig Lords!** Once per day release a blare from this dented old trumpet and test Presence dr12. One creature may make their next non-combat test an automatic success. |
+
+### 5. Heretical Priest
+
+Hunted by the two-headed basilisks of the One True Faith, this heretic can be found raving in ruins, traipsing endlessly down dusty roads and desecrating cathedrals by night.
+
+**Begins with** 3d6 × 10s and d4 Omens. **hp:** Toughness + d8
+
+**Abilities:** **Insightful**, roll 3d6+2 for Presence. **Frail**, roll 3d6-2 for Strength. Roll a D8 on the weapons table and may use Powers while wearing medium armor.
+
+#### Unholy Origins (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1 | Galgenbeck, near the cathedral of the Two-Headed Basilisks. |
+| 2 | Massacred Alliáns cult, sole survivor. |
+| 3 | The crypts of Grift. |
+| 4 | Temple ruins in the Valley of the Unfortunate Undead. |
+| 5 | One of the many Graven-Tosk thief-tunnels. |
+| 6 | Secret Bergen Chrypt church. |
+
+#### You begin with one of the following (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1 | **Sacred Shepherd's Crook:** Its head a hook of human bone inscribed with overlapping anti-prayers. This crook hooks through other worlds. Staff does 2D4 damage except to faithless humans. |
+| 2 | **Stolen Mitre:** While wearing this holy hat the priest's vile body fades, becoming hard to hit in combat (Defence dr10). If pulled over the ears outside of battle the priest becomes nearly invisible, testing stealth against dr8. |
+| 3 | **List of Sins:** A long and accurate document cross-referenced against reality to discover unseen evil-doers. Successful Presence dr10: A strange light surrounds evil creatures. The list's owner defends with +2 against any being discovered this way. |
+| 4 | **The Blasphemous Nechrubel Bible:** So intensely blasphemous even the Priests themselves can only peruse it once per day. When read, roll a die. Even result: For the rest of the day PCs heal D4 hp after just five minutes of rest. Odd result: The priest is plagued by demonic hallucinations. The DM may invent D3 things that only the Priest can see and describe them to the player as if true. This effect ends with sunrise. |
+| 5 | **Stones taken from Thel-Emas' lost temple:** Cast the stones on the ground. Their pattern reveals if danger lurks in an adjacent room. The stones can lie. The priest tests Presence dr10 to see if they are true but after failing they cannot test again until the sun has set. |
+| 666 | **(Wrong Jesus) Crucifix:** The crucifix can be used in encounters with the undead as well as lesser trolls and goblins. Check morale (add or subtract the priest's Presence modifier) to see if the creatures bow and kindly remove themselves. |
+
+### 6. Occult Herbmaster
+
+Born of the mushroom, raised in the glade, watched by the eye of the moon in a silverblack pool.
+
+**Begins with** 2d6 × 10s and d2 Omens. **hp:** Toughness + d6
+
+**Abilities:** **Tough as wood**, roll 3d6+2 Toughness. **Low in protein**, roll 3d6-2 Strength. Roll D6 on the weapons table and D2 on the armor table. You carry a **portable laboratory** and continually search for frequently expended ingredients. Daily you have the materials to create two randomly determined decoctions and can brew a total of D4 doses. If unused they lose vitality after 24 hours.
+
+#### Probably raised in (d8)
+
+| d8 | Result |
+|---:|--------|
+| 1–3 | calm isolation in the Sarkash dark. |
+| 4 | the illegal midnight markets of Schleswig. |
+| 5 | the heretic isle of Crëlut, two nautical miles east of Grift. |
+| 6 | the old frozen ruins not far from Alliáns. |
+| 7 | a little witches cottage in Galgenbeck. |
+| 8 | the ruins of the Shadow King's manse, thick with memories of mushrooms and smoke. |
+
+#### Occult Herbmaster Decoctions (d8)
+
+| d8 | Result |
+|---:|--------|
+| 1 | **Red poison:** Toughness dr12 or -d10 hp. |
+| 2 | **Ezumiel's vapor:** Pass a dr14 test or severe (and arguably fun) hallucinations for d4 hours. |
+| 3 | **Southern frog stew:** Vomit for d4 hours, pass a dr14 test or you can do nothing else. |
+| 4 | **Elixir vitalis:** Heals d6 hp and stops infection. Can be habit-forming. |
+| 5 | **Spider-owl soup:** See in darkness, climb on walls for 30 minutes. |
+| 6 | **Fernor's philtre:** Translucent oil, must be dabbed right into the eye. Heals infection and gives +2 on Presence tests for d4 hours. |
+| 7 | **Hyphos' enervating snuff:** Berserk! Two attacks per round but defend with dr14. Lasts one fight. Must be snorted, causes sneezing. |
+| 8 | **Black poison:** Toughness dr14 or -d6 hp and blinded for one hour. |
