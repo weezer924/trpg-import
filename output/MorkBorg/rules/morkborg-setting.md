@@ -321,3 +321,316 @@ Roll two d6: the first die is the tens digit, the second the ones.
 | 55 | Bloodstained knuckle-duster. |
 | 56 | Two weighted dice. |
 | 61–66 | The result in silver. |
+
+---
+
+## Even More Reasons to Risk One's Life
+
+### Where do you wander? (d12)
+
+| d12 | Result |
+|----:|--------|
+| 1 | On the barren fields of Kergüs |
+| 2 | In the centre of Alliáns |
+| 3 | On a beach not distant from Grift |
+| 4 | On a dirty Schleswig street |
+| 5 | In the poor Wästland countryside |
+| 6 | At the city wall of Galgenbeck |
+| 7 | In the untamed wilds of Tveland |
+| 8 | Near the Valley of the Unfortunate Undead |
+| 9 | Pretty much lost in Sarkash |
+| 10 | At the Bergen Chrypt tree line |
+| 11 | Onboard a ship on the Endless Sea |
+| 12 | In a forgotten part of Graven-Tosk |
+
+### Who (or what) contacts you? (d20)
+
+| d20 | Result |
+|----:|--------|
+| 1 | One-eyed woman who rules the thieves |
+| 2 | Bureaucrat with enemies and no honor |
+| 3 | Badly burned priest |
+| 4 | Noble child said to see dark visions |
+| 5 | Warrior that switched loyalties |
+| 6 | Faint whispers from the crypt |
+| 7 | Remorseful hangman |
+| 8 | Tortured traitor |
+| 9 | Reccuring vision in a horrid nightmare |
+| 10 | Hermit mocked by the other cave-folk |
+| 11 | Demented elder |
+| 12 | Sacrifice who escaped a death-cult |
+| 13 | Monk who was bitten at night |
+| 14 | Unshaved mystic at The Paunchy Swine |
+| 15 | Devastated mother dressed in white |
+| 16 | Sailor too long at sea |
+| 17 | Scoundrel covered in ulcers |
+| 18 | Drunk seeress with no teeth |
+| 19 | Restless soul by the name of Ghast |
+| 20 | Terrified soldier with broken knees |
+
+### Adventure Spark (d100)
+
+| d100 | Result |
+|-----:|--------|
+| 1–2 | The undead-riddled Valley awaits |
+| 3–4 | Thirteen priests are missing |
+| 5–6 | Wrongly imprisoned for murder |
+| 7–8 | 66 sacrifices are needed |
+| 9–10 | Children missing at Lake Onda |
+| 11–12 | Sinkhole swallows half of Schleswig |
+| 13–14 | Sabotage an unholy alliance |
+| 15–16 | The count goes insane at night |
+| 17–18 | Hunted by bloodthirsty death-cult |
+| 19–20 | Trapped by an earthquake |
+| 21–22 | Verhu's prophecy is false! |
+| 23–24 | Rumours of a cursed treasure |
+| 25–26 | Kidnapped blood-wizard |
+| 27–28 | A dead demon is resurrected |
+| 29–30 | Every grave is emptied one night |
+| 31–32 | Enormous cave system near Grift |
+| 33–34 | The dead refuse to stay dead |
+| 35–36 | PCs are selected for ritual sacrifice |
+| 37–38 | Anthelia falls severely ill |
+| 39–40 | PC dopplegangers go berserk |
+| 41–42 | Take part in a holy mass burial |
+| 43–44 | The entire kingdom has nightmares |
+| 45–46 | Something has infiltrated the court |
+| 47–48 | Artefact must be destroyed |
+| 49–50 | Map the land in the west |
+| 51–52 | Talk of an unexplored island |
+| 53–54 | Gain the trust of a dangerous hermit |
+| 55–56 | Find the way to Cube-Violet |
+| 57–58 | Stop a Grift suicide-cult |
+| 59–60 | Pardon a mad mass-murderer |
+| 61–62 | Defend a fort from the undead |
+| 63–64 | Steal a sarcophagus from a caravan |
+| 65–66 | A fire threatens to devour Sarkash |
+| 67–68 | Go to the land of the dead and back |
+| 69–70 | HE demands a gift. See it delivered |
+| 71–72 | Powerful elixir needs ingredients |
+| 73–74 | Slave revolt in Galgenbeck |
+| 75–76 | Mystical ruins are unearthed |
+| 77–78 | They're coming out of the walls! |
+| 79–80 | Three assassinations each night |
+| 81–82 | Alchemist needs a living goblin |
+| 83–84 | A strange ship ran aground |
+| 85–86 | A weirdness leaves Bergen Chrypt |
+| 87–88 | Seven women with black eyes |
+| 89–90 | The icon's eyes have been stolen |
+| 91–92 | The beast beneath the bridge |
+| 93–94 | Movement in a black star's crater |
+| 95–96 | Light from broken sewer gate |
+| 97–98 | Children hum forbidden songs |
+| 99–00 | Newly discovered path in Sarkash |
+
+---
+
+## Dungeon Generator
+
+> One of the many Bedeviled Dungeons. Draw or find a map. Around 10 rooms is enough for one night's session.
+
+### What is it called? (roll d12 twice — "The [prefix] [suffix]")
+
+| d12 | Prefix | Suffix |
+|----:|--------|--------|
+| 1 | Slaughter | pit |
+| 2 | Death | church |
+| 3 | Night | temple |
+| 4 | Hadean | tunnels |
+| 5 | Hell | crypt |
+| 6 | Plague | grave |
+| 7 | Sin | fort |
+| 8 | Doom | ziggurat |
+| 9 | Dark | den |
+| 10 | Murder | maze |
+| 11 | Torture | house |
+| 12 | Slave | waste |
+
+### Status (d6)
+
+| d6 | Result |
+|---:|--------|
+| 1–2 | Still active |
+| 3–6 | Inactive, because (d4): 1. The place was invaded; 2. Everything ended in disaster; 3. It was no longer needed; 4. A Misery was fulfilled (roll to see which one — see [Calendar of Nechrubel](#the-calendar-of-nechrubel)) |
+
+### Imminent Danger (d10)
+
+| d10 | Result |
+|----:|--------|
+| 1 | Is slowly flooding with (d4): 1–2 oil, 3–4 water |
+| 2 | Berserkers are appearing |
+| 3 | Is about to collapse |
+| 4 | Senses are being distorted |
+| 5 | Underworld emissions of poisonous spores |
+| 6 | A hunted cult intends it to be their new hideout |
+| 7 | A terrible, dormant curse about to be unleashed |
+| 8 | Fire is spreading from the deepest chamber |
+| 9 | The gate will shut and seal, and not open again until seven days have passed |
+| 10 | A lethal mechanism is about to activate |
+
+### Who or what dwells here now? (d12)
+
+| d12 | Result |
+|----:|--------|
+| 1 | Animated suits of armor battling goblins |
+| 2 | Nechrubel-worshipping lich with a skeletal court |
+| 3 | Heretic cult lead by a possessed 11-year old |
+| 4 | A vengeful cabal of undead porcelain dolls |
+| 5 | Desperate thieves guild dying slowly of cholera |
+| 6 | A meaty mass of slime, larvae and spider legs |
+| 7 | Wickheads running from foreboding darkness |
+| 8 | A Bark-Witch and her root-children |
+| 9 | Four-legged pale gremlins stinking of dirt |
+| 10 | Tergol's escaped experiment |
+| 11 | Disease spreading ochre-beetles |
+| 12 | Dissident courtiers dedicated to the occult |
+
+### Distinctive Feature (d12)
+
+| d12 | Result |
+|----:|--------|
+| 1 | Portal to the land of the dead, soon ready |
+| 2 | Lab where corpses are assembled into golems |
+| 3 | Black prism which twists all Powers |
+| 4 | 300 emaciated, mutilated prisoners |
+| 5 | Blind hermit, firmly rooted in the ground, spreading his vile corruption |
+| 6 | Bony remains of the Basilisk's spawn |
+| 7 | Obelisk that separates body and soul |
+| 8 | Rooms move around the dungeons center |
+| 9 | High ceilings, whispers in the upper dark |
+| 10 | Artwork affecting the surroundings |
+| 11 | Ensnaring, intelligent plants |
+| 12 | Giant pools of boiling tar |
+
+### Sample Rooms (d4 × d6)
+
+Roll d4 then d6 for each room.
+
+| d4 | d6 | Result |
+|---:|---:|--------|
+| 1 | 1 | Inscriptions, the motifs are (d6): 1. Vomit-inducing; 2. Terrifying; 3. Hypnotic; 4. Childish; 5. Teleportation causing; 6. Ugly and pointless |
+| 1 | 2 | Bloodied beds |
+| 1 | 3 | Flooded |
+| 1 | 4 | Leaning |
+| 1 | 5 | Stinks |
+| 1 | 6 | Fire damage |
+| 2 | 1 | Obvious traps |
+| 2 | 2 | Full of blood |
+| 2 | 3 | Torture chamber |
+| 2 | 4 | Sooty walls |
+| 2 | 5 | Freezing draft |
+| 2 | 6 | Creaking doors |
+| 3 | 1 | Compact darkness |
+| 3 | 2 | Locked sarcophagi |
+| 3 | 3 | Shelves with (d4): 1–2 obscure literature; 3–4 rotting food |
+| 3 | 4 | Abyssal pits |
+| 3 | 5 | Mirrors everywhere |
+| 3 | 6 | Ungodly yet exquisite chandeliers |
+| 4 | 1 | Utterly silent |
+| 4 | 2 | Full of debris |
+| 4 | 3 | Sacrificial altar (d4): 1–2 cracked; 3–4 fresh blood |
+| 4 | 4 | Remains of a throne |
+| 4 | 5 | Smoke-filled |
+| 4 | 6 | Bonfire in the center |
+
+---
+
+## Rules Reference Sheet
+
+### Abilities and Tests
+
+- **Agility** — Defend, balance, swim, flee
+- **Presence** — Perceive, aim, charm, wield Powers
+- **Strength** — Crush, lift, strike, grapple
+- **Toughness** — Resist poison/cold/heat, survive falling
+
+**Tests:** Roll d20 ± ability equal to or greater than DR to succeed. Creatures don't apply any ability, only roll an unmodified d20 against the DR.
+
+**Difficulty Ratings (DR):**
+
+| DR | Description |
+|---:|-------------|
+| 6 | incredibly simple |
+| 8 | routine |
+| 10 | pretty simple |
+| 12 | normal |
+| 14 | difficult |
+| 16 | really hard |
+| 18 | should not be possible |
+
+### Adventuring
+
+**Reaction (2d6):**
+
+| 2d6 | Result |
+|----:|--------|
+| 2–3 | Kill! |
+| 4–6 | Angered |
+| 7–8 | Indifferent |
+| 9–10 | Almost friendly |
+| 11–12 | Helpful |
+
+**Rest:**
+
+- Catch breath — heal d4 HP
+- A night's sleep — heal d6 HP
+- **Infection:** No healing when resting. Take d6 damage each day.
+
+**Morale (2d6):** If you roll over the creature's Morale, d6:
+
+| d6 | Result |
+|---:|--------|
+| 1–3 | Flees |
+| 4–6 | Surrenders |
+
+**Roll Morale if:**
+- The leader is killed
+- Half the group is eliminated
+- Lone enemy has 1/3 HP left
+
+### Powers / Scrolls
+
+- **Amount per day:** A PC can use their Powers a total of **Presence + d4** times per day. Roll the total amount every day.
+- **Wield a Power:** Make a **Presence DR12** test. Failure means the Power doesn't work and the caster takes d2 HP damage, becomes dizzy for an hour and cannot use Powers during that time. For fumbles, see [Arcane Catastrophes](morkborg-rules.md#arcane-catastrophes).
+
+### Combat
+
+**Initiative (d6):**
+
+| d6 | Result |
+|---:|--------|
+| 1–3 | Enemies begin |
+| 4–6 | Player Characters begin individual: **Agility + d6** |
+
+**Test:**
+
+| Action | Test |
+|--------|------|
+| Melee | DR12 Strength |
+| Ranged | DR12 Presence |
+| Defence | DR12 Agility |
+
+**Crit (natural 20):**
+- **Attack:** ×2 damage, armor protection reduced one tier.
+- **Defence:** PC gains a free attack.
+
+**Fumble (natural 1):**
+- **Attack:** Weapon breaks or is lost.
+- **Defence:** PC takes double damage, armor is reduced one tier.
+
+**Armor Tiers:**
+
+| Tier | Modifier |
+|------|----------|
+| 1. Light | -d2 |
+| 2. Medium | -d4, +2 DR Agility tests |
+| 3. Heavy | -d6, +4 DR Agility tests, Defence +2 DR |
+
+**Broken (0 HP) (d4):**
+
+| d4 | Result |
+|---:|--------|
+| 1 | Fall unconscious for d4 rounds, awaken with d4 HP. |
+| 2 | Roll a d6: 1–5 = Broken or severed limb. 6 = Lost eye. Can't act for d4 rounds then become active with d4 HP. |
+| 3 | Haemorrhage: death in d2 hours unless treated. All tests are DR16 the first hour. DR18 the last hour. |
+| 4 | Dead. |
