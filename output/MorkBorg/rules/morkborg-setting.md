@@ -14,3 +14,169 @@
 6. [Rules Reference Sheet](#rules-reference-sheet)
 
 ---
+
+## The Dying World
+
+> Source: PDF p.9–16.
+
+The Wind from the west. From the sundered land. Rot rides it, and the stench of blood. Cursed walker, will you travel there? To the Valley of the Unfortunate Undead? Our young ones are taken by the child-thief Tergol, known for his vile crimes and alchemy of flesh.
+
+Distances shift. Paths between places warp. As if this pale, lightless world possessed a will and bitter life. Its mercy curdled to wrath over a too-long age. Who are you? The grave robber with silver glittering between cracked fingernails? The mystic who would bend the world's miserable heart away from its inevitable end?
+
+Most likely, it makes little difference. No one has seen the sun in years. The old care more for sacrifice and god-offerings than their bawling spawn. Doomsayers are proved right time and again and embraced by hidden powers. Maybe it's best to surrender — to trust your own instinct and skill rather than the whim of the dice? Before all is drowned in welcome silence. Life locked and failing in a DARK FORT.
+
+### What Was Written Must Be Known
+
+**I.** Anuk Schleger, monk of the Creton order, encountered the basilisk Verhu in the year 565 and set down that creature's whispered prophecies. These lost texts came to be known as the Nameless Scriptures.
+
+300 years later, while working on a new Cathedral, The Two-Headed Basilisks, an orthodox branch of the Creton order uncovered Schleger's tomb and with it the Scriptures.
+
+Since then all events described within have come to pass. The prophecies are absolutely, factually true and have, thus, supplanted all other Scripture. Around this cathedral has grown Galgenbeck, the greatest city that ever was.
+
+**II.** The basilisks are two and two-headed. The four heads have argued for hundreds of years. Verhu predicts inexorable annihilation and, since he's always right, has become utterly full of himself.
+
+His is also the head worshipped most. If you could learn the codes of the apocalypse perhaps the right offerings might avert it? Verhu loves his position and hungers for temples to be raised in his name.
+
+**III.** When the world was but water, dust and clouds thick with plague-fat flies came she, first of the basilisks. From the cracks of Bergen Chrypt she crawled. She bears the head of Denial, Lusi, who looks up and down. Yet all shall be well. Her twin Arkh, Head of Deception, claims to be the first prophet of truths now prostituted by Verhu. Few have ever seen her, the oldest, but many walk her twin paths.
+
+She spawned many since the dawn of time, their conceptions not without agony. All were cast down the cliffs of Bergen Chrypt, only he survived. Down in the Valley of the Unfortunate Undead his eyes locked upon the mountain's peak, he spits out curses upon his evil mother. The head Gorgh is bitter, rank with envy that only his twin Verhu knows the damned truth. Time and time again his prophecies are brought to be. The piles of gold-gift riches from his faithful teeter and slide, so tall are they.
+
+**IV.** The world dies even now. Reality decays, truth becomes dream and dream, truth. Cracks grow in the once-stable structures of the past, allowing things misshapen and vile to worm through, emerging into day's wan light. The world closes in, bounded to the west by the massive Bergen Chrypt with its catacombs and ice-caked peaks east. Many have ploughed the wave's furrow in search of new lands, surrounded by the Endless Sea to the north, south and known. They all return, against their will. Alive or dead.
+
+### Regions
+
+#### Tveland — Galgenbeck
+
+Galgenbeck in the land of Tveland is the greatest city that ever was. No King or Queen rules in Galgenbeck but an arch-priestess: Josilfa Migol. Deep beneath the Cathedral of the Two-Headed Basilisks, in a cool black chamber crossed by shards of light, lies her throne. Josilfa, old but still young, commoners gossip that she colludes with the god Nechrubel, who gave her eternal life. Nechrubel: the shadow that covers all. Nechrubel is melancholy, crop failure, conflict and war. It is said he whispered the apocalyptic prophecies in Verhu's ear.
+
+As time grows ever shorter the Two-Headed Basilisks become ever-more desperate in their recruitment. To take one's own life is considered sinful cowardice. The road to salvation lies through mortification of the flesh; the apocalypse is to be met with eyes wide open. Only then can the soul be allowed passage to the Shimmering Fields. Heretics and apostates are hunted down and corrected, in public and at length, by the Inquisition.
+
+#### Tveland — Sarkash
+
+In Tveland also lies Sarkash. The forest seems, lately, to spread unnaturally fast. Paths tangle and wind in the overgrown gloom, leading wanderers astray. Far in the depths of Sarkash, always where one least expects to find it, in a halo of dying trees, is Graven-Tosk. A truly ancient cemetery filled with mausoleums, blank-eyed cherubs, stagnant fountains, plague pits and ordinary graves.
+
+But hasn't it grown warmer in this usually cold place? Do you hear the frantic scratching? The air feels heavy, stale and hard to breathe.
+
+#### Tveland — Palace of the Shadow King
+
+Rising over Graven-Tosk like rage rising over pain is the Palace of the Shadow King. A gothic black castle, like a mirror to the Cathedral of the Two-Headed Basilisk in Galgenbeck. Most of the palace lies in crumbling ruins, home to unfortunate souls sheltering beneath its broken halls. None dare dream what might lie under the rubble-covered catacombs and cellars. Tunnels sprawl beneath like writhing roots, digging deeper into the cold earth like cancerous veins. The inner wing still stands, acting as the home of the Shadow King, a being obscured by ritual. The slaves of the servants of the courtiers of the King come forth and do his will.
+
+The title is hereditary: sons are always born to the Shadow King. It's whispered Princes of that line disguise themselves as ordinary men wandering the ruins engaging in games and tricking travelers, multiplying the miseries of their people.
+
+#### Grift
+
+From ages past, Grift grew upon an eastern peninsula of the Endless Sea. Cut from the world by the bottomless Múr, the thriving city state can be reached only by three bridges of such might and cyclopean size it is said that only enslaved giants could have raised them. Grift was once a place of harmony and the light of reason, a shelter from the plaguewracked, war-torn world beyond.
+
+But the world turns and even the Múr cannot protect Grift from its inevitable fall.
+
+King Sigfúm the Kind is mocked in the street. Much of Grift has fallen into disrepair as vile creatures begin crawling from the dried, cracked earth. Each night the bridges scream and roar like great ships grinding upon rocks. Sigfúm is defeated. He knows the end is near, believes the prophecies of Verhu and so, kindly and calmly, prepares his people for death. Huge parchments dot the streets, calendars of despair marking each correct preparation and its time. Each day a leaf is turned and when the last page comes, Sigfúm will march his people to the cliff Terion to fulfill what was written. Terion, a thousand meters of vertical rock with the raging sea biting at its base.
+
+The inquisition of the Two-Headed Basilisks is not too keen on the heretical suicide scheme of Sigfúm the Kind.
+
+#### Kergüs — Alliáns
+
+Desolation rolls over Kergüs like a frostbarren wind. The lawless and forlorn trek across its ice-wracked expanse, crawling over the plains or cowering in the cracked earth to flee Blood-Countess Anthelia. North, where the wind is born, lies Alliáns, a storm-piercing spire-city of black glass. Within stands a castle like a waterfall of white stone: the throne of Anthelia. She as pale as her castle's walls, as youthful as a drop of melting ice. Some say she is eternally young. The gulls cry the names of Knights who sought her hand, a reminder that suitors and signs of Anthelia's age disappear in conjunction. But who listens to a gull? And in Kergüs, even gulls freeze in the cold that rolls from the dreams of the Countess. Dreams of her unending youth.
+
+**Anthelia's Ambivalence.** Anthelia is well aware time is short. Neuroses burden her. *"Why is everything so pale? So cold?"* She cries out for colour or warmth. She drains the world of both with every glance, touch and breath. Those who bring her vibrant life are promised great rewards. All fear to do so. Excuses are made, explanations found. The feelings of the Countess are fragile, her powers absolute. Court life entails grey opulence, excitement and fear.
+
+#### The Western Kingdom — Schleswig & Lake Onda
+
+The western kingdom, called Wästland in the songs of the simple and rhymes of the poor, once home to peace and wealth when Lake Onda gifted fish and the river-trade thrived.
+
+Now, terror and despotism stalk. In the secret citadel of the sad-but-gaudy city of Schleswig King Fathmu IX schemes. Paranoid, fat and increasingly mad, he is consumed with psychosis and invisible fears.
+
+Obsessed with the prophecies of Verhu, the King raids and invades houses and villages, barns and temples. Nowhere and no one is safe, especially the poor. Taxed into starvation, the contents of their larders and storehouses are carted off by Fathmu's men.
+
+#### The Western Kingdom — Valley of the Unfortunate Undead
+
+Rumors whisper the basilisk *HE* is coiled within its crypts, a sight infrequently survived. Lies and legends enshroud the valley, obscuring any truth. Peddler's tales say the soil, the very air, is lethal — bringing a sleepless, stumbling death. This is no clean fate but a slow-growing, fathomless despair, weighing down the traveler with poisoned memories and dark thoughts until the spark of life is mutated into a mournful, hopeless undeath.
+
+Others claim lost wanderers can fall and find themselves in the Realm of the Dead when the black soil hungrily drags them under the earth.
+
+Those without hope travel here seeking an end to pain, a golden afterlife beyond this dark and ruined world. They gather in suicide cults and the valley's few twisted trees begin to droop strange fruit from hempen rope. Others plumb the crypts seeking Verhu, believing they can persuade him of other fates. Some simply and stupidly leave gifts and sacrifices to a power they cannot comprehend. Gloom grows, obscuring the world like an oil-stained image.
+
+---
+
+## The Calendar of Nechrubel
+
+> Source: PDF p.17–19.
+
+The world trembles. One can feel it in ways sharp and subtle, mysterious and clear. One by one, inevitable events demand their place.
+
+Illustrating this, the Game Master (GM) rolls a die each dawn. A result of 1 activates one Misery. The die used is determined by the GM and the group. The GM then rolls d66 to determine which Misery occurs. The same Misery will not befall the world twice.
+
+**7:7.** The seventh Misery will always be 7:7, and the world finally dies. The seventh seal is broken for the seventh and final time. The game and your lives end here. Burn the book.
+
+### When will all this agony end?
+
+| Die | Pace |
+|-----|------|
+| d100 | Years of pain |
+| d20 | A bleak half-year |
+| d10 | A fall in anguish |
+| d6 | A cruel month |
+| d2 | The end is nigh! |
+
+### The Miseries — The Nameless Scriptures
+
+*Transcribed by Anuk Schleger the monk.* Roll d66 (first die = Psalm, second = verse) to determine which Misery befalls the world.
+
+#### Psalm I
+
+- **1:1** The City shall be made hollow. Of those who rest in hollowness, they shall not be seen.
+- **1:2** And the earth shall shake and be riven. And from the cracks shall rise a poisonous mist, and in ten days it will shroud the world.
+- **1:3** Of those who build mightily, stone by stone, so shall they fall, stone by stone.
+- **1:4** And the depths of the underworld shall bring forth flying spectres and crawling beasts. In their passing the worm grows fat, the vulture weary.
+- **1:5** Doubt is crowned. The loyal shall turn their blades on those who silver gave.
+- **1:6** And blood-cough shall spread like fire across the wastelands of the drought.
+
+#### Psalm II
+
+- **2:1** As at the beginning, so at the end, all manner of fly and wasp shall fill the air.
+- **2:2** And the ground pale with maggots.
+- **2:3** And from the Spears: a frost. Born from Bergen Chrypt and covering all.
+- **2:4** And in ten days and one the writings of sorcerers will be made pale as air.
+- **2:5** And glass shall become quartz.
+- **2:6** And SHE shall see HIM grow stronger. And SHE reveals herself and all shall be slain.
+
+#### Psalm III
+
+- **3:1** At Graven-Tosk the soil shall grow warm and those who rest be made to walk.
+- **3:2** In the heart of Sarkash fog and dusk shall breathe beneath the waking trees. That which was hewed by man shall now hew in its turn.
+- **3:3** And hunger shall come among you. You shall dig roots and pull children from the breast. The gaunt shall prey upon the gaunt.
+- **3:4** The great shall be made poor and the poor poorer still.
+- **3:5** Then shall come rain unending and the day shall be made night by its coming.
+- **3:6** Brother shall slay Brother and Sister poison Sister.
+
+#### Psalm IV
+
+- **4:1** For five days and five nights mothers flesh shall be the cloak of demons.
+- **4:2** And for five days and five nights shall fathers weep.
+- **4:3** Look to the West. Forth comes fire, and a horde, and the Kingdoms burn.
+- **4:4** The liar, Arkh shall make knots of the hearts of men, sundering the strongest of bonds.
+- **4:5** Behold now the Endless Sea, where Leviathan causes waves to be as mountains.
+- **4:6** And Leviathan shall come among you. Children winter-born and fated to fall before snow, both shall it take.
+
+#### Psalm V
+
+- **5:1** The lake and brook shall blacken and the water become tar.
+- **5:2** The trees shall wither, shrivel and die.
+- **5:3** And birds shall fall dead from the sky.
+- **5:4** In one night all those not yet of seven years and seven days shall pass. Born and unborn. And dawn shall give them life as eaters of men.
+- **5:5** The sky shall weep fire and a great stone shall plummet as a city fallen from heaven. Its gift is Death and madness is its herald.
+- **5:6** And the last King and the last Queen shall wither to dust. Their wretched courts are devoured by wolves.
+
+#### Psalm VI
+
+- **6:1** You shall know the last day is come. The sun shall set and never rise.
+- **6:2** And day shall be as night and night as day. You shall not sleep, neither shall you wake.
+- **6:3** Anthelia shall have her will and drink all colour from the world.
+- **6:4** Those who walk on two legs shall be nameless as the beasts of the field.
+- **6:5** The earth shall vein, bringing black serpents forth from within the earth.
+- **6:6** And the unnamed enter the earth, passing through the Veil as it is sundered by Daejmon, the left underling of Nechrubel.
+
+#### Psalm VII — The Last
+
+- **7:7** All praise Yetsabu-Nech, the underworld's nightmare, the black disk which stands before the sun! All praise Verhu, beaming with delight! All praise the fire which burns all! And the darkness shall swallow the darkness.
+
+---
