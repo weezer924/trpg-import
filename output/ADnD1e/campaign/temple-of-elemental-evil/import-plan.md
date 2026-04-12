@@ -82,18 +82,18 @@ T1-4 是 AD&D 历史上最经典的超级模组之一，合并了 T1 (Village of
 | Step | Content | PDF Pages | Output File(s) | Status |
 |------|---------|-----------|-----------------|--------|
 | 0 | Import plan + AD&D 1e guide | — | `import-plan.md` | ✅ Done |
-| 1 | Region overview + Hommlet village | p.4-20 | `region.md`, `hommlet.md` | ⬜ Not Started |
-| 2 | Moathouse | p.21-26 | `moathouse.md` | ⬜ Not Started |
-| 3 | Interlude + Nulb village | p.27-34 | `nulb.md` (+ append `region.md`) | ⬜ Not Started |
-| 4 | Temple exterior (Tower + Ruins + Temple) | p.35-42 | `temple-exterior.md` | ⬜ Not Started |
-| 5 | Dungeon Level 1 | p.43-57 | `dungeon-level-1.md` | ⬜ Not Started |
-| 6 | Dungeon Level 2 | p.58-74 | `dungeon-level-2.md` | ⬜ Not Started |
-| 7 | Dungeon Level 3 | p.75-94 | `dungeon-level-3.md` | ⬜ Not Started |
-| 8 | Dungeon Level 4 | p.95-106 | `dungeon-level-4.md` | ⬜ Not Started |
-| 9 | Elemental Nodes (Air/Earth/Fire/Water) | p.107-119 | `elemental-nodes.md` | ⬜ Not Started |
-| 10 | Appendices (Deities + Monsters + Magic Items) | p.120-128 | `appendices.md` | ⬜ Not Started |
-| 11 | Encounters + NPCs summary | — | `encounters.md`, `npcs.md` | ⬜ Not Started |
-| 12 | Cross-validation + fixes | — | all files | ⬜ Not Started |
+| 1 | Region overview + Hommlet village | p.4-20 | `region.md`, `hommlet.md` | ✅ Done |
+| 2 | Moathouse | p.21-26 | `moathouse.md` | ✅ Done |
+| 3 | Interlude + Nulb village | p.27-34 | `nulb.md` (+ append `region.md`) | ✅ Done |
+| 4 | Temple exterior (Tower + Ruins + Temple) | p.35-42 | `temple-exterior.md` | ✅ Done |
+| 5 | Dungeon Level 1 | p.43-57 | `dungeon-level-1.md` | ✅ Done |
+| 6 | Dungeon Level 2 | p.58-74 | `dungeon-level-2.md` | ✅ Done |
+| 7 | Dungeon Level 3 | p.75-94 | `dungeon-level-3.md` | ✅ Done |
+| 8 | Dungeon Level 4 | p.95-106 | `dungeon-level-4.md` | ✅ Done |
+| 9 | Elemental Nodes (Air/Earth/Fire/Water) | p.107-119 | `elemental-nodes.md` | ✅ Done |
+| 10 | Appendices (Deities + Monsters + Magic Items) | p.120-128 | `appendices.md` | ✅ Done |
+| 11 | Encounters + NPCs summary | — | `encounters.md`, `npcs.md` | ✅ Done |
+| 12 | Cross-validation + fixes | — | all files | ✅ Done |
 
 ### Session Breakdown (建议的对话拆分)
 
