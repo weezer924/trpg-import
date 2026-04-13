@@ -19,6 +19,7 @@
 | Call of Cthulhu 7e | CoC | 待导入 | `Call of Cthulhu/` | `output/CoC/` |
 | Cairn (1e & 2e) | Cairn | 待导入 | `Cairn/` | `output/Cairn/` |
 | Mörk Borg (Bare Bones) | MorkBorg | 已完成 | `Mork Borg/` | `output/MorkBorg/` |
+| Operation WhiteBox | OWB | 已完成 | `Operation White Box/` | `output/OWB/` |
 | OSR 相关 | — | 参考 | `OSR related/` | — |
 | 其他系统 | — | 按需添加 | `{System}/` | `output/{System}/` |
 
@@ -68,6 +69,8 @@ output/                            # 输出目录，按系统分子目录
   │   ├── campaign/                # OSE 原创模组
   │   │   └── the-hole-in-the-oak/
   │   └── supplements/             # 补充（necromancer）
+  ├── OWB/                         # Operation WhiteBox (WWII OSR)
+  │   └── rules/
   └── ...
 pdf_extract.py                     # PDF 文本提取工具（pymupdf）
 ```
@@ -125,6 +128,7 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf）
 | OSE 规则书       | `.claude/ose-import-guide.md`             | OSE Classic/Advanced 规则书导入                    |
 | OSE 战役模组     | `.claude/ose-campaign-import-guide.md`    | B 系列模组 → output/OSE/campaign/ 多文件结构       |
 | AD&D 1e 战役模组 | `.claude/adnd1e-campaign-import-guide.md` | T1-4 等模组 → output/ADnD1e/campaign/ 多文件结构   |
+| OWB 规则书       | `.claude/owb-import-guide.md`             | WWII 特战 OSR → 2 个输出文件                       |
 | CoC              | `.claude/coc-import-guide.md`             | 待创建                                             |
 
 **导入新系统时**：先创建该系统的专属导入指南（参考 dnd5e 指南的结构），再按指南逐步执行。
