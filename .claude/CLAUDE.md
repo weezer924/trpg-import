@@ -20,6 +20,7 @@
 | Cairn (1e & 2e) | Cairn | 待导入 | `Cairn/` | `output/Cairn/` |
 | Mörk Borg (Bare Bones) | MorkBorg | 已完成 | `Mork Borg/` | `output/MorkBorg/` |
 | Operation WhiteBox | OWB | 已完成 | `Operation White Box/` | `output/OWB/` |
+| Tales from the Loop | TFTL | 部分完成 | `Tales from the Loop/` | `output/TalesFromTheLoop/` |
 | OSR 相关 | — | 参考 | `OSR related/` | — |
 | 其他系统 | — | 按需添加 | `{System}/` | `output/{System}/` |
 
@@ -71,8 +72,14 @@ output/                            # 输出目录，按系统分子目录
   │   └── supplements/             # 补充（necromancer）
   ├── OWB/                         # Operation WhiteBox (WWII OSR)
   │   └── rules/
+  ├── MorkBorg/                    # Mörk Borg
+  │   └── rules/
+  ├── TalesFromTheLoop/            # Tales from the Loop
+  │   ├── rules/
+  │   ├── campaign/
+  │   └── characters/
   └── ...
-pdf_extract.py                     # PDF 文本提取工具（pymupdf）
+pdf_extract.py                     # PDF 文本提取工具（pymupdf，备用/grep 用）
 ```
 
 ---
@@ -97,7 +104,7 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf）
 - **每个章节提取完成后立即校验**，不要等全部做完再查
 - **context 变长后果断开新对话**，带上相应系统的导入指南 + 已完成的输出文件继续
 - 输出文件采用**追加模式**：每个对话在已有文件末尾追加新章节内容
-- 优先使用 `pdf_extract.py` 提取 PDF 文本，再格式化为 markdown
+- 优先使用 pdf-to-markdown skill 转换 PDF，再在 `output/{System}/` 下整理为结构化 markdown
 
 ### 3.3 每章节检查清单
 
@@ -137,13 +144,13 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf）
 
 ## 5. 工具
 
-### 5.1 pdf_extract.py
+### 5.1 pdf-to-markdown skill
 
-基于 pymupdf 的 PDF 文本提取工具。导入时优先使用此工具提取原文，再格式化为 markdown。
+首选。基于 pymupdf4llm，输出结构化 markdown（含图片、表格、缓存）。见 `.claude/skills/pdf-to-markdown/`。
 
-### 5.2 convert_pdfs.py
+### 5.2 pdf_extract.py
 
-批量转换辅助脚本。
+备用。基于 pymupdf 的原始文本提取，用于 grep 搜索或校对 markdown 输出。
 
 ---
 
@@ -154,3 +161,36 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf）
 3. **保留原文术语**：PDF 中的术语格式保持原样
 4. **页码标注**：在每个大章节开头标注 PDF 页码范围，便于后续校对
 5. **导入模组时**：先读对应系统的战役导入指南，按其规范执行
+
+---
+
+## 7. AI 查阅项目（sibling 目录）
+
+每个系统在 `/Users/jack/Projects/trpg-projects/{SystemName}/` 下有独立项目目录，供 AI DM / Keeper 运行游戏：
+
+- `rules/` → symlink 到 `dnd-rules-import/output/{System}/rules/`（结构化规则）
+- `campaign/` → symlink 到 `.../output/{System}/campaign/`（模组）
+- `characters/` → symlink 到 `.../output/{System}/characters/`（PC/pregens）
+- `rule books/` → symlink 到 `Rule Books/{系统}/md files/`（PDF→md 原文，对照用）
+- `tools/mcp-server/` — 骰子/状态/存档 MCP 服务
+- `.mcp.json` 的 `cwd` 必须指向本项目目录（不是旧的 `/Users/jack/Projects/OSE`）
+
+已建：OSE、WW2 OBW、Tales from the loop、Mork Borg。新增系统时复制 Mork Borg 模板即可。
+
+### 7.1 角色模板约定
+
+每系统在 `output/{System}/characters/character-template.md` 写创建步骤 + state.yaml schema。
+建模板前查 `Rule Books/{系统}/Character Sheets.pdf`（若有）——纯表单图用 `Read` 工具多模态预览字段，
+pdf-to-markdown 对这类 PDF 只能提标签文字。
+
+### 7.2 saves/ 结构与命名
+
+```
+saves/{name}/
+  state.yaml           # party/npcs/inventory/campaign 等
+  {role}-notes.md      # referee-notes / gm-notes / keeper-notes（按系统角色术语）
+  {theme}-log.md       # quest-log / mystery-log / mission-log / misery-log
+saves/.active          # 当前活跃存档名
+```
+
+角色术语按系统官方定义（D&D=DM, OSE/OWB/MB=Referee, TFTL=GM, CoC=Keeper, Cairn=Warden）。
