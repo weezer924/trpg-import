@@ -17,7 +17,7 @@
 8. [Mass Combat](#mass-combat)
 9. [Mini-Setting: Nazi Superscience](#mini-setting-nazi-superscience)
 10. [Mini-Setting: Nazi Occult](#mini-setting-nazi-occult)
-11. [Mini-Setting: Galaxy War 1939](#mini-setting-galaxy-war-1939)
+11. [Mini-Setting: Galaxy War 1939 — Space Operations Executive](#mini-setting-galaxy-war-1939--space-operations-executive)
 12. [Afterword](#afterword)
 
 ---
