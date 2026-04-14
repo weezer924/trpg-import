@@ -21,6 +21,7 @@
 | Mörk Borg (Bare Bones) | MorkBorg | 已完成 | `Mork Borg/` | `output/MorkBorg/` |
 | Operation WhiteBox | OWB | 已完成 | `Operation White Box/` | `output/OWB/` |
 | Tales from the Loop | TFTL | 部分完成 | `Tales from the Loop/` | `output/TalesFromTheLoop/` |
+| Sword World 1.0 | SW | 导入中 | `source/Sword World 1.0/` | `output/SwordWorld/` |
 | OSR 相关 | — | 参考 | `OSR related/` | — |
 | 其他系统 | — | 按需添加 | `{System}/` | `output/{System}/` |
 
@@ -136,6 +137,7 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf，备用/g
 | OSE 战役模组     | `.claude/ose-campaign-import-guide.md`    | B 系列模组 → output/OSE/campaign/ 多文件结构       |
 | AD&D 1e 战役模组 | `.claude/adnd1e-campaign-import-guide.md` | T1-4 等模组 → output/ADnD1e/campaign/ 多文件结构   |
 | OWB 规则书       | `.claude/owb-import-guide.md`             | WWII 特战 OSR → 2 个输出文件                       |
+| Sword World 1.0  | `.claude/swordworld-import-guide.md`      | 日式 2d6 OSR → 6 个输出文件（源为 txt）            |
 | CoC              | `.claude/coc-import-guide.md`             | 待创建                                             |
 
 **导入新系统时**：先创建该系统的专属导入指南（参考 dnd5e 指南的结构），再按指南逐步执行。
