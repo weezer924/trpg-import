@@ -15,24 +15,24 @@
 
 ## 1. 支持的游戏系统
 
-| 系统 | 简称 | 状态 | 源 PDF 目录 | 输出目录 |
-|------|------|------|------------|---------|
-| D&D 5e (2014) | Dnd5e | 已完成 | `D&D 5e/Core/` | `output/Dnd5e/` |
-| D&D 5e 模组 | — | 部分完成 | `D&D 5e/Modules/` | `output/Dnd5e/campaign/` |
-| D&D 5.5e (2024) | — | 待导入 | `D&D 5.5e/Core/` | `output/Dnd5e2024/` |
-| D&D 3.5e | — | 待导入 | `D&D 3.5e/` | `output/Dnd35e/` |
-| AD&D 1e | ADnD1e | 导入中 | `AD&D 1st edition/` | `output/ADnD1e/` |
-| AD&D 2e | ADnD2e | 待导入 | `AD&D 2nd edition/` | `output/ADnD2e/` |
-| D&D Classic (Mentzer/RC) | DnDClassic | 部分完成 | `D&D Classic/` | `output/DnDClassic/` |
-| Old-School Essentials | OSE | 已完成 | `OSE/` | `output/OSE/` |
-| Call of Cthulhu 7e | CoC | 待导入 | `Call of Cthulhu/` | `output/CoC/` |
-| Cairn (1e & 2e) | Cairn | 待导入 | `Cairn/` | `output/Cairn/` |
-| Mörk Borg (Bare Bones) | MorkBorg | 已完成 | `Mork Borg/` | `output/MorkBorg/` |
-| Operation WhiteBox | OWB | 已完成 | `Operation White Box/` | `output/OWB/` |
-| Tales from the Loop | TFTL | 部分完成 | `Tales from the Loop/` | `output/TalesFromTheLoop/` |
-| Sword World 1.0 | SW | 部分完成 | `source/Sword World 1.0/` | `output/SwordWorld/` |
-| OSR 相关 | — | 参考 | `OSR related/` | — |
-| 其他系统 | — | 按需添加 | `{System}/` | `output/{System}/` |
+| 系统                     | 简称       | 状态     | 源 PDF 目录               | 输出目录                   |
+| ------------------------ | ---------- | -------- | ------------------------- | -------------------------- |
+| D&D 5e (2014)            | Dnd5e      | 已完成   | `D&D 5e/Core/`            | `output/Dnd5e/`            |
+| D&D 5e 模组              | —          | 部分完成 | `D&D 5e/Modules/`         | `output/Dnd5e/campaign/`   |
+| D&D 5.5e (2024)          | —          | 待导入   | `D&D 5.5e/Core/`          | `output/Dnd5e2024/`        |
+| D&D 3.5e                 | —          | 待导入   | `D&D 3.5e/`               | `output/Dnd35e/`           |
+| AD&D 1e                  | ADnD1e     | 导入中   | `AD&D 1st edition/`       | `output/ADnD1e/`           |
+| AD&D 2e                  | ADnD2e     | 待导入   | `AD&D 2nd edition/`       | `output/ADnD2e/`           |
+| D&D Classic (Mentzer/RC) | DnDClassic | 部分完成 | `D&D Classic/`            | `output/DnDClassic/`       |
+| Old-School Essentials    | OSE        | 已完成   | `OSE/`                    | `output/OSE/`              |
+| Call of Cthulhu 7e       | CoC        | 待导入   | `Call of Cthulhu/`        | `output/CoC/`              |
+| Cairn (1e & 2e)          | Cairn      | 待导入   | `Cairn/`                  | `output/Cairn/`            |
+| Mörk Borg (Bare Bones)   | MorkBorg   | 已完成   | `Mork Borg/`              | `output/MorkBorg/`         |
+| Operation WhiteBox       | OWB        | 已完成   | `Operation White Box/`    | `output/OWB/`              |
+| Tales from the Loop      | TFTL       | 部分完成 | `Tales from the Loop/`    | `output/TalesFromTheLoop/` |
+| Sword World 1.0          | SW         | 已完成   | `source/Sword World 1.0/` | `output/SwordWorld/`       |
+| OSR 相关                 | —          | 参考     | `OSR related/`            | —                          |
+| 其他系统                 | —          | 按需添加 | `{System}/`               | `output/{System}/`         |
 
 **战役模组/战役设定**导入到各系统输出目录下的 `campaign/` 子目录，详见各系统的战役导入指南。
 
@@ -138,16 +138,16 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf，备用/g
 
 每个游戏系统有独立的详细导入指南，包含：输出文件列表、章节优先级、格式模板、分对话计划、版本注意事项等。
 
-| 系统             | 指南文件                                  | 说明                                               |
-| ---------------- | ----------------------------------------- | -------------------------------------------------- |
-| D&D 5e 规则书    | `.claude/dnd5e-rules-import-guide.md`     | 三本核心书 → 5 个输出文件                          |
-| D&D 战役模组     | `.claude/dnd-campaign-import-guide.md`    | 模组 PDF → output/Dnd5e/campaign/ 多文件结构       |
-| OSE 规则书       | `.claude/ose-import-guide.md`             | OSE Classic/Advanced 规则书导入                    |
-| OSE 战役模组     | `.claude/ose-campaign-import-guide.md`    | B 系列模组 → output/OSE/campaign/ 多文件结构       |
-| AD&D 1e 战役模组 | `.claude/adnd1e-campaign-import-guide.md` | T1-4 等模组 → output/ADnD1e/campaign/ 多文件结构   |
-| OWB 规则书       | `.claude/owb-import-guide.md`             | WWII 特战 OSR → 2 个输出文件                       |
-| Sword World 1.0  | `.claude/swordworld-import-guide.md`      | 日式 2d6 OSR → 6 个输出文件（源为 txt）            |
-| CoC              | `.claude/coc-import-guide.md`             | 待创建                                             |
+| 系统             | 指南文件                                  | 说明                                             |
+| ---------------- | ----------------------------------------- | ------------------------------------------------ |
+| D&D 5e 规则书    | `.claude/dnd5e-rules-import-guide.md`     | 三本核心书 → 5 个输出文件                        |
+| D&D 战役模组     | `.claude/dnd-campaign-import-guide.md`    | 模组 PDF → output/Dnd5e/campaign/ 多文件结构     |
+| OSE 规则书       | `.claude/ose-import-guide.md`             | OSE Classic/Advanced 规则书导入                  |
+| OSE 战役模组     | `.claude/ose-campaign-import-guide.md`    | B 系列模组 → output/OSE/campaign/ 多文件结构     |
+| AD&D 1e 战役模组 | `.claude/adnd1e-campaign-import-guide.md` | T1-4 等模组 → output/ADnD1e/campaign/ 多文件结构 |
+| OWB 规则书       | `.claude/owb-import-guide.md`             | WWII 特战 OSR → 2 个输出文件                     |
+| Sword World 1.0  | `.claude/swordworld-import-guide.md`      | 日式 2d6 OSR → 6 个输出文件（源为 txt）          |
+| CoC              | `.claude/coc-import-guide.md`             | 待创建                                           |
 
 **导入新系统时**：先创建该系统的专属导入指南（参考 dnd5e 指南的结构），再按指南逐步执行。
 
@@ -193,7 +193,7 @@ python3 pdf_extract.py some.pdf --info   # 查总页数+目录
 - `tools/mcp-server/` — 骰子/状态/存档 MCP 服务
 - `.mcp.json` 的 `cwd` 必须指向本项目目录（不是旧的 `/Users/jack/Projects/OSE`）
 
-已建：OSE、WW2 OBW、Tales from the loop、Mork Borg。新增系统时复制 Mork Borg 模板即可。
+已建：OSE、WW2 OBW、Tales from the loop、Mork Borg、SwordWorld。新增系统时复制 Mork Borg 模板即可。
 
 ### 7.1 角色模板约定
 
