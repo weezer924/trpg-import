@@ -4,6 +4,15 @@
 
 ---
 
+## 0. 新对话从这里开始
+
+1. 确认要导入的系统 → 查第 1 节状态表
+2. 读该系统的专属导入指南（第 4 节表格）
+3. 按指南执行；每对话只处理 1-2 章节，完成后立即校验
+4. 输出追加到 `output/{System}/` 对应文件
+
+---
+
 ## 1. 支持的游戏系统
 
 | 系统 | 简称 | 状态 | 源 PDF 目录 | 输出目录 |
@@ -21,7 +30,7 @@
 | Mörk Borg (Bare Bones) | MorkBorg | 已完成 | `Mork Borg/` | `output/MorkBorg/` |
 | Operation WhiteBox | OWB | 已完成 | `Operation White Box/` | `output/OWB/` |
 | Tales from the Loop | TFTL | 部分完成 | `Tales from the Loop/` | `output/TalesFromTheLoop/` |
-| Sword World 1.0 | SW | 导入中 | `source/Sword World 1.0/` | `output/SwordWorld/` |
+| Sword World 1.0 | SW | 部分完成 | `source/Sword World 1.0/` | `output/SwordWorld/` |
 | OSR 相关 | — | 参考 | `OSR related/` | — |
 | 其他系统 | — | 按需添加 | `{System}/` | `output/{System}/` |
 
@@ -148,11 +157,18 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf，备用/g
 
 ### 5.1 pdf-to-markdown skill
 
-首选。基于 pymupdf4llm，输出结构化 markdown（含图片、表格、缓存）。见 `.claude/skills/pdf-to-markdown/`。
+**首选**，任何 PDF 转 markdown 都先用它。基于 pymupdf4llm，输出结构化 markdown（含图片、表格、缓存）。见 `.claude/skills/pdf-to-markdown/`。
+
+- 艺术字型密集的 PDF（Mörk Borg 等 OSR 美术重度书）必须加 `--docling`，否则 pymupdf 会静默丢失艺术字文本。
 
 ### 5.2 pdf_extract.py
 
 备用。基于 pymupdf 的原始文本提取，用于 grep 搜索或校对 markdown 输出。
+
+```bash
+python3 pdf_extract.py "Rule Books/<系统>/<书>.pdf" --pages 10-30
+python3 pdf_extract.py some.pdf --info   # 查总页数+目录
+```
 
 ---
 
