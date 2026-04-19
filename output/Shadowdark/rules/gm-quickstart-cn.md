@@ -1,0 +1,1 @@
+/Users/jack/Projects/trpg-projects/Rule Books/Shadowdark/md files/Game Master Quickstart (CN).md

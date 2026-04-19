@@ -1,0 +1,1 @@
+/Users/jack/Projects/trpg-projects/Rule Books/Shadowdark/Supplements/Creating and Adapting Monsters for Shadowark 建立與改編怪物.md
