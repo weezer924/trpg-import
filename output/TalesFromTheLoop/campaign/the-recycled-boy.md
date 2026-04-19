@@ -19,6 +19,7 @@
 - [9. Aftermath](#9-aftermath)
 - [10. NPCs](#10-npcs)
 - [11. Handouts](#11-handouts)
+- [12. Solo Play Adjustments](#12-solo-play-adjustments)
 
 ---
 
@@ -303,3 +304,95 @@ Kerstin 致其"姐妹"（实为 Greta）的未完成信。要点：
 - 担心几年后又得搬家；希望下一站离"姐妹"近
 - 问"姐妹"项目进展如何；讨厌想到她住在 Göholmen [Cape Horn] 那座臭烘烘的 bunker；说她随时可住家里，但不再唠叨
 - 信末：Pelle 在楼上自言自语，似乎心烦，把东西摔在地上；她要去看看他是否没事
+
+
+---
+
+## 12. Solo Play Adjustments
+
+**触发条件**：玩家只有 1 人（1 Kid + 1 GM）。同时加载 `rules/solo-play.md`。
+
+本段仅覆盖本模组的**特定数值与流程调整**，通用单人机制见 `rules/solo-play.md`。
+
+### Showdown 数值
+
+- **Threat Level：Normal 3 成功**（原 4 Kids × 2 = 8）
+- **Remote Destabilizer 奖励：+2 骰**（不变，但效果在低门槛下影响更显著）
+- Complete Failure 阈值：< 2 成功（Pelle 崩溃）
+- Partial Success 阈值：2 成功（允许以 Condition 换 +1）
+- Complete Success 阈值：≥ 3 成功
+
+### Trouble 难度
+
+本模组各地点 Trouble 全部按 `rules/solo-play.md` 的"失败后果替代"处理——避免频繁给 Condition：
+
+- **Pelle 家警报系统**：失败 = 警报响起 + Countdown 推进，不给 Condition
+- **蝴蝶小飞弹机器人**：命中后直接 Scared（不摇骰），3 小时后苏醒
+- **水下机器人触须**：**第一次命中即 Injured**（原规则需第二次才 Injured——单人团骰池小，缩短到一次）
+- **Baby-Robot 抱抓**：单人团一次 FORCE 成功即可挣脱（原需 2 次成功）
+
+### 地点精简
+
+官方流程：Pelle's House → Boat ⇄ Bunker → Showdown。
+单人团建议采用剧本 p.8 **"Short on Time"** 模式的激进版：
+
+- **保留 Pelle's House 作为起点**（Handout #1 + #2）
+- **Boat 和 Bunker 二选一**——推荐保留 **Bunker Lady**（Remote Destabilizer 对 Showdown 数学决定性强）
+- 删除的地点中关键线索**直接前置到 Pelle's House**：
+  - 若删 Boat：Handout #2（Kerstin 的信）中加入"Pelle 爸妈的船停在 Lake Mead Marina"但"我们还没去那里找"的暗示
+  - 若删 Bunker：Handout #2 中强化对 "Göholmen 地堡" 的提及，或 Anders 电话短信中留言"去找 Greta，她做过能关掉他的东西"
+
+### Remote Destabilizer 前置暗示
+
+原模组 Remote Destabilizer 只在 Bunker 遇到 Greta 后给——对单人团 Showdown 数学太关键，**提前暗示**：
+
+- Pelle's House 三楼若 INVESTIGATE 成功，发现一份旧的"Greta 实验笔记"——**"对 Pelle 兼容的紧急关机原型"**字样
+- 这让玩家**理解为什么要冒险去 Bunker**，并感知到 Remote 的价值
+
+### 关系槽替换建议
+
+PC 的 Ghost 槽（`rules/solo-play.md` 要求）可选以下之一与本模组呼应：
+
+- **已故兄弟姐妹**：呼应 Pelle 是"人造孩子"的主题，PC 会对 Pelle 产生复杂情感
+- **搬走的挚友**：呼应 Kerstin 和 Anders 一直搬迁、Pelle 不断失去朋友的剧情
+- **离开的父/母**：呼应家庭的脆弱与修补
+
+GM 在开场前确认 PC 的 Ghost 设定，将之在 Bunker 或 Showdown 场景中以意象方式呼应（不直接提，让玩家自己联系）。
+
+### Anchor 插入时机
+
+| 剧本节点 | Anchor 插入建议 |
+|---|---|
+| Intro the Mystery（学校骚动） | Anchor 在场（老师型）或电话关切（家人型） |
+| Pelle's House 结束 | PC 回家路上遇 Anchor，或 Anchor 察觉 PC 脏兮兮 |
+| Bunker 之前 | Anchor 无意间提一句 "Göholmen 那边住着一个怪女人"——作为线索通道 |
+| Showdown 之前 | 允许 PC 主动找 Anchor 做情感充能场景（下一场 +1 骰或 Condition 清 1 个） |
+| Aftermath | Anchor 出现，让 PC 决定说不说实话——定调尾声 |
+
+### Showdown 开场台词
+
+剧本 p.15 Pelle 原话："I speak for all of us when I say that we don't want to hurt you, but we will if we must."
+
+单人团推荐描述：
+
+> "你爬上冷却塔的维修梯，湿滑的金属在手下发凉。上面的服务金库门敞开着。
+> 金库地面堆满了他的'收藏'：会动的玩具机器人、割草机零件、一整套闪烁的舞池灯光系统。
+> 在灯光中央，Pelle 坐着看你。
+> 他开口：'我代表我们所有人说——我们不想伤害你，但如果必须，我们会。'
+> 他的眼睛是两个孩子的眼睛，但他的声音像十个科学家在同时说话。
+> ——你想做什么？"
+
+### Condition 预算（建议）
+
+整场 Mystery 目标累计 **3–5 个 Condition**：
+
+- 开场至 Pelle's House：0–1（日常或警报系统失败）
+- Bunker：1–2（Baby-Robot + Greta 情感冲击）
+- Showdown：1–2（Push 换成功）
+
+### Aftermath 单人化
+
+原剧本 Aftermath 为多 Kid 各一场小尾声。单人团改为：
+
+- 1 场与 Anchor 的收尾对话（PC 说 or 不说真相）
+- 可选：1 场独处 Iconic Item 场景（治愈剩余 Conditions，叙事层面的"童年又过了一天"）
