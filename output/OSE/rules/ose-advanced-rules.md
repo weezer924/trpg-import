@@ -7,7 +7,7 @@
 ## Index
 
 1. [Introduction](#introduction) — game overview, advanced fantasy gaming, terminology, dice notation, compatibility
-2. [Player Characters](#player-characters) — game statistics, character creation, ability scores, alignment, languages
+2. [Player Characters](#player-characters) — game statistics, character creation (Basic + Advanced methods), ability scores, alignment, languages, weapon proficiency, secondary skills, multiple classes
 3. [Advancement](#advancement) — experience, levelling up, level titles, high-level play, wealth
 4. [Equipment](#equipment) — adventuring gear, weapons, armour, weapon combat stats
 5. [Vehicles and Mounts](#vehicles-and-mounts) — animals of burden, land vehicles, water vessels, ship weaponry
@@ -15,7 +15,7 @@
 7. [Strongholds](#strongholds) — construction, domain management, structure prices
 8. [Magic](#magic) — spells overview, arcane/divine magic, spell books, magical research, spell lists
 9. [Adventuring](#adventuring) — time/weight/movement, encumbrance, ability checks, hazards, dungeon/wilderness/waterborne adventuring, encounters, evasion and pursuit
-10. [Combat](#combat) — combat sequence, initiative, attacking, morale, combat tables
+10. [Combat](#combat) — combat sequence, initiative, attacking, advanced combat options (two weapons / charging / parrying / splash weapons), morale, combat tables
 
 > See also: `ose-advanced-classes.md` (22 classes + 10 races), `ose-advanced-referee.md` (running adventures, encounter tables)
 
@@ -160,29 +160,72 @@ Player characters are described by the following game statistics:
 
 **Ascending AC (Optional Rule):** Higher AC is better. Uses attack bonus instead of THAC0 and attack matrix.
 
-### Creating a Character
+### Character Creation Options
 
-*(PDF p.16–17)*
+*(PDF p.14–15)*
+
+OSE Advanced Fantasy offers two methods of character creation. Both produce fully compatible PCs.
+
+**Basic Method** — The character's class determines their race (humans, or a demihuman class such as "Elf", "Dwarf", "Halfling"). Fastest path from blank sheet to 1st-level PC.
+
+**Advanced Method** — The player chooses a **race** and a **class** separately, allowing combinations such as *elf fighter*, *duergar cleric*, or *halfling thief*. More customisation, slightly more setup.
+
+> **This campaign uses the Advanced Method** (separate race and class — see `CLAUDE.md` → 启用的可选规则). Use the 15-step process below. The Basic Method is retained for reference.
+
+**Multiple Classes (Optional Rule, PDF p.15):** When using the Advanced Method, players may optionally choose up to 3 classes for a single character. XP is split evenly across per-class counts. Single-classed PCs tend to be overwhelmed by multiclass ones. **Not used in this campaign.**
+
+---
+
+### Creating a Character: Advanced Method
+
+*(PDF p.18–19)*
 
 1. **Roll Ability Scores:** Roll 3d6 for each: STR, INT, WIS, DEX, CON, CHA. Sub-par characters (8 or less in every score, or extremely low in one) may be discarded at referee's discretion.
-2. **Choose a Class:** Select from available classes, noting minimum ability score requirements. Class determines race (human unless demihuman class chosen).
-3. **Adjust Ability Scores:** May raise prime requisite(s) by lowering other non-prime requisite scores. For every 2 points lowered, 1 point may be added to a prime requisite. Only STR, INT, and WIS may be lowered. No score may be lowered below 9. Some classes have additional constraints.
-4. **Note Ability Score Modifiers:** See tables below.
-5. **Note Attack Values:** THAC0 from class level progression chart. 1st level PCs have THAC0 19 [0].
-6. **Note Saving Throws and Class Abilities:** Record class abilities and saving throws. If spellcaster, determine starting spells.
-7. **Roll Hit Points:** Roll the die type for chosen class, apply CON modifier. Minimum 1 hp regardless of modifier. *Re-Rolling 1s and 2s (Optional Rule):* Referee may allow re-rolling 1 or 2 results (before CON modifier).
-8. **Choose Alignment:** Lawful, Neutral, or Chaotic.
-9. **Note Known Languages:** Class determines native languages (always Common + alignment language). High INT grants additional languages.
-10. **Buy Equipment:** Start with 3d6 × 10 gold pieces. Consult equipment lists. Class may restrict some equipment.
-11. **Note Armour Class:** Determined by armour worn + DEX modifier. Unarmoured: AC 9 [10].
-12. **Note Level and XP:** Begin at 1st level with 0 XP.
-13. **Name Character.**
+2. **Choose a Race:** Select from the 10 available races (see `ose-advanced-classes.md` → Character Races). Note minimum ability score requirements. Apply any racial **ability score modifiers** (e.g. Drow –1 CON / +1 DEX, Duergar +1 CON / –1 CHA). Modifiers cannot raise a score above 18 or lower it below 3.
+3. **Choose a Class:** Select a class available to your race, noting minimum ability score requirements and max level caps. (Multiple Classes — optional, not used in this campaign.)
+4. **Adjust Ability Scores:** May raise prime requisite(s) by lowering other (non-prime) scores at a 2:1 ratio. Only STR, INT, and WIS may be lowered. No score may drop below 9. Some classes impose additional constraints.
+5. **Note Ability Score Modifiers:** Record STR/INT/WIS/DEX/CON/CHA bonuses and penalties from the Ability Scores tables.
+6. **Note Attack Values:** THAC0 from the class level progression chart. 1st-level PCs have THAC0 19 [0]. **Ascending AC (enabled in this campaign):** record attack bonus +0 at 1st level instead.
+7. **Note Saving Throws and Class/Race Abilities:** Record class abilities, race abilities, and the 5 saving throws (D/W/P/B/S). If a spellcaster, determine starting spells (ask the referee which spells are in the spell book, if any). **Weapon Proficiency (enabled in this campaign):** select starting proficient weapons from those usable by the race/class — see `ose-advanced-optional-rules-checklist.md` and `ose-advanced-reference-booklet.md` → Weapon Proficiency.
+8. **Roll Hit Points:** Roll the die type for your class, apply CON modifier. Minimum 1 hp regardless of modifier. **Re-rolling 1s and 2s (enabled in this campaign):** if the raw die shows 1 or 2 (before CON mod), re-roll once.
+9. **Choose Alignment:** Lawful, Neutral, or Chaotic.
+10. **Note Known Languages:** Race determines native languages (Common + alignment language + any racial languages). High INT grants additional slots.
+11. **Buy Equipment:** Start with 3d6 × 10 gold pieces. Consult equipment lists. Race and class may restrict some equipment (e.g. weapon/armour limits).
+12. **Note Armour Class:** Determined by armour worn + DEX modifier. Unarmoured: AC 9 [10] (AAC 10).
+13. **Note Level and XP:** Begin at 1st level with 0 XP.
+14. **Secondary Skill (Optional Rule):** *Not used in this campaign.* (PDF p.25 offers a d100 background profession table if desired.)
+15. **Name Character.** Ready for adventure.
+
+---
+
+### Creating a Character: Basic Method (Alternative)
+
+*(PDF p.16–17 — retained for reference; this campaign uses the Advanced Method above.)*
+
+1. **Roll Ability Scores:** Roll 3d6 for each: STR, INT, WIS, DEX, CON, CHA.
+2. **Choose a Class:** Class determines race — human unless a demihuman class (Drow/Duergar/Dwarf/Elf/Gnome/Half-Elf/Halfling/Half-Orc/Svirfneblin) is selected.
+3. **Adjust Ability Scores:** Same 2:1 lowering rule as Advanced.
+4. **Note Ability Score Modifiers.**
+5. **Note Attack Values:** THAC0 19 [0] at 1st level.
+6. **Note Saving Throws and Class Abilities.** (Weapon Proficiency optional sub-step as above.)
+7. **Roll Hit Points.** (Re-rolling 1s/2s optional.)
+8. **Choose Alignment.**
+9. **Note Known Languages.** Class (not race) determines natives.
+10. **Buy Equipment:** 3d6 × 10 gp.
+11. **Note Armour Class.**
+12. **Note Level and XP:** 1st level, 0 XP.
+13. **Secondary Skill (Optional Rule).**
+14. **Name Character.**
+
+---
 
 **1st Level PC Attack Values:**
 
 | Attack Roll: | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 |
 |:-------------|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | AC Hit:      | 9  | 8  | 7  | 6  | 5  | 4  | 3  | 2  | 1  | 0  |
+
+With **Ascending AC** (enabled): roll d20 + attack bonus (+0 at 1st level for all classes) ≥ target AAC to hit.
 
 ### Ability Scores
 
@@ -344,6 +387,64 @@ Native languages are determined by class. These always include **Common** and th
 | 18 | Orcish |
 | 19 | Pixie |
 | 20 | Human dialect |
+
+---
+
+### Weapon Proficiency (Optional Rule)
+
+*(PDF p.23 — **enabled in this campaign**; quick-ref table in `ose-advanced-reference-booklet.md` → Weapon Proficiency)*
+
+Normally all characters of the same class can use the same weapons with equal skill. This optional rule differentiates characters by limiting which weapons each is trained to use.
+
+**Martial / Semi-martial / Non-martial:** Classes are categorised by how quickly their THAC0 and saving throws improve.
+
+- **Martial (every 3 levels):** Barbarian, Drow, Duergar, Dwarf, Elf, Half-Elf, Halfling, Knight, Paladin, Ranger, Svirfneblin.
+- **Semi-martial (every 4 levels):** Acrobat, Assassin, Bard, Cleric, Druid, Half-Orc, Thief.
+- **Non-martial (every 5 levels):** Gnome, Illusionist, Magic-User.
+
+**Choosing Proficiencies:** Selected from the list of weapons usable by the character's class (and race, under the Advanced Method).
+
+**Initial Proficiencies at 1st level:**
+
+| Category | Initial | New Proficiency | Non-Proficiency Penalty |
+|:---------|:-------:|:----------------|:-----------------------:|
+| Martial | 4 | Every 3 levels | –2 |
+| Semi-martial | 3 | Every 4 levels | –3 |
+| Non-martial | 1 | Every 5 levels | –5 |
+
+**Non-Proficient Attacks:** Using a non-proficient weapon incurs the penalty above to attack rolls. The referee may allow using race/class-restricted weapons at the same penalty.
+
+#### Weapon Specialisation (Optional Sub-Rule)
+
+*(PDF p.23 — **enabled in this campaign**)*
+
+**Martial characters only** may specialise in a single weapon by dedicating **two proficiency slots** to one weapon type. At 1st level, a specialised martial character has 3 proficiencies total (the specialised weapon + 2 others) instead of 4.
+
+**Benefits:** +1 to attack rolls and +1 to damage rolls with the specialised weapon.
+
+> **Current campaign proficiency/specialisation assignments** (per `saves/border/referee-notes.md`):
+> - 兰德加（Ranger, Martial·4 slots）: 长弓（专精 +1/+1）、剑、手斧
+> - 骨匠（Cleric, Semi-martial·3 slots）: 钉头锤、锤、投石索
+> - 莫薇娜（Necromancer, Non-martial·1 slot）: 匕首
+> - 皮帕（Halfling Thief, Semi-martial·3 slots）: 短剑、投石索、短弓
+> - 泽利斯 / 克拉根 / 维斯波: 回归后再定
+
+### Secondary Skills (Optional Rule)
+
+*(PDF p.25 — **not used in this campaign**; d100 table in `ose-advanced-reference-booklet.md` → Secondary Skills)*
+
+Grants characters a background profession picked up before adventuring. Roll d100 or select from the table. The referee adjudicates uses: typically allows a character to assess value/quality, make minor repairs, or construct simple items associated with the skill. Never matches a dedicated full-time professional.
+
+### Multiple Classes (Optional Rule)
+
+*(PDF p.15 — **not used in this campaign**; requires Advanced Method)*
+
+A character may be of up to 3 classes, selected at creation. Ability scores must meet all selected classes' requirements.
+
+- **XP tracking:** Separately tracked per class. Earned XP is split evenly across per-class counts.
+- **Level:** Each class levels independently when its per-class XP threshold is met.
+- **Abilities:** Gains all features of all classes (HP uses best die, armour/weapon restrictions follow the most permissive class, etc. — see PDF for full combining rules).
+- **Caveat:** Multi-classed PCs tend to overshadow single-classed ones.
 
 ---
 
@@ -1577,6 +1678,61 @@ Possible when opponents are 5' or less apart.
 - **Unarmed attacks:** As melee. 1d2 damage (modified by STR).
 - **Unstable surfaces:** Missile attacks –4. Spells cannot be cast. Magic items normal. Magical flight generally not unstable.
 - **Water combat:** Attack and damage penalised. Missile weapons usually don't work underwater.
+
+### Advanced Combat Options
+
+*(PDF p.236–237 — optional combat rules introduced in Advanced Fantasy)*
+
+#### Attacking with Two Weapons (Optional Rule)
+
+*(**enabled in this campaign**)*
+
+Characters with **DEX or STR as a prime requisite** may wield two one-handed weapons:
+
+- **Secondary weapon:** Must be small (e.g. dagger, hand axe).
+- **Primary attack penalty:** –2 to attack rolls.
+- **Extra attack:** One additional attack per round with the secondary weapon, at –4 to attack.
+- Cannot also use a shield.
+
+#### Charging into Melee (Optional Rule)
+
+*(**enabled in this campaign**)*
+
+**Once per combat**, a character may charge into melee and attack:
+
+- **Movement:** At least 20' (or 20 yards in wilderness) before attacking. Must have a clear run.
+- **Bonus:** +2 to attack rolls this round.
+- **Penalty:** –1 to AC this round.
+- **Bracing weapons:** Weapons with the *Brace* trait (e.g. pole arm) can be set against charging characters, dealing double damage if they hit.
+
+#### Missile Attacks on Targets in Melee (Optional Rule)
+
+*(not currently tracked — referee may apply if melee chaos warrants)*
+
+When shooting missiles into a melee, **randomly determine which combatant is targeted** before the attack roll. Typically all combatants have equal chance; larger creatures may count as 2 or more targets.
+
+#### Parrying (Optional Rule)
+
+*(**enabled in this campaign**)*
+
+Characters with **STR 13+** may forfeit their attack that round to act purely defensively:
+
+- **Benefit:** Apply the character's STR melee bonus as an AC bonus that round (e.g. STR 16 = AC –2 / AAC +2).
+- Must be declared before initiative or at declaration phase.
+
+#### Splash Weapons (Optional Rule)
+
+*(**enabled in this campaign** — weapon keyword on holy water, burning oil, etc.)*
+
+**Direct attack on creature:** Normal attack roll. If hit: container smashes, target takes listed damage over 2 rounds as liquid drips off.
+
+**Targeting a surface (e.g. floor, wall):**
+- Attack vs AC 9 [10].
+- Success: all creatures within 5' of the point are splashed (1d2 damage if liquid is harmful).
+
+**Misses:** Container lands 5' from intended target in a random direction.
+- Roll 1d12 as clock-face direction (12 = forward past target, 6 = behind thrower, 3 = right, 9 = left, etc.).
+- Creatures within 5' of the landing point are splashed (1d2 damage if harmful).
 
 ### Morale (Optional Rule)
 
