@@ -200,7 +200,9 @@ python3 pdf_extract.py some.pdf --info   # 查总页数+目录
 - `tools/mcp-server/` — 骰子/状态/存档 MCP 服务
 - `.mcp.json` 的 `cwd` 必须指向本项目目录（不是旧的 `/Users/jack/Projects/OSE`）
 
-已建：OSE、WW2 OBW、Tales from the loop、Mork Borg、SwordWorld、DnDClassic、Shadowdark、Traveller。新增系统时复制 Mork Borg 模板即可。
+已建：OSE、WW2 OBW、Tales from the loop、Mork Borg、SwordWorld、DnDClassic、Shadowdark、Traveller、Cairn2e。新增系统时复制 Mork Borg 模板即可。
+
+**Cairn2e 注意**：rules/ 里每个 md 是指向 `output/Cairn/rules/cairn2e-*.md` 的 symlink（还附带 `cairn1e-spells.md`，因 2e Spellbooks 沿用 1e 法术表）。characters/ 和 campaign/ 目前在 `output/Cairn2e/` 下，是独立于 `output/Cairn/` 的 2e 专用子树。
 
 ### 7.1 角色模板约定
 

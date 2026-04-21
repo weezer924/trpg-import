@@ -1,0 +1,1 @@
+../../Cairn/rules/cairn2e-warden-bestiary.md
