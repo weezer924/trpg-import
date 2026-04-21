@@ -26,11 +26,13 @@
 | D&D Classic (Mentzer/RC) | DnDClassic | 部分完成 | `D&D Classic/`            | `output/DnDClassic/`       |
 | Old-School Essentials    | OSE        | 已完成   | `OSE/`                    | `output/OSE/`              |
 | Call of Cthulhu 7e       | CoC        | 待导入   | `Call of Cthulhu/`        | `output/CoC/`              |
-| Cairn (1e & 2e)          | Cairn      | 待导入   | `Cairn/`                  | `output/Cairn/`            |
+| Cairn (1e & 2e)          | Cairn      | 已完成   | `OSR related/Cairn 1st/`、`OSR related/Cairn 2e/` | `output/Cairn/rules/`      |
 | Mörk Borg (Bare Bones)   | MorkBorg   | 已完成   | `Mork Borg/`              | `output/MorkBorg/`         |
 | Operation WhiteBox       | OWB        | 已完成   | `Operation White Box/`    | `output/OWB/`              |
 | Tales from the Loop      | TFTL       | 部分完成 | `Tales from the Loop/`    | `output/TalesFromTheLoop/` |
 | Sword World 1.0          | SW         | 已完成   | `source/Sword World 1.0/` | `output/SwordWorld/`       |
+| Classic Traveller (1981) | Traveller  | 已完成   | `Traveller/Classic Traveller/` | `output/Traveller/`   |
+| Shadowdark               | Shadowdark | 部分完成 | `Shadowdark/`             | `output/Shadowdark/`       |
 | OSR 相关                 | —          | 参考     | `OSR related/`            | —                          |
 | 其他系统                 | —          | 按需添加 | `{System}/`               | `output/{System}/`         |
 
@@ -55,7 +57,7 @@
   │   └── Modules/                 # B/X 系列模组
   ├── OSE/                         # Old-School Essentials (B/X 复刻)
   ├── Call of Cthulhu/             # 克苏鲁的呼唤 7e
-  ├── Cairn/                       # Cairn 1e & 2e
+  ├── OSR related/                 # OSR 相关参考资料（Cairn 1e/2e 在此）
   │   ├── Cairn 1st/
   │   └── Cairn 2e/
   ├── OSR related/                 # OSR 相关参考资料
@@ -84,6 +86,9 @@ output/                            # 输出目录，按系统分子目录
   │   └── rules/
   ├── MorkBorg/                    # Mörk Borg
   │   └── rules/
+  ├── Cairn/                       # Cairn 1e + 2e（文件名前缀区分）
+  │   └── rules/                   # cairn1e-{rules,spells,bestiary}.md
+  │                                # cairn2e-{overview,character-creation,rules,procedures,backgrounds}.md
   ├── TalesFromTheLoop/            # Tales from the Loop
   │   ├── rules/
   │   ├── campaign/
@@ -147,6 +152,8 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf，备用/g
 | AD&D 1e 战役模组 | `.claude/adnd1e-campaign-import-guide.md` | T1-4 等模组 → output/ADnD1e/campaign/ 多文件结构 |
 | OWB 规则书       | `.claude/owb-import-guide.md`             | WWII 特战 OSR → 2 个输出文件                     |
 | Sword World 1.0  | `.claude/swordworld-import-guide.md`      | 日式 2d6 OSR → 6 个输出文件（源为 txt）          |
+| Classic Traveller | `.claude/traveller-import-guide.md`      | LBB 1-2-3 合订（扫描件，需 docling OCR）→ 6 个输出文件（errata 内联合并）|
+| Cairn 2e         | `.claude/cairn2e-import-guide.md`         | Player's Guide → 5 文件（已完成）+ Warden's Guide 待办 |
 | CoC              | `.claude/coc-import-guide.md`             | 待创建                                           |
 
 **导入新系统时**：先创建该系统的专属导入指南（参考 dnd5e 指南的结构），再按指南逐步执行。
@@ -193,7 +200,7 @@ python3 pdf_extract.py some.pdf --info   # 查总页数+目录
 - `tools/mcp-server/` — 骰子/状态/存档 MCP 服务
 - `.mcp.json` 的 `cwd` 必须指向本项目目录（不是旧的 `/Users/jack/Projects/OSE`）
 
-已建：OSE、WW2 OBW、Tales from the loop、Mork Borg、SwordWorld。新增系统时复制 Mork Borg 模板即可。
+已建：OSE、WW2 OBW、Tales from the loop、Mork Borg、SwordWorld、DnDClassic、Shadowdark、Traveller。新增系统时复制 Mork Borg 模板即可。
 
 ### 7.1 角色模板约定
 
