@@ -55,6 +55,19 @@ Findings below are historical — the table here tracks what has since been fixe
 | Party Organisation (Marching Order, Caller, Mapper, Dividing Treasure) | rules.md:L1394 new `### Party Organisation` | `[missing]` | ✅ fixed |
 | Encounter Tables duplication (monsters.md had a 311-line simpler copy) | monsters.md:L3185 replaced with redirect | `[duplication]` | ✅ fixed (canonical version in referee.md) |
 
+**Commit `b18c9c4` (P2 systematic page refs — "档四" partial, 4 of 5 files):**
+
+Regenerated `*(PDF p.XX)*` references to `*(PDF printed p.XX)*` using correct Advanced Player's Tome / Referee's Tome printed pages. Applied via `/tmp/fix_page_refs.py` (ordered line-aware replacements).
+
+| File | Refs fixed | Notes |
+|---|---:|---|
+| rules.md | 27 | Ability Scores, Alignment, Languages, Advancement block (3), Equipment, Vehicles, Hired Help block (3), Strongholds, Magic overview, Magical Research, Adventuring block (9 sub-sections), Combat block (3) |
+| classes.md | 8 | Character Classes overview + 7 classic classes (Cleric / Dwarf / Elf / Fighter / Halfling / Magic-User / Thief) — were citing OSE Classic Rules Tome pages |
+| spells.md | 7 | 4 section headers (Cleric/MU far-off, Druid/Illusionist 2-off) + 3 Magic-User sub-sections |
+| referee.md | 2 | Awarding XP, Encounter Tables range |
+
+**monsters.md HTML `<!-- PDF p.NNN -->` comments**: deferred until 档三 (parallel re-import of 95 missing monsters) merges — will batch-regenerate all 229 monster comments in one sweep afterwards.
+
 ### Remaining (not yet fixed)
 
 **P0 — large re-imports (require separate worktree session with parallel agents per CLAUDE.md workflow):**
@@ -64,21 +77,21 @@ Findings below are historical — the table here tracks what has since been fixe
 
 **P2 — page-reference hygiene (batch-scriptable):**
 
-- 18 systematic page-reference errors in `ose-advanced-rules.md` from Advancement section onward (copied from OSE Classic, not Advanced Player's Tome)
-- 8 classic-class page references in `ose-advanced-classes.md` (Cleric, Dwarf, Elf, Fighter, Halfling, Magic-User, Thief page refs + overview range)
-- 4 spell-section page references in `ose-advanced-spells.md`
-- Systematic HTML `<!-- PDF p.NNN -->` comments in `ose-advanced-monsters.md` (appear to cite OSE Classic, not Advanced Referee's Tome)
-- 2 page-ref offsets in `ose-advanced-referee.md` (Awarding XP + Encounter Tables range)
+- ~~18 systematic page-reference errors in `ose-advanced-rules.md`~~ ✅ fixed (27 total refs) in `b18c9c4`
+- ~~8 classic-class page references in `ose-advanced-classes.md`~~ ✅ fixed in `b18c9c4`
+- ~~4 spell-section page references in `ose-advanced-spells.md`~~ ✅ fixed (7 total refs) in `b18c9c4`
+- ~~2 page-ref offsets in `ose-advanced-referee.md`~~ ✅ fixed in `b18c9c4`
+- Systematic HTML `<!-- PDF p.NNN -->` comments in `ose-advanced-monsters.md` — **deferred** until 档三 merges, then regenerate all 229 monster comments in one sweep
 
 ### Remediation summary by severity
 
-| Severity | Pre-audit | Fixed in 80e2408 | Fixed in 3af2a73 | Still open |
-|---|---:|---:|---:|---:|
-| `[bug]` | 1 | 1 | 0 | **0** |
-| `[missing]` | ~202 | 8 (rules.md items + rows) | 3 (rules.md sections) | **~192** (95 monsters + ~97 magic items) |
-| `[extra]` | 0 | — | — | **0** |
-| `[duplication]` | 1 | — | 1 | **0** |
-| `[formatting]` | 35 | 1 (Doppelgänger) | — | **34** (page refs — P2) |
+| Severity | Pre-audit | Fixed in 80e2408 (档一) | Fixed in 3af2a73 (档二) | Fixed in b18c9c4 (档四 partial) | Still open |
+|---|---:|---:|---:|---:|---:|
+| `[bug]` | 1 | 1 | 0 | 0 | **0** |
+| `[missing]` | ~202 | 8 | 3 | 0 | **~192** (95 monsters + ~97 magic items — pending 档三) |
+| `[extra]` | 0 | — | — | — | **0** |
+| `[duplication]` | 1 | — | 1 | — | **0** |
+| `[formatting]` | 35 | 1 (Doppelgänger) | — | 44 (over-counted; all non-monster page refs) | **~1 systematic** (monsters.md HTML `<!-- PDF p.NNN -->` comments — pending 档三) |
 
 ## Known intentional deviations
 
