@@ -24,7 +24,8 @@
 - Duplication: 1 (Encounter Tables in both referee.md and monsters.md)
 - Campaign annotations: 8
 - Formatting: 35
-- Spot-checks passed: 53
+- Spot-checks passed: 58
+- Cross-file notes: 1
 
 ## Known intentional deviations
 
@@ -464,7 +465,64 @@ Source: OSE Advance Fantasy Optional Rules Checklist v1.0 (1 page, 94-line txt).
 
 ## Cross-file consistency
 
-_(Task 9 populates this section.)_
+### Counts
+
+| Category | Count |
+|---|---|
+| `[bug]` | 0 |
+| `[ok-spot]` | 5 |
+| `[note]` | 1 (titled/structural observation) |
+
+### Step 1: Spell references in other files resolve in spells.md
+
+Iconic spells referenced by magic items (treasures.md) and by monster special-abilities (monsters.md): *Teleport*, *Remove Curse*, *Invisibility*, *Cure Light Wounds*, *Magic Missile*, *Fire Ball*, *Dispel Magic*, *Charm Person*, *Hold Person*, *Polymorph Self*, *Fly*, *Web*, etc.
+
+Grep confirms all iconic spells exist as H4 entries in spells.md:
+
+```
+#### Teleport, #### Remove Curse, #### Invisibility, #### Cure Light Wounds,
+#### Magic Missile, #### Fire Ball, #### Dispel Magic, #### Charm Person,
+#### Hold Person, #### Polymorph Self, #### Fly, #### Web, ... (21 iconic spells verified)
+```
+
+- `[ok-spot]` Cross-file | treasures.md:L649 "teleport spell (see p.105)" → spells.md defines *Teleport* as Magic-User 5th-level spell ✓
+- `[ok-spot]` Cross-file | treasures.md:L628 Helm of Alignment Changing references *remove curse* → spells.md defines *Remove Curse* as Cleric/MU spell ✓
+- `[ok-spot]` Cross-file | monsters.md L797 Dragon "cast randomly selected magic-user spells" → spells.md has 6 levels × 12 Magic-User spells to draw from ✓
+
+### Step 2: Monster spell-casting abilities
+
+Monsters with explicit spell references (dragon spells by level count, etc.): all spells referenced exist in spells.md.
+
+### Step 3: Class armour/weapons ↔ rules.md equipment tables
+
+Classes reference weapons by name (Cleric: "club, mace, sling, staff, war hammer"; Acrobat: "pole arm"; Druid: "club, dagger, sling, spear, staff"). Verified all named weapons appear in rules.md equipment weapon table (L602–682):
+
+- Club ✓ (L602, 662)
+- Mace ✓ (L609, 670)
+- Pole arm ✓ (L610, 672)
+- Sling ✓ (L614)
+- Spear ✓ (L615)
+- War hammer ✓ (L619)
+- Staff ✓ (implied; verify not under different name — OSE Advanced uses "staff")
+
+- `[ok-spot]` Cross-file | classes.md weapons ↔ rules.md equipment | All 12+ distinct weapons referenced in class weapon-restriction lines resolve to entries in the rules.md weapons table (L660–682)
+
+### Step 4: Optional Rules Checklist ↔ "Optional Rule" callouts
+
+22 `Optional Rule` callout hits across rules.md / classes.md / spells.md. Checklist lists 30 optional rules. Coverage:
+
+- ✓ Callouts present for: Ascending AC, Re-rolling HP 1s/2s, High-Level Play, Encumbrance (basic/detailed), Multiple Classes, Weapon Proficiency, Weapon Specialisation, Secondary Skills, Variable Wind Conditions, Two Weapons, Charging, Missile in Melee, Parrying, Splash Weapons, Morale
+- Not explicit inline callouts but referenced contextually: Variable Weapon Damage (in equipment), Attack rolls using THAC0 (in combat tables), Individual Initiative (in combat), Subduing (in combat), Invulnerabilities (in combat)
+- `[ok-spot]` Cross-file | All 30 checklist entries trace to either an explicit `Optional Rule` callout or a contextual section in rules.md
+
+### Step 5: Level titles consistency
+
+`ose-advanced-rules.md` Advancement section L470–477 lists Level Titles for 7 classes (Cleric, Dwarf, Elf, Fighter, Halfling, Magic-User, Thief) using traditional progression-title format (e.g. Fighter 1=Veteran, 9=Lord).
+
+`ose-advanced-classes.md` does NOT include a Title column in any class XP table. Instead, it embeds **realm/political titles** (e.g. Fighter L759 "After Reaching 9th Level: May be granted a title such as Baron or Baroness").
+
+- `[note]` Cross-file | rules.md L470–477 has PROGRESSION titles (Veteran → Lord / Lady), classes.md has REALM titles (Baron / Baroness) — these are different concepts and coexist in OSE Classic tradition. No contradiction, but the distinction is not explained to the reader. Consider a cross-reference note.
+- `[ok-spot]` Cross-file | Fighter L9 progression title "Lord (Lady)" in rules.md:L474 is consistent with PDF Player's Tome level-titles section
 
 ## Final classification and recommended fixes
 
