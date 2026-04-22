@@ -33,6 +33,7 @@
 | Sword World 1.0          | SW         | 已完成   | `source/Sword World 1.0/` | `output/SwordWorld/`       |
 | Classic Traveller (1981) | Traveller  | 已完成   | `Traveller/Classic Traveller/` | `output/Traveller/`   |
 | Shadowdark               | Shadowdark | 部分完成 | `Shadowdark/`             | `output/Shadowdark/`       |
+| Mythic GME 2e            | Mythic     | 导入中   | `Mythic GME/`             | `output/Mythic/`           |
 | OSR 相关                 | —          | 参考     | `OSR related/`            | —                          |
 | 其他系统                 | —          | 按需添加 | `{System}/`               | `output/{System}/`         |
 
@@ -154,6 +155,7 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf，备用/g
 | Sword World 1.0  | `.claude/swordworld-import-guide.md`      | 日式 2d6 OSR → 6 个输出文件（源为 txt）          |
 | Classic Traveller | `.claude/traveller-import-guide.md`      | LBB 1-2-3 合订（扫描件，需 docling OCR）→ 6 个输出文件（errata 内联合并）|
 | Cairn 2e         | `.claude/cairn2e-import-guide.md`         | Player's Guide → 5 文件（已完成）+ Warden's Guide 待办 |
+| Mythic GME 2e    | `.claude/mythic-import-guide.md`          | Solo storytelling engine → 5 目录 37 文件（AI-facing） |
 | CoC              | `.claude/coc-import-guide.md`             | 待创建                                           |
 
 **导入新系统时**：先创建该系统的专属导入指南（参考 dnd5e 指南的结构），再按指南逐步执行。
