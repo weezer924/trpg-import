@@ -526,4 +526,65 @@ Classes reference weapons by name (Cleric: "club, mace, sling, staff, war hammer
 
 ## Final classification and recommended fixes
 
-_(Task 10 populates this section.)_
+### Final roll-up
+
+| File | Bugs | Missing | Extra | Formatting | ok-spots |
+|---|---:|---:|---:|---:|---:|
+| rules.md | 0 | 10 | 0 | 18 | 10 |
+| classes.md | 1 | 0 | 0 | 8 | 10 |
+| spells.md | 0 | 0 | 0 | 4 | 10 |
+| monsters.md | 0 | 95 | 0 | 3 | 6 |
+| treasures.md | 0 | ~97 | 0 | 0 | 7 |
+| referee.md | 0 | 0 | 0 | 2 | 5 |
+| reference-booklet.md | 0 | 0 | 0 | 0 | 3 |
+| optional-rules-checklist.md | 0 | 0 | 0 | 0 | 2 |
+| cross-file | 0 | 0 | 0 | 0 | 5 |
+| **Total** | **1** | **~202** | **0** | **35** | **58** |
+
+Plus: **8 campaign-annotation blocks** in rules.md (deliberate customisations, not bugs), and **1 structural duplication** (Encounter Tables live in both referee.md and monsters.md).
+
+### The headline finding
+
+**The OSE Advanced Fantasy markdown set is 50–60% short of the Referee's Tome monster and magic-item catalogues.**
+
+- `ose-advanced-monsters.md` has **134 monsters** out of the PDF's **229** (~58% coverage). 95 monsters, including iconic ones (Lich, Mimic, Couatl, Ettin, Hag, Banshee, Tarrasque, Rakshasa, Ghost, Bulette), are **entirely absent** — not listed in the Index, not described anywhere in the file.
+- `ose-advanced-treasures.md` has **28 miscellaneous magic items** out of the PDF's **125** (~22% coverage for that category). Iconic items (Deck of Many Things, Portable Hole, Cube of Force, Figurine of Wondrous Power, Ioun Stones, Sphere of Annihilation, Robe of the Archmagi) are absent.
+- All OTHER content is highly faithful: every class stat block, every spell description, every rule procedure that IS present matches the PDF exactly (only 1 bug found across ~14,000 MD lines, plus 35 page-reference formatting issues).
+
+**Implication:** Running an OSE Advanced campaign from this reference set will fail unpredictably — players will encounter monsters or loot rolls that reference entries the DM can't look up.
+
+### P0 — must fix (block use for play)
+
+1. **Restore 95 missing monsters to `ose-advanced-monsters.md`** — re-import from Referee's Tome p.24–120 (printed) / doc p.26–122. Full list in the "Missing monsters (complete list — 95)" block above. This is the single most impactful remediation.
+2. **Restore ~97 missing miscellaneous magic items to `ose-advanced-treasures.md`** — re-import from Referee's Tome p.156–195 (printed). Full list in the "Missing miscellaneous magic items (sample list)" block above.
+3. **Restore 2 missing spell lists in `ose-advanced-rules.md` Magic overview** — Druid Spell List and Illusionist Spell List indexes. Actual spell descriptions already exist in spells.md; only the quick-reference lists in rules.md are missing.
+4. **Restore 15 missing level-title rows in `ose-advanced-rules.md` Advancement section** — Acrobat, Assassin, Barbarian, Bard, Drow, Druid, Duergar, Gnome, Half-Elf, Half-Orc, Illusionist, Knight, Paladin, Ranger, Svirfneblin. Source: Player's Tome p.88–89 (printed).
+
+### P1 — should fix (content correctness or significant completeness)
+
+5. **Fix the one content bug in classes.md** — Magic-User Weapons line (L1146) says "Dagger only", PDF says "Dagger, staff (optional)". Add the optional staff.
+6. **Restore Poison section in `ose-advanced-rules.md` Equipment chapter** — 4 bloodstream poisons (I–IV) + 5 ingested poisons (I–V) with cost / save / onset / effect tables. Source: Player's Tome printed p.98–99.
+7. **Restore Dogs subsection in `ose-advanced-rules.md` Vehicles and Animals chapter** — Hunting Dog + War Dog stat blocks. Source: Player's Tome printed p.103.
+8. **Restore Turning the Undead section in `ose-advanced-rules.md` Magic chapter** — attempt frequency, limits, mixed undead rules. Source: Player's Tome printed p.123. (Tables themselves are already in reference-booklet.md, so cross-reference may suffice.)
+9. **Restore Party Organisation / Marching Order / Caller / Mapper / Dividing Treasure subsections** — source: Player's Tome printed p.212–215.
+10. **Resolve Encounter Tables duplication** — referee.md version is the canonical (sub-table-by-terrain layout matching PDF); remove or redirect the simpler 1d20 version in monsters.md.
+
+### P2 — nice to have (cosmetic / reference hygiene)
+
+11. **Fix Doppelganger umlaut** in monsters.md:L770 (heading and Index anchor).
+12. **Regenerate all HTML `<!-- PDF p.NNN -->` comments in monsters.md** — currently cite OSE Classic page numbers, not Advanced Referee's Tome.
+13. **Fix the 7 classic-class page references in classes.md** (Cleric, Dwarf, Elf, Fighter, Halfling, Magic-User, Thief) — currently cite OSE Classic Rules Tome pages, not Advanced Player's Tome.
+14. **Fix the 18 systematic page references in rules.md** from Advancement section onward — all use OSE Classic page numbers; need rewriting to Player's Tome printed (or doc) pages.
+15. **Fix the 4 spell-section page references in spells.md** — Cleric `p.78–87` → printed 134–143; Magic-User `p.90–110` → printed 190–211; Druid/Illusionist 2-off.
+16. **Add note explaining distinction between Level Titles (rules.md) and Realm Titles (classes.md)** — or consolidate in one place.
+17. **Audit Ring of Protection, 5' Radius** (treasures.md:L1050) — verify whether PDF has this as a sub-variant of Ring of Protection or as a separate entry.
+
+### Uncommitted campaign annotations
+
+The original working-tree change to `ose-advanced-rules.md` (campaign customisation: Advanced Method character creation, optional-rule activations, combat-option expansions) was committed during Task 0 by the implementing subagent as `9ecba16`. The audit found **zero bugs in the annotated sections** (16 campaign-annotation lines audited, all flagged correctly as deliberate customisation, not PDF mismatches). The commit is safe to keep. No further action needed.
+
+### Recommendation
+
+- **Do not ship this MD set as a play-reference until P0 items 1–2 are fixed.** Missing 95 monsters and ~97 magic items is not a cosmetic issue; it creates play-blocking lookup failures.
+- **The rules, spells, classes, referee, reference-booklet, and optional-rules-checklist files are close to production quality** — only page-reference cosmetics (P2) and a single word-level weapon bug (P1 #5) need attention before they're release-ready.
+- **Recommend re-import workflow for monsters + miscellaneous magic items** using parallel subagent pattern (similar to campaign imports per project CLAUDE.md, but scoped to sub-ranges of the Referee's Tome).
