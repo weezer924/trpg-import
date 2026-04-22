@@ -88,16 +88,24 @@ Agent 1 hit an API stream timeout at 46 min / 108 tool calls before committing; 
 - ~~4 spell-section page references in `ose-advanced-spells.md`~~ ✅ fixed (7 total refs) in `b18c9c4`
 - ~~2 page-ref offsets in `ose-advanced-referee.md`~~ ✅ fixed in `b18c9c4`
 - ~~Systematic HTML `<!-- PDF p.NNN -->` comments in `ose-advanced-monsters.md`~~ ✅ fixed in `53f382c` — 234 comments regenerated from Referee's Tome ToC (97 replaced + 132 added + 5 NPC-Encounters section refs updated)
+- ~~234 monsters.md HTML comments off by +2 (doc pages mislabeled as "printed")~~ ✅ fixed — all comments shifted −2 to match actual printed pages (Referee's Tome offset: printed = doc − 2). Found during 档 A spot-check.
+
+### 档 A spot-check results (2026-04-22, post-remediation)
+
+- **Content accuracy**: 5/5 sampled monsters (Lich / Tarrasque / Will-o'-the-Wisp / Mimic / Rakshasa) + 5/5 sampled magic items (Apparatus of the Crab / Chime of Opening / Cube of Force / Deck of Many Things / Horn of Valhalla) — stat blocks, descriptions, tables all match PDF verbatim. 档三 import is trustworthy.
+- **monsters.md Index**: all 95 new monsters present, no gaps.
+- **treasures.md Index**: category-level by design (15 H2 entries, no per-item A-Z listing) — consistent with original import, not a gap.
+- **Found & fixed**: 234 monster PDF comments had doc-page numbers mislabeled as printed pages. Fix verified: Lich → printed p.76 (was p.78), Tarrasque → p.114 (was p.116), etc.
 
 ### Remediation summary by severity
 
-| Severity | Pre-audit | 80e2408 (档一) | 3af2a73 (档二) | b18c9c4 (档四 partial) | c92f58f+24bca62+090ca21 (档三) | 53f382c (档四 final) | Still open |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| `[bug]` | 1 | 1 | 0 | 0 | 0 | 0 | **0** |
-| `[missing]` | ~202 | 8 | 3 | 0 | ~194 | 0 | **0** |
-| `[extra]` | 0 | — | — | — | — | — | **0** |
-| `[duplication]` | 1 | — | 1 | — | — | — | **0** |
-| `[formatting]` | 35 | 1 (Doppelgänger) | — | 44 (page refs, 4 files) | — | 234 (monsters.md HTML comments regen) | **0** |
+| Severity | Pre-audit | 80e2408 (档一) | 3af2a73 (档二) | b18c9c4 (档四 partial) | c92f58f+24bca62+090ca21 (档三) | 53f382c (档四 final) | 档 A fix | Still open |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `[bug]` | 1 | 1 | 0 | 0 | 0 | 0 | 0 | **0** |
+| `[missing]` | ~202 | 8 | 3 | 0 | ~194 | 0 | 0 | **0** |
+| `[extra]` | 0 | — | — | — | — | — | — | **0** |
+| `[duplication]` | 1 | — | 1 | — | — | — | — | **0** |
+| `[formatting]` | 35 | 1 (Doppelgänger) | — | 44 (page refs, 4 files) | — | 234 (monsters.md HTML comments regen) | 234 (monsters.md doc→printed page shift) | **0** |
 
 **All audit findings remediated.** The OSE Advanced MD set (`output/OSE/rules/ose-advanced-*.md`) now faithfully reflects the Advanced Fantasy Player's Tome v1.2 + Referee's Tome v1.2 + Reference Booklet v1.0 + Optional Rules Checklist v1.0. Ready for play-reference use.
 
