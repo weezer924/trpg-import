@@ -17,13 +17,13 @@
 
 ## Summary
 
-- Files checked: 1 / 8
-- Bugs: 0
+- Files checked: 2 / 8
+- Bugs: 1
 - Missing: 10
 - Extra: 0
 - Campaign annotations: 8
-- Formatting: 18
-- Spot-checks passed: 10
+- Formatting: 26
+- Spot-checks passed: 20
 
 ## Known intentional deviations
 
@@ -124,7 +124,59 @@ _(Note: page refs for Ability Checks, Saving Throws, Hazards, Dungeon/Wilderness
 
 ## File: ose-advanced-classes.md
 
-_(Task 3 populates this section.)_
+### Counts
+
+| Category | Count |
+|---|---|
+| `[bug]` | 1 |
+| `[missing]` | 0 |
+| `[extra]` | 0 |
+| `[formatting]` | 8 |
+| `[ok-spot]` | 10 |
+
+### Notes on structure and page numbering
+
+Classes and races are H3 headings under two H2 sections (`## Character Classes` and `## Character Races`), not individual H2 headings. All 22 class H3s and all 10 race H3s are present.
+
+The file uses **PDF document page numbers** throughout (not printed page numbers as the task convention expects). For the 15 advanced classes (Acrobat, Assassin, Barbarian, Bard, Drow, Druid, Duergar, Gnome, Half-Elf, Half-Orc, Illusionist, Knight, Paladin, Ranger, Svirfneblin) the doc-page numbers are internally consistent with each other (doc = printed + 2).
+
+However, the 7 classic classes (Cleric, Dwarf, Elf, Fighter, Halfling, Magic-User, Thief) have page references that match neither the doc pages nor the printed pages in the Player's Tome. These appear to have been copied from the OSE Classic B/X book (where these same classes appear at lower page numbers). The character races section also uses doc page numbers consistently.
+
+### Bug
+
+- `[bug]` classes.md:L1146 | PDF Player printed p.66 (doc p.68) | Magic-User **Weapons** stat block lists "Dagger only" — PDF states "Dagger, staff (optional)". The optional staff rule is omitted entirely.
+
+### Formatting issues — page references
+
+**Classic classes (wrong page numbers — appear copied from OSE Classic B/X, not this Player's Tome):**
+
+- `[formatting]` classes.md:L382 | Cleric page ref "(PDF p.24–25)" is wrong — printed p.36–37 (doc p.38–39); "p.24" is the Alignment section, not the Cleric class
+- `[formatting]` classes.md:L642 | Dwarf page ref "(PDF p.26–27)" is wrong — printed p.46–47 (doc p.48–49)
+- `[formatting]` classes.md:L690 | Elf page ref "(PDF p.28–29)" is wrong — printed p.48–49 (doc p.50–51)
+- `[formatting]` classes.md:L743 | Fighter page ref "(PDF p.30–31)" is wrong — printed p.50–51 (doc p.52–53); "p.30–31" is where Acrobat lives
+- `[formatting]` classes.md:L899 | Halfling page ref "(PDF p.32–33)" is wrong — printed p.56–57 (doc p.58–59)
+- `[formatting]` classes.md:L1137 | Magic-User page ref "(PDF p.34–35)" is wrong — printed p.66–67 (doc p.68–69)
+- `[formatting]` classes.md:L1405 | Thief page ref "(PDF p.36–37)" is wrong — printed p.74–75 (doc p.76–77)
+
+**Overview range (wrong start):**
+
+- `[formatting]` classes.md:L49 | Character Classes overview ref "(PDF p.24–77)" — p.24 is the Alignment section; classes start at printed p.28 (doc p.30). Should be "(PDF printed p.28–75)" or "(PDF doc p.30–77)"
+
+### Spot-checks — class stat blocks
+
+- `[ok-spot]` classes.md:L741–783 | PDF Player printed p.50–51 (doc p.52–53) | Fighter: Requirements None, Prime Requisite STR, HD 1d8, Max Level 14, Armour any/shields, Weapons any; XP table 14 rows: L1=0/19[0]/D12W13P14B15S16, L2=2000, L3=4000, L14=840,000/10[+9]/D4W5P6B5S8; all values match PDF exactly
+- `[ok-spot]` classes.md:L380–455 | PDF Player printed p.36–37 (doc p.38–39) | Cleric: Requirements None, Prime Requisite WIS, HD 1d6, Max Level 14, Armour any/shields, Weapons any blunt; XP table 14 rows: L1=0/19[0]/D11W12P14B16S15, L5=12,000, L14=700,000/12[+7]/D3W5P7B8S7; all values match PDF exactly
+- `[ok-spot]` classes.md:L1135–1180 | PDF Player printed p.66–67 (doc p.68–69) | Magic-User: Requirements None, Prime Requisite INT, HD 1d4, Max Level 14, Armour none; XP table 14 rows: L1=0/19[0]/D13W14P13B16S15/spells:1–0–0–0–0–0, L11=600,000/14[+5], L14=1,050,000/14[+5]/D8W9P8B11S8/spells:4–4–4–4–3–3; all values match PDF exactly
+- `[ok-spot]` classes.md:L1270–1343 | PDF Player printed p.70–71 (doc p.72–73) | Ranger: Requirements CON 9/WIS 9, Prime Requisite STR, HD 1d8, Max Level 14, Armour leather/chainmail/shields; XP table 14 rows: L1=0/19[0]/D12W13P14B15S16, L7=90,000/14[+5], L14=925,000/10[+9]/D4W5P6B5S8; all values match PDF exactly
+- `[ok-spot]` classes.md:L1403–1485 | PDF Player printed p.74–75 (doc p.76–77) | Thief: Requirements None, Prime Requisite DEX, HD 1d4, Max Level 14, Armour leather/no shields, Weapons any; XP table 14 rows: L1=0/19[0]/D13W14P13B16S15, L5=9,600/17[+2], L14=760,000/12[+7]/D8W9P7B10S8; Thief Skills table 14 rows (L1: CS 87, TR 10, HN 1–2, HS 10, MS 20, OL 15, PP 20; L14: CS 99, TR 99, HN 1–5, HS 99, MS 99, OL 99, PP 125); all values match PDF exactly
+
+### Spot-checks — race ability modifiers
+
+- `[ok-spot]` classes.md:L1507 | PDF Player printed p.79 (doc p.81) | Drow (Race): Ability Modifiers –1 CON, +1 DEX; matches PDF "–1 CON, +1 DEX" exactly
+- `[ok-spot]` classes.md:L1546 | PDF Player printed p.80 (doc p.82) | Duergar (Race): Ability Modifiers –1 CHA, +1 CON; matches PDF "–1 CHA, +1 CON" exactly
+- `[ok-spot]` classes.md:L1672 | PDF Player printed p.83 (doc p.85) | Gnome (Race): Ability Modifiers None; matches PDF "None" exactly
+- `[ok-spot]` classes.md:L1792 | PDF Player printed p.86 (doc p.88) | Half-Orc (Race): Ability Modifiers –2 CHA, +1 CON, +1 STR; matches PDF exactly
+- `[ok-spot]` classes.md:L1837 | PDF Player printed p.87 (doc p.89) | Svirfneblin (Race): Ability Modifiers None; matches PDF "None" exactly
 
 ## File: ose-advanced-spells.md
 
