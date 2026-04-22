@@ -151,7 +151,7 @@
 
 ### Awarding XP
 
-*(PDF p.148)*
+*(PDF printed p.18)*
 
 **Recovered Treasure:** Primary source of XP (usually ¾+ of total). 1 XP per 1gp value. Magical treasure does not grant XP.
 
@@ -190,7 +190,7 @@ For each HD above 21: +250 to both Base and Bonus. Extraordinary peril: treat as
 
 ## Encounter Tables
 
-*(PDF p.132–141)*
+*(PDF printed p.134–141)*
 
 This section provides encounter tables by dungeon level and wilderness terrain type, using the monsters found in this book. Special tables may also be created to reflect the different balance of monsters inhabiting a specific dungeon or wilderness region.
 

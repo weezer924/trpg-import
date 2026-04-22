@@ -46,7 +46,7 @@
 
 ## Character Classes
 
-*(PDF p.24–77)*
+*(PDF printed p.26–75)*
 
 22 character classes (7 classic + 15 advanced). Demihumans (Dwarf, Elf, Halfling, and advanced demihuman races) use the race-as-class system—race and class are one and the same. Classes marked (Advanced) are from the Advanced Fantasy Player's Tome.
 
@@ -379,7 +379,7 @@ D: Death/poison; W: Wands; P: Paralysis/petrify; B: Breath attacks; S: Spells/ro
 
 ### Cleric
 
-*(PDF p.24–25)*
+*(PDF printed p.36–37)*
 
 Clerics are adventurers who have sworn to serve a deity. They are trained for battle and channel the power of their deity.
 
@@ -639,7 +639,7 @@ D: Death/poison; W: Wands; P: Paralysis/petrify; B: Breath attacks; S: Spells/ro
 
 ### Dwarf
 
-*(PDF p.26–27)*
+*(PDF printed p.46–47)*
 
 Dwarves are stout, bearded demihumans, about 4' tall and weighing about 150 pounds. They typically live underground and love fine craftsmanship, gold, hearty food, and strong drink. They have skin, hair, and eye colours in earth tones. Known for stubbornness and practicality, dwarves are hardy and have strong resistance to magic, as reflected in their saving throws.
 
@@ -687,7 +687,7 @@ D: Death/poison; W: Wands; P: Paralysis/petrify; B: Breath attacks; S: Spells/ro
 
 ### Elf
 
-*(PDF p.28–29)*
+*(PDF printed p.48–49)*
 
 Elves are slender, fey demihumans with pointed ears, typically weighing about 120 pounds and between 5 and 5½ feet tall. They seldom live in human settlements, preferring to feast and make merry in the woods. Masters of both sword and spell, elves are fascinated by spells and beautifully constructed magic items.
 
@@ -740,7 +740,7 @@ D: Death/poison; W: Wands; P: Paralysis/petrify; B: Breath attacks; S: Spells/ro
 
 ### Fighter
 
-*(PDF p.30–31)*
+*(PDF printed p.50–51)*
 
 Fighters are adventurers dedicated to mastering the arts of combat and war. Their role is to battle monsters and defend other characters.
 
@@ -896,7 +896,7 @@ D: Death/poison; W: Wands; P: Paralysis/petrify; B: Breath attacks; S: Spells/ro
 
 ### Halfling
 
-*(PDF p.32–33)*
+*(PDF printed p.56–57)*
 
 Halflings are small, rotund demihumans with furry feet and curly hair, weighing about 60 pounds and around 3' tall. Friendly and welcoming, they love the comforts of home and are not known for their bravery. Halflings who gain treasure through adventuring often use their wealth in pursuit of a quiet, comfortable life.
 
@@ -1134,7 +1134,7 @@ D: Death/poison; W: Wands; P: Paralysis/petrify; B: Breath attacks; S: Spells/ro
 
 ### Magic-User
 
-*(PDF p.34–35)*
+*(PDF printed p.66–67)*
 
 Magic-users are adventurers whose study of arcane secrets has taught them how to cast spells. They can cast a greater number of increasingly powerful spells as they advance in level.
 
@@ -1402,7 +1402,7 @@ D: Death/poison; W: Wands; P: Paralysis/petrify; B: Breath attacks; S: Spells/ro
 
 ### Thief
 
-*(PDF p.36–37)*
+*(PDF printed p.74–75)*
 
 Thieves are adventurers who live by their skills of deception and stealth. Their range of unique skills makes them very handy companions in adventures. However, thieves are not always to be trusted.
 

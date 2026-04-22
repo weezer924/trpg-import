@@ -229,7 +229,7 @@ With **Ascending AC** (enabled): roll d20 + attack bonus (+0 at 1st level for al
 
 ### Ability Scores
 
-*(PDF p.18–19)*
+*(PDF printed p.20–21)*
 
 **Strength (STR)** — Brawn, muscle, and physical power.
 - **Melee:** Applied to attack and damage rolls with melee weapons.
@@ -341,7 +341,7 @@ With **Ascending AC** (enabled): roll d20 + attack bonus (+0 at 1st level for al
 
 ### Alignment
 
-*(PDF p.20)*
+*(PDF printed p.22)*
 
 All beings adhere to one of three alignments:
 
@@ -355,7 +355,7 @@ All beings adhere to one of three alignments:
 
 ### Languages
 
-*(PDF p.21)*
+*(PDF printed p.24)*
 
 Native languages are determined by class. These always include **Common** and the character's **alignment language**. High INT grants additional languages.
 
@@ -452,7 +452,7 @@ A character may be of up to 3 classes, selected at creation. Ability scores must
 
 ## Advancement
 
-*(PDF p.38–40)*
+*(PDF printed p.88–90)*
 
 ### Experience
 
@@ -495,7 +495,7 @@ In some campaigns, characters gain titles as they advance. These may be granted 
 
 ### High-Level Play (Optional Rule)
 
-*(PDF p.39)*
+*(PDF printed p.89)*
 
 Human character classes have a maximum level of 14. If the referee allows continued play beyond this, human characters may advance to a maximum of 36th level:
 
@@ -523,7 +523,7 @@ Human character classes have a maximum level of 14. If the referee allows contin
 
 ### Wealth
 
-*(PDF p.40)*
+*(PDF printed p.90)*
 
 **Money:** The most common coin is the gold piece (gp). Other coins: platinum (pp), electrum (ep), silver (sp), copper (cp).
 
@@ -550,7 +550,7 @@ Human character classes have a maximum level of 14. If the referee allows contin
 
 ## Equipment
 
-*(PDF p.42–47)*
+*(PDF printed p.94–100)*
 
 ### Adventuring Gear
 
@@ -750,7 +750,7 @@ Ingested poisons take effect when swallowed by the victim. A single vial is enou
 
 ## Vehicles and Mounts
 
-*(PDF p.48–57)*
+*(PDF printed p.100–108)*
 
 ### Rules for Vehicles
 
@@ -994,7 +994,7 @@ Fire large rocks or flaming pitch.
 
 ## Hired Help
 
-*(PDF p.58–65)*
+*(PDF printed p.110–116)*
 
 ### Retainers
 
@@ -1056,7 +1056,7 @@ Loyalty rating determined by hiring PC's CHA. May be adjusted by referee:
 
 ### Mercenaries
 
-*(PDF p.60–61)*
+*(PDF printed p.110–111)*
 
 Hired soldiers who guard, patrol, and serve in wilderness settings as part of a larger force. They do **not** accompany characters on adventures and do **not** count as retainers.
 
@@ -1100,7 +1100,7 @@ Hired soldiers who guard, patrol, and serve in wilderness settings as part of a 
 
 ### Specialists
 
-*(PDF p.62–63)*
+*(PDF printed p.112–113)*
 
 Characters hired for non-combat, non-adventuring purposes. Not treated as retainers; do not count toward retainer limit.
 
@@ -1138,7 +1138,7 @@ Characters hired for non-combat, non-adventuring purposes. Not treated as retain
 
 ## Strongholds
 
-*(PDF p.66–69)*
+*(PDF printed p.118–120)*
 
 ### Construction
 
@@ -1241,7 +1241,7 @@ Characters hired for non-combat, non-adventuring purposes. Not treated as retain
 
 ## Magic
 
-*(PDF p.70–76)*
+*(PDF printed p.122–131)*
 
 ### Spells
 
@@ -1312,7 +1312,7 @@ Groups who wish to impose limits may use these guidelines:
 
 ### Magical Research
 
-*(PDF p.73)*
+*(PDF printed p.126)*
 
 Spell casters can research new spells, magic items, and other magical effects. Requires time, money, and sometimes rare ingredients. Minimum 15% chance of failure.
 
@@ -1389,7 +1389,7 @@ Reversible spells: Reversed version noted in parentheses.
 
 ## Adventuring
 
-*(PDF p.112–135)*
+*(PDF printed p.212–232)*
 
 ### Party Organisation
 
@@ -1420,7 +1420,7 @@ The spoils may be divided however the players agree on.
 
 ### Time, Weight, and Movement
 
-*(PDF p.112–113)*
+*(PDF printed p.214–215)*
 
 **Tracking Time:** The referee tracks game time (distinct from real time). In dungeons, turns are tracked; in wilderness, days.
 
@@ -1477,7 +1477,7 @@ Tracks weight and bulk of gear and treasure. Maximum load: 1,600 coins (cannot m
 
 ### Ability Checks
 
-*(PDF p.114)*
+*(PDF printed p.216)*
 
 Roll 1d20 ≤ ability score = success. Modifiers: –4 (easy) to +4 (very difficult). Natural 1 = success; natural 20 = failure.
 
@@ -1491,7 +1491,7 @@ Roll 1d20 ≤ ability score = success. Modifiers: –4 (easy) to +4 (very diffic
 
 ### Saving Throws
 
-*(PDF p.115)*
+*(PDF printed p.217)*
 
 Five categories:
 - **Death or Poison (D):** Death ray or poison.
@@ -1507,7 +1507,7 @@ Five categories:
 
 ### Hazards and Challenges
 
-*(PDF p.116–117)*
+*(PDF printed p.218–219)*
 
 - **Climbing:** Referee may require DEX ability check. Sheer surfaces normally impossible without special equipment or class abilities.
 - **Darkness:** Light sources enable 30' radius normal vision.
@@ -1521,7 +1521,7 @@ Five categories:
 
 ### Dungeon Adventuring
 
-*(PDF p.118–119)*
+*(PDF printed p.220–221)*
 
 **Doors:**
 - *Secret doors:* Search 10'×10' area. 1-in-6 chance of finding (some classes have better chance).
@@ -1556,7 +1556,7 @@ Five categories:
 
 ### Wilderness Adventuring
 
-*(PDF p.120–121)*
+*(PDF printed p.222–223)*
 
 **Distance:** Ranges and movement rates measured in yards (tripled). Spell area effects still in feet.
 
@@ -1598,7 +1598,7 @@ Five categories:
 
 ### Waterborne Adventuring
 
-*(PDF p.122–123)*
+*(PDF printed p.224–225)*
 
 **Distance:** Ranges/movement in yards (tripled). Spell areas in feet.
 
@@ -1651,7 +1651,7 @@ Five categories:
 
 ### Encounters
 
-*(PDF p.124–125)*
+*(PDF printed p.226–227)*
 
 **Surprise:** Each unaware side rolls 1d6. Result of 1–2 = surprised. Both surprised = momentary confusion. One side surprised = opponent gets 1 free round.
 
@@ -1685,7 +1685,7 @@ Five categories:
 
 ### Evasion and Pursuit
 
-*(PDF p.126–127)*
+*(PDF printed p.228–229)*
 
 #### In the Dungeon
 
@@ -1746,7 +1746,7 @@ Success = pursuer cannot catch up until next day (only if random encounter indic
 
 ## Combat
 
-*(PDF p.130–135)*
+*(PDF printed p.234–237)*
 
 ### Combat Sequence Per Round
 
@@ -1885,7 +1885,7 @@ Characters with **STR 13+** may forfeit their attack that round to act purely de
 
 ### Morale (Optional Rule)
 
-*(PDF p.133)*
+*(PDF printed p.238)*
 
 Monsters have a morale rating (2–12). Score of 2 = never fights. Score of 12 = fights to death.
 
@@ -1912,7 +1912,7 @@ Monsters have a morale rating (2–12). Score of 2 = never fights. Score of 12 =
 
 ### Combat Tables
 
-*(PDF p.134–135)*
+*(PDF printed p.240–241)*
 
 **Normal Humans (NH):** Non-adventuring humans. Less than 1 HD. Own saving throw and attack row.
 

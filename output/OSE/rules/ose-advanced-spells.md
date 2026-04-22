@@ -15,7 +15,7 @@
 
 ## Cleric Spells
 
-*(PDF p.78–87)*
+*(PDF printed p.134–143)*
 
 ### 1st Level Spells
 
@@ -348,7 +348,7 @@ Two uses:
 
 ## Magic-User Spells
 
-*(PDF p.90–110)*
+*(PDF printed p.190–211)*
 
 ### 1st Level Spells
 
@@ -1101,7 +1101,7 @@ Transforms stone into living flesh. Especially useful for restoring petrified cr
 
 ## Druid Spells
 
-*(PDF p.148–157)*
+*(PDF printed p.146–155)*
 
 ### 1st Level Spells
 
@@ -1552,7 +1552,7 @@ A barrier of tough, thorny plants is conjured at a point of the caster's choosin
 
 ## Illusionist Spells
 
-*(PDF p.160–189)*
+*(PDF printed p.158–183)*
 
 ### 1st Level Spells
 
@@ -2038,7 +2038,7 @@ The caster's person—along with everything worn or carried—becomes shadowy an
 
 ### 4th Level Spells
 
-*(PDF p.174–177)*
+*(PDF printed p.172–175)*
 
 #### Confusion
 
@@ -2201,7 +2201,7 @@ An area is cloaked with a combination of invisibility and illusion, making it se
 
 ### 5th Level Spells
 
-*(PDF p.178–183)*
+*(PDF printed p.176–181)*
 
 #### Chaos
 
@@ -2387,7 +2387,7 @@ This spell sends an apparition to deliver a message to a named subject.
 
 ### 6th Level Spells
 
-*(PDF p.184–189)*
+*(PDF printed p.182–187)*
 
 #### Acid Fog
 
