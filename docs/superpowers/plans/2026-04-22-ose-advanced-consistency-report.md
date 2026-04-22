@@ -17,13 +17,13 @@
 
 ## Summary
 
-- Files checked: 2 / 8
+- Files checked: 3 / 8
 - Bugs: 1
 - Missing: 10
 - Extra: 0
 - Campaign annotations: 8
-- Formatting: 26
-- Spot-checks passed: 20
+- Formatting: 30
+- Spot-checks passed: 30
 
 ## Known intentional deviations
 
@@ -180,7 +180,53 @@ However, the 7 classic classes (Cleric, Dwarf, Elf, Fighter, Halfling, Magic-Use
 
 ## File: ose-advanced-spells.md
 
-_(Task 4 populates this section.)_
+### Counts
+
+| Category | Count |
+|---|---|
+| `[bug]` | 0 |
+| `[missing]` | 0 |
+| `[extra]` | 0 |
+| `[formatting]` | 4 |
+| `[ok-spot]` | 10 |
+
+### Notes on structure and page numbering
+
+The file covers all 4 spell lists (Cleric, Magic-User, Druid, Illusionist) in a single file. The Index at L9–12 orders them Cleric → Magic-User → Druid → Illusionist, which is the order they appear in the body. All spell counts per level are exactly right:
+
+| List | L1 | L2 | L3 | L4 | L5 | L6 | Total |
+|---|---|---|---|---|---|---|---|
+| Cleric | 8 | 8 | 6 | 6 | 6 | — | 34 |
+| Magic-User | 12 | 12 | 12 | 12 | 12 | 12 | 72 |
+| Druid | 8 | 8 | 6 | 6 | 6 | — | 34 |
+| Illusionist | 12 | 12 | 12 | 12 | 12 | 12 | 72 |
+| **Total** | | | | | | | **212** |
+
+All 212 spells are present with correct level assignments. No spells are missing or extra.
+
+The file uses **PDF document page numbers** throughout (as cited in `*(PDF p.…)*` section headers), not printed page numbers as the task convention requires. Additionally, the Cleric and Magic-User section headers have severely wrong page references (appear to come from an earlier draft or a different book), while the Druid and Illusionist headers use doc pages that are 2 off from the correct printed pages.
+
+The "Fire Ball" spell (Magic-User L3, L616) is rendered as two words, matching the PDF exactly — this is not a bug.
+
+### Formatting issues — page references
+
+- `[formatting]` spells.md:L18 | `*(PDF p.78–87)*` for Cleric Spells is wrong — actual printed pages are 134–143 (doc 136–145). Off by ~56 pages; likely copied from an earlier draft or OSE Classic book.
+- `[formatting]` spells.md:L351 | `*(PDF p.90–110)*` for Magic-User Spells is wrong — actual printed pages are 190–211 (doc 192–213). Off by ~100 pages; inconsistently different error magnitude from Cleric.
+- `[formatting]` spells.md:L1104 | `*(PDF p.148–157)*` for Druid Spells uses PDF document pages, not printed pages — actual printed pages are 146–155 (doc 148–157). Should be `*(PDF p.146–155)*`.
+- `[formatting]` spells.md:L1555 | `*(PDF p.160–189)*` for Illusionist Spells uses PDF document pages, not printed pages — actual printed pages are 158–187 (doc 160–189). Should be `*(PDF p.158–187)*`.
+
+### Spot-checks
+
+- `[ok-spot]` spells.md:L22–31 | PDF Player printed p.134 (doc p.136) | Cleric 1: *Cure Light Wounds*: Duration Instant, Range "The caster or a creature touched", heals 1d6+1 hp, reversed Cause Light Wounds inflicts 1d6+1 — matches PDF exactly
+- `[ok-spot]` spells.md:L225–230 | PDF Player printed p.139 (doc p.141) | Cleric 3: *Striking*: Duration 1 turn, Range 30', +1d6 damage, treated as magical — matches PDF exactly
+- `[ok-spot]` spells.md:L334–345 | PDF Player printed p.143 (doc p.145) | Cleric 5: *Raise Dead*: Duration Instant, Range 120', time limit 4 days/level above 7th, 2-week weakness period, reversed Finger of Death (save vs death) — matches PDF exactly
+- `[ok-spot]` spells.md:L1138–1147 | PDF Player printed p.147 (doc p.149) | Druid 1: *Entangle*: Duration 1 turn, Range 80', 20' radius area, save vs spells — matches PDF exactly
+- `[ok-spot]` spells.md:L1314–1325 | PDF Player printed p.150 (doc p.152) | Druid 3: *Call Lightning*: Duration 1 turn/level, Range 360', 10' radius area per strike, 8d6 damage (save vs spells for half), requires storm clouds — matches PDF exactly
+- `[ok-spot]` spells.md:L1570–1600 | PDF Player printed p.159 (doc p.161) | Illusionist 1: *Chromatic Orb*: Duration Instant, Range 60', 7-row table (Quartz 1d4 to Sapphire 2d8 Paralysis), all 7 colour/damage/effect rows and all 7 effect descriptions match PDF exactly
+- `[ok-spot]` spells.md:L1790–1801 | PDF Player printed p.168 (doc p.170) | Illusionist 2: *Hypnotic Pattern*: Duration Concentration, Range "30' square around the caster", 30'×30' area, up to 24 HD affected, save vs spells — matches PDF exactly
+- `[ok-spot]` spells.md:L411–419 | PDF Player printed p.191 (doc p.193) | Magic-User 1: *Magic Missile*: Duration 1 turn, Range 150', hits unerringly, 1d6+1 damage, two additional missiles per 5 levels (3 at 6th–10th, 5 at 11th–15th) — matches PDF exactly
+- `[ok-spot]` spells.md:L616–622 | PDF Player printed p.196 (doc p.198) | Magic-User 3: *Fire Ball*: Duration Instant, Range 240', 20' radius sphere, 1d6/caster level (save vs spells for half) — matches PDF exactly (two-word "Fire Ball" spelling also matches PDF)
+- `[ok-spot]` spells.md:L835–844 | PDF Player printed p.204 (doc p.206) | Magic-User 5: *Cloudkill*: Duration 6 turns, Range 30', 30' diameter, moves 60'/turn, sinks, 1 hp/round contact, <5 HD save vs death each round or die — matches PDF exactly
 
 ## File: ose-advanced-monsters.md
 
