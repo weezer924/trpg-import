@@ -27,6 +27,59 @@
 - Spot-checks passed: 58
 - Cross-file notes: 1
 
+## Remediation status (2026-04-22)
+
+Findings below are historical — the table here tracks what has since been fixed. The "Summary" counters above are pre-remediation and reflect the audit as performed, not the current state.
+
+### Fixed (committed)
+
+**Commit `80e2408` (P0/P1 small fixes — "档一"):**
+
+| Item | File | Severity | Status |
+|---|---|---|---|
+| Magic-User weapons missing "staff (optional)" | classes.md:L1146 | `[bug]` | ✅ fixed |
+| Doppelgänger heading + Index anchor (umlaut) | monsters.md:L42, L770 | `[formatting]` | ✅ fixed |
+| Level Titles: 15 of 22 classes absent | rules.md:L469–494 | `[missing]` | ✅ fixed (expanded from 7 to 22 classes, alphabetical) |
+| Deepcommon language note | rules.md:L364 | `[missing]` | ✅ fixed |
+| Dogs subsection (Hunting / War Dog stat blocks) | rules.md:L776 new `### Dogs` | `[missing]` | ✅ fixed |
+| Dog armour entry in Tack and Harness table | rules.md:L795 (in `#### Tack and Harness`) | `[missing]` | ✅ fixed |
+| Druid Spell List index (34 spells) | rules.md:L1362 | `[missing]` | ✅ fixed |
+| Illusionist Spell List index (72 spells) | rules.md:L1374 | `[missing]` | ✅ fixed |
+
+**Commit `3af2a73` (P1 mid-size sections — "档二"):**
+
+| Item | File | Severity | Status |
+|---|---|---|---|
+| Poison section (4 bloodstream + 5 ingested + tables + application rules) | rules.md:L703 new `### Poison` | `[missing]` | ✅ fixed |
+| Turning the Undead rules (base + optional limits) | rules.md:L1287 new `### Turning the Undead` | `[missing]` | ✅ fixed |
+| Party Organisation (Marching Order, Caller, Mapper, Dividing Treasure) | rules.md:L1394 new `### Party Organisation` | `[missing]` | ✅ fixed |
+| Encounter Tables duplication (monsters.md had a 311-line simpler copy) | monsters.md:L3185 replaced with redirect | `[duplication]` | ✅ fixed (canonical version in referee.md) |
+
+### Remaining (not yet fixed)
+
+**P0 — large re-imports (require separate worktree session with parallel agents per CLAUDE.md workflow):**
+
+- 95 missing monster entries in `ose-advanced-monsters.md` (Lich, Mimic, Couatl, Tarrasque, Hag, Banshee, Bulette, Rakshasa, Ghost, etc.) — see "Missing monsters (complete list — 95)" section below
+- ~97 missing miscellaneous magic items in `ose-advanced-treasures.md` (Deck of Many Things, Portable Hole, Cube of Force, Figurine of Wondrous Power, Ioun Stones, Sphere of Annihilation, etc.) — see "Missing miscellaneous magic items (sample list)" section below
+
+**P2 — page-reference hygiene (batch-scriptable):**
+
+- 18 systematic page-reference errors in `ose-advanced-rules.md` from Advancement section onward (copied from OSE Classic, not Advanced Player's Tome)
+- 8 classic-class page references in `ose-advanced-classes.md` (Cleric, Dwarf, Elf, Fighter, Halfling, Magic-User, Thief page refs + overview range)
+- 4 spell-section page references in `ose-advanced-spells.md`
+- Systematic HTML `<!-- PDF p.NNN -->` comments in `ose-advanced-monsters.md` (appear to cite OSE Classic, not Advanced Referee's Tome)
+- 2 page-ref offsets in `ose-advanced-referee.md` (Awarding XP + Encounter Tables range)
+
+### Remediation summary by severity
+
+| Severity | Pre-audit | Fixed in 80e2408 | Fixed in 3af2a73 | Still open |
+|---|---:|---:|---:|---:|
+| `[bug]` | 1 | 1 | 0 | **0** |
+| `[missing]` | ~202 | 8 (rules.md items + rows) | 3 (rules.md sections) | **~192** (95 monsters + ~97 magic items) |
+| `[extra]` | 0 | — | — | **0** |
+| `[duplication]` | 1 | — | 1 | **0** |
+| `[formatting]` | 35 | 1 (Doppelgänger) | — | **34** (page refs — P2) |
+
 ## Known intentional deviations
 
 `output/OSE/rules/ose-advanced-rules.md` has an uncommitted diff adding campaign-specific notes ("this campaign uses the Advanced Method", "enabled in this campaign") around Player Characters → Character Creation Options, Creating a Character: Advanced/Basic Method, and Combat → advanced combat options. Classify all such lines as `[campaign-annotation]`.
