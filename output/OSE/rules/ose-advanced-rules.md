@@ -361,6 +361,8 @@ Native languages are determined by class. These always include **Common** and th
 
 **The Common Tongue:** Widespread among intelligent species. All PC races and many monsters speak Common. The referee may rule that different cultures have different languages.
 
+**Deepcommon:** Creatures native to the Underworld speak an alternative common tongue known as Deepcommon.
+
 **Alignment Languages:** All intelligent beings know a secret, unwritten language of gestures, signs, and code words associated with their alignment. Beings of the same alignment can communicate this way. Others will recognise an alignment language is being used but won't understand. Changing alignment means forgetting the former language and learning the new one.
 
 **Other Languages:** Many demihuman and monster species have their own language. PCs with high INT may choose from the following:
@@ -468,12 +470,27 @@ When a character gains enough XP to reach the next experience level, consult the
 
 In some campaigns, characters gain titles as they advance. These may be granted by guilds, colleges, or temples. Titles vary by campaign world; the following may be used as inspiration:
 
-- **Cleric:** Acolyte, Adept, Priest(ess), Vicar, Curate, Elder, Bishop, Lama, Matriarch (Patriarch).
+- **Acrobat:** Apprentice, Tumbler, Jumper, Gymnast, Vaulter, Leaper, Aerialist, Acrobat, Master Acrobat.
+- **Assassin:** Bravo, Rutterkin, Waghalter, Murderer, Thug, Killer, Cutthroat, Executioner, Assassin.
+- **Barbarian:** Hunter, Huntsmaster (Huntsmistress), Barbarian Warrior, Barbarian Hero, Berserker, Barbarian Champion, Horde Master (Mistress), Conqueror, Barbarian Lord (Lady).
+- **Bard:** Rhymer, Lyricist, Sonnateer, Skald, Troubadour, Minstrel, Muse, Lorist, Bard.
+- **Cleric:** Acolyte, Adept, Priest(ess), Vicar, Curate, Elder, Bishop, Lama, Patriarch (Matriarch).
+- **Drow:** Acolyte/Veteran, Adept/Warrior, Priest(ess)/Swordmaster, Vicar/Hero, Curate/Swashbuckler, Elder/Myrmidon, Bishop/Champion, Lama/Superhero, Patriarch (Matriarch)/Lord (Lady).
+- **Druid:** Aspirant, Ovate, Initiate of the 1st Circle, Initiate of the 2nd Circle, Initiate of the 3rd Circle, Initiate of the 4th Circle, Initiate of the 5th Circle, Initiate of the 6th Circle, Druid.
+- **Duergar:** Skulk, Prowler, Scavenger, Warden, Mentalist, Kineticist, Vanisher, Duergar Champion, Duergar Lord (Lady).
 - **Dwarf:** Dwarven Veteran, Dwarven Warrior, Dwarven Swordmaster, Dwarven Hero, Dwarven Swashbuckler, Dwarven Myrmidon, Dwarven Champion, Dwarven Superhero, Dwarven Lord (Lady).
-- **Elf:** Medium/Veteran, Seer/Warrior, Conjurer/Swordmaster, Magician/Hero, Enchanter(Enchantress)/Swashbuckler, Warlock(Witch)/Myrmidon, Sorcerer(Sorceress)/Champion, Necromancer/Superhero, Wizard/Lord (Lady).
+- **Elf:** Medium/Veteran, Seer/Warrior, Conjurer/Swordmaster, Magician/Hero, Enchanter (Enchantress)/Swashbuckler, Warlock (Witch)/Myrmidon, Sorcerer (Sorceress)/Champion, Necromancer/Superhero, Wizard/Lord (Lady).
 - **Fighter:** Veteran, Warrior, Swordmaster, Hero, Swashbuckler, Myrmidon, Champion, Superhero, Lord (Lady).
+- **Gnome:** Gnome Prestidigitator, Minor Gnome Trickster, Gnome Trickster, Master Gnome Trickster, Gnome Cabalist, Gnome Visionist, Gnome Phantasmist, Gnome Apparitionist, Gnome Spellbinder, Gnome Illusionist.
+- **Half-Elf:** Veteran, Warrior/Medium, Swordmaster/Seer, Hero/Seer, Swashbuckler/Conjurer, Myrmidon/Magician, Champion/Magician, Superhero/Enchanter (Enchantress), Lord (Lady)/Warlock (Witch).
 - **Halfling:** Halfling Veteran, Halfling Warrior, Halfling Swordmaster, Halfling Hero, Halfling Swashbuckler, Halfling Myrmidon, Halfling Champion, Sheriff.
+- **Half-Orc:** Outlaw, Pickpocket, Brigand, Bandit, Raider, Pillager, Marauder, Plunderer, Bandit Lord (Lady).
+- **Illusionist:** Prestidigitator, Minor Trickster, Trickster, Master Trickster, Cabalist, Visionist, Phantasmist, Apparitionist, Spellbinder, Illusionist.
+- **Knight:** Rider, Lancer, Armiger, Scutifer, Esquire, Knight Errant, Knight Bachelor, Knight, Knightly Lord (Lady).
 - **Magic-User:** Medium, Seer, Conjurer, Magician, Enchanter (Enchantress), Warlock (Witch), Sorcerer (Sorceress), Necromancer, Wizard.
+- **Paladin:** Gallant, Keeper, Protector, Defender, Warder, Guardian, Chevalier, Justiciar, Paladin.
+- **Ranger:** Runner, Strider, Scout, Courser, Tracker, Guide, Pathfinder, Ranger, Ranger Knight.
+- **Svirfneblin:** Miner, Tunneller, Delver, Prospector, Excavator, Seeker, Gem Hunter, Stonespeaker, Svirfneblin Lord (Lady).
 - **Thief:** Apprentice, Footpad, Robber, Burglar, Cutpurse, Sharper, Pilferer, Thief, Master Thief.
 
 ### High-Level Play (Optional Rule)
@@ -756,15 +773,32 @@ Damage: Die rolled when using the optional rule for variable weapon damage.
 | Horse (war) | 250 | 24 | 120' (40') | 4,000 | 12 | 60' (20') | 8,000 |
 | Mule | 30 | 24 | 120' (40') | 2,000 | 12 | 60' (20') | 4,000 |
 
+### Dogs
+
+| Dog Type | Cost (gp) | Miles/Day | MV |
+|----------|----------:|----------:|:--:|
+| Hunting | 17 | 36 | 180' (60') |
+| War | 25 | 24 | 120' (40') |
+
+**Hunting Dog** — Domestic breeds selected for intelligence and excellent sense of smell. AC 7 [12], HD 1+2 (6hp), Att 1 × bite (1d6), THAC0 18 [+1], MV 180' (60'), SV D12 W13 P14 B15 S16 (1), ML 10, AL Neutral, XP 15
+- **Tracking:** By scent. Once started, very difficult to put off the trail.
+- **Command:** Trained to attack on owner's command.
+
+**War Dog** — Large domestic breeds selected for bulk and ferocious nature. AC 8 [11], HD 2+2 (11hp), Att 1 × bite (2d4), THAC0 17 [+2], MV 120' (40'), SV D12 W13 P14 B15 S16 (1), ML 11, AL Neutral, XP 25
+- **Armour:** Trained to wear armour (see Tack and Harness).
+- **Command:** Trained to attack on owner's command.
+
 #### Tack and Harness
 
 | Item | Cost (gp) |
 |------|----------:|
-| Barding | 150 |
+| Dog armour | 25 |
+| Horse barding | 150 |
 | Saddle and bridle | 25 |
 | Saddle bags | 5 |
 
-- **Barding:** Leather and plate metal armour. AC 5 [14], weighs 600 coins.
+- **Dog armour:** Light leather armour with a spiked collar. Provides the animal with AC 6 [13].
+- **Horse barding:** Leather and plate metal armour. AC 5 [14], weighs 600 coins.
 - **Saddle bags:** Hold up to 300 coins weight.
 
 ### Land Vehicles
@@ -1262,6 +1296,32 @@ Reversible spells: Reversed version noted in parentheses.
 **5th Level:** 1. Animate Dead, 2. Cloudkill, 3. Conjure Elemental, 4. Contact Higher Plane, 5. Feeblemind, 6. Hold Monster, 7. Magic Jar, 8. Pass-Wall, 9. Telekinesis, 10. Teleport, 11. Transmute Rock to Mud (Mud to Rock), 12. Wall of Stone
 
 **6th Level:** 1. Anti-Magic Shell, 2. Control Weather, 3. Death Spell, 4. Disintegrate, 5. Geas (Remove Geas), 6. Invisible Stalker, 7. Lower Water, 8. Move Earth, 9. Part Water, 10. Projected Image, 11. Reincarnation, 12. Stone to Flesh (Flesh to Stone)
+
+### Druid Spell List
+
+**1st Level:** 1. Animal Friendship, 2. Detect Danger, 3. Entangle, 4. Faerie Fire, 5. Invisibility to Animals, 6. Locate Plant or Animal, 7. Predict Weather, 8. Speak with Animals
+
+**2nd Level:** 1. Barkskin, 2. Create Water, 3. Cure Light Wounds, 4. Heat Metal, 5. Obscuring Mist, 6. Produce Flame, 7. Slow Poison, 8. Warp Wood
+
+**3rd Level:** 1. Call Lightning, 2. Growth of Nature, 3. Hold Animal, 4. Protection from Poison, 5. Tree Shape, 6. Water Breathing
+
+**4th Level:** 1. Cure Serious Wounds, 2. Dispel Magic, 3. Protection from Fire and Lightning, 4. Speak with Plants, 5. Summon Animals, 6. Temperature Control
+
+**5th Level:** 1. Commune with Nature, 2. Control Weather, 3. Pass Plant, 4. Protection from Plants and Animals, 5. Transmute Rock to Mud, 6. Wall of Thorns
+
+### Illusionist Spell List
+
+**1st Level:** 1. Auditory Illusion, 2. Chromatic Orb, 3. Colour Spray, 4. Dancing Lights, 5. Detect Illusion, 6. Glamour, 7. Hypnotism, 8. Light, 9. Phantasmal Force, 10. Read Magic, 11. Spook, 12. Wall of Fog
+
+**2nd Level:** 1. Blindness / Deafness, 2. Blur, 3. Detect Magic, 4. False Aura, 5. Fascinate, 6. Hypnotic Pattern, 7. Improved Phantasmal Force, 8. Invisibility, 9. Magic Mouth, 10. Mirror Image, 11. Quasimorph, 12. Whispering Wind
+
+**3rd Level:** 1. Blacklight, 2. Dispel Illusion, 3. Fear, 4. Hallucinatory Terrain, 5. Invisibility 10' Radius, 6. Nondetection, 7. Paralysation, 8. Phantom Steed, 9. Rope Trick, 10. Spectral Force, 11. Suggestion, 12. Wraithform
+
+**4th Level:** 1. Confusion, 2. Dispel Magic, 3. Emotion, 4. Illusory Stamina, 5. Improved Invisibility, 6. Massmorph, 7. Minor Creation, 8. Phantasmal Killer, 9. Rainbow Pattern, 10. Shadow Monsters, 11. Solid Fog, 12. Veil of Abandonment
+
+**5th Level:** 1. Chaos, 2. Demi-Shadow Monsters, 3. Illusion, 4. Looking Glass, 5. Major Creation, 6. Maze of Mirrors, 7. Projected Image, 8. Seeming, 9. Shadowcast, 10. Shadowy Transformation, 11. Time Flow, 12. Visitation
+
+**6th Level:** 1. Acid Fog, 2. Dream Quest, 3. Impersonation, 4. Manifest Dream, 5. Mass Suggestion, 6. Mislead, 7. Permanent Illusion, 8. Shades, 9. Through the Looking Glass, 10. Triggered Illusion, 11. True Seeing, 12. Vision
 
 ---
 

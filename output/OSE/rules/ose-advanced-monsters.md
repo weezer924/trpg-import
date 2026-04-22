@@ -39,7 +39,7 @@
 28. [Cyclops](#cyclops) — one-eyed giant
 29. [Dervish](#dervish) — fanatical nomads
 30. [Djinni (Lesser)](#djinni-lesser) — air elemental being
-31. [Doppelganger](#doppelganger) — shape-shifting mimic
+31. [Doppelgänger](#doppelgänger) — shape-shifting mimic
 32. [Dragon](#dragon) — black, blue, gold, green, red, sea, white
 33. [Dragon Turtle](#dragon-turtle) — gargantuan sea monster
 34. [Driver Ant](#driver-ant) — giant black ants
@@ -767,7 +767,7 @@ Highly magical, free-willed, intelligent beings from the elemental plane of air.
 
 ---
 
-### Doppelganger
+### Doppelgänger
 
 Intelligent, human-sized shape-shifters of wicked character and highly magical nature.
 

@@ -1143,7 +1143,7 @@ Magic-users are adventurers whose study of arcane secrets has taught them how to
 **Hit Dice:** 1d4
 **Maximum Level:** 14
 **Armour:** None
-**Weapons:** Dagger only
+**Weapons:** Dagger; staff (optional)
 **Languages:** Alignment, Common
 
 **Arcane Magic:** (See Magic, p68 for full details on arcane magic.)
