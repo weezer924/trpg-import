@@ -34,6 +34,7 @@
 | Classic Traveller (1981) | Traveller  | 已完成   | `Traveller/Classic Traveller/` | `output/Traveller/`   |
 | Shadowdark               | Shadowdark | 部分完成 | `Shadowdark/`             | `output/Shadowdark/`       |
 | Mythic GME 2e            | Mythic     | 导入中   | `Mythic GME/`             | `output/Mythic/`           |
+| Mausritter               | Mausritter | 已完成   | `OSR related/Mausritter/` | `output/Mausritter/`       |
 | OSR 相关                 | —          | 参考     | `OSR related/`            | —                          |
 | 其他系统                 | —          | 按需添加 | `{System}/`               | `output/{System}/`         |
 
