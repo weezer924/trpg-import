@@ -17,13 +17,14 @@
 
 ## Summary
 
-- Files checked: 5 / 8
+- Files checked: 6 / 8
 - Bugs: 1
 - Missing: 202 (10 rules + 95 monsters + 97 misc magic items)
 - Extra: 0
+- Duplication: 1 (Encounter Tables in both referee.md and monsters.md)
 - Campaign annotations: 8
-- Formatting: 33
-- Spot-checks passed: 43
+- Formatting: 35
+- Spot-checks passed: 48
 
 ## Known intentional deviations
 
@@ -358,7 +359,42 @@ Alchemist's Beaker, Amulet of Protection Against Possession, Apparatus of the Cr
 
 ## File: ose-advanced-referee.md
 
-_(Task 7 populates this section.)_
+### Counts
+
+| Category | Count |
+|---|---|
+| `[bug]` | 0 |
+| `[missing]` | 0 |
+| `[extra]` | 0 |
+| `[duplication]` | 1 (Encounter Tables live in both referee.md and monsters.md, with different content) |
+| `[formatting]` | 2 (page-ref offsets) |
+| `[ok-spot]` | 5 |
+
+### Notes
+
+All 9 Running Adventures sub-sections from PDF (Referee's Role, Handling PCs, Running the Game, Monsters and NPCs, Adventure Scenarios, Designing a Dungeon, Designing a Wilderness, Designing a Base Town, Awarding XP) are present.
+
+The NPC Encounters section (Adventuring Parties + Strongholds) is present, consistent with PDF.
+
+### Duplication with monsters.md
+
+- `[duplication]` referee.md:L191–606 vs monsters.md:L3186–3498 | Both files contain `## Encounter Tables`. The two versions are structurally different:
+  - **referee.md** uses PDF's "Sub-Table by Terrain" layout (Sub-Table 2 + Sub-Tables B/C/D/F/G/J/L/O/S) matching PDF Referee's Tome printed p.137-141. Roll mechanic: "Roll 1d4 and 1d10" — appears to be a multi-step encounter resolution matching PDF.
+  - **monsters.md** uses a consolidated "1d20 by Dungeon Level (1–3 / 4+) and Wilderness by Terrain" layout with single tables per level. Simpler but less faithful to PDF structure.
+  - Recommendation: **referee.md's version is canonical**; the monsters.md `## Encounter Tables` section should be removed or replaced with a reference to referee.md.
+
+### Formatting issues
+
+- `[formatting]` referee.md:L154 | Awarding XP page ref `*(PDF p.148)*` is wrong — printed p.18 (doc p.20). "p.148" looks like OSE Classic Rules Tome page.
+- `[formatting]` referee.md | Index range `*(PDF p.132–141)*` for Encounter Tables — printed p.134–141 (2-off).
+
+### Spot-checks
+
+- `[ok-spot]` referee.md:L25–55 | PDF Referee printed p.6–7 | Referee's Role + Handling PCs sections present with all sub-points (adjudication, neutrality, fair play, PC agency, etc.) matching PDF
+- `[ok-spot]` referee.md:L152–188 | PDF Referee printed p.18 | Awarding XP: treasure = 1gp → 1XP, magical treasure no XP, extraordinary-peril bonus (1 HD category higher), party-wide split including retainers — all rules text matches PDF
+- `[ok-spot]` referee.md:L160–182 | PDF Referee printed p.18 | Full XP-by-HD table: 20 rows (Less than 1 → 21+, with bonus tier for each). Values sampled: HD<1 → 5/1, HD 1 → 10/3, HD 1+ → 15/4, HD 2 → 20/5, HD 2+ → 25/10, HD 3 → 35/15, HD 4+ → 125/75, HD 9–10+ → 900/700, HD 17–20+ → 2000/1150, HD 21–21+ → 2500/2000 — all match PDF exactly
+- `[ok-spot]` referee.md:L355–405 | PDF Referee printed p.137 | Wilderness Encounter Sub-Table 2 (Prehistoric Animal / Undead / Unusual columns) present; spot row 1 = Bear Cave / Banshee / Basilisk matches PDF
+- `[ok-spot]` referee.md:L611–730 | PDF Referee printed p.142–144 | NPC Encounters (Adventuring Parties, Strongholds) section present and scoped to PDF's coverage
 
 ## File: ose-advanced-reference-booklet.md
 
