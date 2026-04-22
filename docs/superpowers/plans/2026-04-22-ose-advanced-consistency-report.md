@@ -17,14 +17,14 @@
 
 ## Summary
 
-- Files checked: 6 / 8
+- Files checked: 8 / 8
 - Bugs: 1
 - Missing: 202 (10 rules + 95 monsters + 97 misc magic items)
 - Extra: 0
 - Duplication: 1 (Encounter Tables in both referee.md and monsters.md)
 - Campaign annotations: 8
 - Formatting: 35
-- Spot-checks passed: 48
+- Spot-checks passed: 53
 
 ## Known intentional deviations
 
@@ -398,11 +398,69 @@ The NPC Encounters section (Adventuring Parties + Strongholds) is present, consi
 
 ## File: ose-advanced-reference-booklet.md
 
-_(Task 8 populates this section.)_
+### Counts
+
+| Category | Count |
+|---|---|
+| `[bug]` | 0 |
+| `[missing]` | 0 (main sections) |
+| `[extra]` | 0 |
+| `[formatting]` | 0 |
+| `[ok-spot]` | 3 |
+
+### Notes
+
+Source: OSE Advanced Fantasy Reference Booklet v1.0 (35 pages, 68 KB txt). The booklet is a condensed quick-reference extract of the Player's Tome + Referee's Tome tables.
+
+MD has **all 4 main sections** from the booklet ToC: Game Procedures, Monsters, Player Characters, Downtime and Equipment. Total 30 H2/H3 headings. Sub-sections track the PDF's organisation.
+
+### Spot-checks
+
+- `[ok-spot]` reference-booklet.md:L1007–1039 | PDF Reference Booklet p.? | **Turning the Undead**: Clerics table (11 rows × 8 HD columns) and Paladins table (11 rows × 8 HD columns) match PDF exactly. Level 1 vs 1 HD = 7, Level 9 vs 7-9 HD = T. Paladin starts at Level 3, shifted 2 levels back from Cleric.
+- `[ok-spot]` reference-booklet.md:L16 | PDF | 4 main sections (Game Procedures, Monsters, Player Characters, Downtime and Equipment) match booklet's "In This Book" introduction
+- `[ok-spot]` reference-booklet.md | No content generated beyond the booklet itself — this MD is a direct rendering of the Reference Booklet PDF, not cross-contaminated with Player's/Referee's Tome content
+
+### Not spot-checked (recommended for follow-up)
+
+- Encumbrance tables (reference-booklet.md:L44–81) — cross-check against both rules.md and the Player's Tome Adventuring section
+- Saving Throws tables (reference-booklet.md:L769–888) — cross-check against classes.md per-class saves
+- Spell Progression tables (reference-booklet.md:L1051–1197) — cross-check against classes.md spell progression columns
 
 ## File: ose-advanced-optional-rules-checklist.md
 
-_(Task 8 populates this section.)_
+### Counts
+
+| Category | Count |
+|---|---|
+| `[bug]` | 0 |
+| `[missing]` | 0 |
+| `[extra]` | 0 |
+| `[formatting]` | 0 |
+| `[ok-spot]` | 2 |
+
+### Notes
+
+Source: OSE Advance Fantasy Optional Rules Checklist v1.0 (1 page, 94-line txt). Both the MD and the PDF list exactly **30 optional rules**, split across two top-level categories ("Optional Rules" = base OSE / Classic-compatible, "Optional Advanced Rules" = Advanced-introduced).
+
+### Category structure (matches PDF)
+
+**Optional Rules** (13 rules across 4 categories):
+- Player Characters: 2 (Re-rolling HP 1s/2s; High-level play)
+- Advancement: 0 (empty header — PDF shows same)
+- Equipment: 3 (Reload; Encumbrance basic; Encumbrance detailed)
+- Adventuring: 8 (Ascending AC; Variable wind; Individual initiative; Variable weapon damage; Invulnerabilities; Subduing; Morale; Attack rolls using THAC0)
+
+**Optional Advanced Rules** (17 rules across 5 categories):
+- Player Characters: 2 (Separate race and class; Multiple classes)
+- Character Classes: 4 (Weapon proficiency; Restricted weapons; Weapon specialisation; Secondary skills)
+- Character Races: 2 (Lifting demihuman restrictions; Human racial abilities)
+- Magic: 4 (Arcane casters and staves; Advanced spell books; Limits on turning undead; Limits on returning from death)
+- Adventuring: 5 (Two weapons; Charging; Missile in melee; Parrying; Splash weapons)
+
+### Spot-checks
+
+- `[ok-spot]` optional-rules-checklist.md | PDF Checklist | **30 rules total, all present**, organised into the same two top-level sections with matching category sub-sections
+- `[ok-spot]` optional-rules-checklist.md:L76–80 | PDF Checklist | Two-weapon fighting description (primary –2, secondary –4 with DEX/STR prime-req) matches PDF exactly; Charging (+2 attack / –1 AC, once per encounter) matches; Parrying (STR 13+, forfeit attack, add STR bonus to AC) matches; Splash weapons miss (1d12 direction, 5' away, 5' radius, 1d2 damage) matches; AC 9 [10] for targeting a surface matches
 
 ## Cross-file consistency
 
