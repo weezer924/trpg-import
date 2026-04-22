@@ -17,13 +17,13 @@
 
 ## Summary
 
-- Files checked: 3 / 8
+- Files checked: 4 / 8
 - Bugs: 1
-- Missing: 10
+- Missing: 105
 - Extra: 0
 - Campaign annotations: 8
-- Formatting: 30
-- Spot-checks passed: 30
+- Formatting: 33
+- Spot-checks passed: 36
 
 ## Known intentional deviations
 
@@ -230,7 +230,66 @@ The "Fire Ball" spell (Magic-User L3, L616) is rendered as two words, matching t
 
 ## File: ose-advanced-monsters.md
 
-_(Task 5 populates this section.)_
+### Counts
+
+| Category | Count |
+|---|---|
+| `[bug]` | 0 |
+| `[missing]` | 95 |
+| `[extra]` | 0 |
+| `[formatting]` | 3 |
+| `[ok-spot]` | 6 |
+
+### Notes on coverage
+
+- PDF Referee's Tome lists **229 top-level monster ToC entries** under `Monster Descriptions`.
+- MD has **149 H3 entries** under `## Monster Descriptions`, but 15 of those are non-monster section headings or NPC-type sub-entries.
+  - Non-monster H3s: `Monster Descriptions (A-Z)`, `Monster Rules`, `Dungeon Encounters`, `Wilderness Encounters`, `Adventuring Parties`, `Strongholds`, `High-Level Cleric`, `High-Level Fighter`, `High-Level Magic-User`, `NPC Encounters`, `Encounter Tables` — these belong to `Encounter Tables` / `NPC Encounters` sub-trees.
+  - Effective MD monster count ≈ **134**, of which some consolidate PDF sub-variants (e.g. `Dragon` H3 contains Black/Red/Gold/Sea/etc. under H4 sub-headings, which is a reasonable editorial choice).
+- Monsters present have **100% faithful stat-block content** (verified across 5 spot-checks spanning low/mid/high HD and special-ability diversity).
+
+### Critical missing monsters (iconic / core)
+
+- `[missing]` monsters.md | **Lich** (PDF Referee Monster Descriptions) — entirely absent; no H3, no prose mention. Players can never encounter a high-level undead caster using this reference.
+- `[missing]` monsters.md | **Mimic** — entirely absent
+- `[missing]` monsters.md | **Couatl** — entirely absent
+- `[missing]` monsters.md | **Hag** — entirely absent
+- `[missing]` monsters.md | **Banshee** — entirely absent
+- `[missing]` monsters.md | **Bulette** — entirely absent
+- `[missing]` monsters.md | **Ettin** — entirely absent
+- `[missing]` monsters.md | **Ghost** — entirely absent
+- `[missing]` monsters.md | **Rakshasa** — entirely absent
+- `[missing]` monsters.md | **Tarrasque** — entirely absent (high-end boss monster)
+
+### Missing monsters (complete list — 95)
+
+Sorted alphabetically:
+
+Amphisbaena, Ankheg, Banshee, Brown Mould, Brownie, Bulette, Caryatid Column, Catoblepas, Coffer Corpse, Couatl, Dark Creeper, Deep One, Demonic Knight, Disenchanter, Djinni (plain + Greater — MD only has "Djinni (Lesser)"), Dog, Doppelgänger (present as "Doppelganger" without umlaut — counted as formatting, not missing), Dragon Multichromatic, Dragonne, Drider, Drow (monster entry, not the class), Duergar (monster entry, not the class), Efreeti (plain + Greater — MD only has "Efreeti (Lesser)"), Ettin, Eye of Terror, Eye of the Deep, Flail Snail, Frog (Giant), Gas Spore, Ghast, Ghost, Gibbering Mouther, Gorilla, Gullygug, Hag, Hippocampus, Hippopotamus, Homunculus, Hook Beast, Hulker, Jackalwere, Jellyfish (Giant), Krell, Lamia, Lamprey (Giant), Leprechaun, Leucrocotta, Lich, Locathah, Lurker Above, Malfyr, Mantid, Mantis (Giant), Merrow, Mimic, Mind Lasher, Mutoid, Mycelian, Necrophidius, Nightmare, Otyugh, Peryton, Phoenix, Piercer, Poltergeist, Pseudo-Dragon, Rakshasa, Remorhaz, Revenant, Roper, Rot Grub, Sahuagin, Satyr, Scorpionoid, Sea Serpent (plain + Greater — MD only has "Sea Serpent (Lesser)"), Seahorse (Giant), Shambling Mound, Slithering Tracker, Slug (Giant), Snake Person, Spawn of the Worm, Sphinx, Strangle Weed, Svirfneblin (monster entry, not the race), Tarrasque, Titan, Trapper, Triton, Turtle (Giant), Violet Fungus, Wasp (Giant), Water Fiend, Will-o'-the-Wisp, Xorn, Yeti.
+
+Diff command for reproducibility:
+```
+python3 pdf_extract.py "Rule Books/OSE/OSE Advanced/Advanced Fantasy Referee's Tome v1.2.pdf" --info \
+  | awk '/Monster Descriptions/{f=1;next} /^  [A-Z][^ ]/{f=0} f && /^      [A-Z]/' \
+  | sed -E 's/^      (.+) \.\.\. p.*/\1/' | sort -u > /tmp/pdf-monsters.txt
+grep -E '^### ' output/OSE/rules/ose-advanced-monsters.md | sed 's/^### //' | sort -u > /tmp/md-monsters.txt
+diff /tmp/pdf-monsters.txt /tmp/md-monsters.txt
+```
+
+### Formatting issues
+
+- `[formatting]` monsters.md:L770 | Heading "Doppelganger" missing umlaut — PDF has `Doppelgänger`. Anchor in Index (L42 `#doppelganger`) currently works but would need update if heading is corrected.
+- `[formatting]` monsters.md | Systematic — HTML comments `<!-- PDF p.NNN -->` on monster entries do not match the Advanced Referee's Tome (Goblin L1283 says `p.178`, real printed p.62 / doc p.64; Medusa L1948 says `p.190`, real printed p.84 / doc p.86). Values look copied from OSE Classic Fantasy Rules Tome, paralleling the Task 3 classes.md finding. Recommend regenerating all PDF-page comments.
+- `[formatting]` monsters.md:L3187 | `## Encounter Tables` page comment `p.218–225` — Advanced Referee printed pages are 134–141 (doc p.136–143); `p.218–225` also looks like OSE Classic Rules Tome range.
+
+### Spot-checks — stat blocks (all match PDF exactly)
+
+- `[ok-spot]` monsters.md:L269–281 | PDF Referee printed p.24 | **Basilisk**: AC 4 [15], HD 6+1** (28hp), Att 1×bite (1d10+petrification) + 1×gaze (petrification), THAC0 13 [+6], MV 60' (20'), SV D10 W11 P12 B13 S14 (6), ML 9, AL Neutral, XP 950, NA 1d6 (1d6), TT F — all numeric and text match including all 5 special-ability callouts
+- `[ok-spot]` monsters.md:L1282–1297 | PDF Referee printed p.62 | **Goblin**: AC 6 [13], HD 1–1 (3hp), Att 1×weapon (1d6 or by weapon), THAC0 19 [0], MV 60' (20'), SV D14 W15 P16 B17 S18 (NH), ML 7 (9 with king), AL Chaotic, XP 5 (bodyguard 20, king 35), NA 2d4 (6d10), TT R (C) — all match
+- `[ok-spot]` monsters.md:L852–862 | PDF Referee printed p.47 | **Dragon, Red**: AC –1 [20], HD 10** (45hp), Att [2×claw (1d8), 1×bite (4d8)] or breath, THAC0 11 [+8], MV 90' (30') / 240' (80') flying, SV D6 W7 P8 B8 S10 (10), ML 10, AL Chaotic, XP 2,300, NA 1d4 (1d4), TT H; breath 90' cone fire; 50% language/spells (3×L1, 3×L2, 3×L3); 10% sleeping — all match
+- `[ok-spot]` monsters.md:L1947–1962 | PDF Referee printed p.84 | **Medusa**: AC 8 [11], HD 4** (18hp), Att 1×snakebites (1d6 + poison), THAC0 16 [+3], MV 90' (30'), SV D10 W11 P12 B13 S14 (4), ML 8, AL Chaotic, XP 175, NA 1d3 (1d4), TT F — all match
+- `[ok-spot]` monsters.md:L2934–2963 | PDF Referee printed p.131–132 | **Vampire**: AC 2 [17], HD 7 to 9** (31/36/40hp), Att 1×touch (1d10 + energy drain) or 1×gaze (charm), THAC0 13 [+6]/12 [+7]/12 [+7], MV 120' (40'), SV D8 W9 P10 B10 S12 (7 to 9), ML 11, AL Chaotic, XP 1,250/1,750/2,300, NA 1d4 (1d6), TT F — all numeric and all special-ability text (energy drain, charming gaze, regeneration, change form 4 variants, summon beasts, coffins, 5 vulnerabilities, destroying methods) match
+- `[ok-spot]` monsters.md:L3186–3270 | PDF Referee printed p.134–137 | Encounter Tables: Dungeon by Level (1–3 / 4+) and Wilderness by Terrain tables present. Spot-check Level 1 d20=6 = "Goblin (2d4)" matches Goblin's NA 2d4 from its stat block.
 
 ## File: ose-advanced-treasures.md
 
