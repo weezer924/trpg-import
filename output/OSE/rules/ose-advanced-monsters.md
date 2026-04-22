@@ -239,6 +239,33 @@ Monsters are described by the following statistics.
 
 ---
 
+### Amphisbaena
+
+8' long giant snakes with a head at each end of their body. Dwell in all but the most extreme climes. Will usually only attack if cornered or surprised.
+
+*AC* 3 [16], *HD* 6* (27hp), *Att* 2 × bite (1d3 + poison), *THAC0* 14 [+5]
+*MV* 120' (40'), *SV* D10 W11 P12 B13 S14 (6), *ML* 8, *AL* Neutral, *XP* 500
+*NA* 1d3 (1d3), *TT* None
+
+- **Poison:** Causes death (save vs poison).
+- **Cold immunity:** Unharmed by cold-based attacks.
+
+---
+
+### Ankheg
+
+10'–20' long, many-legged, burrowing insects with tough shells and shiny black eyes. Consume soil but also enjoy fresh meat. Dwell in forests and fertile lands.
+
+*AC* 2 [17], *HD* 3** to 8** (13/18/22/27/31/36hp), *Att* 1 × bite (3d6 + acid) or 1 × acid squirt (4d8), *THAC0* By HD (17 [+2] to 12 [+7])
+*MV* 120' (40') / 60' (20') burrowing, *SV* By HD, *ML* 9, *AL* Neutral, *XP* 65/175/425/725/1,250/1,750
+*NA* 1d6 (1d6), *TT* C
+
+- **Ambush:** Hide just beneath the surface of the ground and burst out when something walks above.
+- **Acid:** Inflicts 1d4 damage per round until washed off or the victim dies.
+- **Acid squirt:** Once per day, may squirt digestive acid at a target up to 30' away. Save versus breath for half damage.
+
+---
+
 ### Ape, White
 
 Albino, herbivorous, gorilla-like apes that live in caves and emerge at night to forage.
@@ -262,6 +289,22 @@ NPC thieves who live by robbery.
 - **Trickery:** Use disguise or trickery to surprise victims.
 - **Leader:** May have a leader of 2nd level or higher (any human class).
 - **Hoard:** Only have treasure type A when encountered in their wilderness lair.
+
+---
+
+### Banshee
+
+Incorporeal female spirits that linger after death in order to cause suffering to the living. Haunt desolate moors.
+
+*AC* 0 [19], *HD* 7* (31hp), *Att* 1 × touch (1d8) or 1 × wail (death), *THAC0* 13 [+6]
+*MV* 150' (50'), *SV* D8 W9 P10 B10 S12 (7), *ML* 12, *AL* Chaotic, *XP* 850
+*NA* 1 (1), *TT* D
+
+- **Undead:** Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Energy immunity:** Unharmed by cold-based or electrical attacks.
+- **Wail:** All within 30' must save versus death or die. Usable once per day and only during the hours of darkness.
+- **Origin:** Legends say that banshees are the spirits of wicked female elves.
 
 ---
 
@@ -472,6 +515,37 @@ Outlaws and mercenaries who make a living by raiding settlements and attacking t
 
 ---
 
+### Brownie
+
+1½' tall humanoids, related to pixies and halflings. They are shy, but friendly with other lawful creatures. Dwell in peaceful meadows.
+
+*AC* 3 [16], *HD* ½ (2hp), *Att* 1 × knife (1d3), *THAC0* 19 [0]
+*MV* 120' (40'), *SV* D6 W7 P9 B11 S9 (Cleric 9), *ML* 7, *AL* Lawful, *XP* 5
+*NA* 3d6 (5d8), *TT* S
+
+- **Surprise:** Never surprised.
+- **Dimension door:** Once per day, can teleport to a known location within 360'.
+- **Ventriloquism:** Can cause voice to appear to come from any location or source (e.g. a statue or animal) within 60'.
+- **Dancing lights:** Can conjure bobbing lights within 60'.
+
+---
+
+### Brown Mould
+
+Deadly fungus that covers walls, ceilings, and other surfaces. Drains heat from any source.
+
+*AC* No hit roll required, *HD* 2* (9hp), *Att* None, *THAC0* 18 [+1]
+*MV* 0' (0'), *SV* D12 W13 P14 B15 S16 (2), *ML* 12, *AL* Neutral, *XP* 25
+*NA* 1d8 (1d4), *TT* None
+
+- **Cold aura:** The area around a brown mould is noticeably cooler than average.
+- **Area:** Each 10 square feet (e.g. 2' × 5') covered in brown mould is treated as one "individual". (A 10' × 10' area would consist of 10 individual moulds.)
+- **Immunity:** Unharmed by all attacks but magical cold.
+- **Heat drain:** Any creature within 5' of the mould suffers 1d8 damage per round.
+- **Multiplication:** Fire within 5' causes the mould to grow rapidly. Burning torch: 2 × size, burning oil: 4 × size, fire ball: 8 × size. Multiplication takes one round.
+
+---
+
 ### Buccaneer
 
 Sailors who make a living by raiding coastal settlements and robbing other ships. Typically ply rivers, lakes, and coastal waters; occasionally oceans.
@@ -498,6 +572,21 @@ Large, hairy goblins with an ungainly gait. Favour attacking by surprise.
 *NA* 2d4 (5d4), *TT* B
 
 - **Surprise:** On a 1–3, due to stealth.
+
+---
+
+### Bulette
+
+15' long, hard-shelled reptiles with huge maws, tiny eyes, and a shark-like crest upon the back. Have a ravenous appetite for the flesh of horses and humanoids (except elves). Love to dig halflings and gnomes out of their burrows.
+
+*AC* 0 [19], *HD* 9* (40hp), *Att* 1 × bite (4d12), 2 × claw (3d6), *THAC0* 12 [+7]
+*MV* 150' (50') / 30' (10') burrowing, *SV* D8 W9 P10 B10 S12 (9), *ML* 11, *AL* Neutral, *XP* 1,600
+*NA* 0 (1d2), *TT* None
+
+- **Ravenous:** Will attack anything living.
+- **Leap:** If cornered, can leap forward 20', attacking with all 4 claws.
+- **Armour plates:** Neck plates can be fashioned into magical shields.
+- **Origin:** Rumoured to be the result of a wizard's experiments in cross-breeding turtles, armadillos, and demons.
 
 ---
 
@@ -539,6 +628,21 @@ Irascible animals that are adapted to life in dry climates. Often used for trans
 
 - **Paralysis:** A hit by a tentacle causes paralysis for 2d4 turns (save versus paralysis). Paralysed victims will be devoured, if the crawler is left in peace.
 - **Cling:** Can walk on walls and ceilings.
+
+---
+
+### Caryatid Column
+
+7' tall stone pillars carved in the likeness of female warriors. Created by powerful spell casters to defend an object or area.
+
+*AC* 4 [15], *HD* 5 (22hp), *Att* 1 × sword (2d4), *THAC0* 15 [+4]
+*MV* 60' (20'), *SV* D10 W11 P12 B13 S14 (5), *ML* 12, *AL* Neutral, *XP* 175
+*NA* 1d12 (1d12), *TT* None
+
+- **Surprise:** On a 1–4, due to appearing like a normal stone pillar.
+- **Activation:** Come to life when a pre-ordained condition happens. Return to the form of a pillar when killed or when defensive function is fulfilled.
+- **Damage reduction:** Half damage from non-magical weapons.
+- **Shatter weapons:** 25% chance of weapons shattering if they hit. Chance reduced by 5% per magical "plus".
 
 ---
 
@@ -600,6 +704,21 @@ Large, solitary hunters with striped camouflage markings. Favour woodlands and c
 
 - **Pursuit:** See main entry.
 - **Surprise:** On a 1–4, in woodland, due to camouflage.
+
+---
+
+### Catoblepas
+
+Nightmarish creatures with a long, bone-tipped tail, a bloated buffalo-like body, stumpy legs, a long, thin neck, and a hideous, boar-like head. Dwell in swamps.
+
+*AC* 7 [12], *HD* 7** (31hp), *Att* 1 × tail (1d6 + stun), 1 × gaze (death), *THAC0* 13 [+6]
+*MV* 60' (20'), *SV* D10 W11 P12 B13 S14 (4), *ML* 8, *AL* Neutral, *XP* 1,250
+*NA* 0 (1d3), *TT* C
+
+- **Surprise:** On a roll of 1, a random character meets the catoblepas' gaze.
+- **Stunning blows:** A character hit by the tail must save versus paralysis (with a +4 bonus) or be knocked over and stunned (unable to move or act) for 1d6 rounds.
+- **Deadly gaze:** 1-in-4 chance of raising head to use gaze each combat round, looking at a character within 60', who must save versus death or die.
+- **Meeting gaze:** Causes instant death, without a saving throw.
 
 ---
 
@@ -670,6 +789,38 @@ Small, magical, bird / reptile hybrids with long serpent tails and the head, leg
 
 ---
 
+### Coffer Corpse
+
+Decaying corpses whose hateful spirits remain stranded in the interred body.
+
+*AC* 7 [12], *HD* 2** (9hp), *Att* 1 × grasp (1d6 + throttle), *THAC0* 18 [+1]
+*MV* 60' (20'), *SV* D12 W13 P14 B15 S16 (2), *ML* 12, *AL* Chaotic, *XP* 30
+*NA* 1 (1), *TT* B
+
+- **Undead:** Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
+- **Turning:** Treated as a 4 HD monster.
+- **Throttle:** On a successful grasp attack, the corpse's hands lock around the victim's throat, inflicting 1d6 automatic damage each subsequent round.
+- **Mundane weapons:** Seem to damage but do not. (Can only be harmed by magical attacks.) A mundane attack with "damage" of 4 or more causes the coffer corpse to drop to the ground as if dead, rising again next round. Any characters who were in melee with it must save versus spells or flee.
+- **Fleeing characters:** Run away at maximum speed for 4 rounds. There is also a 50% chance of dropping held items.
+
+---
+
+### Couatl
+
+12' long, winged, feathered serpents of great intelligence and magical power. Dwell in hot jungles. Considered divine by native people.
+
+*AC* 4 [15], *HD* 9**** (40hp), *Att* 1 × bite (1d3 + poison + constriction), *THAC0* 12 [+7]
+*MV* 60' (20') / 180' (60') flying, *SV* D8 W9 P10 B10 S12 (9), *ML* 9, *AL* Lawful, *XP* 3,700
+*NA* 1d4 (1d4), *TT* B, I
+
+- **Poison:** Causes death (save vs poison).
+- **Constriction:** When a bite attack is successful, the couatl wraps around the victim and begins to squeeze, inflicting 2d4 automatic damage immediately and on each subsequent round.
+- **Shape changing:** May take on the form of a person or animal.
+- **Spell casting:** Roll 1d10. 1–4: spells as a 5th level magic-user; 5–8: spells as a 7th level cleric; 9–10: both. (See the Advanced Fantasy Player's Tome.)
+- **Speech:** Common, plus languages of birds and serpents.
+
+---
+
 ### Crab, Giant
 
 Unintelligent crustaceans that lurk in coastal waters and creep along beaches. Cannot swim.
@@ -727,6 +878,68 @@ More than 50' long. Usually encountered in Lost World regions. Will attack small
 
 ---
 
+### Dark Creeper
+
+Scrawny, pale-skinned humanoids (4' tall), who dress in dark cloaks and dwell deep underground. Covet and attempt to steal magic items.
+
+*AC* 7 [12] (0 [19] in darkness), *HD* 1+1* (5hp), *Att* 1 × dagger (1d4), *THAC0* 18 [+1]
+*MV* 90' (30'), *SV* D12 W13 P14 B15 S16 (1), *ML* 7, *AL* Chaotic, *XP* 19 (leader: 45)
+*NA* 1 (2d4 × 10), *TT* C, U, V
+
+- **Surprise:** On a 1–3, due to stealth.
+- **Extinguish light:** 3 times per day. All light sources within 50' are extinguished and cannot be relit for 1 hour. Magical light sources have a 50% chance of remaining active.
+- **Pick pockets:** 35% chance per round. On a roll of 70+, the target notices.
+- **Detect magic items:** Up to 15' away.
+- **Infravision:** 90'.
+- **Upon death:** The creeper's body spontaneously combusts. All within 10' must save versus spells or be blinded for 1d6 turns. Non-metal gear in the creeper's possession is destroyed. (Non-metal magic items have a 50% chance of surviving the combustion.)
+- **Leader:** A 6' tall, 2+1 HD leader (with 10hp) is present for every 25 dark creepers. Leaders are known as dark stalkers. The leader can conjure a wall of fog twice per day, blocking vision in a 20' cube for 1 turn. If a leader is killed, characters within 10' also suffer 3d6 damage (half damage if the save succeeds).
+
+---
+
+### Deep One
+
+Scaly, fish-headed, amphibious humanoids with long, webbed fingers and toes. Once dwelt in coastal regions and warred with humans. Now only encountered in the Underworld, in deep caverns and around subterranean seas.
+
+*AC* 5 [14], *HD* 3 (13hp), *Att* 2 × claw (1d4+1) or 1 × weapon (1d6 or by weapon), *THAC0* 17 [+2]
+*MV* 90' (30') / 180' (60') swimming, *SV* D12 W13 P14 B15 S16 (3), *ML* 8, *AL* Chaotic, *XP* 35 (leader: 175, cleric: 125, priest-king: 1,750)
+*NA* 2d12 (4d10 × 10), *TT* M, S
+
+- **Infravision:** 90'.
+- **Hate the sun:** –1 to hit in full daylight.
+- **Poison immunity:** Unharmed by any form of poison.
+- **Magic resistance:** Unaffected by illusions, sleep, charm, and hold spells.
+- **Leader:** Groups are led by a 5 HD deep one (with 22hp).
+- **Clerics:** A 4 HD sea priest(ess) is present for every 25 deep ones encountered. This creature has the abilities of a 4th level chaotic cleric.
+- **Priest-king:** A deep one community with over 200 individuals will be led by a priest-king with 8 HD and the abilities of a 10th level chaotic cleric.
+- **Hate mind lashers:** Attack on sight.
+- **Slaves and sacrifices:** Enslave other humanoids (especially humans) and sacrifice them to alien gods.
+- **Trade:** Will occasionally come to the surface on moonlit nights to trade with coastal settlements. They offer rare metals and gems, but demand human sacrifices or deep one/human unions.
+
+---
+
+### Demonic Knight
+
+Holy warriors who were seduced by dark powers and now exist as undead monsters of great power and evil. Dwell in the haunted stronghold they built in life or in the service of their dark master.
+
+*AC* 0 [19], *HD* 10*** (45hp), *Att* 1 × magic sword (1d8 + 6) or 1 × magic, *THAC0* 11 [+8]
+*MV* 120' (40'), *SV* D6 W7 P8 B8 S10 (10), *ML* 12, *AL* Chaotic, *XP* 3,000
+*NA* 1 (1), *TT* None
+
+- **Undead:** Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
+- **Aura of fear:** Any who come within 5' must save versus spells or flee at maximum speed for 10 rounds, with a 50% chance of dropping held items.
+- **Detect invisible creatures:** Within 60'.
+- **Command undead:** Can command mindless undead to do their bidding.
+- **Magic powers:** Once per day each:
+  - a. **Dispel magic:** Ends spells of non-instantaneous duration within a 20' cube area.
+  - b. **Fireball:** 14d6 damage to all in a 20' radius area up to 240' away. Save versus spells for half damage.
+  - c. **Wall of ice:** Up to 1,200 sq ft, lasting 12 turns. Blocks creatures with less than 4 HD. Creatures with 4+ HD can break through but suffer 1d6 damage.
+- **Magic resistance:** +4 bonus to all saving throws against magic.
+- **Spell turning:** 10% chance of reflecting spells back onto the caster.
+- **Steed:** Usually riding a nightmare.
+- **Magic sword:** Harms creatures which are invulnerable to mundane attacks. Sword carries a curse that affects any non-chaotic being who holds it.
+
+---
+
 ### Dervish
 
 Fanatically religious, nomadic people who wander steppes and desert regions, living in tents.
@@ -744,25 +957,98 @@ Fanatically religious, nomadic people who wander steppes and desert regions, liv
 
 ---
 
-### Djinni (Lesser)
+### Disenchanter
+
+Pale blue, intelligent, partially transparent, dromedary-like creatures with long, flexible snouts. Feed on magical energy.
+
+*AC* 5 [14], *HD* 5* (22hp), *Att* 1 × probing snout (disenchantment), *THAC0* 15 [+4]
+*MV* 120' (40'), *SV* D10 W11 P12 B13 S14 (5), *ML* 7, *AL* Neutral, *XP* 300
+*NA* 1d2 (0), *TT* None
+
+- **Detect magic items:** Up to 60'. Can differentiate items by power level.
+- **Attack magic items:** Attack the most powerful magic item nearby. Small or concealed items (e.g. a ring or a potion in a backpack) incur a –4 penalty to attack.
+- **Disenchantment:** A magic item hit by the proboscis is drained of all magic.
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+
+---
+
+### Djinni
 
 Highly magical, free-willed, intelligent beings from the elemental plane of air. Tall humanoids wreathed in clouds.
+
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Magic powers:**
+  - a. **Gaseous form**
+  - b. **Invisibility**
+  - c. **Illusion:** Visual and audial. No concentration required. Remains until touched or dispelled.
+  - d. **Create food and drink:** For 12 humans and mounts for one day.
+  - e. **Conjure metallic objects:** Up to 1,000 coins weight. Temporary: hardness determines duration (gold: 1 day; iron: 1 round).
+  - f. **Conjure soft goods / wooden objects:** Up to 1,000 coins weight. Permanent.
+- **If killed:** Return to the plane of air.
+
+#### Djinni (Lesser)
 
 *AC* 5 [14], *HD* 7+1* (32hp), *Att* 1 × fists (2d8), magic, *THAC0* 12 [+7]
 *MV* 90' (30') / 240' (80') flying, *SV* D4 W5 P6 B5 S8 (14), *ML* 12, *AL* Neutral, *XP* 850
 *NA* 1 (1), *TT* None
 
-- **Mundane damage immunity:** Can only be harmed by magical attacks.
-- **Magic powers:** Each can be used three times per day:
-  - a. **Whirlwind form:** 5 rounds to transform (or change back). 70' tall, 20' wide at top, 10' wide at base. Moves at 120' (40'). 2d6 damage to all in path. Creatures with less than 2HD swept aside (save vs death).
-  - b. **Gaseous form**
-  - c. **Invisibility**
-  - d. **Illusion:** Visual and audial. No concentration required. Remains until touched or dispelled.
-  - e. **Create food and drink:** For 12 humans and mounts for one day.
-  - f. **Conjure metallic objects:** Up to 1,000 coins weight. Temporary: hardness determines duration (gold: 1 day; iron: 1 round).
-  - g. **Conjure soft goods / wooden objects:** Up to 1,000 coins weight. Permanent.
+- **Magic powers:** Each can be used three times per day.
+- **Whirlwind form:** Up to three times per day. 5 rounds to transform (or change back). 70' tall, 20' wide at top, 10' wide at base. Moves at 120' (40'). 2d6 damage to all in path. Creatures with less than 2HD swept aside (save versus death).
 - **Carrying capacity:** 6,000 coins without fatigue. Up to 12,000 coins for 3 turns walking / 1 turn flying. Must rest 1 turn afterwards.
-- **If killed:** Returns to the plane of air.
+
+#### Djinni (Greater)
+
+Mighty rulers (sometimes called pashas) of the race of djinn.
+
+*AC* –2 [21], *HD* 15** (67hp), *Att* 2 × fists (3d10), magic, *THAC0* 9 [+10]
+*MV* 120' (40') / 360' (120') flying, *SV* D2 W2 P2 B2 S2 (30), *ML* 11, *AL* Neutral, *XP* 3,250
+*NA* 1 (1), *TT* None
+
+- **Regeneration:** A damaged greater djinni gains 3hp at the start of each round, if it is alive.
+- **Magic powers:** May use one power each round, without limit.
+- **Whirlwind form:** 1 round to transform (or change back). 120' tall, 40' wide at top, 10' wide at base. Moves at 240' (80'). 3d12 damage to all in path. Creatures with less than 5 HD are slain (save versus death).
+- **Wishes:** At most once per day, may grant another's wish.
+- **Carrying capacity:** 10,000 coins without fatigue. Up to 20,000 coins for 3 turns walking / 1 turn flying. Must rest 1 turn afterwards.
+
+---
+
+### Dog
+
+Carnivorous pack hunters. Many domesticated breeds exist.
+
+#### Hunting Dog
+
+Domestic breeds selected for their intelligence and excellent sense of smell.
+
+*AC* 7 [12], *HD* 1+2 (6hp), *Att* 1 × bite (1d6), *THAC0* 18 [+1]
+*MV* 180' (60'), *SV* D12 W13 P14 B15 S16 (1), *ML* 10, *AL* Neutral, *XP* 15
+*NA* 0 (0), *TT* None
+
+- **Tracking:** By scent. Once started, very difficult to put off the trail.
+- **Command:** Trained to attack on owner's command.
+- **Domestic:** Not encountered in the wild. Typically cost 17gp.
+
+#### War Dog
+
+Large domestic breeds selected for their bulk and ferocious nature.
+
+*AC* 6 [13], *HD* 2+2 (11hp), *Att* 1 × bite (2d4), *THAC0* 17 [+2]
+*MV* 120' (40'), *SV* D12 W13 P14 B15 S16 (1), *ML* 11, *AL* Neutral, *XP* 25
+*NA* 0 (0), *TT* None
+
+- **Armour:** Typically wear a spiked collar and light leather armour. AC reduced to 8 [11] if unarmoured.
+- **Command:** Trained to attack on owner's command.
+- **Domestic:** Not encountered in the wild. Typically cost 25gp (50gp with armour).
+
+#### Wild Dog
+
+Packs of wild dogs roam the wilderness or may, rarely, be encountered in caves.
+
+*AC* 7 [12], *HD* 2 (9hp), *Att* 1 × bite (1d6), *THAC0* 18 [+1]
+*MV* 180' (60'), *SV* D12 W13 P14 B15 S16 (1), *ML* 6 (8 in larger packs), *AL* Neutral, *XP* 20
+*NA* 2d6 (3d6), *TT* None
+
+- **Strength in numbers:** Packs of 4 or more wild dogs have morale 8. If the pack is reduced to less than 50% of its original size, this morale bonus is lost.
 
 ---
 
@@ -887,6 +1173,45 @@ Found in cold regions.
 
 ---
 
+### Dragon, Multichromatic
+
+Giant, thoroughly evil, female dragons with five heads of different colours. Dwell in deep dungeon lairs.
+
+*AC* –1 [20], *HD* 16*** (72hp), *Att* 5 × bite (damage by head colour) or breath, 1 × tail sting (1d6 + poison), *THAC0* 8 [+11]
+*MV* 60' (20') / 180' (60') flying, *SV* D2 W3 P4 B3 S6 (16), *ML* 11, *AL* Chaotic, *XP* 4,200
+*NA* 1 (1), *TT* H × 2
+
+- **Poison:** Causes death (save vs poison).
+- **White head:** Bite: 2d8 damage. Breath: 80' long cone of cold, 2' wide at the mouth, 30' at far end.
+- **Black head:** Bite: 2d10 damage. Breath: 60' long line of acid, 5' wide.
+- **Green head:** Bite: 3d8 damage. Breath: Cloud of chlorine gas, 50' long, 40' wide, 20' high.
+- **Blue head:** Bite: 3d10 damage. Breath: 100' long line of lightning, 5' wide.
+- **Red head:** Bite: 4d8 damage. Breath: 90' long cone of fire, 2' wide at the mouth, 30' at far end.
+- **Breath weapons:** Each head can breathe once per day. All caught in the area suffer damage equal to the dragon's current hp (save versus breath for half).
+- **Languages:** Common and dragon.
+- **Magic-user spells:** White head: 2 × 1st level, black head: 2 × 2nd level, green head: 2 × 3rd level, blue head: 2 × 4th level, red head: 2 × 5th level.
+- **Disabling heads:** Heads may be targeted individually. An attack that inflicts 10 or more damage disables a head (unable to attack, breathe, or cast spells).
+- **Head regeneration:** Disabled heads regenerate in one day.
+- **Sleeping:** 10%. If sleeping, may be attacked for 1 round with a +2 bonus to hit.
+- **Unique:** There is rumoured to be but a single multichromatic dragon—the ruler of all coloured dragons.
+
+---
+
+### Dragonne
+
+Small (5' tall at the shoulder) dragons with brass-coloured scales, small wings, and the head of a lion. Dreaded for their fearsome roar.
+
+*AC* 3 [16], *HD* 8* (36hp), *Att* 2 × claw (1d6), [1 × bite (4d6) or 1 × roar], *THAC0* 12 [+7]
+*MV* 150' (50') / 90' (30') flying, *SV* D8 W9 P10 B10 S12 (8), *ML* 8, *AL* Neutral, *XP* 1,200
+*NA* 1 (1d4), *TT* E
+
+- **Roar:** All within 120' must save versus paralysis or be weakened (–2 penalty to attack rolls) for 2d6 rounds. Characters within 30' who fail the save are also deafened for the same duration.
+- **Roar frequency:** May be used at most every 3 rounds.
+- **Limited flight:** Small wings allow flight for at most 3 turns.
+- **Languages:** Dragon and sphinx.
+
+---
+
 ### Dragon Turtle
 
 Gargantuan sea monsters with the body and hard shell of a turtle and the head, tail, and legs of a dragon. Lurk in huge caves in the depths of the ocean, only rarely coming to the surface.
@@ -902,6 +1227,22 @@ Gargantuan sea monsters with the body and hard shell of a turtle and the head, t
 
 ---
 
+### Drider
+
+Hybrid monstrosities with the 8 legs of a giant spider and the hideously bloated upper body and head of a drow. Drider are drow who have undergone a ritual of transformation into bound servants of their spider deity. Hunt in the caverns of the Underworld. Consume the blood of paralysed victims.
+
+*AC* 3 [16], *HD* 6*** (27hp), *Att* 1 × weapon (1d6 or by weapon) or 1 × bite (1d4 + poison), *THAC0* 14 [+5]
+*MV* 120' (40'), *SV* D10 W11 P11 B13 S10 (Drow 6), *ML* 9, *AL* Neutral, *XP* 950
+*NA* 1d4 (1d4), *TT* L
+
+- **Stalking:** Often stalk prey and strike at an opportune moment.
+- **Weapons:** Swords, axes, bows.
+- **Poison:** Causes paralysis for 1d2 turns (save versus poison with a –2 penalty).
+- **Divine spells:** Cast spells as a 6th level drow (see the Advanced Fantasy Player's Tome).
+- **Spiders:** 1-in-10 chance of being accompanied by 2d6 giant spiders.
+
+---
+
 ### Driver Ant
 
 Giant (6' long), omnivorous, black ants.
@@ -913,6 +1254,22 @@ Giant (6' long), omnivorous, black ants.
 - **Rapacious:** Consume everything in their path, when hungry.
 - **Morale:** Attack relentlessly, once they are engaged in melee (morale 12). Will even pursue through flames.
 - **Lair treasure:** 30% chance of 1d10 × 1,000gp worth of gold nuggets, mined by the ants.
+
+---
+
+### Drow
+
+Slender, fey demihumans with pointed ears, jet black skin, and hair of silver or white. Also known as dark elves. Live in the deep places of the Underworld and worship strange, subterranean deities.
+
+*AC* 5 [14], *HD* 1+1* (5hp), *Att* 1 × weapon (1d8 or by weapon), *THAC0* 18 [+1]
+*MV* 120' (40'), *SV* D12 W13 P13 B15 S12 (Drow 1), *ML* 8 (10 with leader), *AL* Neutral, *XP* 19
+*NA* 1d4 (2d12), *TT* E
+
+- **Infravision:** 90'.
+- **Light sensitivity:** Suffer a –2 penalty to attack rolls and a –1 penalty to AC when in bright light (daylight, continual light).
+- **Divine spells:** Each drow has either light or its reverse, darkness, memorized.
+- **Spiders:** 1-in-4 chance of being accompanied by 1d4 giant spiders.
+- **Leader:** Groups of 15+ are led by a drow of level 1d6 + 1 (see the Advanced Fantasy Player's Tome). The leader may have magical items: 5% chance per level for each magic item table.
 
 ---
 
@@ -932,6 +1289,22 @@ Shy, peaceful, yet wary tree spirits that can manifest as beautiful female human
 
 ---
 
+### Duergar
+
+Short, scrawny, bearded demihumans with grey skin and hair and ugly visages. Also known as grey dwarves. Renowned for their avaricious and xenophobic natures. Dwell in strongholds in the Underworld.
+
+*AC* 4 [15], *HD* 1* (4hp), *Att* 1 × weapon (1d8 or by weapon), *THAC0* 19 [0]
+*MV* 60' (20'), *SV* D8 W9 P10 B13 S12 (Duergar 1), *ML* 8 (10 with leader), *AL* Neutral, *XP* 13
+*NA* 1d6 (5d8), *TT* G
+
+- **Surprise:** On a 1–3, due to their ability to briefly become invisible.
+- **Enlargement:** Once per day, may double in size for 1d4 rounds. While enlarged, inflict double damage in melee.
+- **Infravision:** 90'.
+- **Light sensitivity:** Suffer a –2 penalty to attack rolls and a –1 penalty to AC when in bright light (daylight, continual light).
+- **Leader:** A leader of level 1d6 + 2 (see the Advanced Fantasy Player's Tome) is present for every 20 duergars. The leader may have magic items: 5% chance per level for each magic item table (except Scrolls and Wands/Staves/Rods).
+
+---
+
 ### Dwarf
 
 Short, stocky, bearded demihumans who dwell in mountains and subterranean realms.
@@ -945,26 +1318,44 @@ Short, stocky, bearded demihumans who dwell in mountains and subterranean realms
 
 ---
 
-### Efreeti (Lesser)
+### Efreeti
 
 Highly magical, free-willed, intelligent beings from the elemental plane of fire. Manifest as giant men with demonic faces and an aura of heat and smoke. Solidify out of billowing smoke clouds.
+
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Magic powers:**
+  - a. **Invisibility**
+  - b. **Illusion:** Visual and audial. No concentration required. Remains until touched or dispelled.
+  - c. **Create wall of fire**
+  - d. **Create food and drink:** For 12 humans and mounts for one day.
+  - e. **Conjure metallic objects:** Up to 1,000 coins weight. Temporary: hardness determines duration (gold: 1 day; iron: 1 round).
+  - f. **Conjure soft goods / wooden objects:** Up to 1,000 coins weight. Permanent.
+- **Hate djinn:** Attack on sight.
+
+#### Efreeti (Lesser)
 
 *AC* 3 [16], *HD* 10* (45hp), *Att* 1 × fists (2d8), magic, *THAC0* 11 [+8]
 *MV* 90' (30') / 240' (80') flying, *SV* D4 W5 P6 B5 S8 (15), *ML* 12, *AL* Chaotic, *XP* 1,600
 *NA* 1 (1), *TT* None
 
-- **Mundane damage immunity:** Can only be harmed by magical attacks.
-- **Magic powers:** Each can be used three times per day:
-  - a. **Pillar of flame:** Transform into a column of fire for up to 3 rounds. Flammable items within 5' are ignited. Attacks do additional 1d8 damage (3d8 total).
-  - b. **Invisibility**
-  - c. **Illusion:** Visual and audial. No concentration required. Remains until touched or dispelled.
-  - d. **Create wall of fire**
-  - e. **Create food and drink:** For 12 humans and mounts for one day.
-  - f. **Conjure metallic objects:** Up to 1,000 coins weight. Temporary: hardness determines duration (gold: 1 day; iron: 1 round).
-  - g. **Conjure soft goods / wooden objects:** Up to 1,000 coins weight. Permanent.
-- **Carrying capacity:** Up to 10,000 coins (flying).
-- **Hate djinn:** Attack on sight.
+- **Magic powers:** Each can be used three times per day.
+- **Pillar of flame:** Up to 3 times a day, transform into a column of fire for up to 3 rounds. Flammable items within 5' are ignited. Attacks do additional 1d8 damage (3d8 total).
+- **Max load:** Up to 10,000 coins (flying).
 - **Bound servitor:** Efreet summoning spells can be researched by high-level magic-users. Can be bound to servitude for 101 days. Efreet are treacherous and will follow commands to the letter while subverting the intent.
+
+#### Efreeti (Greater)
+
+Mighty rulers (sometimes called amirs) of the race of efreet.
+
+*AC* –2 [21], *HD* 20*** (90hp), *Att* 2 × fists (3d10), magic, *THAC0* 6 [+13]
+*MV* 120' (40') / 360' (120') flying, *SV* D2 W2 P2 B2 S2 (30), *ML* 11, *AL* Chaotic, *XP* 5,450
+*NA* 1 (1), *TT* None
+
+- **Regeneration:** A damaged greater efreeti gains 2hp at the start of each round, as long as it is alive.
+- **Magic powers:** May use one power each round, without limit.
+- **Pillar of flame:** Transform into a column of fire for as long as desired. Flammable items within 15' are ignited. Attacks do additional 2d8 damage (3d10 + 2d8 total).
+- **Wishes:** At most once per day, may grant another's wish.
+- **Max load:** Up to 20,000 coins (flying).
 
 ---
 
@@ -1055,6 +1446,65 @@ Slender, fey demihumans with pointed ears. Live in harmony with nature, in beaut
 
 ---
 
+### Ettin
+
+Two-headed giants (13' tall) of low intelligence and brutal temperament, dressing in filthy animal skins. Lair underground and operate only in darkness.
+
+*AC* 4 [15], *HD* 10 (45hp), *Att* 2 × spiked club (3d6), *THAC0* 11 [+8]
+*MV* 120' (40'), *SV* D6 W7 P8 B8 S10 (10), *ML* 8, *AL* Chaotic, *XP* 900
+*NA* 1d4 (1d4), *TT* C
+
+- **Surprise:** Only surprised on a roll of 1, as both heads are vigilant.
+- **Related to orcs:** Some sages claim that the two races are related.
+
+---
+
+### Eye of Terror
+
+Floating, scaled spheres (5' diameter) with a wide, toothy maw, a large central eye, and 10 smaller eyes on stalks. Hateful, scheming, and avaricious. Lair deep underground.
+
+*AC* 0 [19], *HD* 11***** (49hp), *Att* 1 × bite (2d4), eye rays, *THAC0* 11 [+8]
+*MV* 30' (10'), *SV* D6 W7 P8 B8 S10 (11), *ML* 12, *AL* Chaotic, *XP* 5,100
+*NA* 1 (0), *TT* L, N, O
+
+- **Anti-magic ray:** The central eye dispels magic up to 60' in front. Spell casting fails and ongoing spells and magic items are temporarily disabled. Characters within the ray cannot be affected by the rays from the eye stalks (see below).
+- **Attacking the central eye:** AC 2 [17], 20hp (separate hp pool). If reduced to 0hp, the anti-magic ray ceases to function.
+- **Eye stalks:** Each stalk can shoot a magical ray up to once per round. Up to 4 stalks can fire in one direction at a time:
+  - a. **Charm person:** Range 120'. Save versus spells or be charmed: move towards the eye of terror (resisting those who try to prevent it); obey the eye's commands (if understood); defend the eye; unable to cast spells or use magic items; unable to harm the eye. Killing the eye of terror breaks the charm.
+  - b. **Charm monster:** As charm person, but affects any creature (except undead).
+  - c. **Sleep:** Range 240'. One creature of 4+1 HD or 2d8 Hit Dice of creatures of 4 HD or less fall asleep for 4d4 turns.
+  - d. **Telekinesis:** Range 120'. Move up to 5,000 coins of weight up to 20' per round. Creatures may save vs spells.
+  - e. **Petrify:** Range 30'. Save versus petrification or turn to stone.
+  - f. **Disintegrate:** Range 20'. Save versus death or be annihilated.
+  - g. **Cause fear:** Range 120'. Save versus spells or flee for 2 turns.
+  - h. **Slow:** Range 240'. Save versus spells or move and attack at half speed for 3 turns.
+  - i. **Cause serious wounds:** Range 60'. Inflicts 2d6+2 damage.
+  - j. **Death spell:** Range 40'. Up to 4d8 HD of creatures within a 60' cube area must save versus death or die instantly. Undead or creatures with greater than 7 HD are unaffected.
+- **Attacking the eye stalks:** AC 7 [12], 12hp (separate hp pool each). Successful attacks damage a random eye stalk. If reduced to 0hp, a stalk's ray cannot function.
+- **Eye regeneration:** Disabled eyes regenerate in 2d4 days.
+
+---
+
+### Eye of the Deep
+
+Floating, scaled spheres (5' diameter) with a wide, toothy maw, two lobster-like pincers, a large central eye, and two smaller eyes on stalks. Hateful, scheming, and avaricious. Lair in the depths of the ocean.
+
+*AC* 5 [14], *HD* 13**** (58hp), *Att* 2 × claw (2d4), 1 × bite (2d10), eye rays, *THAC0* 10 [+9]
+*MV* 150' (50') swimming, *SV* D4 W5 P6 B5 S8 (13), *ML* 10, *AL* Chaotic, *XP* 5,150
+*NA* 0 (1), *TT* C
+
+- **Blinding ray:** The central eye emits a ray of blinding light up to 60' in front. Characters must save versus death or be paralysed for 1d10 rounds.
+- **Blinding ray frequency:** May be used at most every 3 rounds.
+- **Attacking the central eye:** AC 5 [14], 20hp (separate hp pool). If reduced to 0hp, the blinding ray ceases to function.
+- **Eye stalks:** Each stalk can shoot a magical ray up to once per round:
+  - a. **Hold person:** Range 120'. Save versus spells or be paralysed for 6 turns. May target 1d4 creatures in a group or an individual (–2 to the save). Affects persons of up to 4+1 HD.
+  - b. **Hold monster:** As hold person, but affects any creature (except undead).
+- **Illusion:** Instead of using its hold person/monster eye rays, both eye stalks may be used to create a convincing illusion affecting all senses.
+- **Attacking the eye stalks:** AC 5 [14], 12hp (separate hp pool each). Successful attacks damage a random eye stalk. If reduced to 0hp, a stalk's magic ray cannot function.
+- **Eye regeneration:** Disabled eyes regenerate in 1d4 days.
+
+---
+
 ### Ferret, Giant
 
 3' long ferrets that hunt giant rats in their burrows. Sometimes kept by humans for this aptitude.
@@ -1120,6 +1570,50 @@ Huge (nearly 30' long), aggressive fish with armour plating.
 
 ---
 
+### Flail Snail
+
+Huge (8' tall) snails with a cluster of flailing, club-like tentacles and a swirling, multi-coloured shell. Dwell underground.
+
+*AC* 0 [19], *HD* 4* (18hp), *Att* 4 to 6 × club tentacle (1d8), *THAC0* 16 [+3]
+*MV* 30' (10'), *SV* D12 W13 P14 B15 S16 (2), *ML* 10 (7 in light), *AL* Neutral, *XP* 125
+*NA* 1 (0), *TT* None
+
+- **Club tentacles:** 1d3+3 tentacles; each can attack once per round.
+- **Attacking the tentacles:** AC 3 [16], 8hp (separate hp pool each). If reduced to 0hp, the tentacle can no longer attack.
+- **If all tentacles are killed:** Snail dies.
+- **Upon death:** Withdraws into shell and shrieks for 1d3 turns. 50% chance per turn of attracting a wandering monster.
+- **Hate light:** In bright light (daylight, continual light, etc.) morale reduced to 7.
+- **Immunities:** Unharmed by poison and fire (including magical fire).
+- **Magic reflection:** Shell protects against magic. Each time snail is targeted by magic, roll 1d6: 1: reflected back at caster; 2–3: cancelled; 4–6: normal effect.
+- **Shell's properties:** Magic reflective properties remain for 1d6 months after the snail's death. Weighs 2,500 coins.
+
+---
+
+### Frog, Giant
+
+#### Giant Mutant Frog
+
+Giant (2' long), mutant frogs with vicious talons and teeth. Highly aggressive, voraciously carnivorous (will even eat their own kind). Dwell underground or in forlorn swamps.
+
+*AC* 7 [12], *HD* 1+4 (8hp), *Att* 2 × talons (1d2), 1 × bite (1d4+1), *THAC0* 18 [+1]
+*MV* 60' (20') / 120' (40') swimming, *SV* D12 W13 P14 B15 S16 (1), *ML* 9, *AL* Neutral, *XP* 15
+*NA* 3d6 (3d6), *TT* None
+
+- **Origin:** Rumoured to have been specially bred by magical means.
+
+#### Giant Poisonous Frog
+
+Brightly coloured giant frogs (3' long) that lurk in warm pools or damp caverns.
+
+*AC* 7 [12], *HD* 1** (4hp), *Att* 1 × bite (1d4 + poison), *THAC0* 19 [0]
+*MV* 90' (30'), *SV* D12 W13 P14 B15 S16 (1), *ML* 9, *AL* Neutral, *XP* 16
+*NA* 1d6 (1d6), *TT* None
+
+- **Sticky tongue:** Attack up to 15' away. On a hit, prey (up to dwarf size) is dragged to the mouth and bitten.
+- **Poison:** Save versus poison with a +4 bonus or die in 1d6 turns.
+
+---
+
 ### Gargoyle
 <!-- PDF p.175 -->
 
@@ -1136,6 +1630,21 @@ Magical monsters that look like hideous, horned, winged statues. Semi-intelligen
 
 ---
 
+### Gas Spore
+
+Mindless, floating fungi that appear almost exactly like an eye of terror—a scaled sphere (5' diameter) with a wide, toothy maw, a large central eye, and 10 smaller eyes on stalks. Drift around in caverns and ruins.
+
+*AC* 9 [10], *HD* 1hp*, *Att* 1 × spore spray (infection), *THAC0* 19 [0]
+*MV* 30' (10'), *SV* D12 W13 P14 B15 S16 (1), *ML* 9, *AL* Neutral, *XP* 6
+*NA* 1d3 (1), *TT* None
+
+- **Distinguishing:** In dim light: 1-in-10 chance of noticing the fungal nature of a gas spore; 10' or closer: 1-in-4 chance.
+- **Upon death:** The gas spore explodes. All within 20' suffer 6d6 damage (save versus wands for half).
+- **Spore spray:** Affects all characters in a 20' cube area in front of the gas spore. Save versus poison or become infected with spores.
+- **Spore infection:** 1d6 gas spores grow inside the victim, killing them in 24 hours. Cure disease removes the spores.
+
+---
+
 ### Gelatinous Cube
 <!-- PDF p.175 -->
 
@@ -1149,6 +1658,39 @@ Magical monsters that look like hideous, horned, winged statues. Semi-intelligen
 - **Paralysis:** For 2d4 turns (save versus paralysis).
 - **Energy immunity:** Unharmed by cold or lightning.
 - **Embedded items:** Indigestible items (e.g. gems, coins) are carried around inside the cube.
+
+---
+
+### Ghast
+
+Grotesque, animalistic, undead humans that crave the flesh of the living. Exude a nauseating carrion stench. Found among packs of ghouls.
+
+*AC* 3 [16], *HD* 4* (18hp), *Att* 2 × claw (1d4 + paralysis), 1 × bite (1d8 + paralysis), *THAC0* 16 [+3]
+*MV* 150' (50'), *SV* D10 W11 P12 B13 S14 (4), *ML* 9, *AL* Chaotic, *XP* 125
+*NA* 1d3 (1d6), *TT* B
+
+- **Carrion stench:** Those within 10' must save versus poison or suffer –2 to hit, while in melee with ghasts.
+- **Paralysis:** For 2d4 turns (save versus paralysis). Creatures larger than ogres are unaffected. After paralysing a target, ghasts will attack others.
+- **Undead:** Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
+
+---
+
+### Ghost
+
+Incorporeal spirits of the restless dead, often carrying an ethereal lantern or candle.
+
+*AC* 0 [19], *HD* 10*** (45hp), *Att* 1 × touch (life drain) or possession, *THAC0* 11 [+8]
+*MV* 90' (30'), *SV* D6 W7 P8 B8 S10 (10), *ML* 10, *AL* Any, *XP* 3,000
+*NA* 1 (1), *TT* E, N
+
+- **Undead:** Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
+- **Mundane damage immunity:** Only harmed by silver weapons or magic.
+- **Aura of fear:** All seeing a ghost must save versus spells or age 10 years and flee for 2d6 turns. Divine spell casters of 7th level or higher are immune.
+- **Life draining touch:** Victim permanently loses 1d4 points of CON. If reduced to 0 CON, the victim dies. Someone killed in this way cannot be raised from the dead by any means short of a wish.
+- **Possession:** A victim within 60' must save versus spells or become possessed. When possessing a victim, the ghost disappears.
+- **Possessed victims:** The ghost gains full control over the victim's body, but is not able to make the victim cast spells.
+- **Expelling:** A ghost is expelled from a possessed victim by dispel evil or if the victim dies.
+- **Alignment:** Lawful ghosts may aid characters, leading them out of danger. Neutral ghosts may reveal their treasure hoard if their remains are consecrated, releasing them from undeath. Chaotic ghosts are hateful of all life.
 
 ---
 
@@ -1244,6 +1786,22 @@ Hairy, brutish, 12' tall humanoids of low intelligence. Dwell in foothills. Know
 - **Lightning immunity:** Unharmed by lightning. Enjoy basking in storms.
 - **Castle:** High among mountain peaks, atop banks of clouds, or in deep waters.
 - **Guardians:** 2d4 griffons. Underwater: 3d6 giant crabs.
+
+---
+
+### Gibbering Mouther
+
+5' mounds of rubbery jelly with hundreds of deranged eyes and mouths. Dwell in dark, cold, dank places. Consume all living matter they come across.
+
+*AC* 0 [19], *HD* 4+3*** (21hp), *Att* 6 × bite (1hp + attach + slip) or gibbering, *THAC0* 15 [+4]
+*MV* 30' (10'), *SV* D12 W13 P14 B15 S16 (2), *ML* 10, *AL* Neutral, *XP* 350
+*NA* 1 (1), *TT* L
+
+- **Surprise:** On a 1–5, if mouther remains motionless with eyes and mouths closed. Appears like a mound of earth.
+- **Attaching:** On a successful bite attack, the mouth locks onto the victim and inflicts 1 damage in subsequent rounds.
+- **Detach:** If mouther or victim dies.
+- **Slip:** 1-in-6 chance of victim falling to the ground. The mouther then immediately oozes on top of the victim and attacks with 6 more mouths.
+- **Gibbering:** All within 60' who hear the babbling of dozens of mouths must save versus spells or be maddened. Victims behave randomly as long as the gibbering continues; roll 1d8 each round. 1: move randomly, 2–5: no action, 6–7: attack nearest creature, 8: flee.
 
 ---
 
@@ -1371,6 +1929,18 @@ Magical monsters that resemble iron-scaled bulls. Dwell in plains or foothills.
 
 ---
 
+### Gorilla
+
+Large (6' tall), heavy-set apes that dwell in isolated jungles. Peaceful and shy.
+
+*AC* 5 [14], *HD* 4+1* (19hp), *Att* 2 × fist (1d3 + rending), 1 × bite (1d6), *THAC0* 15 [+4]
+*MV* 120' (40'), *SV* D12 W13 P14 B15 S16 (2), *ML* 7, *AL* Neutral, *XP* 200
+*NA* 0 (1d4), *TT* None
+
+- **Rending:** If a victim is hit by both fists in the same round, the gorilla rends for an extra 1d6 automatic damage.
+
+---
+
 ### Green Slime
 <!-- PDF p.180 -->
 
@@ -1415,6 +1985,51 @@ Large, rapacious predators combining the features of an eagle (head, wings, fron
 - **Attack horses:** Within 120', unless a morale check is passed.
 - **Defend nest:** Attack if it is approached.
 - **Taming:** Captured young can be trained as loyal mounts. Their fierce nature cannot be trained out: they still instinctively attack horses.
+
+---
+
+### Gullygug
+
+Barbaric, tribal, frog-like humanoids. Dwell in damp, dark places.
+
+*AC* 5 [14], *HD* 1* (4hp), *Att* 1 × weapon (1d6 or by weapon) or [2 × claw (1d2), 1 × bite (1d4 + 1)], *THAC0* 19 [0]
+*MV* 30' (10') / 150' (50') swimming, *SV* D12 W13 P14 B15 S16 (1), *ML* 7, *AL* Chaotic, *XP* 13 (leader: 13, chieftain: 125)
+*NA* 2d6 (1d8 × 10), *TT* D
+
+- **Surprise:** On a 1–3, due to chameleon-like skin.
+- **Hopping attack:** Jump up to 30' forwards and gain +1 to attack. If wielding an impaling weapon (e.g. spear), this counts as a charge and inflicts double damage on a successful hit.
+- **Leader:** Groups are led by a gullygug with 8 hit points. The leader gains a +1 bonus to damage rolls.
+- **Chieftain:** A 4 HD chieftain (with 15hp) rules a gullygug tribe. The chieftain gains a +2 bonus to damage rolls.
+- **Hybrids:** Rumours of human-gullygug hybrids are sometimes heard.
+
+---
+
+### Hag
+
+#### Black Hag
+
+Hideous crones, 8' tall, with blue-black skin and iron-like talons and teeth. Dwell in desolate forests and swamps. Ravenously carnivorous, love human flesh.
+
+*AC* 0 [19], *HD* 8* (36hp), *Att* 2 × talon (1d8 + 3), 1 × bite (1d8 + 3), *THAC0* 12 [+7]
+*MV* 150' (50'), *SV* D8 W9 P10 B10 S12 (8), *ML* 10, *AL* Chaotic, *XP* 1,200
+*NA* 1 (1), *TT* D
+
+- **Illusion immunity:** Completely unaffected by illusions and phantasms.
+- **Grapple:** If a victim is hit by all three of a hag's attacks in the same round, they are seized and suffer automatic damage (3d8 + 9) each subsequent round.
+- **Cloak true form:** Can cloak true appearance with an illusory form.
+
+#### Sea Hag
+
+Ghastly, green-skinned, weed-festooned crones who crave humanoid flesh. Dwell in seaweed forests in warm shallows.
+
+*AC* 6 [13], *HD* 3** (13hp), *Att* 1 × dagger (1d4) or 1 × gaze (death), *THAC0* 17 [+2]
+*MV* 150' (50'), *SV* D12 W13 P14 B15 S16 (3), *ML* 10, *AL* Chaotic, *XP* 65
+*NA* 0 (1d4), *TT* C
+
+- **Hideous visage:** Anyone who looks at a sea hag must save versus spells or be weakened (–2 penalty to attacks and damage) for 1d6 turns.
+- **Deadly gaze:** Three times per day, may gaze at a character within 30'. The target must save versus death or die instantly.
+- **Magic resistance:** +2 bonus to all saving throws against magic.
+- **Freshwater hag:** A very rare subspecies of sea hag dwells in freshwater pools.
 
 ---
 
@@ -1534,6 +2149,18 @@ For example: antelope, deer, goats.
 
 ---
 
+### Hippocampus
+
+Intelligent aquatic horses with two finned forelegs and a long, fish-like tail.
+
+*AC* 4 [15], *HD* 4 (18hp), *Att* 1 × tail (1d4), *THAC0* 16 [+3]
+*MV* 240' (80'), *SV* D10 W11 P12 B13 S14 (4), *ML* 10, *AL* Lawful, *XP* 75
+*NA* 0 (2d4), *TT* None
+
+- **Mounts:** Used as mounts by aquatic humanoids.
+
+---
+
 ### Hippogriff
 <!-- PDF p.183 -->
 
@@ -1549,6 +2176,35 @@ Fantastic creatures combining the features of a giant eagle (head and forequarte
 
 ---
 
+### Hippopotamus
+
+Massive, thick-skinned pachyderms that live in tropical rivers and lakes. Herbivorous but aggressively territorial.
+
+- **Males:** 1/4 of animals are males, whose bite does extra damage.
+- **Tip boats:** 50% likely to emerge under canoes or small boats, tipping them over.
+
+#### Behemoth
+
+Gargantuan (20' long) hippos, found in Lost World settings.
+
+*AC* 3 [16], *HD* 10 (45hp), *Att* 1 × bite (2d8—males 3d8), *THAC0* 11 [+8]
+*MV* 60' (20') / 120' (40') swimming, *SV* D10 W11 P12 B13 S14 (5), *ML* 9, *AL* Neutral, *XP* 900
+*NA* 0 (1d4), *TT* None
+
+- **Submersion:** Lurk underwater. Can remain submerged for up to 30 minutes.
+
+#### Normal
+
+Common hippos, 12' long.
+
+*AC* 5 [14], *HD* 8 (36hp), *Att* 1 × bite (2d6—males 3d6), *THAC0* 12 [+7]
+*MV* 90' (30') / 120' (40') swimming, *SV* D10 W11 P12 B13 S14 (4), *ML* 9, *AL* Neutral, *XP* 650
+*NA* 0 (2d6), *TT* None
+
+- **Submersion:** Lurk underwater. Can remain submerged for up to 15 minutes.
+
+---
+
 ### Hobgoblin
 <!-- PDF p.183 -->
 
@@ -1559,6 +2215,35 @@ Larger and nastier relatives of goblins. Dwell underground, but commonly seek pr
 *NA* 1d6 (4d6), *TT* D
 
 - **Hobgoblin king and bodyguards:** A 5HD (22hp) king and 1d4 4HD (3d6hp) bodyguards live in the hobgoblin lair. The king gains a +2 bonus to damage rolls. A thoul may sometimes be found among the king's bodyguards.
+
+---
+
+### Homunculus
+
+Miniature (18" tall), scaly-skinned humanoids with bat-like wings and fangs. Created by powerful magic-users.
+
+*AC* 5 [14], *HD* 2* (9hp), *Att* 1 × bite (1d3 + poison), *THAC0* 18 [+1]
+*MV* 60' (20') / 180' (60') flying, *SV* D11 W12 P11 B14 S12 (Magic-User 9), *ML* 9, *AL* As creator, *XP* 25
+*NA* 1 (1), *TT* None
+
+- **Poison:** Victim must save versus spells or fall deep asleep for 1d3 turns.
+- **Telepathic link:** The creator can telepathically control the homunculus and can see/hear through its eyes/ears.
+- **Control range:** 480'. Will never deliberately move further away from creator.
+- **Upon death:** The creator suffers 2d10 damage.
+- **Constructing:** Formed by an alchemical process on a quantity of the creator's blood. Requires hiring an alchemist.
+
+---
+
+### Hook Beast
+
+Tall (9') bipedal monsters with vulture-like beaks, a tough, plated carapace, and arms that end in horrid hooks. Voraciously hunt in packs, deep underground.
+
+*AC* 2 [17], *HD* 5 (22hp), *Att* 2 × claw (1d8), *THAC0* 15 [+4]
+*MV* 90' (30'), *SV* D10 W11 P12 B13 S14 (5), *ML* 8, *AL* Chaotic, *XP* 175
+*NA* 2d6 (0), *TT* K
+
+- **Keen hearing:** Only surprised on a 1.
+- **Language:** Cannot speak. Communicate among themselves with eerily echoing carapace clicks.
 
 ---
 
@@ -1616,6 +2301,23 @@ Lightly built horses adapted to run at high speed. Can survive purely on grass, 
 
 ---
 
+### Hulker
+
+Hulking (9' tall, 5' wide), bipedal monsters with claws of iron, wicked mandibles, and four eyes (two insectoid, two human-like). Hunt for fresh meat in caverns, tunnels, and dungeons.
+
+*AC* 2 [17], *HD* 10* (45hp), *Att* 2 × claw (3d4), 1 × mandibles (2d8), 1 × gaze (confusion), *THAC0* 11 [+8]
+*MV* 60' (20'), *SV* D6 W7 P8 B8 S10 (10), *ML* 10, *AL* Chaotic, *XP* 1,600
+*NA* 1d4 (0), *TT* G
+
+- **Burrowing:** Can burrow through solid stone at 10' (3') or soft earth at 60' (20').
+- **Surprise:** Characters surprised by a hulker meet its gaze.
+- **Confusing gaze:** Anyone meeting a hulker's gaze is confused for 3d4 rounds (save versus spells). Unless averting eyes or using a mirror, characters in melee are affected each round.
+- **Confusion:** Victims behave randomly; roll 1d8 each round. 1: move randomly, 2–5: no action, 6–7: attack nearest creature, 8: flee.
+- **Averting eyes:** –4 penalty to hit; the hulker gains a +2 bonus to attack.
+- **Mirrors:** The reflection of a hulker is harmless. Fighting by looking in a mirror incurs a –1 penalty to attack.
+
+---
+
 ### Hydra
 <!-- PDF p.184 -->
 
@@ -1666,6 +2368,36 @@ Highly intelligent, magical creatures summoned from another plane of existence t
 
 ---
 
+### Jackalwere
+
+Evil shapeshifters which can take on the form of a normal jackal or a jackal-headed humanoid. Roam borderland areas looking for human victims to rob and eat.
+
+*AC* 3 [16], *HD* 4* (18hp), *Att* 1 × bite (2d4) or 1 × weapon (1d6 or by weapon), *THAC0* 16 [+3]
+*MV* 120' (40'), *SV* D10 W11 P12 B13 S14 (4), *ML* 7, *AL* Chaotic, *XP* 125
+*NA* 0 (1d4), *TT* C
+
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Sleep gaze:** Anyone meeting a jackalwere's gaze must save versus spells or fall deep asleep for 4d4 turns. This ability may not be used in combat.
+- **Pack:** 2-in-10 chance of being encountered with 2d6 normal jackals (treat as wild dogs).
+
+---
+
+### Jellyfish, Giant
+
+Huge, transparent sea creatures which float near the surface of warm seas. Have 40 tentacles (each 100' long) which drift through the surrounding waters, seeking prey.
+
+*AC* 9 [10], *HD* 4** (18hp), *Att* 1–40 × tentacle (1d10 + paralysis), *THAC0* 16 [+3]
+*MV* 15' (5'), *SV* D12 W13 P14 B15 S16 (2), *ML* 8, *AL* Neutral, *XP* 175
+*NA* 0 (1d10), *TT* None
+
+- **Surprise:** On a 1–5, due to near-invisibility.
+- **Tentacles:** Each target within 100' of the jellyfish can be attacked with 1d4 tentacles each round.
+- **Paralysis:** Lasts for 1d10 rounds (save versus paralysis to resist).
+- **Killed victims:** Will be drawn to the body and digested over 3d4 turns.
+- **Severing tentacles:** Any attack that inflicts 1 or more damage severs a tentacle.
+
+---
+
 ### Killer Bee
 <!-- PDF p.185 -->
 
@@ -1702,6 +2434,49 @@ Small, wicked, hairless, canine humanoids with scaly, rust-coloured skin. Dwell 
 
 ---
 
+### Krell
+
+Hovering brains (5' across) with an octopus-like beak and a cluster of 10 spiny, 6'-long tentacles hanging below. Dwell in dungeons and ruins.
+
+*AC* 3 [16], *HD* 5** (22hp), *Att* 1 × beak (1d6), 10 × tentacle (1d4 + paralysis), *THAC0* 15 [+4]
+*MV* 120' (40'), *SV* D10 W11 P12 B13 S14 (5), *ML* 8, *AL* Chaotic, *XP* 425
+*NA* 1 (0), *TT* None
+
+- **Ambush:** Prefer to ambush victims by dropping on them from above.
+- **Tentacle attacks:** All 10 tentacles attack a single target.
+- **Paralysis:** Lasts 1 turn (save versus paralysis with a +4 bonus).
+- **Paralysed victims:** Two tentacles wrap around the victim; the other tentacles and beak inflict automatic damage.
+- **Attacking the tentacles:** A successful attack targeted at the tentacles disables one (that tentacle can no longer attack).
+- **Lightning immunity:** Unharmed by lightning.
+
+---
+
+### Lamia
+
+Centaur-like monsters with the legs and body of a beast and the upper body and head of a woman. Dwell in ruins and deserts. Prey on humanoids, draining their blood and consuming their flesh.
+
+*AC* 2 [17], *HD* 9** (40hp), *Att* 1 × touch (1d4 + WIS drain), *THAC0* 12 [+7]
+*MV* 240' (80'), *SV* D8 W9 P10 B10 S12 (9), *ML* 8, *AL* Chaotic, *XP* 2,300
+*NA* 1 (1), *TT* D
+
+- **WIS drain:** Touch drains 1 point of WIS. If reduced to below 3 WIS, victim mindlessly obeys the lamia's commands.
+- **Charm person:** Once per day. Save versus spells or be charmed: move towards the lamia (resisting those who try to prevent it); obey the lamia's commands (if understood); defend the lamia; unable to cast spells or use magic items; unable to harm the lamia. Killing the lamia breaks the charm.
+- **Illusion:** Once per day. Visual and audial. No concentration required. Remains until touched or dispelled.
+
+---
+
+### Lamprey, Giant
+
+8' long eels with horrid sphincter mouths lined with barbed teeth. Dwell in deep waters (both salt and fresh).
+
+*AC* 5 [14], *HD* 5* (22hp), *Att* 1 × bite (1d6 + blood drain), *THAC0* 15 [+4]
+*MV* 90' (30'), *SV* D12 W13 P14 B15 S16 (3), *ML* 7, *AL* Neutral, *XP* 300
+*NA* 0 (1d4), *TT* None
+
+- **Blood drain:** Attaches to victim on a successful hit, doing 10 automatic damage per round.
+
+---
+
 ### Leech, Giant
 <!-- PDF p.186 -->
 
@@ -1714,6 +2489,59 @@ Horrid, 3–4' long, slug-like creatures with sucker mouths. Lurk in swamps.
 - **Blood drain:** Attaches to victim on a successful hit, doing 1d6 automatic damage per round.
 - **Detaching:** Must be killed.
 - **If victim dies:** Leech detaches and finds a hidden place to digest.
+
+---
+
+### Leprechaun
+
+Diminutive (2' tall) magical humanoids who delight in mischief and theft. Dwell in lush, green lands.
+
+*AC* 7 [12], *HD* ½* (2hp), *Att* None, *THAC0* 19 [0]
+*MV* 150' (50'), *SV* D12 W13 P14 B15 S16 (1), *ML* 7, *AL* Neutral, *XP* 6
+*NA* 1 (1d20), *TT* F
+
+- **Surprise:** Acute hearing prevents surprise. Always surprise others, if invisible.
+- **Magic resistance:** +4 to saving throws.
+- **Magic powers:** Usable without limit:
+  - a. **Illusion:** Visual and audial. No concentration required. Remains until touched or dispelled.
+  - b. **Invisibility:** In combat: cannot be attacked in the first round; in subsequent rounds, may be attacked at –2 to hit (locatable by faint shadows).
+  - c. **Polymorph objects:** Turn a non-living object into another object of similar size.
+  - d. **Ventriloquism:** Throw voice 60'.
+- **Theft:** Sneak up on PCs, snatch valuable objects, and run away. 1-in-4 chance per round of dropping object if chased.
+- **Hoard:** If captured, will use trickery to avoid revealing location of hoard.
+- **Wine:** Their love of wine may be used to outwit them.
+
+---
+
+### Leucrocotta
+
+Weird monsters with a stag-like body, a lion-like tail, and a badger-like head. Have jagged ridges of bone in place of teeth. Dwell in ruins and desolate wilds.
+
+*AC* 3 [16], *HD* 6+1 (28hp), *Att* 1 × bite (3d6), *THAC0* 13 [+6]
+*MV* 180' (60'), *SV* D10 W11 P12 B13 S14 (6), *ML* 8, *AL* Chaotic, *XP* 350
+*NA* 0 (1d4), *TT* D
+
+- **Mimicry:** Can mimic human voices to lure prey to approach. Speak Common.
+- **Retreat attack:** If retreating from melee, can make a kick attack (inflicts 1d6 damage on a successful attack roll).
+
+---
+
+### Lich
+
+Mighty magic-users whose evil magic has rendered them immortal in undeath, their souls stored in a phylactery. Appear as a skeletal figure dressed in decaying finery. A cold fire burns in their eyes. Ruthlessly pursue their arcane research in vast dungeons or ruined palaces.
+
+*AC* 0 [19], *HD* 11**** (49hp), *Att* 1 × touch (1d10 + paralysis), *THAC0* 11 [+8]
+*MV* 60' (20'), *SV* D8 W9 P8 B11 S8 (Magic-user 14), *ML* 10, *AL* Chaotic, *XP* 4,300
+*NA* 1 (1), *TT* A
+
+- **Undead:** Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
+- **Aura of fear:** All seeing a lich must save versus spells or flee for 2d6 turns. Characters above 4th level are immune.
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Energy immunity:** Unharmed by electrical- and cold-based attacks.
+- **Magic immunity:** Immune to magic causing polymorph, insanity, or death.
+- **Arcane spells:** Cast spells as a 14th level magic-user.
+- **Paralysing touch:** Chill touch causes paralysis for 6 turns (save vs paralysis).
+- **Divine liches:** Rumours are occasionally heard of powerful divine spell casters becoming liches. These liches cast spells as a 14th level cleric.
 
 ---
 
@@ -1817,6 +2645,37 @@ Semi-intelligent, tribal, aquatic humanoids with reptilian heads and tails. Ofte
 
 ---
 
+### Locathah
+
+Nomadic humanoid fish-people with pale yellow scales, fanned ears, and large eyes. Forage and hunt in warm shallows. Lair in caves carved into great undersea rocks.
+
+*AC* 5 [14], *HD* 2 (9hp), *Att* 1 × weapon (1d6 or by weapon), *THAC0* 18 [+1]
+*MV* 120' (40'), *SV* D12 W13 P14 B15 S16 (2), *ML* 9, *AL* Neutral, *XP* 20 (guards: 35, leader: 75, chieftain: 175)
+*NA* 0 (1d20), *TT* A
+
+- **Weapons:** Crossbows and lances.
+- **Mounted:** On giant eels. (Use the electric eel stats, without the electric shock ability.)
+- **Leader:** Groups of 40+ are led by a 4 HD locathah (with 18hp) and four 3 HD guards (with 14hp).
+- **Chieftain:** A 5 HD chieftain (with 22hp) rules locathah groups of 100+.
+- **Pets:** Keep electric eels and giant jellyfish as lair guardians.
+
+---
+
+### Lurker Above
+
+Mindless, carnivorous, ray-like monstrosities that cling to ceilings and drop on prey below. Glide through the air with gas-filled pockets in body. Dwell exclusively underground.
+
+*AC* 5 [14], *HD* 10* (45hp), *Att* 1 × smother (1d6), *THAC0* 11 [+8]
+*MV* 10' (3') / 90' (30') gliding, *SV* D10 W11 P12 B13 S14 (5), *ML* 12, *AL* Neutral, *XP* 1,600
+*NA* 1 (0), *TT* C
+
+- **Surprise:** On a 1–4, due to stone-like appearance of underbelly.
+- **Cling:** Can creep on walls and ceilings.
+- **Smother:** Affects all within the 20' square area the lurker drops onto. A single attack roll is made and compared against the AC of all targets.
+- **Trapped victims:** Cannot move, automatically suffer 1d6 damage per round. Can attack the lurker only if they had a short weapon (e.g. dagger, short sword) in hand when trapped.
+
+---
+
 ### Lycanthrope
 <!-- PDF p.188–189 -->
 
@@ -1900,6 +2759,23 @@ Semi-intelligent pack hunters.
 
 ---
 
+### Malfyr
+
+Nightmarish extra-dimensional monsters with an obese, humanoid physique, an elephantine head with a fanged mouth, arms ending in wicked pincers, and a belly writhing with slimy tentacles. Sometimes summoned by powerful magic.
+
+*AC* 3 [16], *HD* 9** (40hp), *Att* 2 × pincer (1d10), 1 × bite (1d6 + poisonous breath), *THAC0* 12 [+7]
+*MV* 60' (20'), *SV* D4 W5 P6 B5 S8 (13), *ML* 11, *AL* Chaotic, *XP* 2,300
+*NA* 1 (1d2), *TT* E
+
+- **Grab:** If a victim is hit by both pincers in the same round, they are trapped in the malfyr's tentacles and suffer 2d6 acid damage each round. The victim can only escape if the malfyr is slain.
+- **Poisonous breath:** Victims of the bite must save versus poison (with a +3 bonus) or die.
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Acid immunity:** Unharmed by acid.
+- **Detect invisible:** Within 60'.
+- **Open doors:** Can bypass locks and wards, both mundane and magical.
+
+---
+
 ### Manticore
 <!-- PDF p.189 -->
 
@@ -1911,6 +2787,33 @@ Monstrosities with the face of a man, the body of a lion, bat-like wings, and a 
 
 - **Tail spikes:** 180' range. 24 in total; 2 regrow each day.
 - **Track and ambush:** Follow humans and attack with tail spikes when they stop to rest.
+
+---
+
+### Mantid
+
+Highly intelligent, 4-armed insectoid warriors who hunt and consume humanoids. Dwell in burrows in arid regions.
+
+*AC* 4 [15], *HD* 6+3 (30hp), *Att* [4 × claw (1d4), 1 × bite (1d4+1)] or 1 × pole arm (1d10) or 2 × crystal disc (1d4+1), *THAC0* 13 [+6]
+*MV* 180' (60'), *SV* D10 W11 P12 B13 S14 (6), *ML* 10, *AL* Neutral, *XP* 350
+*NA* 0 (2d6), *TT* L
+
+- **Leap:** Can jump up to 20' high and 50' forward to attack.
+- **Crystal disc:** Range 90'. If attack misses, returns to mantid's hand. Typically carry 10 discs.
+- **Dodge missiles:** AC 0 [19] vs missiles.
+
+---
+
+### Mantis, Giant
+
+12' long, predatory insects with vicious clawed forelimbs and slicing mandibles. Green colouration acts as camouflage. Dwell in forests and jungles. Hunt any living prey, favouring giant insects.
+
+*AC* 2 [17], *HD* 10* (45hp), *Att* 2 × claw (1d6), *THAC0* 11 [+8]
+*MV* 60' (20') / 120' (40') flying, *SV* D10 W11 P12 B13 S14 (5), *ML* 10, *AL* Neutral, *XP* 1,600
+*NA* 0 (1), *TT* None
+
+- **Surprise:** On a 1–4, due to camouflage. Will not attack obviously more powerful creatures, staying motionless and hidden.
+- **Grab:** If a victim is hit by both claws in the same round, they are trapped and attacked each subsequent round with the mandibles (+2 bonus to attack roll, 3d4 damage).
 
 ---
 
@@ -1997,6 +2900,55 @@ Aquatic humanoids with fish tails in place of legs. Live in coastal waters, farm
 
 ---
 
+### Merrow
+
+Frightful humanoids, 9' tall, with green scales, shaggy, weed-like hair, and webbed hands and feet. Sometimes called aquatic ogres. Dwell in shallow waters, lairing in underwater caves.
+
+*AC* 3 [16], *HD* 4+4 (22hp), *Att* 1 × spear (2d6) or [2 × claw (1d6), 1 × bite (2d4)], *THAC0* 15 [+4]
+*MV* 60' (20') / 120' (40') swimming, *SV* D10 W11 P12 B13 S14 (4), *ML* 10, *AL* Chaotic, *XP* 125
+*NA* 0 (2d6), *TT* A
+
+- **Surprise:** On a 1–4, due to camouflage.
+- **Air breathing:** Can breathe out of water for up to 2 hours.
+
+---
+
+### Mimic
+
+Semi-intelligent monstrous shape-shifters that take on the form of inanimate objects (e.g. chests, doors, statues). Dwell exclusively underground.
+
+*AC* 6 [13], *HD* 9* (40hp), *Att* 1 × pseudopod (3d4), *THAC0* 12 [+7]
+*MV* 30' (10'), *SV* D10 W11 P12 B13 S14 (5), *ML* 9, *AL* Neutral, *XP* 1,600
+*NA* 1 (0), *TT* None
+
+- **Mimicry:** Can change form to appear like any object of stone or wood.
+- **Attack if touched:** Remain motionless; only attack if touched, lashing out with a pseudopod.
+- **Contact glue:** Anything that touches a mimic is stuck fast by the glue it exudes. Released only by killing the mimic.
+- **Light sensitivity:** Suffer a –2 penalty to attack rolls and a –1 penalty to AC when in bright light (daylight, continual light).
+- **Intelligent mimics:** There is rumoured to be a subspecies of intelligent mimics which can speak and which may help adventurers if fed.
+
+---
+
+### Mind Lasher
+
+Evil, ultra-intelligent, octopus-headed humanoids with slimy, purple-black skin and pupilless eyes. Dwell in the deep Underworld, where they hatefully plot to enslave humanity. Feed on the brains of humanoids.
+
+*AC* 4 [15], *HD* 8*** (36hp), *Att* 1 × mental power (see below) or 4 × tentacle (1d2 + brain probe), *THAC0* 12 [+7]
+*MV* 120' (40'), *SV* D8 W9 P10 B10 S12 (8), *ML* 7, *AL* Chaotic, *XP* 2,300
+*NA* 1d4 (1d4), *TT* B, N, O
+
+- **Brain probe:** When a tentacle hits, it latches onto the victim, who is unable to escape. After 1d4 rounds, the tentacle works its way to the victim's brain and rips it out of the skull, killing the victim. The lasher instantly consumes the brain.
+- **Mental powers:** May use each of the following powers three times per day:
+  - a. **Mind control:** A target within 30' must save versus paralysis or come under the lasher's mental control for 1d6 rounds. Forced acts that are self-destructive or against the victim's alignment allow another save to break the mind control.
+  - b. **Mind blast:** Targets in a 60' cone (20' at the end) must save versus paralysis or be paralysed for 1 turn.
+  - c. **Mind thrust:** A target within 60' must save versus spells or suffer 3d6 damage.
+- **Mental defence:** +4 bonus to all saving throws against mental powers.
+- **Levitation:** Can move vertically at will, up to 20' per round.
+- **ESP:** Can read thoughts of any within 90'. Obstructed by a thin layer of lead or by rock of 2' thick or greater.
+- **Magic resistance:** +2 bonus to all saving throws against magic, +4 against mind-affecting magic.
+
+---
+
 ### Minotaur
 <!-- PDF p.191 -->
 
@@ -2042,6 +2994,39 @@ Undead humanoids wrapped in funerary bandages. Haunt ruins and tombs.
 
 ---
 
+### Mutoid
+
+Humanoids with mismatched body parts of many different creatures (e.g. reptiles, crustaceans, birds, mammals, etc.). Each individual has a unique appearance. Shunned by other species, they live in hiding within large settlements or band together and dwell in ruins.
+
+*AC* 6 [13], *HD* 1+1 (5hp), *Att* 1 × weapon (1d6 or by weapon), *THAC0* 18 [+1]
+*MV* 90' (30'), *SV* D12 W13 P14 B15 S16 (1), *ML* 7, *AL* Neutral, *XP* 15 (leader: 20, chieftain: 75)
+*NA* 1d8 (1d100), *TT* C
+
+- **Surprise:** On a 1–3, due to great skill at hiding and camouflage. Requires 1 turn of preparation.
+- **Mimicry:** Can mimic the sound of any monster or animal.
+- **Pick pockets:** 70% chance of success, penalised by 5% for every level of the victim above 5th. A roll of more than twice the percentage required for success means that the attempted theft is noticed.
+- **Leader:** Groups of 10+ are led by an individual with 2 HD (with 9hp).
+- **Chieftain:** A 4 HD chieftain (with 18hp) rules groups of 40+.
+- **Origin:** Rumoured to have been created by magic (possibly an accident).
+
+---
+
+### Mycelian
+
+Mycelians are 4' tall humanoid mushrooms, with tall stems, wide, flat caps, and beady eyes amid their gills. They have no mouths, but communicate telepathically. They dwell in lightless caverns deep underground.
+
+*AC* 9 [10], *HD* 1 (4hp), *Att* 1 × clubbing hands (1d4), *THAC0* 19 [0]
+*MV* 90' (30'), *SV* D12 W13 P14 B15 S16 (1), *ML* 8, *AL* Lawful, *XP* 10 (leader: 50, king: 725)
+*NA* 1d12 (2d10 × 10), *TT* N × 2
+
+- **Telepathy:** Can communicate non-verbally with any sentient being within 120'.
+- **Light sensitivity:** Suffer a –2 penalty to attack rolls and a –1 penalty to AC when in bright light (daylight, continual light).
+- **Leader:** Groups of 10+ are led by a 6' tall mycelian with 3 HD (13hp). Three times per day, a leader can spray a spore cloud onto a target within 20', which must save versus poison or become completely passive, unable to act or move for 3 rounds.
+- **King:** A mycelian lair is ruled by a 10' tall king with 6 HD (27hp). Six times per day, the king can spray a spore cloud onto a target within 20', which must save versus poison. The king's spore cloud has the effect either of pacifying the target (unable to move or act for 6 rounds) or of causing hallucinations for 6 turns (roll 1d3, 1: flee in terror, 2. cower and babble, 3: attempt to kill nearest creature).
+- **Fungal zombies:** Lair is guarded by 1d6 fungal zombies animated by the king. These behave as normal zombies, but are not undead and cannot be turned.
+
+---
+
 ### Neanderthal (Caveman)
 <!-- PDF p.192 -->
 
@@ -2055,6 +3040,33 @@ Squat, powerful, primitive demihumans with ape-like faces. Dwell in caverns and 
 - **Leaders:** Two 6HD leaders (one male, one female) live in the neanderthal lair. They are 10' tall and of a related but distinct race.
 - **Racial animosity:** Attack ogres on sight. Hate goblins and kobolds.
 - **Pets:** Sometimes keep white apes as pets (see Ape, White).
+
+---
+
+### Necrophidius
+
+Giant snake skeletons (10' long) with a snake-fanged human skull for a head. Created by powerful magic-users or clerics for a specific purpose (e.g. to guard treasures or to assassinate a victim).
+
+*AC* 1 [18], *HD* 2** (9hp), *Att* 1 × bite (1d8 + paralysis), *THAC0* 18 [+1]
+*MV* 90' (30'), *SV* D12 W13 P14 B15 S16 (2), *ML* 12, *AL* Chaotic, *XP* 30
+*NA* 1 (0), *TT* None
+
+- **Undead:** Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
+- **Surprise:** If a necrophidius surprises enemies, it begins to sway hypnotically. All who observe must save versus spells or be hypnotised for 1d4 rounds, unable to move or act. The necrophidius attacks hypnotised victims.
+- **Paralysing bite:** Victim must save versus paralysis or be paralysed for 1d4 turns.
+
+---
+
+### Nightmare
+
+Intelligent, demonic horses with glowing red eyes, flaming nostrils, and hooves like smouldering embers.
+
+*AC* –3 [22], *HD* 6* (27hp), *Att* 2 × flaming hoof (2d4 + 2), 1 × bite (2d4), *THAC0* 14 [+5]
+*MV* 150' (50') / 360' (120') flying, *SV* D10 W11 P12 B13 S14 (6), *ML* 10, *AL* Chaotic, *XP* 500
+*NA* 0 (1), *TT* None
+
+- **Burning smoke:** Breathe out a choking cloud of burning smoke. Anyone in melee with a nightmare must save versus poison or suffer –2 to attack and damage rolls against the monster.
+- **Steed:** Sometimes act as a steed for powerful undead (e.g. demonic knight, lich, spectre, vampire).
 
 ---
 
@@ -2187,6 +3199,22 @@ Ugly, bad-tempered, animalistic humanoids who live underground and are active at
 
 ---
 
+### Otyugh
+
+Aggressive, semi-intelligent, hulking (8' around) monstrosities with three stumpy legs, eyes on a long tentacle stalk, a sphincter-like mouth lined with fangs, and two razor-edged tentacles. Lurk underground in piles of dung or carrion, which they consume. Crave fresh meat.
+
+*AC* 2 [17], *HD* 6* to 8* (27/31/36hp), *Att* 2 × tentacle (1d8), 1 × bite (1d4+1 + disease), *THAC0* By HD (14 [+5] to 12 [+7])
+*MV* 60' (20'), *SV* By HD, *ML* 9, *AL* Neutral, *XP* 500/850/1,200
+*NA* 1 (1d2), *TT* None
+
+- **Disease:** Victims must save versus poison or contract a disease that is fatal in 1d12 days.
+- **Light sensitivity:** Suffer a –2 penalty to attack rolls and a –1 penalty to AC when in bright light (daylight, continual light).
+- **Telepathic:** Can communicate non-verbally with any sentient creature.
+- **Symbiotic:** Often live in partnership with a powerful monster, living off its dung and the carcasses of its victims.
+- **Predatory otyughs:** Rumours tell of rare, highly intelligent, predatory otyughs.
+
+---
+
 ### Owl Bear
 <!-- PDF p.197 -->
 
@@ -2212,6 +3240,51 @@ Semi-intelligent winged horses that are wilful and timid.
 - **Hate hippogriffs:** Natural enemies.
 - **Mount:** Can carry a human-sized rider.
 - **Training:** If captured when young, will serve Lawful characters.
+
+---
+
+### Peryton
+
+Weird monsters with the body, talons, and wings of a giant eagle, the head and great antlers of a stag, and the fangs of a wolf. Dwell in mountains. Prey upon humans and their ilk.
+
+*AC* 6 [13], *HD* 4 (18hp), *Att* 1 × antlers (4d4), *THAC0* 16 [+3]
+*MV* 120' (40') / 210' (70') flying, *SV* D10 W11 P12 B13 S14 (4), *ML* 9, *AL* Chaotic, *XP* 75
+*NA* 0 (2d4), *TT* B
+
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Killing a victim:** When a victim is killed, the peryton rips out their heart and flies away.
+
+---
+
+### Phoenix
+
+Highly magical giant orange-red eagles (20' wingspan) wreathed in searing flame. Dwell in remote areas guarding magical shrines, portals, tombs, etc. Only violent if attacked.
+
+*AC* –2 [21], *HD* 20** (90hp), *Att* 2 × talon (2d6), 1 × bite (4d6), *THAC0* 6 [+13]
+*MV* 150' (50') / 450' (150') flying, *SV* D2 W2 P2 B2 S4 (20), *ML* 10, *AL* Lawful, *XP* 4,300
+*NA* 0 (1d2), *TT* V × 2
+
+- **Fiery aura:** All within 20' suffer 6d6 damage per round. Phoenix fire is of such intensity that magical protection from fire is ineffective.
+- **Magic resistance:** +2 to saving throws.
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Fire immunity:** Unharmed by magical and non-magical fire.
+- **Spell immunity:** Unaffected by charm and hold spells.
+- **Upon death:** Disappear in a 20' radius ball of ash and fire, inflicting 1d10 × 10 damage (save versus breath for half). Phoenix fire is of such intensity that magical protection from fire is ineffective.
+- **Resurrection:** 1 round after death, returns to life from its ashes and flees.
+- **Feathers:** Phoenix feathers are highly magical. Each is worth up to 25,000gp.
+
+---
+
+### Piercer
+
+Non-intelligent, carnivorous monsters that hang from cavern ceilings, resembling stalactites. 2' to 6' long.
+
+*AC* 3 [16], *HD* 1 to 4 (4/9/13/18hp), *Att* 1 × drop (1d6 per HD), *THAC0* By HD (19 [0] to 16 [+3])
+*MV* 10' (3'), *SV* D12 W13 P14 B15 S16 (1 to 2), *ML* 12, *AL* Neutral, *XP* 10/20/35/75
+*NA* 3d6 (0), *TT* None
+
+- **Blend in with stone:** Indistinguishable from normal stalactites.
+- **Drop:** Sensitive to sound and heat. Attack a victim directly below by dropping from the ceiling. Creep back up to the ceiling if the attack misses.
 
 ---
 
@@ -2247,6 +3320,38 @@ Sailors who make a living by raiding coastal settlements, robbing other ships, a
 - **Invisible:** Naturally invisible, but may choose to reveal themselves. May remain invisible when attacking: cannot be attacked in the first round; in subsequent rounds, may be attacked at –2 to hit (locatable by faint shadows and air movement).
 - **Surprise:** Always surprise, if invisible.
 - **Limited flight:** Small wings only allow 3 turns of flight. Must rest 1 turn after flying.
+
+---
+
+### Poltergeist
+
+Invisible, incorporeal spirits which haunt the place of their death. Lift small objects and hurl them at intruders.
+
+*AC* 9 [10], *HD* 2 (9hp), *Att* 2 × hurled object (1d4), *THAC0* 18 [+1]
+*MV* 60' (20'), *SV* D12 W13 P14 B15 S16 (2), *ML* 12, *AL* Chaotic, *XP* 20
+*NA* 1d8 (0), *TT* None
+
+- **Undead:** Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
+- **Surprise:** Always surprise, unless PCs can see invisible.
+- **Hurled objects:** Range 30'. Can only throw objects which are nearby.
+- **Mundane damage immunity:** Only harmed by silver weapons or magic.
+- **Attacking a poltergeist:** Location can be deduced from source of thrown objects. Attack rolls suffer a –4 penalty.
+
+---
+
+### Pseudo-Dragon
+
+Intelligent, miniature (1–2' long), winged dragons with a sting-tipped tail and rusty red scales. Dwell in small caves or hollowed out trees.
+
+*AC* 2 [17], *HD* 2* (9hp), *Att* 1 × bite (1d3), 1 × tail sting (1d3 + poison), *THAC0* 18 [+1]
+*MV* 60' (20') / 240' (80') flying, *SV* D12 W13 P14 B15 S16 (2), *ML* 8, *AL* Lawful, *XP* 25
+*NA* 1 (1), *TT* L × 10
+
+- **Surprise:** On a 1–4, due to chameleon-like ability to blend in with surroundings.
+- **Poison:** Induces a comatose, near-death state for 1d6 days (save versus poison). Victim appears dead, except to very close inspection.
+- **Magic resistance:** +2 bonus to all saving throws against magic.
+- **Telepathy:** Communicate telepathically within 30'.
+- **Companion:** Sometimes become a companion for a lawful adventurer. Able to telepathically transmit senses to the companion, up to 240' distant.
 
 ---
 
@@ -2288,6 +3393,23 @@ Gigantic, slimy worms with bodies 100' long and 8–10' thick. Bore tunnels thro
 
 ---
 
+### Rakshasa
+
+Highly intelligent evil spirits that take the form of feline humanoids, with the head of a great cat (e.g. tiger, panther), eerie reversed hands, and cruel claws. Prefer a diet of human flesh. Use their powers of illusion to gain the trust of people, then attack. Dwell in hot climes.
+
+*AC* 0 [19], *HD* 7** (31hp), *Att* 2 × claw (1d3), 1 × bite (1d4+1), *THAC0* 13 [+6]
+*MV* 150' (50'), *SV* D4 W5 P6 B5 S8 (14), *ML* 9, *AL* Chaotic, *XP* 1,250
+*NA* 1d4 (1d4), *TT* F
+
+- **Cloak true form:** Can read the minds of those they encounter then cloak their true form with an illusion of a creature or type of person deemed friendly.
+- **Spell immunity:** Immune to all spells of 1st to 3rd level.
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Spell casting:** Cast spells as a 5th level magic-user and a 3rd level cleric.
+- **Vulnerability:** A hit by a blessed crossbow bolt kills a rakshasa.
+- **Groups:** A single male will often be encountered with multiple females.
+
+---
+
 ### Rat
 <!-- PDF p.199 -->
 
@@ -2318,6 +3440,40 @@ Swarming packs of 6" to 2' long individuals, with brown or grey fur.
 - **Disease; Afraid of fire; Attacking in water:** See main entry.
 - **Pack:** Each group of 5–10 rats attacks as a pack. Each pack makes a single attack roll against one creature.
 - **Engulf:** The creature attacked must save versus death or fall prone, unable to attack until able to stand up again.
+
+---
+
+### Remorhaz
+
+Predatory, many-legged worm-like monsters with long necks, horrid, crushing mandibles, and compound eyes. Icy blue in colour, with scaly plates along the back which glow red hot. Dwell in frozen wastes, sustained by the heat of their internal fires.
+
+*AC* 0 [19], *HD* 7* to 14* (31/36/40/45/49/54/58/63hp), *Att* 1 × bite (6d6), *THAC0* By HD (13 [+6] to 9 [+10])
+*MV* 120' (40'), *SV* By HD (7 to 14), *ML* 10, *AL* Neutral, *XP* 850/1,200/1,600/1,600/1,900/1,900/2,300/2,300
+*NA* 1 (1), *TT* F
+
+- **Swallow whole:** A bite attack roll of natural 20 indicates that a human-sized (or smaller) victim is swallowed. This is instantly fatal, due to the internal fires.
+- **Melt weapons:** A weapon that hits has a 1-in-4 chance of contacting the red hot back and instantly melting. Magical weapons are unaffected.
+- **Avoiding the back:** Trying not to hit the red hot back incurs a –2 penalty to attack rolls.
+- **Nests:** A pair of remorhaz is occasionally encountered in their lair with a clutch of 1d2 eggs. Each egg is worth 5,000gp.
+
+---
+
+### Revenant
+
+The corpse of a person who was murdered, reanimated by the desperate need for revenge. Only the most obsessive individuals return from death in this way.
+
+*AC* 9 [10], *HD* 8* (36hp), *Att* 1 × grasp (2d8 + throttle), *THAC0* 12 [+7]
+*MV* 90' (30'), *SV* D8 W9 P10 B10 S12 (8), *ML* 12, *AL* Neutral, *XP* 1,200
+*NA* 1 (1), *TT* None
+
+- **Undead:** Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
+- **Throttle:** On a successful grasp attack, the revenant's hands lock around the victim's throat, inflicting 2d8 automatic damage each subsequent round.
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Regeneration:** 3 rounds after being damaged, start regaining 3hp per round. Severed limbs reattach.
+- **Return from death:** If killed (0hp), will regenerate and fight again in 2d6 rounds.
+- **Fire:** Cannot regenerate damage caused by fire. The only way to permanently kill a revenant.
+- **Purpose:** Seek out and slay killer (and accomplices). Once this purpose has been accomplished, dissipate into dust.
+- **Class abilities:** If the revenant was an adventurer in life, it retains all class abilities, including spell casting.
 
 ---
 
@@ -2428,6 +3584,38 @@ Large, ferocious, semi-intelligent baboons that live in packs led by a powerful 
 
 ---
 
+### Roper
+
+Horrible, amorphous monstrosities that form their bodies into the shape of a stalagmite or pillar (9' tall, 3' across). Carnivorous, but lust most of all after human flesh. Dwell in caverns or forests.
+
+*AC* 0 [19], *HD* 12** (54hp), *Att* 1 × bite (5d6) or 6 × tentacle (grab + weakness), *THAC0* 10 [+9]
+*MV* 30' (10'), *SV* D6 W7 P8 B8 S10 (12), *ML* 10, *AL* Chaotic, *XP* 2,700
+*NA* 1d3 (1d4+1), *TT* L × 5
+
+- **Tentacles:** Can attack up to 50' away.
+- **Weakness:** Victim suffers a –3 penalty to attack and damage rolls for 3 turns.
+- **Grab:** A victim hit by a tentacle is grabbed and dragged toward the monster's mouth (10' per round). The victim can only be freed by severing the tentacle.
+- **Severing tentacles:** Requires a hit with a magical cutting weapon inflicting 5 or more damage.
+- **Magic resistance:** +2 to saving throws.
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Energy immunity:** Unharmed by cold or lightning.
+- **Spell immunity:** Immune to all spells of 1st to 3rd level.
+
+---
+
+### Rot Grub
+
+Tiny (2" long) maggots that consume living flesh. Lurk in heaps of dung or rubble, waiting to be touched.
+
+*AC* 9 [10], *HD* 1hp*, *Att* None, *THAC0* 20 [–1]
+*MV* 10' (3'), *SV* D14 W15 P16 B17 S18 (NH), *ML* 12, *AL* Neutral, *XP* 6
+*NA* 5d4 (5d4), *TT* None
+
+- **If touched:** Burrow rapidly into flesh, seeking the heart. Cause death in 1d3 turns.
+- **Killing:** Applying fire in the first 2 rounds after contact kills the grubs. This inflicts 1d6 damage on the victim. Cure disease is also effective.
+
+---
+
 ### Rust Monster
 <!-- PDF p.201 -->
 
@@ -2439,6 +3627,25 @@ Magical, armadillo-like creatures with long tails and two long, antennae-like fe
 
 - **Rusting:** Metal that touches a rust monster (e.g. weapons that hit it, or armour struck by a feeler) crumbles instantly to rust. Magic items have a 10% chance per "plus", to be unaffected on each successful hit. Each time a magic item is affected, it loses one "plus".
 - **Smell metal:** Attracted by the scent.
+
+---
+
+### Sahuagin
+
+Predatory, sadistic aquatic humanoids with black-green scales and deep black eyes. Sometimes known as "sea devils". Worship evil deities and delight in the killing, enslaving, and torture of other sentient species. Dwell in warm salt water, but make nighttime raids onto land.
+
+*AC* 5 [14], *HD* 2+2 (11hp), *Att* 1 × weapon (1d6 or by weapon) or [2 × claw (1d2), 1 × bite (1d4)], *THAC0* 17 [+2]
+*MV* 120' (40') / 240' (80') swimming, *SV* D12 W13 P14 B15 S16 (2), *ML* 8, *AL* Chaotic, *XP* 25 (lieutenant: 50, chieftain: 125, baron: 350)
+*NA* 0 (2d4 × 10), *TT* A
+
+- **Light sensitivity:** Suffer a –2 penalty to attack rolls and a –1 penalty to AC when in bright light (daylight, continual light).
+- **Breathe air:** For up to 4 hours.
+- **Underwater hearing:** Can hear boats at a range of up to 1 mile away.
+- **Chieftain and lieutenants:** Groups are led by a sahuagin with 4+4 HD plus one 3+3 HD lieutenant for every 10 members of the group.
+- **Underwater villages:** Domed stone buildings concealed with seaweed. Home to 1d3 × 100 individuals.
+- **Barons:** Villages are ruled by a 6+6 HD sahuagin baron.
+- **Priestesses:** For every 100 sahuagin in a village, there will be a priestess (a cleric of 3rd to 5th level).
+- **Guardians:** 2d4 sharks guard the lair. Obey simple commands from sahuagin.
 
 ---
 
@@ -2475,6 +3682,23 @@ Giant, 6-legged lizards with blue/white scales. Dwell in icy, wilderness regions
 
 ---
 
+### Satyr
+
+Magical humanoids with the legs and horns of goats. Love dance, drink, and debauchery. Dwell in deep, isolated forests.
+
+*AC* 5 [14], *HD* 5 (22hp), *Att* 1 × horns (2d4) or magic pipes, *THAC0* 15 [+4]
+*MV* 180' (60'), *SV* D6 W7 P8 B8 S10 (10), *ML* 9, *AL* Neutral, *XP* 175 (piper: 300)
+*NA* 0 (2d4), *TT* I, N
+
+- **Surprise:** Only surprised on a 1.
+- **Hide in woods:** 90% undetectable when hiding.
+- **Magic pipes:** One satyr in a group has magic pipes and may play them when encountered for one of the following effects:
+  - a. **Charm:** Used on attractive individuals. Anyone within 60' who hears the song must save versus spells or be charmed: move towards the satyr (resisting those who try to prevent it); defend the satyr; obey the satyr's commands (if understood); unable to cast spells or use magic items; unable to harm the satyr. A character who saves is unaffected for the rest of the encounter. Killing the satyr breaks the charm.
+  - b. **Fear:** Used on powerful enemies. All within 60' must save versus spells or flee for 2 turns.
+  - c. **Sleep:** Used against intruders not deemed dangerous. All within 60' must save versus spells or fall asleep for 4d4 turns. Satyrs will rob sleeping victims.
+
+---
+
 ### Scorpion, Giant
 <!-- PDF p.202 -->
 
@@ -2490,16 +3714,57 @@ Huge arachnids, as big as a small horse, with pincers and deadly stingers. Dwell
 
 ---
 
-### Sea Serpent (Lesser)
-<!-- PDF p.202 -->
+### Scorpionoid
 
-20'–30' long, serpent-like sea monsters with rows of many fins.
+Hideous, 12' tall monsters with the legs, body, and stinging tail of a giant scorpion, and a humanoid upper body and head. Ruthless hunters who hate all other sentient species. Dwell in warm climates in caverns, deserts, and mountains.
+
+*AC* 1 [18], *HD* 8* (36hp), *Att* 1 × giant weapon (3d6) or 1 × tail sting (1d10 + poison), *THAC0* 12 [+7]
+*MV* 240' (80'), *SV* D8 W9 P10 B10 S12 (8), *ML* 10, *AL* Chaotic, *XP* 1,200
+*NA* 1d8 (1d10), *TT* J, K, M
+
+- **Weapons:** Typically use pole arms or long bows.
+- **Poison:** Causes death (save versus poison). Even if the save succeeds, the victim is paralysed and convulsing for 1d8–1 rounds.
+- **Pets:** Often keep giant scorpions as pets.
+
+---
+
+### Seahorse, Giant
+
+15' long seahorses that graze marine plants in small herds. Timid and easily scared. Dwell in all but very cold waters.
+
+*AC* 7 [12], *HD* 3 (13hp), *Att* 1 × butt (1d4+1), *THAC0* 17 [+2]
+*MV* 210' (70'), *SV* D12 W13 P14 B15 S16 (2), *ML* 5 (8 with rider), *AL* Neutral, *XP* 35
+*NA* 0 (1d20), *TT* None
+
+- **Flee:** Can flee at double speed for up to 10 rounds.
+- **Mount:** Often used as mounts by locathah, mermen, and tritons.
+
+---
+
+### Sea Serpent
+
+Serpent-like sea monsters with rows of many fins.
+
+#### Sea Serpent (Lesser)
+
+20'–30' long.
 
 *AC* 5 [14], *HD* 6 (27hp), *Att* 1 × bite (2d6) or 1 × squeeze (1d10 hull damage), *THAC0* 14 [+5]
 *MV* 150' (50'), *SV* D12 W13 P14 B15 S16 (3), *ML* 8, *AL* Neutral, *XP* 275
 *NA* 0 (2d6), *TT* None
 
 - **Lunge:** Up to 20' out of water to use bite attack.
+- **Squeeze:** Coil around and crush a vessel (of equal size or smaller).
+
+#### Sea Serpent (Greater)
+
+80' long.
+
+*AC* 3 [16], *HD* 14 (63hp), *Att* 1 × bite (3d6) or 1 × squeeze (2d10 hull damage), *THAC0* 9 [+10]
+*MV* 240' (80'), *SV* D8 W9 P10 B10 S12 (7), *ML* 9, *AL* Neutral, *XP* 1,350
+*NA* 0 (1d4), *TT* None
+
+- **Lunge:** Up to 40' out of water to use bite attack.
 - **Squeeze:** Coil around and crush a vessel (of equal size or smaller).
 
 ---
@@ -2517,6 +3782,22 @@ Intelligent, incorporeal (but not undead) monsters that look like shadows. Able 
 - **Strength drain:** Victims lose 1 STR per hit. Recovers after 8 turns. If reduced to 0 STR, the victim becomes a shadow.
 - **Mundane damage immunity:** Can only be harmed by magical attacks.
 - **Spell immunity:** Unaffected by charm and sleep spells.
+
+---
+
+### Shambling Mound
+
+Sentient, semi-intelligent plant monsters with the shape of a roughly humanoid (9' tall), slime-soaked mound of vegetation. Dwell in forlorn swamps and damp underground locales.
+
+*AC* 3 [16], *HD* 9* (40hp), *Att* 2 × clubbing fist (2d8), *THAC0* 12 [+7]
+*MV* 60' (20'), *SV* D10 W11 P12 B13 S14 (5), *ML* 12, *AL* Neutral, *XP* 1,600
+*NA* 1d3 (1d3), *TT* B
+
+- **Suffocation:** If a victim is hit by both fists in the same round, they are entangled in the shambler's roots and tendrils and suffocate in 2d4 rounds. The victim can only be freed if the shambler is killed.
+- **Weapon damage reduction:** All weapon damage reduced by half.
+- **Fire immunity:** Unharmed by fire, due to being soaked with slime.
+- **Lightning growth:** If damaged by lightning, gains one Hit Die.
+- **Seep:** Can flatten body to squeeze through small holes.
 
 ---
 
@@ -2605,6 +3886,37 @@ Skeletal remains of humanoids, reanimated as guardians by powerful magic-users o
 
 ---
 
+### Slithering Tracker
+
+Transparent, intelligent oozes that subsist on the blood plasma of sentient creatures. Dwell in gloomy ruins and dungeons.
+
+*AC* 5 [14], *HD* 5* (22hp), *Att* 1 × touch (paralysis), *THAC0* 15 [+4]
+*MV* 120' (40'), *SV* D10 W11 P12 B13 S14 (5), *ML* 6, *AL* Neutral, *XP* 300
+*NA* 1 (0), *TT* C
+
+- **Surprise:** On a 1–5, unless target can detect invisibility.
+- **Tracking:** Do not attack directly, but follow a single victim until they sleep.
+- **Detecting:** Victim has a 1-in-20 chance of noticing that they are being followed by the slithering tracker.
+- **Paralysis:** For 6 turns (save versus paralysis). Paralysis continues indefinitely if the tracker maintains physical contact. Once a victim is paralysed, the tracker extracts their blood plasma at a rate of 2d6 hit points per turn.
+- **Seep:** Can squeeze through small holes and cracks.
+
+---
+
+### Slug, Giant
+
+Gargantuan (30' long) grey slugs with rasp-like tongues and acidic spit. Voracious predators that dwell underground.
+
+*AC* 8 [11], *HD* 12* (54hp), *Att* 1 × bite (1d12) or 1 × acid spit (4d6), *THAC0* 10 [+9]
+*MV* 60' (20'), *SV* D10 W11 P12 B13 S14 (6), *ML* 10, *AL* Neutral, *XP* 1,900
+*NA* 1 (0), *TT* None
+
+- **Acid spit:** Range 60'. Victim may save versus breath for half damage.
+- **Damage immunity:** Unharmed by non-magical blunt weapons.
+- **Squeeze:** Can squeeze through small holes.
+- **Break down doors:** Can easily smash through doors.
+
+---
+
 ### Snake
 <!-- PDF p.204 -->
 
@@ -2669,6 +3981,41 @@ Dwell in all but the most extreme climes. Will usually only attack if cornered o
 
 ---
 
+### Snake Person
+
+Depraved monsters with the sinuous body, tail, and head of a giant snake and scaly humanoid torso and arms. Capture other sentients to be eaten or sacrificed in obscene rituals praising their demonic masters. Dwell in hot jungles.
+
+*AC* 4 [15], *HD* 6* (27hp), *Att* 1 × bite (1d10 + poison) or 1 × weapon (1d6 or by weapon), *THAC0* 14 [+5]
+*MV* 90' (30'), *SV* D10 W11 P12 B13 S14 (6), *ML* 8, *AL* Chaotic, *XP* 500 (priests: 725)
+*NA* 1d4 (2d10), *TT* C
+
+- **Poison:** Causes death in 1d6 turns (save versus poison).
+- **Magic resistance:** +4 bonus to all saving throws against magic.
+- **Priests:** For every 10 snake people in the lair, there will be 1 priest with the ability to cast spells as a 5th level cleric.
+- **Cults:** Sometimes found among human cults that worship snakes.
+- **Crossbreeds:** Human/snake person hybrids are said to be possible. Such creatures appear as humans, except for their snake-like eyes and forked tongues.
+
+---
+
+### Spawn of the Worm
+
+Grotesque, animated human corpses in an advanced state of rot. Brains have been entirely devoured by vile worms, which fill the skull cavity and writhe out of the eyes and mouth. Dwell in dungeons, tomb complexes, and swamps.
+
+*AC* 9 [10], *HD* 4*** (18hp), *Att* 1 × fist (1d8 + disease), 1 × worm (burrow), *THAC0* 16 [+3]
+*MV* 90' (30'), *SV* D10 W11 P12 B13 S14 (4), *ML* 12, *AL* Chaotic, *XP* 225
+*NA* 1d3 (1d6), *TT* None
+
+- **Undead:** Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
+- **Aura of fear:** All coming within 30' must save versus spells or flee for 1 turn.
+- **Disease:** Anyone hit contracts a horrible rotting disease (save versus poison with a +4 bonus). Permanently lose 2 points of CHA per month (death if CHA reaches 0); magical healing is ineffective; natural healing is ten times slower. The disease can only be removed by magic.
+- **Burrowing worms:** A worm leaps from the spawn's skull at a character in melee. This requires an attack roll. If the worm hits, it starts to burrow into the victim's flesh. In 1d4 rounds, it reaches the brain, killing the victim, who becomes a spawn of the worm in 6 turns.
+- **Killing worms:** The first round after a worm hits, it can be killed by contact with steel, holy water, or a blessed object. Subsequently, only magic (e.g. cure disease) will work.
+- **Regeneration:** Regain 2hp per round. Severed limbs reattach.
+- **Return from death:** If killed (0hp), regenerate and fight again in 2d6 rounds.
+- **Fire, acid, holy water:** Cannot regenerate damage from these sources. The only way to permanently kill.
+
+---
+
 ### Spectre
 <!-- PDF p.205 -->
 
@@ -2681,6 +4028,21 @@ Incorporeal phantoms; one of the most powerful undead monsters.
 - **Undead:** Make no noise, until they attack. Immune to effects that affect living creatures (e.g. poison). Immune to mind-affecting or mind-reading spells (e.g. charm, hold, sleep).
 - **Mundane damage immunity:** Can only be harmed by magical attacks.
 - **Energy drain:** A successfully hit target permanently loses two experience levels (or Hit Dice). This incurs a loss of two Hit Dice of hit points, as well as all other benefits due to the drained levels (e.g. spells, saving throws, etc.). A character's XP is reduced to the lowest amount for the new level. A person drained of all levels becomes a spectre next night, under the control of the spectre that killed them.
+
+---
+
+### Sphinx
+
+Large (8' tall) monsters with bird-like wings, the body of a lion, and a human head. Collect riddles, puzzles, and obscure lore. May pose riddles to those they meet, attacking and consuming any who cannot give the correct answer. Dwell in warm climes in ruins and wild areas.
+
+*AC* 0 [19], *HD* 12*** (54hp), *Att* 2 × claw (3d6), [1 × roar or magic], *THAC0* 10 [+9]
+*MV* 180' (60') / 360' (120') flying, *SV* D2 W2 P2 B2 S2 (24), *ML* 10, *AL* Neutral, *XP* 3,500
+*NA* 1 (1), *TT* M
+
+- **Roar:** All within 120' must save versus spells with a –4 penalty or flee in terror for 1d6 turns. Characters within 60' who fail the save are stunned (unable to move or act) for 1d6 rounds and then flee. Characters within 10' also suffer 6d6 damage and are deafened for 1 turn.
+- **Roar frequency:** May be used at most twice per day.
+- **Magic:** Cast magic-user spells, once per day each: detect magic, read languages, read magic, detect invisible, locate object, clairvoyance, dispel magic, remove curse.
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
 
 ---
 
@@ -2785,6 +4147,38 @@ Feathered, bird-like creatures with long, sharp beaks.
 
 ---
 
+### Strangle Weed
+
+10' long fronds of rubbery seaweed that seek out living prey. Dwell in warm seas.
+
+*AC* 5 [14], *HD* 3* (13hp), *Att* 1 × grab (1d4 + entangle), *THAC0* 17 [+2]
+*MV* 0' (0'), *SV* D12 W13 P14 B15 S16 (2), *ML* 7, *AL* Neutral, *XP* 50
+*NA* 0 (3d4), *TT* U
+
+- **Entangle:** A victim hit by a frond is entangled and suffers 1d4 automatic damage on each subsequent round. May make a STR check each round to escape.
+- **Clusters:** Each frond is treated as an individual monster, but clusters of multiple fronds are controlled by a single semi-intelligent "brain" in the seabed.
+
+---
+
+### Svirfneblin
+
+Short, thickset demihumans with long noses and gnarled, hairless, grey skin. Also known as deep gnomes. Dwell deep in the Underworld in labyrinthine lairs riddled with cunning secret passages and chambers.
+
+*AC* 5 [14], *HD* 1 (4hp), *Att* 1 × weapon (1d6 or by weapon), *THAC0* 19 [0]
+*MV* 60' (20'), *SV* D8 W9 P10 B14 S11 (Svirfneblin 1), *ML* 8 (10 in sight of leader or chieftain), *AL* Neutral, *XP* 10 (leader: 20, bodyguard: 35, chieftain: 75)
+*NA* 1d8 (5d8), *TT* C
+
+- **Surprise:** On a 1–4 underground, due to ability to blend into stone.
+- **Infravision:** 90'.
+- **Light sensitivity:** Suffer a –2 penalty to attack rolls and a –1 penalty to AC when in bright light (daylight, continual light).
+- **Leader:** A 2 HD leader (with 11hp) is present for every 20 svirfneblins.
+- **Clan chieftain and bodyguards:** A 4 HD chieftain (with 18hp) and 1d6 3 HD bodyguards (with 1d4 + 9hp) live in the lair. The chieftain gains a +1 bonus to damage.
+- **Summon earth elemental:** Once per day, leaders and chieftains can summon an 8 HD earth elemental for 1d6 turns.
+- **Hate deep ones and mind lashers:** Normally attack on sight.
+- **Mines and machines:** Love machinery, mining, and gems.
+
+---
+
 ### Thoul
 <!-- PDF p.208 -->
 
@@ -2796,6 +4190,45 @@ Magical monstrosities that look like hobgoblins (except on close inspection), bu
 
 - **Paralysis:** Successful attacks cause paralysis for 2d4 turns (save versus paralysis negates). Elves and creatures larger than ogres are unaffected. After paralysing a target, thouls will attack others.
 - **Regeneration:** A damaged thoul gains 1 hit point at the start of each round, as long as it is alive.
+
+---
+
+### Tarrasque
+
+Legendary, gargantuan (50' long) reptilian monstrosities dreaded throughout all lands. Spend most of their time sleeping in their underground lairs. Emerge periodically and ravage vast swaths of land, consuming all plants and animals in the path. Tarrasques are quite possibly the most feared monster of all.
+
+*AC* –3 [22], *HD* 36** (162hp), *Att* 2 × claw (1d12), 1 × bite (5d10 + severing), 1 × tail (2d12), 2 × horn (1d10), *THAC0* 5 [+14]
+*MV* 90' (30'), *SV* D2 W3 P4 B3 S6 (18), *ML* 10, *AL* Neutral, *XP* 17,750
+*NA* 0 (1), *TT* Carapace
+
+- **Aura of terror:** Creatures of under 3 HD who behold a tarrasque are paralysed with terror until it is out of sight. Creatures of more than 3 HD will instead flee in terror for 6 turns. Creatures of 7 HD or higher may save vs paralysis to resist.
+- **Charge:** In first round of combat, when not in melee. Requires a clear run of at least 20 yards. Horns inflict double damage.
+- **Severing:** A bite attack roll of 18 or higher indicates that one of the target's extremities (determined randomly, e.g. 1–2: leg, 3–4: arm, 5–6: head) is severed.
+- **Regeneration:** A damaged tarrasque gains 1hp at the start of each round.
+- **Return from death:** If killed (0hp), will regenerate, reforming completely from even only a tiny piece.
+- **Killing permanently:** Only possible by reducing to 0hp then using a wish.
+- **Energy reflection:** Immune to energy rays, cones, and bolts (lighting, cold, magic missiles, etc.). 1-in-6 chance of the attack being reflected back at its origin.
+- **Fire immunity:** Unharmed by fire.
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Carapace:** 10d10 diamonds (1,000gp value each) can be extracted from the carapace. It is also possible to craft magic shields from the plates.
+- **Sleeping:** Sleep in lair for months or years, before emerging for 1–2 weeks of voracious feeding.
+- **Unique:** It is rumoured that there may only be a single tarrasque.
+
+---
+
+### Titan
+
+Gargantuan (22' tall) humanoids of radiant beauty and athletic build. Beneficent of character, but prone to megalomania. Natives of higher planes, but sometimes have strongholds in the mortal world.
+
+*AC* 0 [19], *HD* 20*** (90hp), *Att* 1 × giant weapon (8d6) or spells, *THAC0* 6 [+13]
+*MV* 150' (50'), *SV* D2 W2 P2 B2 S4 (20), *ML* 10, *AL* Lawful, *XP* 5,450
+*NA* 1 (1d2), *TT* E, L × 10, M
+
+- **Invisibility:** At will. Become visible when attacking or casting spells.
+- **Levitation:** At will. Move vertically up to 20' per round.
+- **Spell casting:** Know how to cast 2 cleric spells of each level (1st to 5th) and 2 magic-user spells of each level (1st to 6th). Each spell known may be cast once per day.
+- **Language:** Speak the tongues of all giants.
+- **Giant companions:** 2-in-10 chance of a storm giant being encountered with titans.
 
 ---
 
@@ -2842,6 +4275,23 @@ Warty amphibians with long, sticky tongues. As large as a great hound, weighing 
 
 ---
 
+### Trapper
+
+Intelligent, cunning predators that stretch their stony, amorphous bodies flat across large areas of floor. Wait for victims to walk across, then fold up, trapping the victims. Typically cover a 20' square area (though larger specimens are occasionally encountered). Dwell underground.
+
+*AC* 3 [16], *HD* 12* (54hp), *Att* 1 × trap (1d8), *THAC0* 10 [+9]
+*MV* 30' (10'), *SV* D6 W7 P8 B8 S10 (12), *ML* 11, *AL* Neutral, *XP* 1,900
+*NA* 1 (0), *TT* G
+
+- **Lure:** Often form a protrusion resembling a chest near centre to lure prey.
+- **Surprise:** On a 1–5, due to camouflaged appearance.
+- **Trap:** Affects all within the 20' square area the trapper covers. A single attack roll is made and compared against the AC of all targets.
+- **Trapped victims:** Cannot move, automatically suffer 1d8 damage per round. Can attack the trapper only if they had a short weapon (e.g. dagger, short sword) in hand when trapped.
+- **Suffocation:** Trapped victims die after 6 rounds due to suffocation.
+- **Damage reduction:** Half damage from fire and cold-based attacks.
+
+---
+
 ### Treant
 <!-- PDF p.209 -->
 
@@ -2869,6 +4319,27 @@ Massive (12' to the shoulder, almost 40' long), aggressive, herbivorous dinosaur
 - **Aggressive:** Normally attack on sight.
 - **Charge:** In first round of combat, when not in melee. Requires a clear run of at least 20 yards. Horns inflict double damage.
 - **Trample:** 3-in-4 chance of trampling each round. +4 to hit human-sized or smaller creatures.
+
+---
+
+### Triton
+
+Aquatic humanoids with silvery skin, blue-green hair, and scaled legs ending in fins. Dwell in warm waters both in shallows and at great depths.
+
+*AC* 5 [14], *HD* 3 (13hp), *Att* 1 × weapon (1d6 or by weapon), *THAC0* 17 [+2]
+*MV* 150' (50'), *SV* D12 W13 P14 B15 S16 (3), *ML* 9, *AL* Lawful, *XP* 35 (leader: 175, king: 900)
+*NA* 0 (1d6 × 10), *TT* F
+
+- **Magic resistance:** +4 bonus to all saving throws against magic.
+- **Weapons:** Tridents (1d6 damage), crossbows, daggers.
+- **Mounts:** Roving bands are usually mounted on hippocampi or giant seahorses.
+- **Leaders:** For every 10 in a group, there is a 5 HD leader.
+- **Lairs:** Beautiful castles on the seabed or caverns sculpted into undersea rocks. Lairs are lavishly decorated with coral.
+- **Triton king:** A 9 HD triton rules the lair. The king has a magical conch shell which he can blow to calm rough seas, to summon 6d6 hippocampi or giant seahorses, or to cause marine animals within 240' to flee (save versus spells).
+- **Priests:** In the lair, there is a high priest (with the abilities of a 10th level cleric) and 1d4 priests (4th level clerics).
+- **Magic-users:** In the lair, there is a 75% chance of a triton with the abilities of a magic-user (level 1d6+4).
+- **Guardians:** Use trained sea creatures to guard their homes.
+- **Divine purpose:** According to legend, tritons were brought to the mortal world from the plane of elemental water for some special purpose which will be revealed when the time is right.
 
 ---
 
@@ -2900,6 +4371,31 @@ Intelligent, wicked, 8' tall humanoids with emaciated, rubbery bodies. Consume t
 - **Return from death:** If killed (0hp), will regenerate and fight again in 2d6 rounds.
 - **Fire and acid:** Cannot regenerate damage from these sources. The only way to permanently kill a troll.
 - **Fear of fire:** Morale 8 when attacked with fire or acid.
+
+---
+
+### Turtle, Giant
+
+#### Sea Turtle
+
+Giant (20' long), peaceful marine reptiles that drift in warm oceans, eating sea plants. Dangerous if threatened.
+
+*AC* 3 [16], *HD* 15 (67hp), *Att* 1 × bite (4d4), *THAC0* 9 [+10]
+*MV* 10' (3') / 150' (50') swimming, *SV* D8 W9 P10 B10 S12 (8), *ML* 7, *AL* Neutral, *XP* 1,350
+*NA* 0 (1d3), *TT* None
+
+- **Tip boats:** 50% likely to emerge under canoes or small boats, tipping them over.
+
+#### Snapping Turtle
+
+Giant (10' long), aggressive predatory turtles that lurk in the shallows of lakes and large rivers.
+
+*AC* 3 [16], *HD* 10 (45hp), *Att* 1 × bite (6d4), *THAC0* 11 [+8]
+*MV* 30' (10'), *SV* D10 W11 P12 B13 S14 (5), *ML* 8, *AL* Neutral, *XP* 900
+*NA* 0 (1d4), *TT* None
+
+- **Surprise:** On a 1–4, due to hiding motionless underwater.
+- **Long neck:** Can bite up to 10' away.
 
 ---
 
@@ -2979,6 +4475,18 @@ Low level fighters, often on their way to or from war.
 
 ---
 
+### Violet Fungus
+
+Giant (5' tall), carnivorous mushrooms that can creep around slowly. Live underground, among shriekers, which they resemble. Feed on the rotting remains of living creatures which stray too close.
+
+*AC* 7 [12], *HD* 3* (13hp), *Att* 2 × tentacle (2d4 + rot), *THAC0* 17 [+2]
+*MV* 10' (3'), *SV* D12 W13 P14 B15 S16 (2), *ML* 12, *AL* Neutral, *XP* 50
+*NA* 1d4 (0), *TT* None
+
+- **Rot:** Tentacles rot flesh. Save versus poison to avoid. If the save fails, the damage inflicted by the hit can only be healed by magic.
+
+---
+
 ### Warp Beast
 <!-- PDF p.214 -->
 
@@ -2991,6 +4499,40 @@ Large, black, six-legged, semi-intelligent monsters. Look similar to panthers wi
 - **Displacement:** Appear 3' from actual location: attackers suffer –2 to hit.
 - **Save bonus:** +2 to all saves.
 - **Hate blink dogs:** Always attack them and their companions.
+
+---
+
+### Wasp, Giant
+
+5' long, highly aggressive, carnivorous insects. Paralyse creatures with their sting then lay eggs in the victim, which is then devoured by the larvae as they hatch. Dwell in warm and temperate climates.
+
+*AC* 4 [15], *HD* 4* (18hp), *Att* 1 × bite (2d4), 1 × sting (1d4 + poison), *THAC0* 16 [+3]
+*MV* 60' (20') / 210' (70') flying, *SV* D12 W13 P14 B15 S16 (2), *ML* 10, *AL* Neutral, *XP* 125
+*NA* 0 (1d20), *TT* L × 20
+
+- **Poison:** Causes permanent paralysis and death after 1d4 days (save vs poison).
+- **Vulnerable to fire:** If a wasp is damaged with fire (e.g. burning oil, torches), its wings are burned off.
+- **Nests:** Some giant wasps build nests of wood pulp. These lairs house 2d20 wasps.
+
+---
+
+### Water Fiend
+
+Evil spirits that inhabit pools. Take a serpent-like form and lash out at approaching creatures.
+
+*AC* 4 [15], *HD* 3+3* (16hp), *Att* 1 × strike (grab), *THAC0* 16 [+3]
+*MV* 120' (40'), *SV* D10 W11 P12 B13 S14 (6), *ML* 9, *AL* Chaotic, *XP* 75
+*NA* 1d3 (1d3), *TT* I
+
+- **Formation:** Takes 2 rounds to form.
+- **Grab:** The victim must save versus paralysis or be dragged underwater.
+- **Submerged victims:** Each round: suffer 1d4 automatic damage and must save versus death or become unconscious. An unconscious victim dies after 3 rounds.
+- **Resistance to sharp weapons:** Only suffer 1 point of damage.
+- **Return from death:** If killed (0hp), will reform with full hp in 2 rounds.
+- **Energy resistance:** Cold attacks paralyse for 1d3 rounds (no damage). Half damage from fire attacks.
+- **Killing permanently:** Only by magic (e.g. dispel evil, purify food and water).
+- **Water-bound:** Must remain in water.
+- **Command water elemental:** 50% chance of being able to take over command of a water elemental that is within 30'.
 
 ---
 
@@ -3092,6 +4634,21 @@ Corpses of humans or demihumans, possessed by malevolent spirits.
 
 ---
 
+### Will-o'-the-Wisp
+
+1' spheres of bobbing, torch-like light that lure people to their doom in bogs or traps. Feed on the energy of dying souls.
+
+*AC* 0 [19], *HD* 6 (27hp), *Att* 1 × lightning (1d10), *THAC0* 14 [+5]
+*MV* 180' (60'), *SV* D10 W11 P12 B13 S14 (6), *ML* 11, *AL* Chaotic, *XP* 275
+*NA* 1d3 (1d6), *TT* G
+
+- **Invisibility:** At will. Cannot attack while invisible.
+- **Mundane damage immunity:** Can only be harmed by magical attacks.
+- **Energy immunity:** Unharmed by electrical attacks. Minimum damage from fire.
+- **If reduced to 5 or less hp:** Will reveal location of treasure hoard.
+
+---
+
 ### Wolf
 <!-- PDF p.216 -->
 
@@ -3150,6 +4707,23 @@ Winged, two-legged, dragon-like monsters with a long tail tipped with a venomous
 
 ---
 
+### Xorn
+
+5' tall, radially symmetric monsters with powerful jaws atop their body and a clawed arm, a stumpy leg, and an eye on each of their 3 sides. Eat rare minerals. Natives of the plane of elemental earth who venture to the material plane on occasion in search of food.
+
+*AC* –2 [21], *HD* 7 (31hp), *Att* 1 × bite (6d4), 3 × claw (1d3), *THAC0* 13 [+6]
+*MV* 90' (30'), *SV* D8 W9 P10 B10 S12 (7), *ML* 8, *AL* Neutral, *XP* 450
+*NA* 1d4 (0), *TT* J, L × 5
+
+- **Surprise:** On a 1–5, due to blending in with stone.
+- **Move through stone:** Can meld into stone and earth, moving at full speed.
+- **Smell metals:** Up to 20' away.
+- **Demand metals:** Will leave characters alone if fed on precious metals. Otherwise, 90% likely to attack.
+- **Energy immunity:** Unharmed by fire or cold-based attacks. Half damage from electrical attacks.
+- **Earth spells:** Move earth pushes 30' and stuns for 1 round (cannot move or act), stone to flesh or transmute rock to mud reduces AC to 9 [10] for 1 round, pass-wall inflicts 1d10+10 damage.
+
+---
+
 ### Yellow Mould
 <!-- PDF p.217 -->
 
@@ -3164,6 +4738,22 @@ Deadly fungus that covers walls, ceilings, and other surfaces.
 - **Spore cloud:** 50% chance of attacking if touched (or damaged): releases a cloud of spores affecting all within a 10' cube area.
 - **Choking:** Save versus death or die within 6 rounds.
 - **Erosion:** Wood or leather in contact with the mould will be eaten away.
+
+---
+
+### Yeti
+
+Large (8' tall), shaggy ape-like monsters with vicious claws and a taste for human flesh. Dwell in isolated, icy regions.
+
+*AC* 5 [14], *HD* 4+4** (22hp), *Att* 2 × claw (1d6 + icy squeeze), *THAC0* 15 [+4]
+*MV* 150' (50'), *SV* D10 W11 P12 B13 S14 (4), *ML* 8, *AL* Neutral, *XP* 275
+*NA* 1d6 (1d6), *TT* D
+
+- **Surprise:** On a 1–4, due to camouflage in snow and ice.
+- **Icy squeeze:** On an attack roll of 20, victim is squeezed for 2d8 extra damage.
+- **Paralysing gaze:** Any who are surprised must save versus paralysis or be frozen still for 3 rounds.
+- **Paralysed victims:** Can be struck automatically with both claws and squeezed for an additional 2d8 damage.
+- **Vulnerable to fire:** 50% extra damage.
 
 ---
 
