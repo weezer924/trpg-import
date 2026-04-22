@@ -700,6 +700,52 @@ Human character classes have a maximum level of 14. If the referee allows contin
 
 Damage: Die rolled when using the optional rule for variable weapon damage.
 
+### Poison
+
+*(PDF printed p.98–99)*
+
+At the referee's option, various types of poison may be available for purchase. Using poison is a chaotic act avoided by many characters. The sale of poisons is prohibited by most cultures; PCs may turn to black markets or clandestine guilds (thieves, assassins).
+
+**Effects:** A victim must save versus poison with a modifier depending on the strength of the poison. Outcome depends on whether the save succeeded or failed.
+
+- **Save modifier:** Applied to the victim's save. Reflects the poison's strength.
+- **Chance of detection:** Probability of the victim noticing the poison (per round of a poisoned blade in use, or by smell/taste). A character who notices a poisoned blade may attack the wielder or call for aid. A victim who notices an ingested poison will reject the drink or food, avoiding poisoning.
+- **Onset time:** The poison's effect occurs after this delay. "Instant" means the poison takes effect before the victim can react.
+- **Effect:** What happens to the victim on save success vs. save fail.
+
+#### Using Bloodstream Poisons
+
+Bloodstream poisons are typically applied to a bladed weapon.
+
+- **Application:** Takes one turn. A vial is sufficient for one bladed melee weapon or up to 6 arrows/crossbow bolts.
+- **Effectiveness:** Once applied, the poison is effective for up to two days or two hits, whichever comes first.
+  - *Evaporation:* After one day, half effectiveness; after two days, no longer effective.
+  - *Wiping off after hits:* Full on the first hit, half on the second, none afterwards.
+- **Half effectiveness:** Inflicts only half damage. For poisons that cause death (rather than damage), half effectiveness grants +4 to the save.
+
+#### Using Ingested Poisons
+
+Ingested poisons take effect when swallowed by the victim. A single vial is enough to poison one victim.
+
+#### Bloodstream Poisons
+
+| Type | Cost (gp) | Save Mod. | Detection | Onset Time | Save Succeeds | Save Fails |
+|:----:|----------:|:---------:|:---------:|:----------:|:-------------:|:----------:|
+| I | 10 | +6 | 80% | 1d4+1 rounds | None | 15hp damage |
+| II | 75 | +5 | 65% | 1d3 rounds | None | 25hp damage |
+| III | 600 | +4 | 40% | 1 round | None | 35hp damage |
+| IV | 1,500 | +3 | 15% | Instant | None | Death |
+
+#### Ingested Poisons
+
+| Type | Cost (gp) | Save Mod. | Detection | Onset Time | Save Succeeds | Save Fails |
+|:----:|----------:|:---------:|:---------:|:----------:|:-------------:|:----------:|
+| I | 5 | +6 | 80% | 2d4 rounds | 10hp damage | 20hp damage |
+| II | 30 | +5 | 65% | 1d4+1 rounds | 15hp damage | 30hp damage |
+| III | 200 | +4 | 40% | 1d2 rounds | 20hp damage | 40hp damage |
+| IV | 500 | +3 | 15% | Instant | 25hp damage | Death |
+| V | 1,000 | +2 | 0% | 1d4 turns | 30hp damage | Death |
+
 ---
 
 ## Vehicles and Mounts
@@ -1238,6 +1284,22 @@ Some character classes can memorize and cast magical spells. A spell consists of
   - **Chaotic:** Usually use reversed spells; normal versions only to benefit allies.
   - **Neutral:** Favour either normal or reversed spells depending on the deity (no deity favours both).
 
+### Turning the Undead
+
+*(PDF printed p.123)*
+
+Some divine spell casters have the ability to turn the undead, with the chance of success noted in their character class description. Unless noted otherwise in the class description, turning the undead may be attempted without limit.
+
+The full Cleric and Paladin turning tables are in `ose-advanced-reference-booklet.md` → *Turning the Undead*.
+
+#### Limits on Turning the Undead (Optional Rule)
+
+Groups who wish to impose limits may use these guidelines:
+
+- **Frequency:** Each character capable of turning the undead may make one attempt per encounter.
+- **Mixed groups of undead:** In encounters with multiple types of undead, a character who makes a successful turning attempt may optionally make another attempt in the following round. Repeat until all types of undead have been affected or an attempt fails.
+- **Duration:** A successfully turned monster is affected for 1 turn; following this turn, the monster may return.
+
 ### Spell Books
 
 - **Number of spells:** Exactly the number the character can memorize (per class and level).
@@ -1328,6 +1390,33 @@ Reversible spells: Reversed version noted in parentheses.
 ## Adventuring
 
 *(PDF p.112–135)*
+
+### Party Organisation
+
+*(PDF printed p.212–213)*
+
+- **Size:** The ideal party is 6–8 characters — large enough to confront adventure challenges, but not so large as to be disorganised. If fewer PCs are present, players may wish to hire retainers (see Hired Help).
+- **Classes:** Mix classes. Combat-focused characters protect the group; other classes bring magic or special abilities useful for different situations.
+- **Level:** Characters more than 4 levels apart should adventure separately — challenges and rewards for greatly different levels do not match.
+
+#### Marching Order
+
+Before starting an adventure, players determine the party's normal arrangement when exploring. For example: two-column formation, well-armoured characters in front, weaker in the middle, a rear guard. The group may define different standard orders for common situations (standard exploration, combat, opening doors, searching, etc.).
+
+#### The Caller
+
+Players may nominate one of their number as group spokesperson (the caller), responsible for informing the referee about the actions and movements of the party as a whole. Delegating this role speeds up play. The caller's character usually takes on the party-leader role and should have high Charisma, positioned near the front of the party.
+
+#### The Mapper
+
+One player creates a map of the areas explored, based on the referee's descriptions. Details such as monsters or traps encountered, puzzle clues, or interesting unexplored areas may be noted on the map as it is drawn.
+
+#### Dividing Treasure
+
+The spoils may be divided however the players agree on.
+
+- **Non-magical treasure:** Typically divided evenly between PCs.
+- **Magic items:** Players must decide who keeps each item. One method: each player rolls a die; highest roll picks first, second highest picks next, and so on.
 
 ### Time, Weight, and Movement
 
