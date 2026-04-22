@@ -12,153 +12,243 @@
 
 ### Monster Descriptions (A-Z)
 3. [Acolyte](#acolyte) — 1st level clerics
-4. [Ape, White](#ape-white) — cave-dwelling albino apes
-5. [Bandit](#bandit) — NPC thieves
-6. [Basilisk](#basilisk) — petrifying serpentine lizard
-7. [Bat](#bat) — giant bat, giant vampire bat, normal bat
-8. [Bear](#bear) — black, cave, grizzly, polar
-9. [Beetle, Giant](#beetle-giant) — fire, oil, tiger
-10. [Berserker](#berserker) — rage fighters
-11. [Black Pudding](#black-pudding) — amorphous black jelly
-12. [Blink Dog](#blink-dog) — teleporting canines
-13. [Boar](#boar) — wild boar
-14. [Brigand](#brigand) — outlaws and mercenaries
-15. [Buccaneer](#buccaneer) — pirate sailors
-16. [Bugbear](#bugbear) — large stealthy goblins
-17. [Caecilia](#caecilia) — giant worm-like amphibian
-18. [Camel](#camel) — desert mount
-19. [Carcass Crawler](#carcass-crawler) — paralysing tentacle worm
-20. [Cat, Great](#cat-great) — lion, mountain lion, panther, sabre-toothed tiger, tiger
-21. [Cave Locust](#cave-locust) — giant cave crickets
-22. [Centaur](#centaur) — horse-human hybrids
-23. [Centipede, Giant](#centipede-giant) — poisonous centipede
-24. [Chimera](#chimera) — lion/goat/dragon hybrid
-25. [Cockatrice](#cockatrice) — petrifying bird-reptile
-26. [Crab, Giant](#crab-giant) — giant crustacean
-27. [Crocodile](#crocodile) — normal, large, giant
-28. [Cyclops](#cyclops) — one-eyed giant
-29. [Dervish](#dervish) — fanatical nomads
-30. [Djinni (Lesser)](#djinni-lesser) — air elemental being
-31. [Doppelgänger](#doppelgänger) — shape-shifting mimic
-32. [Dragon](#dragon) — black, blue, gold, green, red, sea, white
-33. [Dragon Turtle](#dragon-turtle) — gargantuan sea monster
-34. [Driver Ant](#driver-ant) — giant black ants
-35. [Dryad](#dryad) — tree spirit
-36. [Dwarf](#dwarf) — mountain demihumans
-37. [Efreeti (Lesser)](#efreeti-lesser) — fire elemental being
-38. [Elemental](#elemental) — air, earth, fire, water
-39. [Elephant](#elephant) — massive tusked animal
-40. [Elf](#elf) — fey demihumans
-41. [Ferret, Giant](#ferret-giant) — giant rat hunters
-42. [Fish, Giant](#fish-giant) — bass, catfish, piranha, rockfish, sturgeon
-43. [Gargoyle](#gargoyle) — animated stone monster
-44. [Gelatinous Cube](#gelatinous-cube) — transparent dungeon jelly
-45. [Ghoul](#ghoul) — paralysing undead
-46. [Giant](#giant) — cloud, fire, frost, hill, stone, storm
-47. [Gnoll](#gnoll) — hyena-headed humanoids
-48. [Gnome](#gnome) — small demihumans
-49. [Goblin](#goblin) — small chaotic humanoids
-50. [Golem](#golem) — amber, bone, bronze, wood
-51. [Gorgon](#gorgon) — petrifying bull
-52. [Green Slime](#green-slime) — corrosive slime
-53. [Grey Ooze](#grey-ooze) — stone-like ooze
-54. [Griffon](#griffon) — eagle-lion hybrid
-55. [Halfling](#halfling) — small demihumans
-56. [Harpy](#harpy) — winged charming monsters
-57. [Hawk](#hawk) — normal and giant
-58. [Hellhound](#hellhound) — fire-breathing dogs
-59. [Herd Animal](#herd-animal) — wild herbivores
-60. [Hippogriff](#hippogriff) — eagle-horse hybrid
-61. [Hobgoblin](#hobgoblin) — large, organised goblins
-62. [Horse](#horse) — draft, riding, war, wild
-63. [Hydra](#hydra) — multi-headed serpent
-64. [Insect Swarm](#insect-swarm) — swarming insects
-65. [Invisible Stalker](#invisible-stalker) — invisible summoned hunter
-66. [Killer Bee](#killer-bee) — giant bees
-67. [Kobold](#kobold) — small dog-like humanoids
-68. [Leech, Giant](#leech-giant) — blood-draining leech
-69. [Living Statue](#living-statue) — crystal, iron, rock
-70. [Lizard, Giant](#lizard-giant) — draco, gecko, horned chameleon, tuatara
-71. [Lizard Man](#lizard-man) — semi-aquatic reptile humanoids
-72. [Lycanthrope](#lycanthrope) — devil swine, werebear, wereboar, wererat, weretiger, werewolf
-73. [Manticore](#manticore) — winged lion with tail spikes
-74. [Mastodon](#mastodon) — prehistoric elephant
-75. [Medium](#medium) — NPC magic-user pretender
-76. [Medusa](#medusa) — petrifying gaze
-77. [Merchant](#merchant) — NPC traders
-78. [Merman](#merman) — aquatic humanoids
-79. [Minotaur](#minotaur) — bull-headed humanoid
-80. [Mule](#mule) — pack animal
-81. [Mummy](#mummy) — undead wrapped in bandages
-82. [Neanderthal (Caveman)](#neanderthal-caveman) — primitive humans
-83. [Nixie](#nixie) — water sprites
-84. [Noble](#noble) — NPC aristocrats
-85. [Nomad](#nomad) — desert riders
-86. [Normal Human](#normal-human) — non-adventuring humans
-87. [Ochre Jelly](#ochre-jelly) — dividing ooze
-88. [Octopus, Giant](#octopus-giant) — giant tentacled sea creature
-89. [Ogre](#ogre) — large brutish humanoids
-90. [Orc](#orc) — chaotic pig-faced humanoids
-91. [Owl Bear](#owl-bear) — bear-owl hybrid
-92. [Pegasus](#pegasus) — winged horse
-93. [Pirate](#pirate) — ocean raiders
-94. [Pixie](#pixie) — tiny invisible fey
-95. [Pterosaur](#pterosaur) — pteranodon, pterodactyl
-96. [Purple Worm](#purple-worm) — colossal burrowing worm
-97. [Rat](#rat) — giant and normal
-98. [Rhagodessa](#rhagodessa) — giant spider-like predator
-99. [Rhinoceros](#rhinoceros) — normal and woolly
-100. [Robber Fly](#robber-fly) — giant predatory fly
-101. [Roc](#roc) — giant bird of prey
-102. [Rock Baboon](#rock-baboon) — aggressive primates
-103. [Rust Monster](#rust-monster) — metal-corroding creature
-104. [Salamander](#salamander) — flame and frost
-105. [Scorpion, Giant](#scorpion-giant) — giant arachnid
-106. [Sea Serpent (Lesser)](#sea-serpent-lesser) — giant sea snake
-107. [Shadow](#shadow) — incorporeal undead
-108. [Shark](#shark) — bull, great white, mako
-109. [Shrew, Giant](#shrew-giant) — aggressive tiny mammals
-110. [Shrieker](#shrieker) — alarm-sounding fungus
-111. [Skeleton](#skeleton) — animated bones
-112. [Snake](#snake) — cobra, pit viper, rock python, sea snake, spitting cobra
-113. [Spectre](#spectre) — incorporeal level-draining undead
-114. [Spider, Giant](#spider-giant) — black widow, crab spider, tarantella
-115. [Sprite](#sprite) — tiny winged fey
-116. [Squid, Giant](#squid-giant) — giant tentacled sea creature
-117. [Stegosaurus](#stegosaurus) — plated dinosaur
-118. [Stirge](#stirge) — blood-sucking bird
-119. [Thoul](#thoul) — troll-ghoul hybrid
-120. [Titanothere](#titanothere) — prehistoric rhino
-121. [Toad, Giant](#toad-giant) — giant amphibian
-122. [Trader](#trader) — NPC merchants
-123. [Treant](#treant) — sentient tree
-124. [Triceratops](#triceratops) — horned dinosaur
-125. [Troglodyte](#troglodyte) — stinking cave reptiles
-126. [Troll](#troll) — regenerating humanoid
-127. [Tyrannosaurus Rex](#tyrannosaurus-rex) — apex predator dinosaur
-128. [Unicorn](#unicorn) — magical horse
-129. [Vampire](#vampire) — powerful level-draining undead
-130. [Veteran](#veteran) — low-level NPC fighters
-131. [Warp Beast](#warp-beast) — six-legged displacement predator
-132. [Water Termite](#water-termite) — freshwater, saltwater, swamp
-133. [Weasel, Giant](#weasel-giant) — blood-draining mammal
-134. [Whale](#whale) — killer, narwhal, sperm
-135. [Wight](#wight) — level-draining undead
-136. [Wolf](#wolf) — normal and dire
-137. [Wraith](#wraith) — incorporeal level-draining undead
-138. [Wyvern](#wyvern) — poisonous winged reptile
-139. [Yellow Mould](#yellow-mould) — deadly dungeon fungus
-140. [Zombie](#zombie) — animated corpses
-
+4. [Amphisbaena](#amphisbaena) — 8' long giant snakes with a head at each end of their body
+5. [Ankheg](#ankheg) — 10'–20' long, many-legged, burrowing insects with tough...
+6. [Ape, White](#ape-white) — cave-dwelling albino apes
+7. [Bandit](#bandit) — NPC thieves
+8. [Banshee](#banshee) — incorporeal female spirits that linger after death in...
+9. [Basilisk](#basilisk) — petrifying serpentine lizard
+10. [Bat](#bat) — giant bat, giant vampire bat, normal bat
+11. [Bear](#bear) — black, cave, grizzly, polar
+12. [Beetle, Giant](#beetle-giant) — fire, oil, tiger
+13. [Berserker](#berserker) — rage fighters
+14. [Black Pudding](#black-pudding) — amorphous black jelly
+15. [Blink Dog](#blink-dog) — teleporting canines
+16. [Boar](#boar) — wild boar
+17. [Brigand](#brigand) — outlaws and mercenaries
+18. [Brownie](#brownie) — 1½' tall humanoids, related to pixies and halflings
+19. [Brown Mould](#brown-mould) — deadly fungus that covers walls, ceilings, and other...
+20. [Buccaneer](#buccaneer) — pirate sailors
+21. [Bugbear](#bugbear) — large stealthy goblins
+22. [Bulette](#bulette) — 15' long, hard-shelled reptiles with huge maws, tiny...
+23. [Caecilia](#caecilia) — giant worm-like amphibian
+24. [Camel](#camel) — desert mount
+25. [Carcass Crawler](#carcass-crawler) — paralysing tentacle worm
+26. [Caryatid Column](#caryatid-column) — 7' tall stone pillars carved in the likeness of female...
+27. [Cat, Great](#cat-great) — lion, mountain lion, panther, sabre-toothed tiger, tiger
+28. [Catoblepas](#catoblepas) — nightmarish creatures with a long, bone-tipped tail, a...
+29. [Cave Locust](#cave-locust) — giant cave crickets
+30. [Centaur](#centaur) — horse-human hybrids
+31. [Centipede, Giant](#centipede-giant) — poisonous centipede
+32. [Chimera](#chimera) — lion/goat/dragon hybrid
+33. [Cockatrice](#cockatrice) — petrifying bird-reptile
+34. [Coffer Corpse](#coffer-corpse) — decaying corpses whose hateful spirits remain stranded...
+35. [Couatl](#couatl) — 12' long, winged, feathered serpents of great...
+36. [Crab, Giant](#crab-giant) — giant crustacean
+37. [Crocodile](#crocodile) — normal, large, giant
+38. [Cyclops](#cyclops) — one-eyed giant
+39. [Dark Creeper](#dark-creeper) — scrawny, pale-skinned humanoids (4' tall), who dress in...
+40. [Deep One](#deep-one) — scaly, fish-headed, amphibious humanoids with long,...
+41. [Demonic Knight](#demonic-knight) — holy warriors who were seduced by dark powers and now...
+42. [Dervish](#dervish) — fanatical nomads
+43. [Disenchanter](#disenchanter) — pale blue, intelligent, partially transparent,...
+44. [Djinni](#djinni) — air elemental being
+45. [Dog](#dog) — carnivorous pack hunters
+46. [Doppelgänger](#doppelgänger) — shape-shifting mimic
+47. [Dragon](#dragon) — black, blue, gold, green, red, sea, white
+48. [Dragon, Multichromatic](#dragon-multichromatic) — giant, thoroughly evil, female dragons with five heads...
+49. [Dragonne](#dragonne) — small (5' tall at the shoulder) dragons with...
+50. [Dragon Turtle](#dragon-turtle) — gargantuan sea monster
+51. [Drider](#drider) — hybrid monstrosities with the 8 legs of a giant spider...
+52. [Driver Ant](#driver-ant) — giant black ants
+53. [Drow](#drow) — slender, fey demihumans with pointed ears, jet black...
+54. [Dryad](#dryad) — tree spirit
+55. [Duergar](#duergar) — short, scrawny, bearded demihumans with grey skin and...
+56. [Dwarf](#dwarf) — mountain demihumans
+57. [Efreeti](#efreeti) — fire elemental being
+58. [Elemental](#elemental) — air, earth, fire, water
+59. [Elephant](#elephant) — massive tusked animal
+60. [Elf](#elf) — fey demihumans
+61. [Ettin](#ettin) — two-headed giants (13' tall) of low intelligence and...
+62. [Eye of Terror](#eye-of-terror) — floating, scaled spheres (5' diameter) with a wide,...
+63. [Eye of the Deep](#eye-of-the-deep) — floating, scaled spheres (5' diameter) with a wide,...
+64. [Ferret, Giant](#ferret-giant) — giant rat hunters
+65. [Fish, Giant](#fish-giant) — bass, catfish, piranha, rockfish, sturgeon
+66. [Flail Snail](#flail-snail) — huge (8' tall) snails with a cluster of flailing,...
+67. [Frog, Giant](#frog-giant) — (variants)
+68. [Gargoyle](#gargoyle) — animated stone monster
+69. [Gas Spore](#gas-spore) — mindless, floating fungi that appear almost exactly like...
+70. [Gelatinous Cube](#gelatinous-cube) — transparent dungeon jelly
+71. [Ghast](#ghast) — grotesque, animalistic, undead humans that crave the...
+72. [Ghost](#ghost) — incorporeal spirits of the restless dead, often carrying...
+73. [Ghoul](#ghoul) — paralysing undead
+74. [Giant](#giant) — cloud, fire, frost, hill, stone, storm
+75. [Gibbering Mouther](#gibbering-mouther) — 5' mounds of rubbery jelly with hundreds of deranged...
+76. [Gnoll](#gnoll) — hyena-headed humanoids
+77. [Gnome](#gnome) — small demihumans
+78. [Goblin](#goblin) — small chaotic humanoids
+79. [Golem](#golem) — amber, bone, bronze, wood
+80. [Gorgon](#gorgon) — petrifying bull
+81. [Gorilla](#gorilla) — large (6' tall), heavy-set apes that dwell in isolated...
+82. [Green Slime](#green-slime) — corrosive slime
+83. [Grey Ooze](#grey-ooze) — stone-like ooze
+84. [Griffon](#griffon) — eagle-lion hybrid
+85. [Gullygug](#gullygug) — barbaric, tribal, frog-like humanoids
+86. [Hag](#hag) — (variants)
+87. [Halfling](#halfling) — small demihumans
+88. [Harpy](#harpy) — winged charming monsters
+89. [Hawk](#hawk) — normal and giant
+90. [Hellhound](#hellhound) — fire-breathing dogs
+91. [Herd Animal](#herd-animal) — wild herbivores
+92. [Hippocampus](#hippocampus) — intelligent aquatic horses with two finned forelegs and...
+93. [Hippogriff](#hippogriff) — eagle-horse hybrid
+94. [Hippopotamus](#hippopotamus) — massive, thick-skinned pachyderms that live in tropical...
+95. [Hobgoblin](#hobgoblin) — large, organised goblins
+96. [Homunculus](#homunculus) — miniature (18" tall), scaly-skinned humanoids with...
+97. [Hook Beast](#hook-beast) — tall (9') bipedal monsters with vulture-like beaks, a...
+98. [Horse](#horse) — draft, riding, war, wild
+99. [Hulker](#hulker) — hulking (9' tall, 5' wide), bipedal monsters with claws...
+100. [Hydra](#hydra) — multi-headed serpent
+101. [Insect Swarm](#insect-swarm) — swarming insects
+102. [Invisible Stalker](#invisible-stalker) — invisible summoned hunter
+103. [Jackalwere](#jackalwere) — evil shapeshifters which can take on the form of a...
+104. [Jellyfish, Giant](#jellyfish-giant) — huge, transparent sea creatures which float near the...
+105. [Killer Bee](#killer-bee) — giant bees
+106. [Kobold](#kobold) — small dog-like humanoids
+107. [Krell](#krell) — hovering brains (5' across) with an octopus-like beak...
+108. [Lamia](#lamia) — centaur-like monsters with the legs and body of a beast...
+109. [Lamprey, Giant](#lamprey-giant) — 8' long eels with horrid sphincter mouths lined with...
+110. [Leech, Giant](#leech-giant) — blood-draining leech
+111. [Leprechaun](#leprechaun) — diminutive (2' tall) magical humanoids who delight in...
+112. [Leucrocotta](#leucrocotta) — weird monsters with a stag-like body, a lion-like tail,...
+113. [Lich](#lich) — mighty magic-users whose evil magic has rendered them...
+114. [Living Statue](#living-statue) — crystal, iron, rock
+115. [Lizard, Giant](#lizard-giant) — draco, gecko, horned chameleon, tuatara
+116. [Lizard Man](#lizard-man) — semi-aquatic reptile humanoids
+117. [Locathah](#locathah) — nomadic humanoid fish-people with pale yellow scales,...
+118. [Lurker Above](#lurker-above) — mindless, carnivorous, ray-like monstrosities that cling...
+119. [Lycanthrope](#lycanthrope) — devil swine, werebear, wereboar, wererat, weretiger, werewolf
+120. [Malfyr](#malfyr) — nightmarish extra-dimensional monsters with an obese,...
+121. [Manticore](#manticore) — winged lion with tail spikes
+122. [Mantid](#mantid) — highly intelligent, 4-armed insectoid warriors who hunt...
+123. [Mantis, Giant](#mantis-giant) — 12' long, predatory insects with vicious clawed...
+124. [Mastodon](#mastodon) — prehistoric elephant
+125. [Medium](#medium) — NPC magic-user pretender
+126. [Medusa](#medusa) — petrifying gaze
+127. [Merchant](#merchant) — NPC traders
+128. [Merman](#merman) — aquatic humanoids
+129. [Merrow](#merrow) — frightful humanoids, 9' tall, with green scales, shaggy,...
+130. [Mimic](#mimic) — semi-intelligent monstrous shape-shifters that take on...
+131. [Mind Lasher](#mind-lasher) — evil, ultra-intelligent, octopus-headed humanoids with...
+132. [Minotaur](#minotaur) — bull-headed humanoid
+133. [Mule](#mule) — pack animal
+134. [Mummy](#mummy) — undead wrapped in bandages
+135. [Mutoid](#mutoid) — humanoids with mismatched body parts of many different...
+136. [Mycelian](#mycelian) — mycelians are 4' tall humanoid mushrooms, with tall...
+137. [Neanderthal (Caveman)](#neanderthal-caveman) — primitive humans
+138. [Necrophidius](#necrophidius) — giant snake skeletons (10' long) with a snake-fanged...
+139. [Nightmare](#nightmare) — intelligent, demonic horses with glowing red eyes,...
+140. [Nixie](#nixie) — water sprites
+141. [Noble](#noble) — NPC aristocrats
+142. [Nomad](#nomad) — desert riders
+143. [Normal Human](#normal-human) — non-adventuring humans
+144. [Ochre Jelly](#ochre-jelly) — dividing ooze
+145. [Octopus, Giant](#octopus-giant) — giant tentacled sea creature
+146. [Ogre](#ogre) — large brutish humanoids
+147. [Orc](#orc) — chaotic pig-faced humanoids
+148. [Otyugh](#otyugh) — aggressive, semi-intelligent, hulking (8' around)...
+149. [Owl Bear](#owl-bear) — bear-owl hybrid
+150. [Pegasus](#pegasus) — winged horse
+151. [Peryton](#peryton) — weird monsters with the body, talons, and wings of a...
+152. [Phoenix](#phoenix) — highly magical giant orange-red eagles (20' wingspan)...
+153. [Piercer](#piercer) — non-intelligent, carnivorous monsters that hang from...
+154. [Pirate](#pirate) — ocean raiders
+155. [Pixie](#pixie) — tiny invisible fey
+156. [Poltergeist](#poltergeist) — invisible, incorporeal spirits which haunt the place of...
+157. [Pseudo-Dragon](#pseudo-dragon) — intelligent, miniature (1–2' long), winged dragons with...
+158. [Pterosaur](#pterosaur) — pteranodon, pterodactyl
+159. [Purple Worm](#purple-worm) — colossal burrowing worm
+160. [Rakshasa](#rakshasa) — highly intelligent evil spirits that take the form of...
+161. [Rat](#rat) — giant and normal
+162. [Remorhaz](#remorhaz) — predatory, many-legged worm-like monsters with long...
+163. [Revenant](#revenant) — the corpse of a person who was murdered, reanimated by...
+164. [Rhagodessa](#rhagodessa) — giant spider-like predator
+165. [Rhinoceros](#rhinoceros) — normal and woolly
+166. [Robber Fly](#robber-fly) — giant predatory fly
+167. [Roc](#roc) — giant bird of prey
+168. [Rock Baboon](#rock-baboon) — aggressive primates
+169. [Roper](#roper) — horrible, amorphous monstrosities that form their bodies...
+170. [Rot Grub](#rot-grub) — tiny (2" long) maggots that consume living flesh
+171. [Rust Monster](#rust-monster) — metal-corroding creature
+172. [Sahuagin](#sahuagin) — predatory, sadistic aquatic humanoids with black-green...
+173. [Salamander](#salamander) — flame and frost
+174. [Satyr](#satyr) — magical humanoids with the legs and horns of goats
+175. [Scorpion, Giant](#scorpion-giant) — giant arachnid
+176. [Scorpionoid](#scorpionoid) — hideous, 12' tall monsters with the legs, body, and...
+177. [Seahorse, Giant](#seahorse-giant) — 15' long seahorses that graze marine plants in small herds
+178. [Sea Serpent](#sea-serpent) — giant sea snake
+179. [Shadow](#shadow) — incorporeal undead
+180. [Shambling Mound](#shambling-mound) — sentient, semi-intelligent plant monsters with the shape...
+181. [Shark](#shark) — bull, great white, mako
+182. [Shrew, Giant](#shrew-giant) — aggressive tiny mammals
+183. [Shrieker](#shrieker) — alarm-sounding fungus
+184. [Skeleton](#skeleton) — animated bones
+185. [Slithering Tracker](#slithering-tracker) — transparent, intelligent oozes that subsist on the blood...
+186. [Slug, Giant](#slug-giant) — gargantuan (30' long) grey slugs with rasp-like tongues...
+187. [Snake](#snake) — cobra, pit viper, rock python, sea snake, spitting cobra
+188. [Snake Person](#snake-person) — depraved monsters with the sinuous body, tail, and head...
+189. [Spawn of the Worm](#spawn-of-the-worm) — grotesque, animated human corpses in an advanced state...
+190. [Spectre](#spectre) — incorporeal level-draining undead
+191. [Sphinx](#sphinx) — large (8' tall) monsters with bird-like wings, the body...
+192. [Spider, Giant](#spider-giant) — black widow, crab spider, tarantella
+193. [Sprite](#sprite) — tiny winged fey
+194. [Squid, Giant](#squid-giant) — giant tentacled sea creature
+195. [Stegosaurus](#stegosaurus) — plated dinosaur
+196. [Stirge](#stirge) — blood-sucking bird
+197. [Strangle Weed](#strangle-weed) — 10' long fronds of rubbery seaweed that seek out living prey
+198. [Svirfneblin](#svirfneblin) — short, thickset demihumans with long noses and gnarled,...
+199. [Thoul](#thoul) — troll-ghoul hybrid
+200. [Tarrasque](#tarrasque) — legendary, gargantuan (50' long) reptilian monstrosities...
+201. [Titan](#titan) — gargantuan (22' tall) humanoids of radiant beauty and...
+202. [Titanothere](#titanothere) — prehistoric rhino
+203. [Toad, Giant](#toad-giant) — giant amphibian
+204. [Trader](#trader) — NPC merchants
+205. [Trapper](#trapper) — intelligent, cunning predators that stretch their stony,...
+206. [Treant](#treant) — sentient tree
+207. [Triceratops](#triceratops) — horned dinosaur
+208. [Triton](#triton) — aquatic humanoids with silvery skin, blue-green hair,...
+209. [Troglodyte](#troglodyte) — stinking cave reptiles
+210. [Troll](#troll) — regenerating humanoid
+211. [Turtle, Giant](#turtle-giant) — (variants)
+212. [Tyrannosaurus Rex](#tyrannosaurus-rex) — apex predator dinosaur
+213. [Unicorn](#unicorn) — magical horse
+214. [Vampire](#vampire) — powerful level-draining undead
+215. [Veteran](#veteran) — low-level NPC fighters
+216. [Violet Fungus](#violet-fungus) — giant (5' tall), carnivorous mushrooms that can creep...
+217. [Warp Beast](#warp-beast) — six-legged displacement predator
+218. [Wasp, Giant](#wasp-giant) — 5' long, highly aggressive, carnivorous insects
+219. [Water Fiend](#water-fiend) — evil spirits that inhabit pools
+220. [Water Termite](#water-termite) — freshwater, saltwater, swamp
+221. [Weasel, Giant](#weasel-giant) — blood-draining mammal
+222. [Whale](#whale) — killer, narwhal, sperm
+223. [Wight](#wight) — level-draining undead
+224. [Will-o'-the-Wisp](#will-o-the-wisp) — 1' spheres of bobbing, torch-like light that lure people...
+225. [Wolf](#wolf) — normal and dire
+226. [Wraith](#wraith) — incorporeal level-draining undead
+227. [Wyvern](#wyvern) — poisonous winged reptile
+228. [Xorn](#xorn) — 5' tall, radially symmetric monsters with powerful jaws...
+229. [Yellow Mould](#yellow-mould) — deadly dungeon fungus
+230. [Yeti](#yeti) — large (8' tall), shaggy ape-like monsters with vicious...
+231. [Zombie](#zombie) — animated corpses
 ### Encounter Tables
-141. [Encounter Tables](#encounter-tables) — redirect to `ose-advanced-referee.md`
+232. [Encounter Tables](#encounter-tables) — redirect to `ose-advanced-referee.md`
 
 ### NPC Encounters
-143. [Adventuring Parties](#adventuring-parties) — generating NPC adventurer groups
-144. [High-Level Cleric](#high-level-cleric) — cleric-led NPC party
-145. [High-Level Fighter](#high-level-fighter) — fighter-led NPC party
-146. [High-Level Magic-User](#high-level-magic-user) — magic-user-led NPC party
-147. [Strongholds](#strongholds) — wilderness stronghold rulers, patrols, reactions
+233. [Adventuring Parties](#adventuring-parties) — generating NPC adventurer groups
+234. [High-Level Cleric](#high-level-cleric) — cleric-led NPC party
+235. [High-Level Fighter](#high-level-fighter) — fighter-led NPC party
+236. [High-Level Magic-User](#high-level-magic-user) — magic-user-led NPC party
+237. [Strongholds](#strongholds) — wilderness stronghold rulers, patrols, reactions
 
 ---
 
