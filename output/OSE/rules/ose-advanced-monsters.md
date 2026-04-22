@@ -319,7 +319,7 @@ Monsters are described by the following statistics.
 
 ### Acolyte
 
-<!-- PDF printed p.24 -->
+<!-- PDF printed p.22 -->
 
 1st level clerics on a quest for their deity.
 
@@ -333,7 +333,7 @@ Monsters are described by the following statistics.
 
 ### Amphisbaena
 
-<!-- PDF printed p.24 -->
+<!-- PDF printed p.22 -->
 
 8' long giant snakes with a head at each end of their body. Dwell in all but the most extreme climes. Will usually only attack if cornered or surprised.
 
@@ -348,7 +348,7 @@ Monsters are described by the following statistics.
 
 ### Ankheg
 
-<!-- PDF printed p.24 -->
+<!-- PDF printed p.22 -->
 
 10'–20' long, many-legged, burrowing insects with tough shells and shiny black eyes. Consume soil but also enjoy fresh meat. Dwell in forests and fertile lands.
 
@@ -364,7 +364,7 @@ Monsters are described by the following statistics.
 
 ### Ape, White
 
-<!-- PDF printed p.24 -->
+<!-- PDF printed p.22 -->
 
 Albino, herbivorous, gorilla-like apes that live in caves and emerge at night to forage.
 
@@ -378,7 +378,7 @@ Albino, herbivorous, gorilla-like apes that live in caves and emerge at night to
 
 ### Bandit
 
-<!-- PDF printed p.25 -->
+<!-- PDF printed p.23 -->
 
 NPC thieves who live by robbery.
 
@@ -394,7 +394,7 @@ NPC thieves who live by robbery.
 
 ### Banshee
 
-<!-- PDF printed p.25 -->
+<!-- PDF printed p.23 -->
 
 Incorporeal female spirits that linger after death in order to cause suffering to the living. Haunt desolate moors.
 
@@ -412,7 +412,7 @@ Incorporeal female spirits that linger after death in order to cause suffering t
 
 ### Basilisk
 
-<!-- PDF printed p.25 -->
+<!-- PDF printed p.23 -->
 
 10' long, serpentine lizards. Unintelligent, but highly magical. Dwell in caverns and twisted brambles.
 
@@ -430,7 +430,7 @@ Incorporeal female spirits that linger after death in order to cause suffering t
 
 ### Bat
 
-<!-- PDF printed p.26 -->
+<!-- PDF printed p.24 -->
 
 Nocturnal, flying mammals that roost in caves or ruins.
 
@@ -471,7 +471,7 @@ Carnivorous bats that may attack adventurers, if hungry. 1-in-20 groups of giant
 
 ### Bear
 
-<!-- PDF printed p.27 -->
+<!-- PDF printed p.25 -->
 
 - **Bear hug:** If a victim is hit by both claw attacks in the same round, the bear hugs for an extra 2d8 automatic damage.
 
@@ -524,7 +524,7 @@ Aggressive, white-furred bears that stand 11' tall and live in cold regions. Fav
 
 ### Beetle, Giant
 
-<!-- PDF printed p.28 -->
+<!-- PDF printed p.26 -->
 
 #### Fire Beetle
 
@@ -558,7 +558,7 @@ Carnivorous, 4' long, tiger-striped beetles with powerful, crushing mandibles. H
 
 ### Berserker
 
-<!-- PDF printed p.28 -->
+<!-- PDF printed p.26 -->
 
 Fighters who enter a rage in battle. They never take prisoners.
 
@@ -573,7 +573,7 @@ Fighters who enter a rage in battle. They never take prisoners.
 
 ### Black Pudding
 
-<!-- PDF printed p.28 -->
+<!-- PDF printed p.26 -->
 
 Huge (5'–30' across), mindless blobs of amorphous black jelly. Driven by ravenous hunger.
 
@@ -591,7 +591,7 @@ Huge (5'–30' across), mindless blobs of amorphous black jelly. Driven by raven
 
 ### Blink Dog
 
-<!-- PDF printed p.29 -->
+<!-- PDF printed p.27 -->
 
 Highly intelligent, dingo-like dogs that live in packs. Have the innate ability to blink in and out of existence.
 
@@ -607,7 +607,7 @@ Highly intelligent, dingo-like dogs that live in packs. Have the innate ability 
 
 ### Boar
 
-<!-- PDF printed p.29 -->
+<!-- PDF printed p.27 -->
 
 Omnivorous wild boars that dwell primarily in forests. Can be irascible and dangerous, if disturbed.
 
@@ -619,7 +619,7 @@ Omnivorous wild boars that dwell primarily in forests. Can be irascible and dang
 
 ### Brigand
 
-<!-- PDF printed p.29 -->
+<!-- PDF printed p.27 -->
 
 Outlaws and mercenaries who make a living by raiding settlements and attacking travellers.
 
@@ -637,7 +637,7 @@ Outlaws and mercenaries who make a living by raiding settlements and attacking t
 
 ### Brownie
 
-<!-- PDF printed p.30 -->
+<!-- PDF printed p.28 -->
 
 1½' tall humanoids, related to pixies and halflings. They are shy, but friendly with other lawful creatures. Dwell in peaceful meadows.
 
@@ -654,7 +654,7 @@ Outlaws and mercenaries who make a living by raiding settlements and attacking t
 
 ### Brown Mould
 
-<!-- PDF printed p.30 -->
+<!-- PDF printed p.28 -->
 
 Deadly fungus that covers walls, ceilings, and other surfaces. Drains heat from any source.
 
@@ -672,7 +672,7 @@ Deadly fungus that covers walls, ceilings, and other surfaces. Drains heat from 
 
 ### Buccaneer
 
-<!-- PDF printed p.30 -->
+<!-- PDF printed p.28 -->
 
 Sailors who make a living by raiding coastal settlements and robbing other ships. Typically ply rivers, lakes, and coastal waters; occasionally oceans.
 
@@ -691,7 +691,7 @@ Sailors who make a living by raiding coastal settlements and robbing other ships
 
 ### Bugbear
 
-<!-- PDF printed p.31 -->
+<!-- PDF printed p.29 -->
 
 Large, hairy goblins with an ungainly gait. Favour attacking by surprise.
 
@@ -705,7 +705,7 @@ Large, hairy goblins with an ungainly gait. Favour attacking by surprise.
 
 ### Bulette
 
-<!-- PDF printed p.31 -->
+<!-- PDF printed p.29 -->
 
 15' long, hard-shelled reptiles with huge maws, tiny eyes, and a shark-like crest upon the back. Have a ravenous appetite for the flesh of horses and humanoids (except elves). Love to dig halflings and gnomes out of their burrows.
 
@@ -722,7 +722,7 @@ Large, hairy goblins with an ungainly gait. Favour attacking by surprise.
 
 ### Caecilia
 
-<!-- PDF printed p.31 -->
+<!-- PDF printed p.29 -->
 
 Gigantic (30' long), grey, worm-like amphibians, with huge, toothed maws.
 
@@ -736,7 +736,7 @@ Gigantic (30' long), grey, worm-like amphibians, with huge, toothed maws.
 
 ### Camel
 
-<!-- PDF printed p.31 -->
+<!-- PDF printed p.29 -->
 
 Irascible animals that are adapted to life in dry climates. Often used for transportation in deserts.
 
@@ -754,7 +754,7 @@ Irascible animals that are adapted to life in dry climates. Often used for trans
 
 ### Carcass Crawler
 
-<!-- PDF printed p.31 -->
+<!-- PDF printed p.29 -->
 
 9' long, 3' high, many-legged, segmented worms with a ring of 2' long tentacles around their mouths.
 
@@ -769,7 +769,7 @@ Irascible animals that are adapted to life in dry climates. Often used for trans
 
 ### Caryatid Column
 
-<!-- PDF printed p.32 -->
+<!-- PDF printed p.30 -->
 
 7' tall stone pillars carved in the likeness of female warriors. Created by powerful spell casters to defend an object or area.
 
@@ -786,7 +786,7 @@ Irascible animals that are adapted to life in dry climates. Often used for trans
 
 ### Cat, Great
 
-<!-- PDF printed p.32 -->
+<!-- PDF printed p.30 -->
 
 Cautious hunters that usually avoid combat with humans unless starving or cornered. Great cats may be playful, but are quick to anger. They remain outdoors, rarely venturing deep underground.
 
@@ -849,7 +849,7 @@ Large, solitary hunters with striped camouflage markings. Favour woodlands and c
 
 ### Catoblepas
 
-<!-- PDF printed p.33 -->
+<!-- PDF printed p.31 -->
 
 Nightmarish creatures with a long, bone-tipped tail, a bloated buffalo-like body, stumpy legs, a long, thin neck, and a hideous, boar-like head. Dwell in swamps.
 
@@ -866,7 +866,7 @@ Nightmarish creatures with a long, bone-tipped tail, a bloated buffalo-like body
 
 ### Cave Locust
 
-<!-- PDF printed p.33 -->
+<!-- PDF printed p.31 -->
 
 2–3' long, herbivorous, giant crickets that dwell in caverns.
 
@@ -884,7 +884,7 @@ Nightmarish creatures with a long, bone-tipped tail, a bloated buffalo-like body
 
 ### Centaur
 
-<!-- PDF printed p.34 -->
+<!-- PDF printed p.32 -->
 
 Fantastic creatures with the legs and body of a horse, and the upper body and head of a human. Live in small family or tribal groups, in wild meadows and isolated forests.
 
@@ -900,7 +900,7 @@ Fantastic creatures with the legs and body of a horse, and the upper body and he
 
 ### Centipede, Giant
 
-<!-- PDF printed p.34 -->
+<!-- PDF printed p.32 -->
 
 1' long centipedes that dwell in dark, damp locations.
 
@@ -914,7 +914,7 @@ Fantastic creatures with the legs and body of a horse, and the upper body and he
 
 ### Chimera
 
-<!-- PDF printed p.34 -->
+<!-- PDF printed p.32 -->
 
 Horrific, hybrid monstrosities with the forequarters of a lion, the hindquarters of a goat, the wings of a dragon, and three heads: goat, lion, and dragon. Dwell in wild, hilly areas, or sometimes in dungeons.
 
@@ -929,7 +929,7 @@ Horrific, hybrid monstrosities with the forequarters of a lion, the hindquarters
 
 ### Cockatrice
 
-<!-- PDF printed p.34 -->
+<!-- PDF printed p.32 -->
 
 Small, magical, bird / reptile hybrids with long serpent tails and the head, legs, and wings of a cockerel. Live in all environments.
 
@@ -943,7 +943,7 @@ Small, magical, bird / reptile hybrids with long serpent tails and the head, leg
 
 ### Coffer Corpse
 
-<!-- PDF printed p.35 -->
+<!-- PDF printed p.33 -->
 
 Decaying corpses whose hateful spirits remain stranded in the interred body.
 
@@ -961,7 +961,7 @@ Decaying corpses whose hateful spirits remain stranded in the interred body.
 
 ### Couatl
 
-<!-- PDF printed p.35 -->
+<!-- PDF printed p.33 -->
 
 12' long, winged, feathered serpents of great intelligence and magical power. Dwell in hot jungles. Considered divine by native people.
 
@@ -979,7 +979,7 @@ Decaying corpses whose hateful spirits remain stranded in the interred body.
 
 ### Crab, Giant
 
-<!-- PDF printed p.35 -->
+<!-- PDF printed p.33 -->
 
 Unintelligent crustaceans that lurk in coastal waters and creep along beaches. Cannot swim.
 
@@ -993,7 +993,7 @@ Unintelligent crustaceans that lurk in coastal waters and creep along beaches. C
 
 ### Crocodile
 
-<!-- PDF printed p.36 -->
+<!-- PDF printed p.34 -->
 
 Large reptiles that are ungainly on land and live primarily in water, lurking just beneath the surface of subtropical swamps and lazy rivers. If hungry, attack any creatures that venture into the water.
 
@@ -1025,7 +1025,7 @@ More than 50' long. Usually encountered in Lost World regions. Will attack small
 
 ### Cyclops
 
-<!-- PDF printed p.37 -->
+<!-- PDF printed p.35 -->
 
 20' tall humanoids with a single, central eye. Dwell in caves, alone or in small groups. Cultivate grapes and raise sheep.
 
@@ -1042,7 +1042,7 @@ More than 50' long. Usually encountered in Lost World regions. Will attack small
 
 ### Dark Creeper
 
-<!-- PDF printed p.37 -->
+<!-- PDF printed p.35 -->
 
 Scrawny, pale-skinned humanoids (4' tall), who dress in dark cloaks and dwell deep underground. Covet and attempt to steal magic items.
 
@@ -1062,7 +1062,7 @@ Scrawny, pale-skinned humanoids (4' tall), who dress in dark cloaks and dwell de
 
 ### Deep One
 
-<!-- PDF printed p.38 -->
+<!-- PDF printed p.36 -->
 
 Scaly, fish-headed, amphibious humanoids with long, webbed fingers and toes. Once dwelt in coastal regions and warred with humans. Now only encountered in the Underworld, in deep caverns and around subterranean seas.
 
@@ -1085,7 +1085,7 @@ Scaly, fish-headed, amphibious humanoids with long, webbed fingers and toes. Onc
 
 ### Demonic Knight
 
-<!-- PDF printed p.38 -->
+<!-- PDF printed p.36 -->
 
 Holy warriors who were seduced by dark powers and now exist as undead monsters of great power and evil. Dwell in the haunted stronghold they built in life or in the service of their dark master.
 
@@ -1110,7 +1110,7 @@ Holy warriors who were seduced by dark powers and now exist as undead monsters o
 
 ### Dervish
 
-<!-- PDF printed p.39 -->
+<!-- PDF printed p.37 -->
 
 Fanatically religious, nomadic people who wander steppes and desert regions, living in tents.
 
@@ -1129,7 +1129,7 @@ Fanatically religious, nomadic people who wander steppes and desert regions, liv
 
 ### Disenchanter
 
-<!-- PDF printed p.39 -->
+<!-- PDF printed p.37 -->
 
 Pale blue, intelligent, partially transparent, dromedary-like creatures with long, flexible snouts. Feed on magical energy.
 
@@ -1146,7 +1146,7 @@ Pale blue, intelligent, partially transparent, dromedary-like creatures with lon
 
 ### Djinni
 
-<!-- PDF printed p.40 -->
+<!-- PDF printed p.38 -->
 
 Highly magical, free-willed, intelligent beings from the elemental plane of air. Tall humanoids wreathed in clouds.
 
@@ -1188,7 +1188,7 @@ Mighty rulers (sometimes called pashas) of the race of djinn.
 
 ### Dog
 
-<!-- PDF printed p.41 -->
+<!-- PDF printed p.39 -->
 
 Carnivorous pack hunters. Many domesticated breeds exist.
 
@@ -1230,7 +1230,7 @@ Packs of wild dogs roam the wilderness or may, rarely, be encountered in caves.
 
 ### Doppelgänger
 
-<!-- PDF printed p.41 -->
+<!-- PDF printed p.39 -->
 
 Intelligent, human-sized shape-shifters of wicked character and highly magical nature.
 
@@ -1247,7 +1247,7 @@ Intelligent, human-sized shape-shifters of wicked character and highly magical n
 
 ### Dragon
 
-<!-- PDF printed p.44 -->
+<!-- PDF printed p.42 -->
 
 A proud, ancient race of gigantic, carnivorous, winged reptiles. There are many subspecies of dragon, many of which are distinguished by the colour of their scales. All dragons are egg-layers and hoard treasure in their lairs, far from areas of human civilisation.
 
@@ -1355,7 +1355,7 @@ Found in cold regions.
 
 ### Dragon, Multichromatic
 
-<!-- PDF printed p.47 -->
+<!-- PDF printed p.45 -->
 
 Giant, thoroughly evil, female dragons with five heads of different colours. Dwell in deep dungeon lairs.
 
@@ -1381,7 +1381,7 @@ Giant, thoroughly evil, female dragons with five heads of different colours. Dwe
 
 ### Dragonne
 
-<!-- PDF printed p.47 -->
+<!-- PDF printed p.45 -->
 
 Small (5' tall at the shoulder) dragons with brass-coloured scales, small wings, and the head of a lion. Dreaded for their fearsome roar.
 
@@ -1398,7 +1398,7 @@ Small (5' tall at the shoulder) dragons with brass-coloured scales, small wings,
 
 ### Dragon Turtle
 
-<!-- PDF printed p.48 -->
+<!-- PDF printed p.46 -->
 
 Gargantuan sea monsters with the body and hard shell of a turtle and the head, tail, and legs of a dragon. Lurk in huge caves in the depths of the ocean, only rarely coming to the surface.
 
@@ -1415,7 +1415,7 @@ Gargantuan sea monsters with the body and hard shell of a turtle and the head, t
 
 ### Drider
 
-<!-- PDF printed p.48 -->
+<!-- PDF printed p.46 -->
 
 Hybrid monstrosities with the 8 legs of a giant spider and the hideously bloated upper body and head of a drow. Drider are drow who have undergone a ritual of transformation into bound servants of their spider deity. Hunt in the caverns of the Underworld. Consume the blood of paralysed victims.
 
@@ -1433,7 +1433,7 @@ Hybrid monstrosities with the 8 legs of a giant spider and the hideously bloated
 
 ### Driver Ant
 
-<!-- PDF printed p.49 -->
+<!-- PDF printed p.47 -->
 
 Giant (6' long), omnivorous, black ants.
 
@@ -1449,7 +1449,7 @@ Giant (6' long), omnivorous, black ants.
 
 ### Drow
 
-<!-- PDF printed p.49 -->
+<!-- PDF printed p.47 -->
 
 Slender, fey demihumans with pointed ears, jet black skin, and hair of silver or white. Also known as dark elves. Live in the deep places of the Underworld and worship strange, subterranean deities.
 
@@ -1467,7 +1467,7 @@ Slender, fey demihumans with pointed ears, jet black skin, and hair of silver or
 
 ### Dryad
 
-<!-- PDF printed p.50 -->
+<!-- PDF printed p.48 -->
 
 Shy, peaceful, yet wary tree spirits that can manifest as beautiful female humanoids. Live in deep forests.
 
@@ -1485,7 +1485,7 @@ Shy, peaceful, yet wary tree spirits that can manifest as beautiful female human
 
 ### Duergar
 
-<!-- PDF printed p.50 -->
+<!-- PDF printed p.48 -->
 
 Short, scrawny, bearded demihumans with grey skin and hair and ugly visages. Also known as grey dwarves. Renowned for their avaricious and xenophobic natures. Dwell in strongholds in the Underworld.
 
@@ -1503,7 +1503,7 @@ Short, scrawny, bearded demihumans with grey skin and hair and ugly visages. Als
 
 ### Dwarf
 
-<!-- PDF printed p.50 -->
+<!-- PDF printed p.48 -->
 
 Short, stocky, bearded demihumans who dwell in mountains and subterranean realms.
 
@@ -1518,7 +1518,7 @@ Short, stocky, bearded demihumans who dwell in mountains and subterranean realms
 
 ### Efreeti
 
-<!-- PDF printed p.51 -->
+<!-- PDF printed p.49 -->
 
 Highly magical, free-willed, intelligent beings from the elemental plane of fire. Manifest as giant men with demonic faces and an aura of heat and smoke. Solidify out of billowing smoke clouds.
 
@@ -1561,7 +1561,7 @@ Mighty rulers (sometimes called amirs) of the race of efreet.
 
 ### Elemental
 
-<!-- PDF printed p.52 -->
+<!-- PDF printed p.50 -->
 
 Beings formed of pure, elemental matter (air, earth, fire, or water) that can be summoned from their plane of origin to serve a magic-user.
 
@@ -1623,7 +1623,7 @@ Huge waves of water.
 
 ### Elephant
 
-<!-- PDF printed p.53 -->
+<!-- PDF printed p.51 -->
 
 Massive, tusked animals that dwell near subtropical forests. Wandering individuals or whole herds may be encountered.
 
@@ -1639,7 +1639,7 @@ Massive, tusked animals that dwell near subtropical forests. Wandering individua
 
 ### Elf
 
-<!-- PDF printed p.53 -->
+<!-- PDF printed p.51 -->
 
 Slender, fey demihumans with pointed ears. Live in harmony with nature, in beautiful natural settings.
 
@@ -1654,7 +1654,7 @@ Slender, fey demihumans with pointed ears. Live in harmony with nature, in beaut
 
 ### Ettin
 
-<!-- PDF printed p.53 -->
+<!-- PDF printed p.51 -->
 
 Two-headed giants (13' tall) of low intelligence and brutal temperament, dressing in filthy animal skins. Lair underground and operate only in darkness.
 
@@ -1669,7 +1669,7 @@ Two-headed giants (13' tall) of low intelligence and brutal temperament, dressin
 
 ### Eye of Terror
 
-<!-- PDF printed p.54 -->
+<!-- PDF printed p.52 -->
 
 Floating, scaled spheres (5' diameter) with a wide, toothy maw, a large central eye, and 10 smaller eyes on stalks. Hateful, scheming, and avaricious. Lair deep underground.
 
@@ -1697,7 +1697,7 @@ Floating, scaled spheres (5' diameter) with a wide, toothy maw, a large central 
 
 ### Eye of the Deep
 
-<!-- PDF printed p.55 -->
+<!-- PDF printed p.53 -->
 
 Floating, scaled spheres (5' diameter) with a wide, toothy maw, two lobster-like pincers, a large central eye, and two smaller eyes on stalks. Hateful, scheming, and avaricious. Lair in the depths of the ocean.
 
@@ -1719,7 +1719,7 @@ Floating, scaled spheres (5' diameter) with a wide, toothy maw, two lobster-like
 
 ### Ferret, Giant
 
-<!-- PDF printed p.55 -->
+<!-- PDF printed p.53 -->
 
 3' long ferrets that hunt giant rats in their burrows. Sometimes kept by humans for this aptitude.
 
@@ -1733,7 +1733,7 @@ Floating, scaled spheres (5' diameter) with a wide, toothy maw, two lobster-like
 
 ### Fish, Giant
 
-<!-- PDF printed p.56 -->
+<!-- PDF printed p.54 -->
 
 #### Giant Bass
 
@@ -1788,7 +1788,7 @@ Huge (nearly 30' long), aggressive fish with armour plating.
 
 ### Flail Snail
 
-<!-- PDF printed p.57 -->
+<!-- PDF printed p.55 -->
 
 Huge (8' tall) snails with a cluster of flailing, club-like tentacles and a swirling, multi-coloured shell. Dwell underground.
 
@@ -1809,7 +1809,7 @@ Huge (8' tall) snails with a cluster of flailing, club-like tentacles and a swir
 
 ### Frog, Giant
 
-<!-- PDF printed p.58 -->
+<!-- PDF printed p.56 -->
 
 #### Giant Mutant Frog
 
@@ -1836,7 +1836,7 @@ Brightly coloured giant frogs (3' long) that lurk in warm pools or damp caverns.
 
 ### Gargoyle
 
-<!-- PDF printed p.58 -->
+<!-- PDF printed p.56 -->
 
 Magical monsters that look like hideous, horned, winged statues. Semi-intelligent and possessed of a great cunning.
 
@@ -1853,7 +1853,7 @@ Magical monsters that look like hideous, horned, winged statues. Semi-intelligen
 
 ### Gas Spore
 
-<!-- PDF printed p.58 -->
+<!-- PDF printed p.56 -->
 
 Mindless, floating fungi that appear almost exactly like an eye of terror—a scaled sphere (5' diameter) with a wide, toothy maw, a large central eye, and 10 smaller eyes on stalks. Drift around in caverns and ruins.
 
@@ -1870,7 +1870,7 @@ Mindless, floating fungi that appear almost exactly like an eye of terror—a sc
 
 ### Gelatinous Cube
 
-<!-- PDF printed p.59 -->
+<!-- PDF printed p.57 -->
 
 10' cubes of transparent jelly. Move through dungeons, absorbing debris and living creatures they come across.
 
@@ -1887,7 +1887,7 @@ Mindless, floating fungi that appear almost exactly like an eye of terror—a sc
 
 ### Ghast
 
-<!-- PDF printed p.59 -->
+<!-- PDF printed p.57 -->
 
 Grotesque, animalistic, undead humans that crave the flesh of the living. Exude a nauseating carrion stench. Found among packs of ghouls.
 
@@ -1903,7 +1903,7 @@ Grotesque, animalistic, undead humans that crave the flesh of the living. Exude 
 
 ### Ghost
 
-<!-- PDF printed p.59 -->
+<!-- PDF printed p.57 -->
 
 Incorporeal spirits of the restless dead, often carrying an ethereal lantern or candle.
 
@@ -1924,7 +1924,7 @@ Incorporeal spirits of the restless dead, often carrying an ethereal lantern or 
 
 ### Ghoul
 
-<!-- PDF printed p.60 -->
+<!-- PDF printed p.58 -->
 
 Grotesque, animalistic, undead humans that crave the flesh of the living.
 
@@ -1939,7 +1939,7 @@ Grotesque, animalistic, undead humans that crave the flesh of the living.
 
 ### Giant
 
-<!-- PDF printed p.60 -->
+<!-- PDF printed p.58 -->
 
 #### Cloud Giant
 
@@ -2021,7 +2021,7 @@ Hairy, brutish, 12' tall humanoids of low intelligence. Dwell in foothills. Know
 
 ### Gibbering Mouther
 
-<!-- PDF printed p.62 -->
+<!-- PDF printed p.60 -->
 
 5' mounds of rubbery jelly with hundreds of deranged eyes and mouths. Dwell in dark, cold, dank places. Consume all living matter they come across.
 
@@ -2039,7 +2039,7 @@ Hairy, brutish, 12' tall humanoids of low intelligence. Dwell in foothills. Know
 
 ### Gnoll
 
-<!-- PDF printed p.62 -->
+<!-- PDF printed p.60 -->
 
 Lazy, humanoid hyenas of low intelligence that live by intimidation and theft. Legends say that gnolls were magically created by a wizard who crossbred gnomes and trolls.
 
@@ -2053,7 +2053,7 @@ Lazy, humanoid hyenas of low intelligence that live by intimidation and theft. L
 
 ### Gnome
 
-<!-- PDF printed p.62 -->
+<!-- PDF printed p.60 -->
 
 Short demihumans with long noses and beards. Smaller cousins of dwarves, whom they get along with. Prefer to live in burrows in non-mountainous country.
 
@@ -2072,7 +2072,7 @@ Short demihumans with long noses and beards. Smaller cousins of dwarves, whom th
 
 ### Goblin
 
-<!-- PDF printed p.63 -->
+<!-- PDF printed p.61 -->
 
 Small, grotesque humanoids with pallid, earth-coloured skin and glowing, red eyes. Dwell underground.
 
@@ -2091,7 +2091,7 @@ Small, grotesque humanoids with pallid, earth-coloured skin and glowing, red eye
 
 ### Golem
 
-<!-- PDF printed p.64 -->
+<!-- PDF printed p.62 -->
 
 Artificial beings constructed from different materials by mighty clerics or wizards.
 
@@ -2153,7 +2153,7 @@ Bronze constructs that resemble fire giants, possessing a great internal heat.
 
 ### Gorgon
 
-<!-- PDF printed p.66 -->
+<!-- PDF printed p.64 -->
 
 Magical monsters that resemble iron-scaled bulls. Dwell in plains or foothills.
 
@@ -2168,7 +2168,7 @@ Magical monsters that resemble iron-scaled bulls. Dwell in plains or foothills.
 
 ### Gorilla
 
-<!-- PDF printed p.66 -->
+<!-- PDF printed p.64 -->
 
 Large (6' tall), heavy-set apes that dwell in isolated jungles. Peaceful and shy.
 
@@ -2182,7 +2182,7 @@ Large (6' tall), heavy-set apes that dwell in isolated jungles. Peaceful and shy
 
 ### Green Slime
 
-<!-- PDF printed p.66 -->
+<!-- PDF printed p.64 -->
 
 Dripping, green slime that clings to walls and ceilings.
 
@@ -2200,7 +2200,7 @@ Dripping, green slime that clings to walls and ceilings.
 
 ### Grey Ooze
 
-<!-- PDF printed p.66 -->
+<!-- PDF printed p.64 -->
 
 Slimy horrors that lurk on stone surfaces or among boulders.
 
@@ -2216,7 +2216,7 @@ Slimy horrors that lurk on stone surfaces or among boulders.
 
 ### Griffon
 
-<!-- PDF printed p.67 -->
+<!-- PDF printed p.65 -->
 
 Large, rapacious predators combining the features of an eagle (head, wings, front claws) and a lion. Prey on horses.
 
@@ -2232,7 +2232,7 @@ Large, rapacious predators combining the features of an eagle (head, wings, fron
 
 ### Gullygug
 
-<!-- PDF printed p.67 -->
+<!-- PDF printed p.65 -->
 
 Barbaric, tribal, frog-like humanoids. Dwell in damp, dark places.
 
@@ -2250,7 +2250,7 @@ Barbaric, tribal, frog-like humanoids. Dwell in damp, dark places.
 
 ### Hag
 
-<!-- PDF printed p.67 -->
+<!-- PDF printed p.65 -->
 
 #### Black Hag
 
@@ -2281,7 +2281,7 @@ Ghastly, green-skinned, weed-festooned crones who crave humanoid flesh. Dwell in
 
 ### Halfling
 
-<!-- PDF printed p.68 -->
+<!-- PDF printed p.66 -->
 
 Little, furry-footed demihumans who dwell in small villages (30–300 occupants).
 
@@ -2296,7 +2296,7 @@ Little, furry-footed demihumans who dwell in small villages (30–300 occupants)
 
 ### Harpy
 
-<!-- PDF printed p.68 -->
+<!-- PDF printed p.66 -->
 
 Hideous hags with the wings and lower bodies of giant eagles. Use their song to lure victims to their doom.
 
@@ -2311,7 +2311,7 @@ Hideous hags with the wings and lower bodies of giant eagles. Use their song to 
 
 ### Hawk
 
-<!-- PDF printed p.68 -->
+<!-- PDF printed p.66 -->
 
 Birds of prey that drift on high currents of air and hunt prey on the ground.
 
@@ -2343,7 +2343,7 @@ Small birds of prey. Will only attack humans if they appear defenceless.
 
 ### Hellhound
 
-<!-- PDF printed p.69 -->
+<!-- PDF printed p.67 -->
 
 Monstrous, cunning, and very intelligent hounds, the size of a small pony. Breathe fire and love heat. Dwell in dungeons or near volcanoes.
 
@@ -2360,7 +2360,7 @@ Monstrous, cunning, and very intelligent hounds, the size of a small pony. Breat
 
 ### Herd Animal
 
-<!-- PDF printed p.69 -->
+<!-- PDF printed p.67 -->
 
 Wild animals that live in large, grazing herds. The exact type depends on the terrain.
 
@@ -2402,7 +2402,7 @@ For example: antelope, deer, goats.
 
 ### Hippocampus
 
-<!-- PDF printed p.69 -->
+<!-- PDF printed p.67 -->
 
 Intelligent aquatic horses with two finned forelegs and a long, fish-like tail.
 
@@ -2416,7 +2416,7 @@ Intelligent aquatic horses with two finned forelegs and a long, fish-like tail.
 
 ### Hippogriff
 
-<!-- PDF printed p.69 -->
+<!-- PDF printed p.67 -->
 
 Fantastic creatures combining the features of a giant eagle (head and forequarters) and a horse. Nest among craggy rocks.
 
@@ -2432,7 +2432,7 @@ Fantastic creatures combining the features of a giant eagle (head and forequarte
 
 ### Hippopotamus
 
-<!-- PDF printed p.70 -->
+<!-- PDF printed p.68 -->
 
 Massive, thick-skinned pachyderms that live in tropical rivers and lakes. Herbivorous but aggressively territorial.
 
@@ -2463,7 +2463,7 @@ Common hippos, 12' long.
 
 ### Hobgoblin
 
-<!-- PDF printed p.70 -->
+<!-- PDF printed p.68 -->
 
 Larger and nastier relatives of goblins. Dwell underground, but commonly seek prey above ground.
 
@@ -2477,7 +2477,7 @@ Larger and nastier relatives of goblins. Dwell underground, but commonly seek pr
 
 ### Homunculus
 
-<!-- PDF printed p.70 -->
+<!-- PDF printed p.68 -->
 
 Miniature (18" tall), scaly-skinned humanoids with bat-like wings and fangs. Created by powerful magic-users.
 
@@ -2495,7 +2495,7 @@ Miniature (18" tall), scaly-skinned humanoids with bat-like wings and fangs. Cre
 
 ### Hook Beast
 
-<!-- PDF printed p.71 -->
+<!-- PDF printed p.69 -->
 
 Tall (9') bipedal monsters with vulture-like beaks, a tough, plated carapace, and arms that end in horrid hooks. Voraciously hunt in packs, deep underground.
 
@@ -2510,7 +2510,7 @@ Tall (9') bipedal monsters with vulture-like beaks, a tough, plated carapace, an
 
 ### Horse
 
-<!-- PDF printed p.71 -->
+<!-- PDF printed p.69 -->
 
 Herd animals that are often used for transportation. Many different domesticated breeds exist.
 
@@ -2565,7 +2565,7 @@ Lightly built horses adapted to run at high speed. Can survive purely on grass, 
 
 ### Hulker
 
-<!-- PDF printed p.72 -->
+<!-- PDF printed p.70 -->
 
 Hulking (9' tall, 5' wide), bipedal monsters with claws of iron, wicked mandibles, and four eyes (two insectoid, two human-like). Hunt for fresh meat in caverns, tunnels, and dungeons.
 
@@ -2584,7 +2584,7 @@ Hulking (9' tall, 5' wide), bipedal monsters with claws of iron, wicked mandible
 
 ### Hydra
 
-<!-- PDF printed p.72 -->
+<!-- PDF printed p.70 -->
 
 Large, dragon-like creatures with multiple, serpentine heads. Sea hydras (adapted to water, with fins) also exist.
 
@@ -2600,7 +2600,7 @@ Large, dragon-like creatures with multiple, serpentine heads. Sea hydras (adapte
 
 ### Insect Swarm
 
-<!-- PDF printed p.73 -->
+<!-- PDF printed p.71 -->
 
 Swarms of many tiny insects that may be encountered protecting their nest. May also be drawn to light or unusual smells.
 
@@ -2621,7 +2621,7 @@ Swarms of many tiny insects that may be encountered protecting their nest. May a
 
 ### Invisible Stalker
 
-<!-- PDF printed p.73 -->
+<!-- PDF printed p.71 -->
 
 Highly intelligent, magical creatures summoned from another plane of existence to perform tasks for powerful magic-users.
 
@@ -2637,7 +2637,7 @@ Highly intelligent, magical creatures summoned from another plane of existence t
 
 ### Jackalwere
 
-<!-- PDF printed p.73 -->
+<!-- PDF printed p.71 -->
 
 Evil shapeshifters which can take on the form of a normal jackal or a jackal-headed humanoid. Roam borderland areas looking for human victims to rob and eat.
 
@@ -2653,7 +2653,7 @@ Evil shapeshifters which can take on the form of a normal jackal or a jackal-hea
 
 ### Jellyfish, Giant
 
-<!-- PDF printed p.74 -->
+<!-- PDF printed p.72 -->
 
 Huge, transparent sea creatures which float near the surface of warm seas. Have 40 tentacles (each 100' long) which drift through the surrounding waters, seeking prey.
 
@@ -2671,7 +2671,7 @@ Huge, transparent sea creatures which float near the surface of warm seas. Have 
 
 ### Killer Bee
 
-<!-- PDF printed p.74 -->
+<!-- PDF printed p.72 -->
 
 Giant (1' long) bees of aggressive temperament. Build hives underground.
 
@@ -2691,7 +2691,7 @@ Giant (1' long) bees of aggressive temperament. Build hives underground.
 
 ### Kobold
 
-<!-- PDF printed p.75 -->
+<!-- PDF printed p.73 -->
 
 Small, wicked, hairless, canine humanoids with scaly, rust-coloured skin. Dwell underground.
 
@@ -2709,7 +2709,7 @@ Small, wicked, hairless, canine humanoids with scaly, rust-coloured skin. Dwell 
 
 ### Krell
 
-<!-- PDF printed p.75 -->
+<!-- PDF printed p.73 -->
 
 Hovering brains (5' across) with an octopus-like beak and a cluster of 10 spiny, 6'-long tentacles hanging below. Dwell in dungeons and ruins.
 
@@ -2728,7 +2728,7 @@ Hovering brains (5' across) with an octopus-like beak and a cluster of 10 spiny,
 
 ### Lamia
 
-<!-- PDF printed p.76 -->
+<!-- PDF printed p.74 -->
 
 Centaur-like monsters with the legs and body of a beast and the upper body and head of a woman. Dwell in ruins and deserts. Prey on humanoids, draining their blood and consuming their flesh.
 
@@ -2744,7 +2744,7 @@ Centaur-like monsters with the legs and body of a beast and the upper body and h
 
 ### Lamprey, Giant
 
-<!-- PDF printed p.76 -->
+<!-- PDF printed p.74 -->
 
 8' long eels with horrid sphincter mouths lined with barbed teeth. Dwell in deep waters (both salt and fresh).
 
@@ -2758,7 +2758,7 @@ Centaur-like monsters with the legs and body of a beast and the upper body and h
 
 ### Leech, Giant
 
-<!-- PDF printed p.76 -->
+<!-- PDF printed p.74 -->
 
 Horrid, 3–4' long, slug-like creatures with sucker mouths. Lurk in swamps.
 
@@ -2774,7 +2774,7 @@ Horrid, 3–4' long, slug-like creatures with sucker mouths. Lurk in swamps.
 
 ### Leprechaun
 
-<!-- PDF printed p.77 -->
+<!-- PDF printed p.75 -->
 
 Diminutive (2' tall) magical humanoids who delight in mischief and theft. Dwell in lush, green lands.
 
@@ -2797,7 +2797,7 @@ Diminutive (2' tall) magical humanoids who delight in mischief and theft. Dwell 
 
 ### Leucrocotta
 
-<!-- PDF printed p.77 -->
+<!-- PDF printed p.75 -->
 
 Weird monsters with a stag-like body, a lion-like tail, and a badger-like head. Have jagged ridges of bone in place of teeth. Dwell in ruins and desolate wilds.
 
@@ -2812,7 +2812,7 @@ Weird monsters with a stag-like body, a lion-like tail, and a badger-like head. 
 
 ### Lich
 
-<!-- PDF printed p.78 -->
+<!-- PDF printed p.76 -->
 
 Mighty magic-users whose evil magic has rendered them immortal in undeath, their souls stored in a phylactery. Appear as a skeletal figure dressed in decaying finery. A cold fire burns in their eyes. Ruthlessly pursue their arcane research in vast dungeons or ruined palaces.
 
@@ -2833,7 +2833,7 @@ Mighty magic-users whose evil magic has rendered them immortal in undeath, their
 
 ### Living Statue
 
-<!-- PDF printed p.79 -->
+<!-- PDF printed p.77 -->
 
 Animated statues of any size and material (three types described below; others may be invented by the referee).
 
@@ -2875,7 +2875,7 @@ Stony crust filled with magma which they shoot from their fingertips.
 
 ### Lizard, Giant
 
-<!-- PDF printed p.80 -->
+<!-- PDF printed p.78 -->
 
 #### Draco
 
@@ -2921,7 +2921,7 @@ Stony crust filled with magma which they shoot from their fingertips.
 
 ### Lizard Man
 
-<!-- PDF printed p.81 -->
+<!-- PDF printed p.79 -->
 
 Semi-intelligent, tribal, aquatic humanoids with reptilian heads and tails. Often encountered in swamps and dungeons, or along rivers and coastlines.
 
@@ -2936,7 +2936,7 @@ Semi-intelligent, tribal, aquatic humanoids with reptilian heads and tails. Ofte
 
 ### Locathah
 
-<!-- PDF printed p.81 -->
+<!-- PDF printed p.79 -->
 
 Nomadic humanoid fish-people with pale yellow scales, fanned ears, and large eyes. Forage and hunt in warm shallows. Lair in caves carved into great undersea rocks.
 
@@ -2954,7 +2954,7 @@ Nomadic humanoid fish-people with pale yellow scales, fanned ears, and large eye
 
 ### Lurker Above
 
-<!-- PDF printed p.82 -->
+<!-- PDF printed p.80 -->
 
 Mindless, carnivorous, ray-like monstrosities that cling to ceilings and drop on prey below. Glide through the air with gas-filled pockets in body. Dwell exclusively underground.
 
@@ -2971,7 +2971,7 @@ Mindless, carnivorous, ray-like monstrosities that cling to ceilings and drop on
 
 ### Lycanthrope
 
-<!-- PDF printed p.82 -->
+<!-- PDF printed p.80 -->
 
 Shapechangers with a human and an animal form.
 
@@ -3055,7 +3055,7 @@ Semi-intelligent pack hunters.
 
 ### Malfyr
 
-<!-- PDF printed p.84 -->
+<!-- PDF printed p.82 -->
 
 Nightmarish extra-dimensional monsters with an obese, humanoid physique, an elephantine head with a fanged mouth, arms ending in wicked pincers, and a belly writhing with slimy tentacles. Sometimes summoned by powerful magic.
 
@@ -3074,7 +3074,7 @@ Nightmarish extra-dimensional monsters with an obese, humanoid physique, an elep
 
 ### Manticore
 
-<!-- PDF printed p.84 -->
+<!-- PDF printed p.82 -->
 
 Monstrosities with the face of a man, the body of a lion, bat-like wings, and a tail bristling with spikes. Love eating humans. Dwell in wild, mountainous regions.
 
@@ -3089,7 +3089,7 @@ Monstrosities with the face of a man, the body of a lion, bat-like wings, and a 
 
 ### Mantid
 
-<!-- PDF printed p.84 -->
+<!-- PDF printed p.82 -->
 
 Highly intelligent, 4-armed insectoid warriors who hunt and consume humanoids. Dwell in burrows in arid regions.
 
@@ -3105,7 +3105,7 @@ Highly intelligent, 4-armed insectoid warriors who hunt and consume humanoids. D
 
 ### Mantis, Giant
 
-<!-- PDF printed p.84 -->
+<!-- PDF printed p.82 -->
 
 12' long, predatory insects with vicious clawed forelimbs and slicing mandibles. Green colouration acts as camouflage. Dwell in forests and jungles. Hunt any living prey, favouring giant insects.
 
@@ -3120,7 +3120,7 @@ Highly intelligent, 4-armed insectoid warriors who hunt and consume humanoids. D
 
 ### Mastodon
 
-<!-- PDF printed p.85 -->
+<!-- PDF printed p.83 -->
 
 Shaggy elephants with large tusks. Live in icy or Lost World regions.
 
@@ -3136,7 +3136,7 @@ Shaggy elephants with large tusks. Live in icy or Lost World regions.
 
 ### Medium
 
-<!-- PDF printed p.85 -->
+<!-- PDF printed p.83 -->
 
 1st level NPC magic-users.
 
@@ -3151,7 +3151,7 @@ Shaggy elephants with large tusks. Live in icy or Lost World regions.
 
 ### Medusa
 
-<!-- PDF printed p.85 -->
+<!-- PDF printed p.83 -->
 
 Deadly creatures of a magical nature that look like women with writhing snakes in place of hair.
 
@@ -3170,7 +3170,7 @@ Deadly creatures of a magical nature that look like women with writhing snakes i
 
 ### Merchant
 
-<!-- PDF printed p.86 -->
+<!-- PDF printed p.84 -->
 
 Organized traders who travel between settlements in well-armed caravans, buying and selling trade goods (e.g. gold, jewels, silk, spices, wine, etc.).
 
@@ -3191,7 +3191,7 @@ Organized traders who travel between settlements in well-armed caravans, buying 
 
 ### Merman
 
-<!-- PDF printed p.86 -->
+<!-- PDF printed p.84 -->
 
 Aquatic humanoids with fish tails in place of legs. Live in coastal waters, farming seaweed and hunting fish.
 
@@ -3208,7 +3208,7 @@ Aquatic humanoids with fish tails in place of legs. Live in coastal waters, farm
 
 ### Merrow
 
-<!-- PDF printed p.87 -->
+<!-- PDF printed p.85 -->
 
 Frightful humanoids, 9' tall, with green scales, shaggy, weed-like hair, and webbed hands and feet. Sometimes called aquatic ogres. Dwell in shallow waters, lairing in underwater caves.
 
@@ -3223,7 +3223,7 @@ Frightful humanoids, 9' tall, with green scales, shaggy, weed-like hair, and web
 
 ### Mimic
 
-<!-- PDF printed p.87 -->
+<!-- PDF printed p.85 -->
 
 Semi-intelligent monstrous shape-shifters that take on the form of inanimate objects (e.g. chests, doors, statues). Dwell exclusively underground.
 
@@ -3241,7 +3241,7 @@ Semi-intelligent monstrous shape-shifters that take on the form of inanimate obj
 
 ### Mind Lasher
 
-<!-- PDF printed p.87 -->
+<!-- PDF printed p.85 -->
 
 Evil, ultra-intelligent, octopus-headed humanoids with slimy, purple-black skin and pupilless eyes. Dwell in the deep Underworld, where they hatefully plot to enslave humanity. Feed on the brains of humanoids.
 
@@ -3263,7 +3263,7 @@ Evil, ultra-intelligent, octopus-headed humanoids with slimy, purple-black skin 
 
 ### Minotaur
 
-<!-- PDF printed p.90 -->
+<!-- PDF printed p.88 -->
 
 Large, brutish, bull-headed men with a craving for human flesh. Dwell in mazes and labyrinths.
 
@@ -3278,7 +3278,7 @@ Large, brutish, bull-headed men with a craving for human flesh. Dwell in mazes a
 
 ### Mule
 
-<!-- PDF printed p.90 -->
+<!-- PDF printed p.88 -->
 
 Stubborn horse/donkey cross-breeds used as beasts of burden.
 
@@ -3294,7 +3294,7 @@ Stubborn horse/donkey cross-breeds used as beasts of burden.
 
 ### Mummy
 
-<!-- PDF printed p.90 -->
+<!-- PDF printed p.88 -->
 
 Undead humanoids wrapped in funerary bandages. Haunt ruins and tombs.
 
@@ -3311,7 +3311,7 @@ Undead humanoids wrapped in funerary bandages. Haunt ruins and tombs.
 
 ### Mutoid
 
-<!-- PDF printed p.90 -->
+<!-- PDF printed p.88 -->
 
 Humanoids with mismatched body parts of many different creatures (e.g. reptiles, crustaceans, birds, mammals, etc.). Each individual has a unique appearance. Shunned by other species, they live in hiding within large settlements or band together and dwell in ruins.
 
@@ -3330,7 +3330,7 @@ Humanoids with mismatched body parts of many different creatures (e.g. reptiles,
 
 ### Mycelian
 
-<!-- PDF printed p.91 -->
+<!-- PDF printed p.89 -->
 
 Mycelians are 4' tall humanoid mushrooms, with tall stems, wide, flat caps, and beady eyes amid their gills. They have no mouths, but communicate telepathically. They dwell in lightless caverns deep underground.
 
@@ -3348,7 +3348,7 @@ Mycelians are 4' tall humanoid mushrooms, with tall stems, wide, flat caps, and 
 
 ### Neanderthal (Caveman)
 
-<!-- PDF printed p.91 -->
+<!-- PDF printed p.89 -->
 
 Squat, powerful, primitive demihumans with ape-like faces. Dwell in caverns and hunt cave bears. Shy of contact with humans (with whom they are related), but friendly with dwarves and gnomes.
 
@@ -3365,7 +3365,7 @@ Squat, powerful, primitive demihumans with ape-like faces. Dwell in caverns and 
 
 ### Necrophidius
 
-<!-- PDF printed p.92 -->
+<!-- PDF printed p.90 -->
 
 Giant snake skeletons (10' long) with a snake-fanged human skull for a head. Created by powerful magic-users or clerics for a specific purpose (e.g. to guard treasures or to assassinate a victim).
 
@@ -3381,7 +3381,7 @@ Giant snake skeletons (10' long) with a snake-fanged human skull for a head. Cre
 
 ### Nightmare
 
-<!-- PDF printed p.92 -->
+<!-- PDF printed p.90 -->
 
 Intelligent, demonic horses with glowing red eyes, flaming nostrils, and hooves like smouldering embers.
 
@@ -3396,7 +3396,7 @@ Intelligent, demonic horses with glowing red eyes, flaming nostrils, and hooves 
 
 ### Nixie
 
-<!-- PDF printed p.92 -->
+<!-- PDF printed p.90 -->
 
 3' tall sprites that appear as attractive women with blueish, greenish, or greyish skin. Lair in the deepest parts of rivers and lakes.
 
@@ -3414,7 +3414,7 @@ Intelligent, demonic horses with glowing red eyes, flaming nostrils, and hooves 
 
 ### Noble
 
-<!-- PDF printed p.92 -->
+<!-- PDF printed p.90 -->
 
 Powerful humans with noble titles (e.g. Count, Duke, Knight, etc.). Dwell in castles.
 
@@ -3429,7 +3429,7 @@ Powerful humans with noble titles (e.g. Count, Duke, Knight, etc.). Dwell in cas
 
 ### Nomad
 
-<!-- PDF printed p.93 -->
+<!-- PDF printed p.91 -->
 
 Superstitious tribes who wander steppes and desert regions, living in tents or temporary huts. Demeanour depends on the tribe: some are warlike, others peaceful.
 
@@ -3450,7 +3450,7 @@ Superstitious tribes who wander steppes and desert regions, living in tents or t
 
 ### Normal Human
 
-<!-- PDF printed p.93 -->
+<!-- PDF printed p.91 -->
 
 Non-adventuring humans without a character class. Artists, beggars, children, craftspeople, farmers, fishermen, housewives, scholars, slaves.
 
@@ -3464,7 +3464,7 @@ Non-adventuring humans without a character class. Artists, beggars, children, cr
 
 ### Ochre Jelly
 
-<!-- PDF printed p.93 -->
+<!-- PDF printed p.91 -->
 
 Giant, ochre amoeboids.
 
@@ -3481,7 +3481,7 @@ Giant, ochre amoeboids.
 
 ### Octopus, Giant
 
-<!-- PDF printed p.94 -->
+<!-- PDF printed p.92 -->
 
 Giant, eight-armed cephalopods. Lurk in coastal waters, close to settlements.
 
@@ -3497,7 +3497,7 @@ Giant, eight-armed cephalopods. Lurk in coastal waters, close to settlements.
 
 ### Ogre
 
-<!-- PDF printed p.94 -->
+<!-- PDF printed p.92 -->
 
 Frightful humanoids, 8–10' tall, dressed in animal hides. Often dwell in caves.
 
@@ -3512,7 +3512,7 @@ Frightful humanoids, 8–10' tall, dressed in animal hides. Often dwell in caves
 
 ### Orc
 
-<!-- PDF printed p.94 -->
+<!-- PDF printed p.92 -->
 
 Ugly, bad-tempered, animalistic humanoids who live underground and are active at night. Sadistic bullies who hate other living creatures and delight in killing.
 
@@ -3533,7 +3533,7 @@ Ugly, bad-tempered, animalistic humanoids who live underground and are active at
 
 ### Otyugh
 
-<!-- PDF printed p.95 -->
+<!-- PDF printed p.93 -->
 
 Aggressive, semi-intelligent, hulking (8' around) monstrosities with three stumpy legs, eyes on a long tentacle stalk, a sphincter-like mouth lined with fangs, and two razor-edged tentacles. Lurk underground in piles of dung or carrion, which they consume. Crave fresh meat.
 
@@ -3551,7 +3551,7 @@ Aggressive, semi-intelligent, hulking (8' around) monstrosities with three stump
 
 ### Owl Bear
 
-<!-- PDF printed p.95 -->
+<!-- PDF printed p.93 -->
 
 Huge (8' tall, 1,500 pounds), ill-tempered, carnivorous bear-like creature with the face of an owl. Owl bears are found in dense forests and underground.
 
@@ -3565,7 +3565,7 @@ Huge (8' tall, 1,500 pounds), ill-tempered, carnivorous bear-like creature with 
 
 ### Pegasus
 
-<!-- PDF printed p.95 -->
+<!-- PDF printed p.93 -->
 
 Semi-intelligent winged horses that are wilful and timid.
 
@@ -3581,7 +3581,7 @@ Semi-intelligent winged horses that are wilful and timid.
 
 ### Peryton
 
-<!-- PDF printed p.95 -->
+<!-- PDF printed p.93 -->
 
 Weird monsters with the body, talons, and wings of a giant eagle, the head and great antlers of a stag, and the fangs of a wolf. Dwell in mountains. Prey upon humans and their ilk.
 
@@ -3596,7 +3596,7 @@ Weird monsters with the body, talons, and wings of a giant eagle, the head and g
 
 ### Phoenix
 
-<!-- PDF printed p.96 -->
+<!-- PDF printed p.94 -->
 
 Highly magical giant orange-red eagles (20' wingspan) wreathed in searing flame. Dwell in remote areas guarding magical shrines, portals, tombs, etc. Only violent if attacked.
 
@@ -3617,7 +3617,7 @@ Highly magical giant orange-red eagles (20' wingspan) wreathed in searing flame.
 
 ### Piercer
 
-<!-- PDF printed p.96 -->
+<!-- PDF printed p.94 -->
 
 Non-intelligent, carnivorous monsters that hang from cavern ceilings, resembling stalactites. 2' to 6' long.
 
@@ -3632,7 +3632,7 @@ Non-intelligent, carnivorous monsters that hang from cavern ceilings, resembling
 
 ### Pirate
 
-<!-- PDF printed p.97 -->
+<!-- PDF printed p.95 -->
 
 Sailors who make a living by raiding coastal settlements, robbing other ships, and illegal slaving. Typically ply the open seas. Renowned for their ruthless and evil ways.
 
@@ -3653,7 +3653,7 @@ Sailors who make a living by raiding coastal settlements, robbing other ships, a
 
 ### Pixie
 
-<!-- PDF printed p.97 -->
+<!-- PDF printed p.95 -->
 
 1–2' tall humanoids with insectoid wings. Distant relatives of elves.
 
@@ -3669,7 +3669,7 @@ Sailors who make a living by raiding coastal settlements, robbing other ships, a
 
 ### Poltergeist
 
-<!-- PDF printed p.97 -->
+<!-- PDF printed p.95 -->
 
 Invisible, incorporeal spirits which haunt the place of their death. Lift small objects and hurl them at intruders.
 
@@ -3687,7 +3687,7 @@ Invisible, incorporeal spirits which haunt the place of their death. Lift small 
 
 ### Pseudo-Dragon
 
-<!-- PDF printed p.98 -->
+<!-- PDF printed p.96 -->
 
 Intelligent, miniature (1–2' long), winged dragons with a sting-tipped tail and rusty red scales. Dwell in small caves or hollowed out trees.
 
@@ -3705,7 +3705,7 @@ Intelligent, miniature (1–2' long), winged dragons with a sting-tipped tail an
 
 ### Pterosaur
 
-<!-- PDF printed p.98 -->
+<!-- PDF printed p.96 -->
 
 Predatory, winged reptiles that live in warm climes, hunting creatures on the ground by gliding on air currents. Often found in Lost World regions.
 
@@ -3729,7 +3729,7 @@ Wingspan of up to 50'. Highly aggressive; often prey on humanoids.
 
 ### Purple Worm
 
-<!-- PDF printed p.98 -->
+<!-- PDF printed p.96 -->
 
 Gigantic, slimy worms with bodies 100' long and 8–10' thick. Bore tunnels through the earth and come to the surface to eat other creatures.
 
@@ -3745,7 +3745,7 @@ Gigantic, slimy worms with bodies 100' long and 8–10' thick. Bore tunnels thro
 
 ### Rakshasa
 
-<!-- PDF printed p.99 -->
+<!-- PDF printed p.97 -->
 
 Highly intelligent evil spirits that take the form of feline humanoids, with the head of a great cat (e.g. tiger, panther), eerie reversed hands, and cruel claws. Prefer a diet of human flesh. Use their powers of illusion to gain the trust of people, then attack. Dwell in hot climes.
 
@@ -3764,7 +3764,7 @@ Highly intelligent evil spirits that take the form of feline humanoids, with the
 
 ### Rat
 
-<!-- PDF printed p.99 -->
+<!-- PDF printed p.97 -->
 
 Multitudinous, disease-ridden rodents that will eat anything. Avoid contact with humans, but may attack if defending their nest or if summoned and commanded by magic (e.g. see Wererat).
 
@@ -3798,7 +3798,7 @@ Swarming packs of 6" to 2' long individuals, with brown or grey fur.
 
 ### Remorhaz
 
-<!-- PDF printed p.100 -->
+<!-- PDF printed p.98 -->
 
 Predatory, many-legged worm-like monsters with long necks, horrid, crushing mandibles, and compound eyes. Icy blue in colour, with scaly plates along the back which glow red hot. Dwell in frozen wastes, sustained by the heat of their internal fires.
 
@@ -3815,7 +3815,7 @@ Predatory, many-legged worm-like monsters with long necks, horrid, crushing mand
 
 ### Revenant
 
-<!-- PDF printed p.100 -->
+<!-- PDF printed p.98 -->
 
 The corpse of a person who was murdered, reanimated by the desperate need for revenge. Only the most obsessive individuals return from death in this way.
 
@@ -3836,7 +3836,7 @@ The corpse of a person who was murdered, reanimated by the desperate need for re
 
 ### Rhagodessa
 
-<!-- PDF printed p.101 -->
+<!-- PDF printed p.99 -->
 
 Huge, hairy, nocturnal arachnid carnivores with large heads and mandibles and 10 legs. Yellow head and abdomen, dark brown thorax. Dwell in caves, hunt voraciously.
 
@@ -3852,7 +3852,7 @@ Huge, hairy, nocturnal arachnid carnivores with large heads and mandibles and 10
 
 ### Rhinoceros
 
-<!-- PDF printed p.101 -->
+<!-- PDF printed p.99 -->
 
 Dim, armoured, herbivorous mammals.
 
@@ -3881,7 +3881,7 @@ Giant rhinoceroses adapted for cold climates: their bodies covered with shaggy, 
 
 ### Robber Fly
 
-<!-- PDF printed p.101 -->
+<!-- PDF printed p.99 -->
 
 3' long, carnivorous flies with yellow and black stripes. Look similar to killer bees, which they hunt. May attack humans.
 
@@ -3897,7 +3897,7 @@ Giant rhinoceroses adapted for cold climates: their bodies covered with shaggy, 
 
 ### Roc
 
-<!-- PDF printed p.102 -->
+<!-- PDF printed p.100 -->
 
 Gigantic birds of prey that nest in the highest peaks of isolated mountain ranges. Will attack intruders, if approached carelessly.
 
@@ -3934,7 +3934,7 @@ Gigantic birds of prey that nest in the highest peaks of isolated mountain range
 
 ### Rock Baboon
 
-<!-- PDF printed p.102 -->
+<!-- PDF printed p.100 -->
 
 Large, ferocious, semi-intelligent baboons that live in packs led by a powerful male. Communicate with screams. Omnivorous, but prefer flesh.
 
@@ -3948,7 +3948,7 @@ Large, ferocious, semi-intelligent baboons that live in packs led by a powerful 
 
 ### Roper
 
-<!-- PDF printed p.102 -->
+<!-- PDF printed p.100 -->
 
 Horrible, amorphous monstrosities that form their bodies into the shape of a stalagmite or pillar (9' tall, 3' across). Carnivorous, but lust most of all after human flesh. Dwell in caverns or forests.
 
@@ -3969,7 +3969,7 @@ Horrible, amorphous monstrosities that form their bodies into the shape of a sta
 
 ### Rot Grub
 
-<!-- PDF printed p.103 -->
+<!-- PDF printed p.101 -->
 
 Tiny (2" long) maggots that consume living flesh. Lurk in heaps of dung or rubble, waiting to be touched.
 
@@ -3984,7 +3984,7 @@ Tiny (2" long) maggots that consume living flesh. Lurk in heaps of dung or rubbl
 
 ### Rust Monster
 
-<!-- PDF printed p.103 -->
+<!-- PDF printed p.101 -->
 
 Magical, armadillo-like creatures with long tails and two long, antennae-like feelers. Feed on rusted metal.
 
@@ -3999,7 +3999,7 @@ Magical, armadillo-like creatures with long tails and two long, antennae-like fe
 
 ### Sahuagin
 
-<!-- PDF printed p.103 -->
+<!-- PDF printed p.101 -->
 
 Predatory, sadistic aquatic humanoids with black-green scales and deep black eyes. Sometimes known as "sea devils". Worship evil deities and delight in the killing, enslaving, and torture of other sentient species. Dwell in warm salt water, but make nighttime raids onto land.
 
@@ -4020,7 +4020,7 @@ Predatory, sadistic aquatic humanoids with black-green scales and deep black eye
 
 ### Salamander
 
-<!-- PDF printed p.104 -->
+<!-- PDF printed p.102 -->
 
 Giant, magical reptiles with an affinity for extreme heat or cold.
 
@@ -4054,7 +4054,7 @@ Giant, 6-legged lizards with blue/white scales. Dwell in icy, wilderness regions
 
 ### Satyr
 
-<!-- PDF printed p.104 -->
+<!-- PDF printed p.102 -->
 
 Magical humanoids with the legs and horns of goats. Love dance, drink, and debauchery. Dwell in deep, isolated forests.
 
@@ -4073,7 +4073,7 @@ Magical humanoids with the legs and horns of goats. Love dance, drink, and debau
 
 ### Scorpion, Giant
 
-<!-- PDF printed p.105 -->
+<!-- PDF printed p.103 -->
 
 Huge arachnids, as big as a small horse, with pincers and deadly stingers. Dwell in caverns, ruins, and deserts.
 
@@ -4089,7 +4089,7 @@ Huge arachnids, as big as a small horse, with pincers and deadly stingers. Dwell
 
 ### Scorpionoid
 
-<!-- PDF printed p.105 -->
+<!-- PDF printed p.103 -->
 
 Hideous, 12' tall monsters with the legs, body, and stinging tail of a giant scorpion, and a humanoid upper body and head. Ruthless hunters who hate all other sentient species. Dwell in warm climates in caverns, deserts, and mountains.
 
@@ -4105,7 +4105,7 @@ Hideous, 12' tall monsters with the legs, body, and stinging tail of a giant sco
 
 ### Seahorse, Giant
 
-<!-- PDF printed p.105 -->
+<!-- PDF printed p.103 -->
 
 15' long seahorses that graze marine plants in small herds. Timid and easily scared. Dwell in all but very cold waters.
 
@@ -4120,7 +4120,7 @@ Hideous, 12' tall monsters with the legs, body, and stinging tail of a giant sco
 
 ### Sea Serpent
 
-<!-- PDF printed p.105 -->
+<!-- PDF printed p.103 -->
 
 Serpent-like sea monsters with rows of many fins.
 
@@ -4150,7 +4150,7 @@ Serpent-like sea monsters with rows of many fins.
 
 ### Shadow
 
-<!-- PDF printed p.106 -->
+<!-- PDF printed p.104 -->
 
 Intelligent, incorporeal (but not undead) monsters that look like shadows. Able to slightly change their shape.
 
@@ -4167,7 +4167,7 @@ Intelligent, incorporeal (but not undead) monsters that look like shadows. Able 
 
 ### Shambling Mound
 
-<!-- PDF printed p.106 -->
+<!-- PDF printed p.104 -->
 
 Sentient, semi-intelligent plant monsters with the shape of a roughly humanoid (9' tall), slime-soaked mound of vegetation. Dwell in forlorn swamps and damp underground locales.
 
@@ -4185,7 +4185,7 @@ Sentient, semi-intelligent plant monsters with the shape of a roughly humanoid (
 
 ### Shark
 
-<!-- PDF printed p.106 -->
+<!-- PDF printed p.104 -->
 
 Aggressive, predatory fish of low intelligence and unpredictable behaviour. Live in saltwater.
 
@@ -4228,7 +4228,7 @@ Aggressive, predatory fish of low intelligence and unpredictable behaviour. Live
 
 ### Shrew, Giant
 
-<!-- PDF printed p.107 -->
+<!-- PDF printed p.105 -->
 
 Brown-furred, mole-like, insectivores with long snouts. Dwell underground; skilled burrowers.
 
@@ -4246,7 +4246,7 @@ Brown-furred, mole-like, insectivores with long snouts. Dwell underground; skill
 
 ### Shrieker
 
-<!-- PDF printed p.107 -->
+<!-- PDF printed p.105 -->
 
 Giant, subterranean mushrooms that can creep around slowly.
 
@@ -4260,7 +4260,7 @@ Giant, subterranean mushrooms that can creep around slowly.
 
 ### Skeleton
 
-<!-- PDF printed p.107 -->
+<!-- PDF printed p.105 -->
 
 Skeletal remains of humanoids, reanimated as guardians by powerful magic-users or clerics. Often encountered in cemeteries, crypts, or other forlorn places.
 
@@ -4274,7 +4274,7 @@ Skeletal remains of humanoids, reanimated as guardians by powerful magic-users o
 
 ### Slithering Tracker
 
-<!-- PDF printed p.108 -->
+<!-- PDF printed p.106 -->
 
 Transparent, intelligent oozes that subsist on the blood plasma of sentient creatures. Dwell in gloomy ruins and dungeons.
 
@@ -4292,7 +4292,7 @@ Transparent, intelligent oozes that subsist on the blood plasma of sentient crea
 
 ### Slug, Giant
 
-<!-- PDF printed p.108 -->
+<!-- PDF printed p.106 -->
 
 Gargantuan (30' long) grey slugs with rasp-like tongues and acidic spit. Voracious predators that dwell underground.
 
@@ -4309,7 +4309,7 @@ Gargantuan (30' long) grey slugs with rasp-like tongues and acidic spit. Voracio
 
 ### Snake
 
-<!-- PDF printed p.108 -->
+<!-- PDF printed p.106 -->
 
 Dwell in all but the most extreme climes. Will usually only attack if cornered or surprised.
 
@@ -4374,7 +4374,7 @@ Dwell in all but the most extreme climes. Will usually only attack if cornered o
 
 ### Snake Person
 
-<!-- PDF printed p.109 -->
+<!-- PDF printed p.107 -->
 
 Depraved monsters with the sinuous body, tail, and head of a giant snake and scaly humanoid torso and arms. Capture other sentients to be eaten or sacrificed in obscene rituals praising their demonic masters. Dwell in hot jungles.
 
@@ -4392,7 +4392,7 @@ Depraved monsters with the sinuous body, tail, and head of a giant snake and sca
 
 ### Spawn of the Worm
 
-<!-- PDF printed p.110 -->
+<!-- PDF printed p.108 -->
 
 Grotesque, animated human corpses in an advanced state of rot. Brains have been entirely devoured by vile worms, which fill the skull cavity and writhe out of the eyes and mouth. Dwell in dungeons, tomb complexes, and swamps.
 
@@ -4413,7 +4413,7 @@ Grotesque, animated human corpses in an advanced state of rot. Brains have been 
 
 ### Spectre
 
-<!-- PDF printed p.111 -->
+<!-- PDF printed p.109 -->
 
 Incorporeal phantoms; one of the most powerful undead monsters.
 
@@ -4429,7 +4429,7 @@ Incorporeal phantoms; one of the most powerful undead monsters.
 
 ### Sphinx
 
-<!-- PDF printed p.111 -->
+<!-- PDF printed p.109 -->
 
 Large (8' tall) monsters with bird-like wings, the body of a lion, and a human head. Collect riddles, puzzles, and obscure lore. May pose riddles to those they meet, attacking and consuming any who cannot give the correct answer. Dwell in warm climes in ruins and wild areas.
 
@@ -4446,7 +4446,7 @@ Large (8' tall) monsters with bird-like wings, the body of a lion, and a human h
 
 ### Spider, Giant
 
-<!-- PDF printed p.112 -->
+<!-- PDF printed p.110 -->
 
 #### Black Widow
 
@@ -4488,7 +4488,7 @@ Large (8' tall) monsters with bird-like wings, the body of a lion, and a human h
 
 ### Sprite
 
-<!-- PDF printed p.113 -->
+<!-- PDF printed p.111 -->
 
 1' tall, winged humanoids, related to pixies and elves. They are shy, but driven by curiosity and their odd sense of humour.
 
@@ -4503,7 +4503,7 @@ Large (8' tall) monsters with bird-like wings, the body of a lion, and a human h
 
 ### Squid, Giant
 
-<!-- PDF printed p.114 -->
+<!-- PDF printed p.112 -->
 
 Giant, ten-armed cephalopods. Two of the ten arms are larger, and may be used to attack ships. Dwell in the depths of the sea, only surface to find prey.
 
@@ -4522,7 +4522,7 @@ Giant, ten-armed cephalopods. Two of the ten arms are larger, and may be used to
 
 ### Stegosaurus
 
-<!-- PDF printed p.114 -->
+<!-- PDF printed p.112 -->
 
 Stocky, herbivorous dinosaurs with a ridge of plates along their backs, and a tail studded with spikes (used to deter attackers). Dwell in sub-tropical Lost World environments.
 
@@ -4536,7 +4536,7 @@ Stocky, herbivorous dinosaurs with a ridge of plates along their backs, and a ta
 
 ### Stirge
 
-<!-- PDF printed p.114 -->
+<!-- PDF printed p.112 -->
 
 Feathered, bird-like creatures with long, sharp beaks.
 
@@ -4552,7 +4552,7 @@ Feathered, bird-like creatures with long, sharp beaks.
 
 ### Strangle Weed
 
-<!-- PDF printed p.115 -->
+<!-- PDF printed p.113 -->
 
 10' long fronds of rubbery seaweed that seek out living prey. Dwell in warm seas.
 
@@ -4567,7 +4567,7 @@ Feathered, bird-like creatures with long, sharp beaks.
 
 ### Svirfneblin
 
-<!-- PDF printed p.115 -->
+<!-- PDF printed p.113 -->
 
 Short, thickset demihumans with long noses and gnarled, hairless, grey skin. Also known as deep gnomes. Dwell deep in the Underworld in labyrinthine lairs riddled with cunning secret passages and chambers.
 
@@ -4588,7 +4588,7 @@ Short, thickset demihumans with long noses and gnarled, hairless, grey skin. Als
 
 ### Thoul
 
-<!-- PDF printed p.117 -->
+<!-- PDF printed p.115 -->
 
 Magical monstrosities that look like hobgoblins (except on close inspection), but combine the powers of ghouls and trolls. Sometimes live among hobgoblins.
 
@@ -4603,7 +4603,7 @@ Magical monstrosities that look like hobgoblins (except on close inspection), bu
 
 ### Tarrasque
 
-<!-- PDF printed p.116 -->
+<!-- PDF printed p.114 -->
 
 Legendary, gargantuan (50' long) reptilian monstrosities dreaded throughout all lands. Spend most of their time sleeping in their underground lairs. Emerge periodically and ravage vast swaths of land, consuming all plants and animals in the path. Tarrasques are quite possibly the most feared monster of all.
 
@@ -4628,7 +4628,7 @@ Legendary, gargantuan (50' long) reptilian monstrosities dreaded throughout all 
 
 ### Titan
 
-<!-- PDF printed p.117 -->
+<!-- PDF printed p.115 -->
 
 Gargantuan (22' tall) humanoids of radiant beauty and athletic build. Beneficent of character, but prone to megalomania. Natives of higher planes, but sometimes have strongholds in the mortal world.
 
@@ -4646,7 +4646,7 @@ Gargantuan (22' tall) humanoids of radiant beauty and athletic build. Beneficent
 
 ### Titanothere
 
-<!-- PDF printed p.117 -->
+<!-- PDF printed p.115 -->
 
 Giant (12' at the shoulder), ancient relatives of the rhinoceros, with massive, blunt horns. Eat grass and tree leaves. Dwell in small herds in Lost World grasslands.
 
@@ -4661,7 +4661,7 @@ Giant (12' at the shoulder), ancient relatives of the rhinoceros, with massive, 
 
 ### Toad, Giant
 
-<!-- PDF printed p.120 -->
+<!-- PDF printed p.118 -->
 
 Warty amphibians with long, sticky tongues. As large as a great hound, weighing 150 to 250 pounds.
 
@@ -4677,7 +4677,7 @@ Warty amphibians with long, sticky tongues. As large as a great hound, weighing 
 
 ### Trader
 
-<!-- PDF printed p.120 -->
+<!-- PDF printed p.118 -->
 
 1st level fighters who live by trading in borderland areas.
 
@@ -4692,7 +4692,7 @@ Warty amphibians with long, sticky tongues. As large as a great hound, weighing 
 
 ### Trapper
 
-<!-- PDF printed p.120 -->
+<!-- PDF printed p.118 -->
 
 Intelligent, cunning predators that stretch their stony, amorphous bodies flat across large areas of floor. Wait for victims to walk across, then fold up, trapping the victims. Typically cover a 20' square area (though larger specimens are occasionally encountered). Dwell underground.
 
@@ -4711,7 +4711,7 @@ Intelligent, cunning predators that stretch their stony, amorphous bodies flat a
 
 ### Treant
 
-<!-- PDF printed p.121 -->
+<!-- PDF printed p.119 -->
 
 Giant (18' tall) humanoids that look like trees. Dwell in forests. Are concerned only with protecting the plants of their home. Speak their own long-winded and circuitous language.
 
@@ -4727,7 +4727,7 @@ Giant (18' tall) humanoids that look like trees. Dwell in forests. Are concerned
 
 ### Triceratops
 
-<!-- PDF printed p.121 -->
+<!-- PDF printed p.119 -->
 
 Massive (12' to the shoulder, almost 40' long), aggressive, herbivorous dinosaurs with a protective crest behind the head, and three long horns. Dwell in Lost World grasslands.
 
@@ -4743,7 +4743,7 @@ Massive (12' to the shoulder, almost 40' long), aggressive, herbivorous dinosaur
 
 ### Triton
 
-<!-- PDF printed p.121 -->
+<!-- PDF printed p.119 -->
 
 Aquatic humanoids with silvery skin, blue-green hair, and scaled legs ending in fins. Dwell in warm waters both in shallows and at great depths.
 
@@ -4766,7 +4766,7 @@ Aquatic humanoids with silvery skin, blue-green hair, and scaled legs ending in 
 
 ### Troglodyte
 
-<!-- PDF printed p.122 -->
+<!-- PDF printed p.120 -->
 
 Intelligent, reptilian humanoids with agile hands, long legs, short tails, and spiky combs on their heads and arms.
 
@@ -4782,7 +4782,7 @@ Intelligent, reptilian humanoids with agile hands, long legs, short tails, and s
 
 ### Troll
 
-<!-- PDF printed p.122 -->
+<!-- PDF printed p.120 -->
 
 Intelligent, wicked, 8' tall humanoids with emaciated, rubbery bodies. Consume the flesh of other humanoids. Dwell underground, in barren wilderness, and in the ruined homes of former victims.
 
@@ -4799,7 +4799,7 @@ Intelligent, wicked, 8' tall humanoids with emaciated, rubbery bodies. Consume t
 
 ### Turtle, Giant
 
-<!-- PDF printed p.122 -->
+<!-- PDF printed p.120 -->
 
 #### Sea Turtle
 
@@ -4826,7 +4826,7 @@ Giant (10' long), aggressive predatory turtles that lurk in the shallows of lake
 
 ### Tyrannosaurus Rex
 
-<!-- PDF printed p.123 -->
+<!-- PDF printed p.121 -->
 
 Great (over 20' tall), two-legged, predatory dinosaurs with huge jaws. Hunt human-sized or larger prey. Dwell in Lost World regions.
 
@@ -4840,7 +4840,7 @@ Great (over 20' tall), two-legged, predatory dinosaurs with huge jaws. Hunt huma
 
 ### Unicorn
 
-<!-- PDF printed p.123 -->
+<!-- PDF printed p.121 -->
 
 Fantastic creatures that appear as elegant horses with a long horn. Unicorns are timid, but proud and wilful.
 
@@ -4855,7 +4855,7 @@ Fantastic creatures that appear as elegant horses with a long horn. Unicorns are
 
 ### Vampire
 
-<!-- PDF printed p.124 -->
+<!-- PDF printed p.122 -->
 
 Greatly feared undead monsters that live by drinking the blood of mortals. Dwell in ruins, tombs, and deserted locales.
 
@@ -4892,7 +4892,7 @@ Greatly feared undead monsters that live by drinking the blood of mortals. Dwell
 
 ### Veteran
 
-<!-- PDF printed p.125 -->
+<!-- PDF printed p.123 -->
 
 Low level fighters, often on their way to or from war.
 
@@ -4906,7 +4906,7 @@ Low level fighters, often on their way to or from war.
 
 ### Violet Fungus
 
-<!-- PDF printed p.125 -->
+<!-- PDF printed p.123 -->
 
 Giant (5' tall), carnivorous mushrooms that can creep around slowly. Live underground, among shriekers, which they resemble. Feed on the rotting remains of living creatures which stray too close.
 
@@ -4920,7 +4920,7 @@ Giant (5' tall), carnivorous mushrooms that can creep around slowly. Live underg
 
 ### Warp Beast
 
-<!-- PDF printed p.125 -->
+<!-- PDF printed p.123 -->
 
 Large, black, six-legged, semi-intelligent monsters. Look similar to panthers with a tentacle growing from each front shoulder. Tentacles ridged with razor-sharp edges.
 
@@ -4936,7 +4936,7 @@ Large, black, six-legged, semi-intelligent monsters. Look similar to panthers wi
 
 ### Wasp, Giant
 
-<!-- PDF printed p.125 -->
+<!-- PDF printed p.123 -->
 
 5' long, highly aggressive, carnivorous insects. Paralyse creatures with their sting then lay eggs in the victim, which is then devoured by the larvae as they hatch. Dwell in warm and temperate climates.
 
@@ -4952,7 +4952,7 @@ Large, black, six-legged, semi-intelligent monsters. Look similar to panthers wi
 
 ### Water Fiend
 
-<!-- PDF printed p.126 -->
+<!-- PDF printed p.124 -->
 
 Evil spirits that inhabit pools. Take a serpent-like form and lash out at approaching creatures.
 
@@ -4974,7 +4974,7 @@ Evil spirits that inhabit pools. Take a serpent-like form and lash out at approa
 
 ### Water Termite
 
-<!-- PDF printed p.126 -->
+<!-- PDF printed p.124 -->
 
 Giant (1'–5' long), wood-eating, aquatic insects with a sack to take in and jet out water. Prone to feeding on passing ships. Only attack creatures if cornered.
 
@@ -5005,7 +5005,7 @@ Giant (1'–5' long), wood-eating, aquatic insects with a sack to take in and je
 
 ### Weasel, Giant
 
-<!-- PDF printed p.127 -->
+<!-- PDF printed p.125 -->
 
 8' to 9' long, vicious, predatory mammals with rich fur of brown, gold, or white. Dwell in subterranean tunnels, hunting alone or in small groups.
 
@@ -5023,7 +5023,7 @@ Giant (1'–5' long), wood-eating, aquatic insects with a sack to take in and je
 
 ### Whale
 
-<!-- PDF printed p.127 -->
+<!-- PDF printed p.125 -->
 
 #### Killer Whale
 
@@ -5060,7 +5060,7 @@ Gargantuan whales up to 60' long. Dwell in open oceans and hunt deep sea monster
 
 ### Wight
 
-<!-- PDF printed p.128 -->
+<!-- PDF printed p.126 -->
 
 Corpses of humans or demihumans, possessed by malevolent spirits.
 
@@ -5076,7 +5076,7 @@ Corpses of humans or demihumans, possessed by malevolent spirits.
 
 ### Will-o'-the-Wisp
 
-<!-- PDF printed p.128 -->
+<!-- PDF printed p.126 -->
 
 1' spheres of bobbing, torch-like light that lure people to their doom in bogs or traps. Feed on the energy of dying souls.
 
@@ -5093,7 +5093,7 @@ Corpses of humans or demihumans, possessed by malevolent spirits.
 
 ### Wolf
 
-<!-- PDF printed p.128 -->
+<!-- PDF printed p.126 -->
 
 Carnivorous relatives of dogs that hunt in packs.
 
@@ -5123,7 +5123,7 @@ Dwell primarily in wild lands, but occasionally lair in caves.
 
 ### Wraith
 
-<!-- PDF printed p.129 -->
+<!-- PDF printed p.127 -->
 
 Incorporeal, undead monsters that appear as pale, human-like forms of coalescing mist. Dwell in deserted regions or in the homes of former victims.
 
@@ -5140,7 +5140,7 @@ Incorporeal, undead monsters that appear as pale, human-like forms of coalescing
 
 ### Wyvern
 
-<!-- PDF printed p.129 -->
+<!-- PDF printed p.127 -->
 
 Winged, two-legged, dragon-like monsters with a long tail tipped with a venomous stinger. Dwell in any terrain, but favour cliffs and forests.
 
@@ -5154,7 +5154,7 @@ Winged, two-legged, dragon-like monsters with a long tail tipped with a venomous
 
 ### Xorn
 
-<!-- PDF printed p.130 -->
+<!-- PDF printed p.128 -->
 
 5' tall, radially symmetric monsters with powerful jaws atop their body and a clawed arm, a stumpy leg, and an eye on each of their 3 sides. Eat rare minerals. Natives of the plane of elemental earth who venture to the material plane on occasion in search of food.
 
@@ -5173,7 +5173,7 @@ Winged, two-legged, dragon-like monsters with a long tail tipped with a venomous
 
 ### Yellow Mould
 
-<!-- PDF printed p.130 -->
+<!-- PDF printed p.128 -->
 
 Deadly fungus that covers walls, ceilings, and other surfaces.
 
@@ -5191,7 +5191,7 @@ Deadly fungus that covers walls, ceilings, and other surfaces.
 
 ### Yeti
 
-<!-- PDF printed p.131 -->
+<!-- PDF printed p.129 -->
 
 Large (8' tall), shaggy ape-like monsters with vicious claws and a taste for human flesh. Dwell in isolated, icy regions.
 
@@ -5209,7 +5209,7 @@ Large (8' tall), shaggy ape-like monsters with vicious claws and a taste for hum
 
 ### Zombie
 
-<!-- PDF printed p.131 -->
+<!-- PDF printed p.129 -->
 
 Listless, humanoid corpses, reanimated as guardians by powerful clerics or wizards.
 
@@ -5229,7 +5229,7 @@ Encounter tables are maintained in `ose-advanced-referee.md` → [Encounter Tabl
 
 
 ## NPC Encounters
-<!-- PDF printed p.140–142 -->
+<!-- PDF printed p.138–140 -->
 
 ### Adventuring Parties
 
@@ -5278,7 +5278,7 @@ If the classes presented in this book are not in use, the referee should replace
 ---
 
 ### High-Level Cleric
-<!-- PDF printed p.141 -->
+<!-- PDF printed p.139 -->
 
 A high-level cleric and party. (Mounts and magic items as per Expert Adventurers.)
 
@@ -5286,7 +5286,7 @@ A high-level cleric and party. (Mounts and magic items as per Expert Adventurers
 - **Alignment:** Roll for the whole party.
 
 ### High-Level Fighter
-<!-- PDF printed p.141 -->
+<!-- PDF printed p.139 -->
 
 A high-level fighter and a group of retainers, often on their way to or from war. (Mounts and magic items as per Expert Adventurers.)
 
@@ -5294,7 +5294,7 @@ A high-level fighter and a group of retainers, often on their way to or from war
 - **Alignment:** Roll for the whole party.
 
 ### High-Level Magic-User
-<!-- PDF printed p.141 -->
+<!-- PDF printed p.139 -->
 
 A high-level magic-user, accompanied by their apprentices and a group of hired guards, often on a quest for arcane lore. (Mounts and magic items as per Expert Adventurers.)
 
@@ -5304,7 +5304,7 @@ A high-level magic-user, accompanied by their apprentices and a group of hired g
 ---
 
 ### Strongholds
-<!-- PDF printed p.142 -->
+<!-- PDF printed p.140 -->
 
 When PCs wander into the vicinity of the wilderness stronghold of a high-level NPC, a warm reception is not always guaranteed.
 
