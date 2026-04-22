@@ -17,13 +17,13 @@
 
 ## Summary
 
-- Files checked: 4 / 8
+- Files checked: 5 / 8
 - Bugs: 1
-- Missing: 105
+- Missing: 202 (10 rules + 95 monsters + 97 misc magic items)
 - Extra: 0
 - Campaign annotations: 8
 - Formatting: 33
-- Spot-checks passed: 36
+- Spot-checks passed: 43
 
 ## Known intentional deviations
 
@@ -293,7 +293,68 @@ diff /tmp/pdf-monsters.txt /tmp/md-monsters.txt
 
 ## File: ose-advanced-treasures.md
 
-_(Task 6 populates this section.)_
+### Counts
+
+| Category | Count |
+|---|---|
+| `[bug]` | 0 |
+| `[missing]` | ~95 miscellaneous magic items + 2 Ring entries |
+| `[extra]` | 0 |
+| `[formatting]` | 0 |
+| `[ok-spot]` | 7 |
+
+### Notes on coverage
+
+| Section | MD count | PDF count | Status |
+|---|---:|---:|---|
+| Treasure Types (A-V) | 22 (15 hoards + 5 individual + 2 group) | 22 | ✓ MATCH |
+| Potions | 21 entries (+ 2 sub-headings) | 21 | ✓ MATCH |
+| Rings | 17 entries (+ 1 sub-heading) | 16 | +1 (Ring of Protection, 5' Radius may be a sub-variant) |
+| Miscellaneous Items | **28** unique items | **125** | ✗ **~95 MISSING** |
+| Armour and Shields | present (H2 section) | present | coverage verified |
+| Rods, Staves, Wands | present | present | not spot-checked |
+| Scrolls and Maps | present | present | not spot-checked |
+| Swords | present | present | not spot-checked |
+| Weapons | present | present | not spot-checked |
+| Sentient Swords | present | present | not spot-checked |
+
+**Magic items that ARE present appear correct** (6/6 detailed spot-checks matched PDF exactly), but the **Miscellaneous Items** category is severely truncated — parallel to the monsters.md situation.
+
+### Critical missing miscellaneous magic items
+
+- `[missing]` treasures.md | PDF Referee p.166 | **Deck of Many Things** — entirely absent (iconic high-risk magic item)
+- `[missing]` treasures.md | PDF Referee p.172 | **Figurine of Wondrous Power** — entirely absent
+- `[missing]` treasures.md | PDF Referee p.189 | **Portable Hole** — entirely absent
+- `[missing]` treasures.md | PDF Referee p.180 | **Ioun Stones** — entirely absent
+- `[missing]` treasures.md | PDF Referee p.165 | **Cube of Force** — entirely absent
+- `[missing]` treasures.md | PDF Referee p.194 | **Sphere of Annihilation** — entirely absent
+- `[missing]` treasures.md | PDF Referee p.191 | **Robe of the Archmagi** — entirely absent
+- `[missing]` treasures.md | PDF Referee p.193 | **Scarab of Chaos / of Death / of Rage** — only "Scarab of Protection" present
+
+### Missing miscellaneous magic items (sample list — MD has 28/125)
+
+Derived from PDF Referee ToC (Miscellaneous Items p.156-195). Items NOT in MD:
+
+Alchemist's Beaker, Amulet of Protection Against Possession, Apparatus of the Crab, Arrow of Location, Bag of Transformation, Book of Foul Corruption, Book of Infinite Spells, Book of Sublime Holiness, Boots of Dancing, Bracers of Armour, Bracers of Defencelessness, Brooch of Shielding, Candle of Invocation, Chime of Opening, Chime of Ravening, Cloak of Defence, Cloak of Flight, Cloak of Poison, Cloak of the Manta Ray, Crystal Hypnosis Ball, Cube of Force, Cube of Frost Resistance, Decanter of Endless Water, Deck of Many Things, Drums of Thunder, Dust of Appearance, Dust of Disappearance, Dust of Sneezing and Choking, Eyes of Charming, Eyes of Minuscule Sight, Eyes of Petrification, Eyes of the Eagle, Feather Token, Figurine of Wondrous Power, Folding Boat, Gem of Brightness, Gem of Monster Attraction, Gem of Pristine Faceting, Gem of Seeing, Gloves of Dexterity, Gloves of Swimming and Climbing, Horn of Cave-Ins, Horn of Frothing, Horn of the Tritons, Horn of Valhalla, Horseshoes of a Zephyr, Horseshoes of Speed, Incense of Meditation, Incense of Obsession, Instant Fortress, Ioun Stones, Iron Flask, Jug of Endless Liquids, Libram of Arcane Power, Loadstone, Luckstone, Lyre of Building, Marvellous Pigments, Medallion of Thought Projection, Mirror of Mental Prowess, Mirror of Opposition, Necklace of Adaptation, Necklace of Fireballs, Necklace of Strangulation, Net of Snaring, Oil of Insubstantiality, Oil of Slipperiness, Pearl of Power, Pearl of Wisdom, Periapt of Foul Rotting, Periapt of Health, Periapt of Proof Against Poison, Periapt of Wound Closure, Phylactery of Betrayal, Phylactery of Faithfulness, Phylactery of Longevity, Pipes of the Sewers, Portable Hole, Purse of Plentiful Coin, Restorative Ointment, Robe of Blending, Robe of Eyes, Robe of Powerlessness, Robe of Scintillating Colours, Robe of the Archmagi, Robe of Useful Items, Rope of Entanglement, Rope of Strangulation, Rug of Suffocation, Saw of Felling, Scarab of Chaos, Scarab of Death, Scarab of Rage, Spade of Mighty Digging, Sphere of Annihilation, Sweet Water, Talisman of the Sphere, Vacuous Grimoire, Well of Many Worlds.
+
+(~97 items listed. MD has 28; PDF ToC has 125. Delta ≈ 97.)
+
+### Spot-checks — magic items
+
+- `[ok-spot]` treasures.md:L489–495 | PDF Referee printed p.157 | **Bag of Holding**: Size objects up to 10'×5'×3' inside; Weight up to 10,000 coins; when full bag weighs 600 coins — matches PDF exactly
+- `[ok-spot]` treasures.md:L506–511 | PDF Referee printed p.161 | **Boots of Speed**: 240' (80') move speed, 12 hours duration, 1 day rest — matches PDF exactly
+- `[ok-spot]` treasures.md:L615–620 | PDF Referee printed p.175 | **Girdle of Giant Strength**: 8 HD combat ability, 2d8 damage (or twice normal with variable weapon damage rule) — matches PDF exactly
+- `[ok-spot]` treasures.md:L647–655 | PDF Referee printed p.177 | **Helm of Teleportation**: uses teleport spell; subject=self/creature/object; save vs spells to resist; first-use single-shot then recharge via teleport cast — matches PDF exactly
+- `[ok-spot]` treasures.md:L870–875 | PDF Referee printed p.200 | **Potion of Healing**: 1d6+1 hp restored; cannot exceed normal max; curing paralysis as alternative effect — matches PDF exactly
+- `[ok-spot]` treasures.md:L1043–1048 | PDF Referee printed p.204 | **Ring of Protection**: +1 AC, +1 saves — matches PDF exactly
+- `[ok-spot]` treasures.md:L92–260 | PDF Referee printed p.148–149 | **Treasure Types table**: 22 total types present (15 hoard A-O + 5 individual P-T + 2 group U-V). Treasure Type A matches: 25% cp, 30% sp, 20% ep, 35% gp, 25% pp, 50% gems (6d6), 50% jewellery (6d6), 30% magic (3 items). Structural split into three subsections (A-O/P-T/U-V) is an MD editorial choice, not present in PDF which keeps one table.
+
+### Not spot-checked (recommended for follow-up)
+
+- Ring of Protection, 5' Radius (MD-only entry L1050) — verify whether PDF has it as a sub-variant under Ring of Protection or as separate entry
+- Swords, Weapons, Sentient Swords sections — present but not individually checked
+- Rods, Staves, Wands section — present but not individually checked
+- Armour and Shields + Cursed Armour — present but not individually checked
 
 ## File: ose-advanced-referee.md
 
