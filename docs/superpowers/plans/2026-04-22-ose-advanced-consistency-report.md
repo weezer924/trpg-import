@@ -66,14 +66,20 @@ Regenerated `*(PDF p.XX)*` references to `*(PDF printed p.XX)*` using correct Ad
 | spells.md | 7 | 4 section headers (Cleric/MU far-off, Druid/Illusionist 2-off) + 3 Magic-User sub-sections |
 | referee.md | 2 | Awarding XP, Encounter Tables range |
 
-**monsters.md HTML `<!-- PDF p.NNN -->` comments**: deferred until 档三 (parallel re-import of 95 missing monsters) merges — will batch-regenerate all 229 monster comments in one sweep afterwards.
+**monsters.md HTML `<!-- PDF p.NNN -->` comments**: still deferred — now ready for batch regeneration across all 229 entries (was blocked on 档三, which merged as `c92f58f`/`24bca62`; new entries added without page comments so there's no further drift).
+
+### 档三 (2026-04-22): 95 monsters + 97 magic items reimported
+
+Dispatched via parallel worktree agents (`agent-af414c6b` for monsters, `agent-a07fd68d` for magic items). Both agents pulled content from `Advanced Fantasy Referee's Tome v1.2.pdf`, inserted alphabetically, and verified against spot-checks.
+
+| File | Added | Commits | Notes |
+|---|---:|---|---|
+| `ose-advanced-monsters.md` | 95 new H3 entries (Lich, Mimic, Couatl, Tarrasque, Hag, Banshee, Bulette, Rakshasa, Ghost, Ettin, Xorn, Yeti, Titan, Sphinx, Phoenix, Drider, Deep One, Nightmare, Dragon Multichromatic, Dragonne, Piercer, Roper, Amphisbaena, Ankheg, + 71 others) | `c92f58f` body, `24bca62` Index | Djinni / Efreeti / Sea Serpent restructured from `### X (Lesser)` into `### X` parent H3 with H4 Lesser/plain/Greater sub-variants per PDF layout. Index regenerated (now 229 entries, 3..231); downstream sections renumbered (Encounter Tables → 232, NPC Encounters → 233-237). Body↔Index alignment verified 1:1. Encounter Tables dedupe preserved. |
+| `ose-advanced-treasures.md` | 99 new H3 entries (Deck of Many Things, Portable Hole, Ioun Stones, Sphere of Annihilation, Figurine of Wondrous Power, Robe of the Archmagi, Cube of Force, Scarab of Chaos/Death/Rage, + 91 others) | `090ca21` | Index line for Miscellaneous Items updated to "~125 misc magic items (A–W)". Multi-variant items (Deck, Figurine, Feather Token) use bold inline labels rather than nested H4s to avoid nav noise. `Ring of Protection, 5' Radius` verified as legitimate PDF sub-variant (kept). |
+
+Agent 1 hit an API stream timeout at 46 min / 108 tool calls before committing; manual follow-up on main was: commit the working-tree diff, rebase onto main to absorb `3af2a73`'s Encounter Tables dedupe and `80e2408`'s umlaut fix (both clean rebases — agent's diff never touched those regions), regenerate Index with a Python script (preserves 138 existing taglines verbatim, derives 91 new ones from flavor paragraphs).
 
 ### Remaining (not yet fixed)
-
-**P0 — large re-imports (require separate worktree session with parallel agents per CLAUDE.md workflow):**
-
-- 95 missing monster entries in `ose-advanced-monsters.md` (Lich, Mimic, Couatl, Tarrasque, Hag, Banshee, Bulette, Rakshasa, Ghost, etc.) — see "Missing monsters (complete list — 95)" section below
-- ~97 missing miscellaneous magic items in `ose-advanced-treasures.md` (Deck of Many Things, Portable Hole, Cube of Force, Figurine of Wondrous Power, Ioun Stones, Sphere of Annihilation, etc.) — see "Missing miscellaneous magic items (sample list)" section below
 
 **P2 — page-reference hygiene (batch-scriptable):**
 
@@ -81,17 +87,17 @@ Regenerated `*(PDF p.XX)*` references to `*(PDF printed p.XX)*` using correct Ad
 - ~~8 classic-class page references in `ose-advanced-classes.md`~~ ✅ fixed in `b18c9c4`
 - ~~4 spell-section page references in `ose-advanced-spells.md`~~ ✅ fixed (7 total refs) in `b18c9c4`
 - ~~2 page-ref offsets in `ose-advanced-referee.md`~~ ✅ fixed in `b18c9c4`
-- Systematic HTML `<!-- PDF p.NNN -->` comments in `ose-advanced-monsters.md` — **deferred** until 档三 merges, then regenerate all 229 monster comments in one sweep
+- Systematic HTML `<!-- PDF p.NNN -->` comments in `ose-advanced-monsters.md` — now unblocked (档三 merged); can batch-regenerate all 229 entries in one sweep
 
 ### Remediation summary by severity
 
-| Severity | Pre-audit | Fixed in 80e2408 (档一) | Fixed in 3af2a73 (档二) | Fixed in b18c9c4 (档四 partial) | Still open |
-|---|---:|---:|---:|---:|---:|
-| `[bug]` | 1 | 1 | 0 | 0 | **0** |
-| `[missing]` | ~202 | 8 | 3 | 0 | **~192** (95 monsters + ~97 magic items — pending 档三) |
-| `[extra]` | 0 | — | — | — | **0** |
-| `[duplication]` | 1 | — | 1 | — | **0** |
-| `[formatting]` | 35 | 1 (Doppelgänger) | — | 44 (over-counted; all non-monster page refs) | **~1 systematic** (monsters.md HTML `<!-- PDF p.NNN -->` comments — pending 档三) |
+| Severity | Pre-audit | 80e2408 (档一) | 3af2a73 (档二) | b18c9c4 (档四 partial) | c92f58f+24bca62+090ca21 (档三) | Still open |
+|---|---:|---:|---:|---:|---:|---:|
+| `[bug]` | 1 | 1 | 0 | 0 | 0 | **0** |
+| `[missing]` | ~202 | 8 | 3 | 0 | ~194 (95 monsters + 99 magic items) | **~0** |
+| `[extra]` | 0 | — | — | — | — | **0** |
+| `[duplication]` | 1 | — | 1 | — | — | **0** |
+| `[formatting]` | 35 | 1 (Doppelgänger) | — | 44 (over-counted; all non-monster page refs) | — | **~1 systematic** (monsters.md HTML `<!-- PDF p.NNN -->` comments — now unblocked) |
 
 ## Known intentional deviations
 
