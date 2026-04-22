@@ -87,17 +87,19 @@ Agent 1 hit an API stream timeout at 46 min / 108 tool calls before committing; 
 - ~~8 classic-class page references in `ose-advanced-classes.md`~~ ✅ fixed in `b18c9c4`
 - ~~4 spell-section page references in `ose-advanced-spells.md`~~ ✅ fixed (7 total refs) in `b18c9c4`
 - ~~2 page-ref offsets in `ose-advanced-referee.md`~~ ✅ fixed in `b18c9c4`
-- Systematic HTML `<!-- PDF p.NNN -->` comments in `ose-advanced-monsters.md` — now unblocked (档三 merged); can batch-regenerate all 229 entries in one sweep
+- ~~Systematic HTML `<!-- PDF p.NNN -->` comments in `ose-advanced-monsters.md`~~ ✅ fixed in `53f382c` — 234 comments regenerated from Referee's Tome ToC (97 replaced + 132 added + 5 NPC-Encounters section refs updated)
 
 ### Remediation summary by severity
 
-| Severity | Pre-audit | 80e2408 (档一) | 3af2a73 (档二) | b18c9c4 (档四 partial) | c92f58f+24bca62+090ca21 (档三) | Still open |
-|---|---:|---:|---:|---:|---:|---:|
-| `[bug]` | 1 | 1 | 0 | 0 | 0 | **0** |
-| `[missing]` | ~202 | 8 | 3 | 0 | ~194 (95 monsters + 99 magic items) | **~0** |
-| `[extra]` | 0 | — | — | — | — | **0** |
-| `[duplication]` | 1 | — | 1 | — | — | **0** |
-| `[formatting]` | 35 | 1 (Doppelgänger) | — | 44 (over-counted; all non-monster page refs) | — | **~1 systematic** (monsters.md HTML `<!-- PDF p.NNN -->` comments — now unblocked) |
+| Severity | Pre-audit | 80e2408 (档一) | 3af2a73 (档二) | b18c9c4 (档四 partial) | c92f58f+24bca62+090ca21 (档三) | 53f382c (档四 final) | Still open |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| `[bug]` | 1 | 1 | 0 | 0 | 0 | 0 | **0** |
+| `[missing]` | ~202 | 8 | 3 | 0 | ~194 | 0 | **0** |
+| `[extra]` | 0 | — | — | — | — | — | **0** |
+| `[duplication]` | 1 | — | 1 | — | — | — | **0** |
+| `[formatting]` | 35 | 1 (Doppelgänger) | — | 44 (page refs, 4 files) | — | 234 (monsters.md HTML comments regen) | **0** |
+
+**All audit findings remediated.** The OSE Advanced MD set (`output/OSE/rules/ose-advanced-*.md`) now faithfully reflects the Advanced Fantasy Player's Tome v1.2 + Referee's Tome v1.2 + Reference Booklet v1.0 + Optional Rules Checklist v1.0. Ready for play-reference use.
 
 ## Known intentional deviations
 
