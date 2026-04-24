@@ -33,7 +33,10 @@
 4. Roll your Hit Points.
 5. Name your character if you wish. It will not save you.
 
-**Optional rules:** Roll on the tables on pages 38–42 (see [Optional Tables](#optional-tables)).
+**Optional rules:**
+- **Choose or randomize a class** (PDF p.46+; see [Optional Classes](#optional-classes) below) and follow the class' own instructions for rolling equipment, weapons and armor — these *replace* the default character-creation steps above.
+- Roll on the tables on pages 38–42 (see [Optional Tables](#optional-tables)).
+- **Roll a number of Omens** (PDF p.37) — default class-less starting Omens is **d2**. See [Optional Rules: Omens](#optional-rules-omens) below for full details.
 
 In this world there are those who seek riches or redemption. Some say the apocalypse is escapable, that it might even be stopped. And there you walk in discord and despair. One hand holds 2d6 × 10 silver (s), the other holds a waterskin and d4 days worth of food. Your soul and your silver are your own and equally easy to lose. To begin with, you are what you own:
 
@@ -288,14 +291,19 @@ See also: [Broken Bodies (d20)](#broken-bodies-d20) in the optional tables.
 
 *(PDF p.30–31)*
 
-### Initiative (d6)
+### Initiative
+
+**Group initiative (d6)** — default:
 
 | d6 | Result |
 |---:|--------|
 | 1–3 | enemies go first |
 | 4–6 | PCs go first |
 
-*Agility + d6 for individual initiative or to determine who goes first within the group.*
+**Individual initiative (Agility + d6)** — equally standard, used to:
+- Determine order between PCs (or between enemies) within their own side
+- Resolve who acts first when the group roll is ambiguous or contested
+- Replace the group roll entirely if the GM prefers per-character ordering
 
 Players roll for both their attacks and defences. Creatures and enemies don't roll dice in combat. The dr for attacks and defence are modified as with any test.
 
@@ -426,6 +434,8 @@ The GM decides the effect on a Crit or Fumble, but see the optional table of [Ar
 ## The Basilisk's Demand
 
 *(PDF p.36)*
+
+> **⚠ Not the doom countdown.** This d20 table is a flavor / plot-hook list of *rare items the Basilisk (or the GM, or the text) demands of the PCs*. The end-of-the-world Misery countdown is a separate mechanic — see `morkborg-setting.md` § **The Calendar of Nechrubel** (dawn die roll cascading d100 → d20 → d10 → d6 → d2, triggering Psalms I–VII).
 
 Roll d20 when the text, the GM or the Basilisk demands a rare and specific thing of the PCs.
 
@@ -605,7 +615,7 @@ A caster who rolls the same result twice explodes in screaming black fire in whi
 | 12 | Your eyes burn with insufferable agony, bleeding heavily before loosening and falling from their gory pits. You continue to see through them wherever they are. |
 | 13 | You and a random nearby creature pass out. *When you wake up, your souls have switched. Welcome to your new flesh.* |
 | 14 | Five twisted, skeletal arms burst from your back. The hands are mischievous, violent and terribly cruel. |
-| 15 | Your skin pales then begins to emit a sickly greenish light. *Living things held close to you slowly fall ill. They weaken, their teeth and bones become brittle, their teeth and hair fall out.* |
+| 15 | Your skin pales then begins to emit a sickly greenish light. *Living things held close to you slowly fall ill. They weaken, their bones become brittle, their teeth and hair fall out.* |
 | 16 | The Power works, but fate or a demonic force perverts its effects to your precise disadvantage. |
 | 17 | The scroll crumbles to tendrils of fine black powder which reach for your nose and mouth. Make a dr14 Toughness test or lose d10 hp. |
 | 18 | The Power pierces you like a knife, feeding on your anima. You are permanently gaunt and drawn, insatiably hungry. *When resting you restore only half of the rolled hp.* |
