@@ -70,7 +70,7 @@ They cautiously approach, wary of zombies or other survivors.
 
 ## Outcome
 
-Scene resolves with the PCs safely inside a stocked, intact house — a windfall outcome built from one Likely Yes (find supplies) + one Exceptional Yes (find shelter) + one Exceptional No (door locked) chained together. CF was held at 4 throughout (no scene-end transitions in this excerpt; CF rules in `../engine/06-chaos-factor.md`).
+Scene resolves with the PCs safely inside a stocked, intact house — a windfall outcome built from one Likely Yes (find supplies) + one Exceptional Yes (find shelter) + one Exceptional No (door locked) chained together. CF was held at 4 throughout (no scene-end transitions in this excerpt; CF rules in `../engine/05-chaos-factor.md`).
 
 ## Lessons (for engine/07-interpretation-principles)
 
