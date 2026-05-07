@@ -35,6 +35,8 @@
 | Shadowdark               | Shadowdark | 部分完成 | `Shadowdark/`             | `output/Shadowdark/`       |
 | Mythic GME 2e            | Mythic     | 已完成   | `Mythic GME/`             | `output/Mythic/`           |
 | Mausritter               | Mausritter | 已完成   | `OSR related/Mausritter/` | `output/Mausritter/`       |
+| Lodoss War (Companion I) | Lodoss     | 已完成   | `Record of Lodoss War RPG/` | `output/Lodoss/`         |
+| Mothership 1e            | Mothership | 已完成（除模组）| `OSR related/Mothership/` | `output/Mothership/`       |
 | OSR 相关                 | —          | 参考     | `OSR related/`            | —                          |
 | 其他系统                 | —          | 按需添加 | `{System}/`               | `output/{System}/`         |
 
@@ -94,6 +96,11 @@ output/                            # 输出目录，按系统分子目录
   ├── TalesFromTheLoop/            # Tales from the Loop
   │   ├── rules/
   │   ├── campaign/
+  │   └── characters/
+  ├── Mothership/                  # Mothership 1e (Sci-Fi Horror)
+  │   ├── rules/                   # PSG（玩家手册） + WOM（监守手册）切分
+  │   ├── supplements/             # 拆船员工具箱 / 黑客 / 仿生人扩展 / 术语表 / 飞船 d100
+  │   ├── campaign/                # 6 个中译模组（Bug Hunt / Ypsilon 14 等）
   │   └── characters/
   └── ...
 pdf_extract.py                     # PDF 文本提取工具（pymupdf，备用/grep 用）
@@ -157,6 +164,8 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf，备用/g
 | Classic Traveller | `.claude/traveller-import-guide.md`      | LBB 1-2-3 合订（扫描件，需 docling OCR）→ 6 个输出文件（errata 内联合并）|
 | Cairn 2e         | `.claude/cairn2e-import-guide.md`         | Player's Guide → 5 文件（已完成）+ Warden's Guide 待办 |
 | Mythic GME 2e    | `.claude/mythic-import-guide.md`          | Solo storytelling engine → 5 目录 37 文件（AI-facing） |
+| Lodoss War (Companion I) | `.claude/lodoss-import-guide.md`  | 1989 Group SNE 独立 TRPG（英译版）→ rules/ 9 + lore/ 4 + collections/ 5 + campaign/ 4 已完成 |
+| Mothership 1e    | `.claude/mothership-import-guide.md`      | Sci-Fi horror（中译 v1.3）→ rules/ 15 + supplements/ 5 + campaign/ 6 + characters/ |
 | CoC              | `.claude/coc-import-guide.md`             | 待创建                                           |
 
 **导入新系统时**：先创建该系统的专属导入指南（参考 dnd5e 指南的结构），再按指南逐步执行。
@@ -203,7 +212,9 @@ python3 pdf_extract.py some.pdf --info   # 查总页数+目录
 - `tools/mcp-server/` — 骰子/状态/存档 MCP 服务
 - `.mcp.json` 的 `cwd` 必须指向本项目目录（不是旧的 `/Users/jack/Projects/OSE`）
 
-已建：OSE、WW2 OBW、Tales from the loop、Mork Borg、SwordWorld、DnDClassic、Shadowdark、Traveller、Cairn2e。新增系统时复制 Mork Borg 模板即可。
+已建：OSE、WW2 OBW、Tales from the loop、Mork Borg、SwordWorld、DnDClassic、Shadowdark、Traveller、Cairn2e、**Mothership**。新增系统时复制 Mork Borg 模板即可。
+
+**Mothership 注意**：是首个用 **Python MCP** 的 sibling（其他系统用 Node/TS）。`tools/mcp-server/` 用 `uv` 管理依赖，`.mcp.json` 的 `command` 是 `uv` 而非 `node`。结构对 AI 透明，但维护时记得 `uv sync` 而非 `npm install`。详见 `tools/mcp-server/README.md`。
 
 **Cairn2e 注意**：rules/ 里每个 md 是指向 `output/Cairn/rules/cairn2e-*.md` 的 symlink（还附带 `cairn1e-spells.md`，因 2e Spellbooks 沿用 1e 法术表）。characters/ 和 campaign/ 目前在 `output/Cairn2e/` 下，是独立于 `output/Cairn/` 的 2e 专用子树。
 
@@ -223,4 +234,4 @@ saves/{name}/
 saves/.active          # 当前活跃存档名
 ```
 
-角色术语按系统官方定义（D&D=DM, OSE/OWB/MB=Referee, TFTL=GM, CoC=Keeper, Cairn=Warden）。
+角色术语按系统官方定义（D&D=DM, OSE/OWB/MB=Referee, TFTL=GM, CoC=Keeper, Cairn=Warden, Mothership=Warden 监守）。
