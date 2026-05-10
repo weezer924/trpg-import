@@ -32,7 +32,7 @@
 
 《母舰®》是面向**成年受众**的恐怖游戏。包含**暴力、粗俗语言、部分性元素、药物滥用**，以及对**精神疾病、创伤、压力与恐慌**的描绘，可能并不适合所有观众。敬请知悉。
 
-> 团体安全工具与桌边礼仪见 → `psg-overview.md#安全指引-safety-instructions` 与 `wom-running-game.md`（待导入）。
+> 团体安全工具与桌边礼仪见 → `psg-overview.md#安全指引-safety-instructions` 与 `wom-running-game.md`。
 
 ---
 
@@ -52,7 +52,7 @@
 
 ## 恐怖 HORRORS
 
-> **新增整理**：本表是 TOMBS 循环的随机生成表——投五次 d100，每次取一列，组合成一只独特的恐怖。详细 TOMBS 循环用法见 → `wom-scenario-design.md`（待导入）。
+> **新增整理**：本表是 TOMBS 循环的随机生成表——投五次 d100，每次取一列，组合成一只独特的恐怖。详细 TOMBS 循环用法见 → `wom-scenario-design.md`。
 
 | D100 | 越界 Transgression | 预兆 Omen | 显现 Manifestation | 放逐 Banishment | 沉睡 Slumber |
 |---:|---|---|---|---|---|
