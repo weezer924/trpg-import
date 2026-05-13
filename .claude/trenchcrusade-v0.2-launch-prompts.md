@@ -32,7 +32,7 @@
 - `tools/mcp-server/` 和 `.mcp.json` 本 Phase 只建占位（Phase B 才填实际内容）
 
 ## 完成判定（v0.2 plan §A.3）
-- [ ] `ls /Users/jack/Projects/trpg-projects/TrenchCrusade/rules/` 显示 9 个 v0.1 文件
+- [ ] `ls /Users/jack/Projects/trpg-projects/TrenchCrusade/rules/` 显示 7 个 v0.1 文件（00-overview / 01-core-rules / 02-comprehensive / 03-keywords / 04-terrain / 05-battlekit / 08-scenarios）
 - [ ] `.claude/CLAUDE.md` 给清晰 AI 角色定位 + 入口 → rules/00-overview.md
 - [ ] `matches/test-match/match-state.yaml` 可写（非 symlink）
 - [ ] git init + first commit

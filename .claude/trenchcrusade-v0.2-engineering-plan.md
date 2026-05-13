@@ -56,7 +56,7 @@ TrenchCrusade/
 ├── narrative/       → symlink ...
 ├── lore/            → symlink ...
 ├── errata/          → symlink ...
-├── rule books/      → symlink Rule Books/Trench Crusade/md files/（PDF→md 原文，AI 查阅用）
+├── rule books/      → symlink Rule Books/Trench Crusade/（PDF + txt 原文，AI 歧义回查用——无 md files/ 子目录）
 ├── tools/
 │   └── mcp-server/  （Phase B 填）
 ├── .mcp.json        （Phase B 填，cwd 指向 sibling）
@@ -79,7 +79,7 @@ TrenchCrusade/
 
 ### A.3 完成判定
 
-- [ ] `cd TrenchCrusade/ && ls rules/` 显示 9 个文件（00-overview / 01-core-rules / 02-comprehensive / 03-keywords / 04-terrain / 05-battlekit / 08-scenarios）
+- [ ] `cd TrenchCrusade/ && ls rules/` 显示 7 个文件（00-overview / 01-core-rules / 02-comprehensive / 03-keywords / 04-terrain / 05-battlekit / 08-scenarios）
 - [ ] `.claude/CLAUDE.md` 给清晰 AI 角色定位
 - [ ] `matches/test-match/match-state.yaml` 可写（非 symlink）
 
