@@ -275,6 +275,15 @@ models:
 
 **v0.2+ 详细 backlog 见 §9.2**。
 
+### 5.1 交叉校验：Core Rules 视频 transcript
+
+Pass 2-4 完成后（rules/01 + rules/02 + rules/03），**必须**用 `output/TrenchCrusade/_references/core-rules-video-transcript.md` §3 校验清单逐条核对：
+
+- 14 条关键规则要点（成功阈值 / 移动三种 / +dice 取高/−dice 取低 / Cover 三问 / Long range 定义 / Injury 阈值 2-6/7-8/9+ / 装甲减伤数值 / Tough 仅首次 / Bloodbath 累加 / Blood marker 不能反向修自 injury / Morale 半数触发 / Shaken=所有 action 变 risky）
+- 数值/阈值若与 PDF v1.0.2 冲突 → **以 PDF 为准**，在 transcript 文件该条目加注修正
+
+视频是简化教学，可能漏边界条件，但**新玩家最易混淆的几条**（Blood Marker 不能反向修自身 injury、Tough 仅首次、Bloodbath 累加 4d6）视频明确指出，rules/02 写到这些时**必须加注释提示**。
+
 ## 6. 校验检查清单（每文件）
 
 - [ ] **完整性**：源 PDF 对应页码区间是否全部覆盖？
