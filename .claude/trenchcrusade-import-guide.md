@@ -426,23 +426,45 @@ Pass 2-4 完成后（rules/01 + rules/02 + rules/03），**必须**用 `output/T
 - [ ] **跨文件引用**：用相对路径 `→ rules/03-keywords-glossary.md#penetrating`
 - [ ] **无乱码**：PDF 提取残留的特殊符号（如 `ª` `≠` ``` ` `` `👑` `☼`）按需保留或转换说明
 
-## 7. sibling 项目（v0.2+，规则稳定后再建）
+## 7. sibling 项目（v0.2 Phase A 已建）
 
-待 v0.1 完成且实际玩过几局后，再考虑建 `/Users/jack/Projects/trpg-projects/TrenchCrusade/`。结构：
+**状态**：v0.2 Phase A 完成，`/Users/jack/Projects/trpg-projects/TrenchCrusade/` 已建（commit `0d9e5e9`）。Phase B-E 待补 MCP server / AI prompt / CLI / 试玩。
 
-- `rules/` → symlink 到 `dnd-rules-import/output/TrenchCrusade/rules/`
-- `warbands/` → symlink
-- `narrative/` → symlink
-- `matches/` → symlink
-- `tools/mcp-server/` — 关键工具：
-  - 距离查询 / LOS 查询 / 移动合法性 / 战团构建校验 / 骰子 / 战场状态 CRUD
-  - 推荐 Python MCP（参考 Mothership sibling 的 `tools/mcp-server/`）
-- `web-ui/` — **新增**：HTML 战场 UI，玩家拖动棋子。与 MCP server 共享 match-state.yaml
+### 当前结构
 
-**与 TTRPG sibling 的差异**：
+```
+TrenchCrusade/
+├── rules/       → symlink dnd-rules-import/output/TrenchCrusade/rules/
+├── warbands/    → symlink
+├── narrative/   → symlink
+├── lore/        → symlink
+├── errata/      → symlink
+├── matches/
+│   ├── coordinate-system.md → symlink
+│   ├── match-template.yaml  → symlink
+│   ├── roster-template.md   → symlink
+│   └── test-match/          ← 本地可写（match-state.yaml 测试用）
+├── rule books/  → symlink Rule Books/Trench Crusade/（PDF + txt 原文，歧义回查）
+├── tools/mcp-server/  ← Phase B 填实际 Python MCP server
+├── .mcp.json    ← 注册 trenchcrusade server（Phase B 才生效）
+├── .claude/CLAUDE.md  ← AI 启动指令（Opponent + Battle Narrator 定位）
+└── README.md
+```
+
+### v0.2 后续 Phase 待补
+
+- **Phase B**（1.5-2d）：Python MCP server v0 — 6 coord 接口 + 6 骰子 + 7 yaml CRUD + roster 校验
+- **Phase C**（1d）：AI master prompt（独立 `tools/ai-opponent-prompt.md`）
+- **Phase D**（1d）：`match-cli` CLI 文本 UI
+- **Phase E**（1-2d）：试玩 Scenario I + friction 回填
+- **v0.3+**：`web-ui/` HTML 战场 UI（暂缓）
+
+### 与 TTRPG sibling 的差异
+
 - **不需要** `saves/{role}-notes.md`、`{theme}-log.md`、`.active` 等 TTRPG 存档约定
 - **需要** `matches/{name}/match-state.yaml` 替代 saves；每场对战独立目录
-- **AI 角色不是 Warden/Keeper**，而是 "Opponent"（对手）
+- **AI 角色不是 Warden/Keeper**，而是 **"Opponent + Battle Narrator"**（对手玩家 + 战斗描述员）
+- 不需要 `characters/`，改用 `warbands/`（战团列表）+ `matches/roster-template.md`（战团构建模板）
 
 ## 8. 注意事项
 
