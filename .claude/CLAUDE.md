@@ -37,6 +37,7 @@
 | Mausritter               | Mausritter | 已完成   | `OSR related/Mausritter/` | `output/Mausritter/`       |
 | Lodoss War (Companion I) | Lodoss     | 已完成   | `Record of Lodoss War RPG/` | `output/Lodoss/`         |
 | Mothership 1e            | Mothership | 已完成（除模组）| `OSR related/Mothership/` | `output/Mothership/`       |
+| **Trench Crusade 1.0.2** ⚔️战棋 | TrenchCrusade | 待导入 | `Trench Crusade/` | `output/TrenchCrusade/` |
 | OSR 相关                 | —          | 参考     | `OSR related/`            | —                          |
 | 其他系统                 | —          | 按需添加 | `{System}/`               | `output/{System}/`         |
 
@@ -102,6 +103,13 @@ output/                            # 输出目录，按系统分子目录
   │   ├── supplements/             # 拆船员工具箱 / 黑客 / 仿生人扩展 / 术语表 / 飞船 d100
   │   ├── campaign/                # 6 个中译模组（Bug Hunt / Ypsilon 14 等）
   │   └── characters/
+  ├── TrenchCrusade/               # Trench Crusade（战棋，AI 当对手玩家）
+  │   ├── rules/                   # 核心规则拆分
+  │   ├── warbands/                # 战团（每 faction 一文件）
+  │   ├── errata/                  # 官方 FAQ/裁决
+  │   ├── narrative/               # 叙事调色板（tone-guide + injury-flavor + event-triggers）
+  │   ├── matches/                 # 战场状态 yaml + 坐标系契约（替代 TTRPG saves/）
+  │   └── lore/                    # 可选 lore（简略时间线）
   └── ...
 pdf_extract.py                     # PDF 文本提取工具（pymupdf，备用/grep 用）
 ```
@@ -166,6 +174,7 @@ pdf_extract.py                     # PDF 文本提取工具（pymupdf，备用/g
 | Mythic GME 2e    | `.claude/mythic-import-guide.md`          | Solo storytelling engine → 5 目录 37 文件（AI-facing） |
 | Lodoss War (Companion I) | `.claude/lodoss-import-guide.md`  | 1989 Group SNE 独立 TRPG（英译版）→ rules/ 9 + lore/ 4 + collections/ 5 + campaign/ 4 已完成 |
 | Mothership 1e    | `.claude/mothership-import-guide.md`      | Sci-Fi horror（中译 v1.3）→ rules/ 15 + supplements/ 5 + campaign/ 6 + characters/ |
+| **Trench Crusade ⚔️** | `.claude/trenchcrusade-import-guide.md` | **战棋**（非 TTRPG，AI 当对手玩家）→ v0.1 MVP: rules/ 7 + warbands/ 2 派 + errata + narrative/ 4 + matches/（坐标系契约） |
 | CoC              | `.claude/coc-import-guide.md`             | 待创建                                           |
 
 **导入新系统时**：先创建该系统的专属导入指南（参考 dnd5e 指南的结构），再按指南逐步执行。
@@ -217,6 +226,14 @@ python3 pdf_extract.py some.pdf --info   # 查总页数+目录
 **Mothership 注意**：是首个用 **Python MCP** 的 sibling（其他系统用 Node/TS）。`tools/mcp-server/` 用 `uv` 管理依赖，`.mcp.json` 的 `command` 是 `uv` 而非 `node`。结构对 AI 透明，但维护时记得 `uv sync` 而非 `npm install`。详见 `tools/mcp-server/README.md`。
 
 **Cairn2e 注意**：rules/ 里每个 md 是指向 `output/Cairn/rules/cairn2e-*.md` 的 symlink（还附带 `cairn1e-spells.md`，因 2e Spellbooks 沿用 1e 法术表）。characters/ 和 campaign/ 目前在 `output/Cairn2e/` 下，是独立于 `output/Cairn/` 的 2e 专用子树。
+
+**Trench Crusade 注意**：⚔️**唯一战棋系统**，sibling 项目暂缓（v0.2+ 规则稳定后再建）。与 TTRPG sibling 关键差异：
+- AI 角色是 **Opponent**（对手玩家），不是 GM/Warden/Keeper
+- 用 `matches/{name}/match-state.yaml`（战场状态）替代 `saves/{name}/{role}-notes.md`
+- 不需要 `characters/`，改用 `warbands/`（战团列表）+ `matches/roster-template.md`（战团构建模板）
+- 计划增加 `web-ui/` 子目录（HTML 战场 UI，玩家拖动棋子）
+- MCP 主要工具：距离查询 / LOS 查询 / 移动合法性 / 战团构建校验 / 骰子（Python MCP，参考 Mothership）
+- 详见 `.claude/trenchcrusade-import-guide.md` §4（坐标系契约）和 §7（sibling 项目设计）
 
 ### 7.1 角色模板约定
 
