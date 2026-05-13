@@ -271,13 +271,9 @@ models:
 | Pass 12 | `rules/08-scenarios.md`（Scenario Format 通用框架 + 1-2 个简单 scenario） | PDF **p.144-160** | MVP 先做 Scenario Format（含 Glorious Deeds + Glory Points 通用规则） + "Claim No Man's Land" + "Hunt for Heroes"。注意 Glory Points (☼) 概念定义虽然主体在 Campaign Rules，但 Scenario Format 章节有单场可用的简化用法（完成一项 Glorious Deed = 10 VP），单场对战不需要完整 Campaign |
 | Pass 13 | `rules/00-overview.md` + `matches/roster-template.md` + `lore/timeline.md` | PDF p.7-13 | 收尾 |
 
-**v0.1 完成判定**：以上 13 个 Pass 全部完成 → 能跑第一局完整对战。
+**v0.1 完成判定**：以上 13 个 Pass 全部完成 → 能跑第一局完整对战（详细规则覆盖验证见 §9.1）。
 
-**v0.2+（后续）**：
-- 剩余 4 个 faction（按你接下来想试哪派加）
-- `rules/06-campaign-rules.md` + `rules/07-glory-items.md`
-- `warbands/Mercenaries`
-- 剩余 10 个 scenario
+**v0.2+ 详细 backlog 见 §9.2**。
 
 ## 6. 校验检查清单（每文件）
 
@@ -314,3 +310,75 @@ models:
 3. **数值格式统一**：所有单位/武器用 YAML 块结构化（§3.2 §3.3）。MCP server 解析依赖此格式，散文格式会破坏 v0.2 工程化。
 4. **保留单位/武器命名**：`Tank-Splitter Sword` / `Holy Smoke` / `Wretched` / `Plague Knight` 等原文名是叙事调色板，不能改名/汉化掉。
 5. **页码标注**：每个大章节开头标 PDF 页码范围，便于校对。
+
+---
+
+## 9. v0.1 完整度验证 与 v0.2+ Backlog
+
+### 9.1 v0.1 不缺核心规则 — 用 "Claim No Man's Land" 剧本验证
+
+实际对照剧本规则需求 → v0.1 文件，全部覆盖：
+
+| 剧本规则需求 | v0.1 覆盖文件 |
+|---|---|
+| 无人区 battlefield archetype + 7 种地形类型 | `rules/04-battlefield-terrain.md` |
+| 地形 8" 视作 2 块 / 6" 间距等设置规则 | `rules/04` |
+| Rolling Off（掷骰决定） | `rules/02`（Other Rules Principles） |
+| 标准部署 / 战团模型数量多者先部署 | `rules/08`（Scenario Format 通用框架） |
+| Infiltrator（渗透者）特殊部署 | `rules/03`（Keywords Glossary） |
+| Out of Action（击倒出局）判定 | `rules/02`（Injury Roll Table） |
+| 模型成本 VP 计算（👑÷10、☼÷3 向上取整） | `warbands/01,02` + `rules/05`（装备成本） |
+| 战团 Shaken / 逃跑（Morale Phase） | `rules/02`（Morale Phase） |
+| Glory Points (☼) + Glorious Deeds 框架 | `rules/08`（Scenario Format 含简化版：完成 1 项 Glorious Deed = 10 VP） |
+| 击倒他们（3" 高度坠落） | `rules/02`（Climbing & Jumping / Jumping Down） |
+| 孤注一掷（同回合 2 次 Risky Success） | `rules/02`（Dash ACTION 触发） |
+| 神枪手（远程 + 远距修正 + 掩体修正命中） | `rules/02`（Combat / Ranged Attack Modifiers） |
+| 第 5 回合末掷 D6 决定游戏长度 | `rules/08`（scenario 特定规则） |
+
+**关键洞察**：Glory Points (☼) 完整定义在 Campaign Rules（p.99），**但 Scenario Format 章节（v0.1 已含，p.144-150）有单场可用的简化用法**——完成一项 Glorious Deed = 10 VP。所以 **v0.1 单场对战不需要 Campaign Rules**。
+
+### 9.2 v0.2+ Backlog（按优先级）
+
+#### v0.2.A — Campaign Rules（战团长线进化）
+
+PDF p.87-143（56 页），新增 2 个 rules 文件：
+
+| 子系统 | PDF 页码 | 内容 |
+|---|---|---|
+| Patrons（赞助人） | p.87-94 | 8 种赞助人（Temporal Lord / Warrior Saint / Learned Saint / Infernal Noble / Sublime Gate / Order of the Fly / Mammon / Antipope of Avignon） |
+| Campaign Games | p.95-99 | 战役框架下的 scenario 选择 + Glory Points 完整规则 |
+| Trauma Step | p.101-103 | 战后伤亡判定（永久损伤/死亡/恢复表） |
+| Promotions & Experience | p.104-111 | 单位升级 4 类技能：Melee&Strength / Ranged / Stealth&Speed / Wildcard |
+| Reinforcements | p.112 | 补充新单位 |
+| Exploration | p.113-122 | 3 张地点表：Common / Rare / Legendary |
+| Quartermaster | p.123-124 | 战间补给采购 |
+| Glory Items | p.125-143 | 晋升装备完整表（19 页） |
+
+输出文件：`rules/06-campaign-rules.md` + `rules/07-glory-items.md`
+
+#### v0.2.B — 剩余 4 个 Faction
+
+| Faction | PDF 页码 | 备注 |
+|---|---|---|
+| Trench Pilgrims | Warbands p.47-70 | 朝圣战士狂热者 |
+| The Sultanate of the Iron Wall | Warbands p.71-102 | 伊斯兰系战团 + Goetic/Alchemist 子系统 |
+| The Cult of the Black Grail | Warbands p.125-143 | 瘟疫膜拜 |
+| The Court of the Seven-Headed Serpent | Warbands p.144-170 | **含 Goetic Powers 子系统（7 种罪恶魔法列表）— 最复杂** |
+
+#### v0.2.C — Mercenaries（雇佣兵）
+
+Warbands p.172-186。原 §1 标"campaign 才用"——**待复核**：Scenario Format 章节是否允许单场用 ☼ 雇佣。如允许则可提前到 v0.1.5。
+
+#### v0.2.D — 剩余 10 个 Scenario
+
+PDF p.154-197。v0.1 只导 Scenario I (Claim No Man's Land) + II (Hunt for Heroes)。剩：
+
+- III Relic Hunt / IV Trench Warfare（标准战场）
+- V Armoured Train / VI Dragon Hunt（异形战场，复杂特殊规则）
+- VII Supply Raid / VIII From Below / IX Fields of Glory / X Don't Breathe / XI The High Ground / XII Great War
+
+### 9.3 待复核问题（导入前先查 PDF）
+
+1. **Mercenaries 单场可用性**：PDF Warbands p.172 "Mercenary Special Rules" 应明确触发条件。若允许单场 skirmish 雇佣，则 §1 暂缓列表中 Mercenaries 应移到 v0.1.5。
+2. **Faction Variants 完整度**：每个 faction 下 3-5 个 variants（如 New Antioch 5 个：Papal States / Éire Rangers / Alba / Stosstruppen / Abyssinia）。v0.1 的 `warbands/01-new-antioch.md` 必须包含主战团 **+ 全 variants**（约 26 PDF 页）。Pass 8 实际工作量需按此评估，可能需拆 2 次对话。
+3. **Goetic Powers 子系统**（Court of Seven-Headed Serpent）：v0.2.B 中此 faction 含 7 种罪恶魔法列表（p.154-161），结构复杂，建议单独一个 Pass。
