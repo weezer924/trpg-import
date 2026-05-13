@@ -37,7 +37,7 @@
 | Mausritter               | Mausritter | 已完成   | `OSR related/Mausritter/` | `output/Mausritter/`       |
 | Lodoss War (Companion I) | Lodoss     | 已完成   | `Record of Lodoss War RPG/` | `output/Lodoss/`         |
 | Mothership 1e            | Mothership | 已完成（除模组）| `OSR related/Mothership/` | `output/Mothership/`       |
-| **Trench Crusade 1.0.2** ⚔️战棋 | TrenchCrusade | 待导入 | `Trench Crusade/` | `output/TrenchCrusade/` |
+| **Trench Crusade 1.0.2** ⚔️战棋 | TrenchCrusade | v0.1 完成（v0.2 工程化中） | `Trench Crusade/` | `output/TrenchCrusade/` |
 | OSR 相关                 | —          | 参考     | `OSR related/`            | —                          |
 | 其他系统                 | —          | 按需添加 | `{System}/`               | `output/{System}/`         |
 
