@@ -109,7 +109,7 @@ initiative: red                  # 本回合 initiative 归属（red | blue）
 glory_points:                    # 单场用简化 VP（PDF p.144 Scenario Format）
   red: 0
   blue: 0
-glorious_deeds_completed:        # 已完成的 Glorious Deeds（每项 10 VP）
+glorious_deeds_completed:        # 已完成的 Glorious Deeds（每项 1 VP，PDF p.153/156/160）
   red: []
   blue: []
 
