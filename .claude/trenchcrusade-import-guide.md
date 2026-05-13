@@ -177,6 +177,126 @@ armoury_tier: 1
 ---
 ```
 
+### 3.7 中英术语锚定表（必读，Pass 2-13 所有作者共用）
+
+**目的**：多 agent 并行导入时保证术语一致。任何 rules / warbands / narrative / errata 章节的中文翻译必须与下表锚定；首次出现给 `中文（English）` 对照，其后用英文原文（保留官方大小写）。
+
+**通用约定**：
+- ✅ **保留英文原文**（**不译**）：单位名、武器名、特殊规则名、faction 名的英文形式、ALL-CAPS 关键词、装备型号
+- ✅ **首次给对照**：核心机制术语、阶段名、战斗动作、判定类型、地形大类
+- ✅ **后续可省**：在同一文件中已给过对照的术语，后文用英文或中文皆可，保持一致
+
+#### A. 核心机制（首次给对照）
+
+| English | 中文锚定 | 备注 |
+|---|---|---|
+| Warband | 战团 | 双方各 1 个 |
+| Faction | 派系 | 6 大派系 + Mercenaries |
+| Activation | 激活 | 一次激活 1 个模型 |
+| Initiative | 先手 / 主动权 | 模型少者持 |
+| Movement Characteristic (M) | 移动值（M） | 模型属性 |
+| Armour Characteristic | 装甲值 | 模型属性 |
+| Cost (👑) | 招募成本（👑 Ducat） | 👑 不译，符号保留 |
+| Glory Points (☼) | 荣耀点数（☼） | ☼ 不译，符号保留；单场 = 完成 Glorious Deed × 10 VP |
+| Glorious Deeds | 荣耀事迹 | 剧本指定 |
+| Victory Points (VP) | 胜利点数（VP） | 用于胜负判定 |
+
+#### B. 阶段与动作（首次给对照）
+
+| English | 中文锚定 | 备注 |
+|---|---|---|
+| Initiative Phase | 先手阶段 | 回合阶段 1 |
+| Activation Phase | 激活阶段 | 回合阶段 2 |
+| Morale Phase | 士气阶段 | 回合阶段 3 |
+| Move ACTION | 移动行动 | 标准移动 |
+| Charge ACTION | 冲锋行动 | M + d6，需 12" 内见敌 |
+| Retreat ACTION | 撤退行动 | 离开 melee；敌方免费 melee |
+| Dash ACTION | 疾行行动 | Risky；同回合可两次 |
+| Shoot ACTION | 射击行动 | 远程攻击 |
+| Fight ACTION | 近战行动 | 近战攻击 |
+
+#### C. 判定与骰子（首次给对照）
+
+| English | 中文锚定 | 备注 |
+|---|---|---|
+| Success Roll | 成功判定 | 2d6 ≥ 7 |
+| Risky Success Roll | 风险判定 | 失败立即结束激活 |
+| Critical Success | 大成功 | 12 = injury +1 dice |
+| +X DICE / -X DICE | +X 骰 / -X 骰 | 多投取高/取低 |
+| Action Success Chart | 成功判定表 | 7+ 成功 / 12 大成功 / 6- 失败 |
+| Injury Roll | 受伤判定 | 命中后投 |
+| Injury Roll Table | 受伤表 | 2-6 / 7-8 / 9+ |
+| Bloodbath Roll | 血浴判定 | 3d6 全加（DEADLY 时 4d6） |
+| INJURY DICE | 伤害骰 | 加在 injury roll |
+| INJURY MODIFIER | 伤害修正 | 加在 injury 结果（最低 -3） |
+| Rolling Off | 掷骰决断 | d6 平手时重投 |
+
+#### D. 标记与状态（首次给对照）
+
+| English | 中文锚定 | 备注 |
+|---|---|---|
+| Blood Marker | 血液标记 | 攻方花，目标 action -1 dice 或 injury +1 dice |
+| Blessing Marker | 祝福标记 | 防方花，反向修正 |
+| Down | 倒下 | 7-8 结果；激活立即结束；起身后 M 减半 |
+| Out of Action | 出局 | 9+ 结果；移出战场 |
+| Shaken | 动摇 | 士气失败选项；所有 action 变 risky |
+| Minor Hit | 轻伤 | 2-6 结果 |
+| Falling | 坠落 | 3"+ 触发 injury，每 3" +1 dice |
+
+#### E. 战斗修正（首次给对照）
+
+| English | 中文锚定 | 备注 |
+|---|---|---|
+| Line of Sight (LOS) | 视线（LOS） | 见 `matches/coordinate-system.md` §6 |
+| Cover | 掩体 | -1 DICE ranged |
+| Partial Line of Sight | 部分视线 | LOS state = partial_cover |
+| Elevated Position | 高地 | 高 3"+ → +1 DICE ranged |
+| Short Range / Long Range | 近射程 / 远射程 | 一半射程为界；Long -1 DICE |
+| Defended Obstacle | 掩护障碍 | 近战时 ½" 障碍 -1 DICE |
+| Off-Hand Weapon | 副手武器 | -1 DICE |
+| Diving Charge | 俯冲冲锋 | 跳下 3"+ 后 charge，成功 +1 DICE 下次 melee |
+
+#### F. 地形（首次给对照）
+
+| English | 中文锚定 | 关键词 |
+|---|---|---|
+| Open terrain | 开阔地形 | — |
+| Difficult Terrain | 崎岖地形 | `DIFFICULT TERRAIN` |
+| Dangerous Terrain | 危险地形 | `DANGEROUS TERRAIN` |
+| Impassable Terrain | 不可通行地形 | `IMPASSABLE TERRAIN` |
+| Trench | 战壕 | z=-1 |
+| Ruins | 废墟 | 可攀爬 |
+| Hill | 山丘 | high ground 来源 |
+| Abandoned Corner | 废弃角落 | 杂物堆 |
+| Landmark | 地标 | 剧本目标 |
+
+#### G. Faction 名称（首次给对照）
+
+| English | 中文锚定 | v0.1 含 |
+|---|---|---|
+| New Antioch (Principality of) | 新安提阿（公国） | ✅ |
+| Heretic Legions | 异端军团 | ✅ |
+| Trench Pilgrims | 战壕朝圣者 | ❌ v0.2 |
+| The Sultanate of the Iron Wall | 钢墙苏丹国 | ❌ v0.2 |
+| The Cult of the Black Grail | 黑圣杯邪教 | ❌ v0.2 |
+| The Court of the Seven-Headed Serpent | 七首蛇圣庭 | ❌ v0.2 |
+| Mercenaries | 雇佣兵 | ❌ v0.2 |
+
+#### H. 不译条目（保留英文原文 + 官方大小写）
+
+- **单位名**：Yeoman / Lieutenant / Anchorite Shrine / Heretic Trooper / Heretic Death Commando / Heretic Priest / Brazen Bull / Plague Knight / Wretched / Trench Pilgrim …
+- **武器名**：Bolt-Action Rifle / Musket / Tank-Splitter Sword / Holy Smoke / Infernal Bomb / Blessed Revolver / Blessed Sabre / Bayonet / Trench Knife …
+- **装备**：Trench Shield / Standard Armour / Reinforced Armour / Machine Armour
+- **ALL-CAPS 关键词**：`PENETRATING (X)` / `CLEAVE (X)` / `TOUGH` / `DEADLY` / `RELIABLE` / `ASSAULT` / `BLAST` / `DIFFICULT TERRAIN` / `DANGEROUS TERRAIN` / `IMPASSABLE TERRAIN` / `COVER` / `BLOOD MARKER` / `BLESSING MARKER`（保留大小写不变）
+- **特殊规则名**、**Skill 名**、**Patron 名**：均保留英文
+
+#### I. 工作流约定
+
+1. 每个 Pass 作者**写完后搜索**自己文件，确保用到的术语都能在本表 A-G 找到锚定；若引入新术语，在 PR 描述里报上来，统一回填本表
+2. ALL-CAPS 关键词（PDF 原文用大写）**任何位置都用 `` ` `` 反引号包**（`` `PENETRATING (1)` ``），与普通英文区分
+3. 不确定翻译时：保留英文 + 加 `[术语待锚定]` 注释（占位），不要自创翻译
+4. ☼ 👑 等 PDF 原文符号**直接复制保留**，不要替换为 ASCII
+
 ## 4. 坐标系与战场状态契约（v0.1 决议）
 
 详细规约见 `matches/coordinate-system.md`，此处给摘要。**整个项目所有规则、单位、武器的数值描述都以此为基础**。
@@ -254,11 +374,18 @@ models:
 
 每对话 1-2 文件，完成后立即校验。**MVP 目标**：能玩第一场 New Antioch vs Heretic Legions 的 "Claim No Man's Land"。
 
+> **⚠️ Pass 2-12 通用硬性规范（rules/* 全适用）**：
+> 凡涉及**距离测量 / Line of Sight / Cover / 地形属性 / base size / 坐标**的描述，
+> **直接引用** `matches/coordinate-system.md` 对应 §（参见该文件 §9 实施 checklist 表），
+> **不要散文复述**——避免规则漂移、保证单一信息源（SSoT）。
+> 例：`rules/02` 写 ranged attack 时只写"判定 LOS（→ `matches/coordinate-system.md` §6）"，
+> 不要重写 PDF "cover 三问" 的散文版本。
+
 | 阶段 | 文件 | 来源 | 备注 |
 |---|---|---|---|
 | 框架 | 指南 + 状态表更新 | — | 当前 |
 | Pass 1 | `matches/coordinate-system.md` + `matches/match-template.yaml` | 本指南 §4 | 先写契约，rules 章节会引用 |
-| Pass 2 | `rules/01-core-rules.md` | PDF p.14-21 | 速览版 |
+| Pass 2 | `rules/01-core-rules.md` | PDF p.14-21 | 速览版；遵守 Pass 2-12 硬性规范（见上方框） |
 | Pass 3 | `rules/02-comprehensive-rules.md` | PDF p.22-51 | 详细规则（长，分 2 节做） |
 | Pass 4 | `rules/03-keywords-glossary.md` | PDF p.52-64 | 关键词词典 |
 | Pass 5 | `rules/04-battlefield-terrain.md` | PDF p.60-67 | 地形规则 |
@@ -336,15 +463,15 @@ Pass 2-4 完成后（rules/01 + rules/02 + rules/03），**必须**用 `output/T
 | 标准部署 / 战团模型数量多者先部署 | `rules/08`（Scenario Format 通用框架） |
 | Infiltrator（渗透者）特殊部署 | `rules/03`（Keywords Glossary） |
 | Out of Action（击倒出局）判定 | `rules/02`（Injury Roll Table） |
-| 模型成本 VP 计算（👑÷10、☼÷3 向上取整） | `warbands/01,02` + `rules/05`（装备成本） |
+| 模型成本 VP 计算 | ~~草拟时以为有 `👑÷10、☼÷3` 公式，PDF Scenario Format p.144-150 实际无此公式~~（属 Campaign Rules，v0.2.A 才覆盖）。v0.1 各 scenario 的 VP 直接由该 scenario 明列条目给出（Objective / Mark / Asset / Glorious Deed） |
 | 战团 Shaken / 逃跑（Morale Phase） | `rules/02`（Morale Phase） |
-| Glory Points (☼) + Glorious Deeds 框架 | `rules/08`（Scenario Format 含简化版：完成 1 项 Glorious Deed = 10 VP） |
+| Glory Points (☼) + Glorious Deeds 框架 | `rules/08`（Scenario Format 含简化版：**每完成 1 项 Glorious Deed = 1 VP**，由 Pass 12 对照 PDF p.153/156/160 校正）|
 | 击倒他们（3" 高度坠落） | `rules/02`（Climbing & Jumping / Jumping Down） |
 | 孤注一掷（同回合 2 次 Risky Success） | `rules/02`（Dash ACTION 触发） |
 | 神枪手（远程 + 远距修正 + 掩体修正命中） | `rules/02`（Combat / Ranged Attack Modifiers） |
-| 第 5 回合末掷 D6 决定游戏长度 | `rules/08`（scenario 特定规则） |
+| 游戏长度 | `rules/08`：**各 scenario 固定回合数**（Scenario I = 4 回合 / Scenario II = 5 回合）；草拟时以为有"第 5 回合末 d6 决定继续"机制——PDF 中无此通用机制。Scenario II 的 d6 用于每回合开始的 Unforeseen Events（5-6 触发），与游戏长度无关 |
 
-**关键洞察**：Glory Points (☼) 完整定义在 Campaign Rules（p.99），**但 Scenario Format 章节（v0.1 已含，p.144-150）有单场可用的简化用法**——完成一项 Glorious Deed = 10 VP。所以 **v0.1 单场对战不需要 Campaign Rules**。
+**关键洞察**：Glory Points (☼) 完整定义在 Campaign Rules（p.99），**但 Scenario Format 章节（v0.1 已含，p.144-150）有单场可用的简化用法**——每完成 1 项 Glorious Deed = **1 VP**（不是 10 VP，PDF p.153/156/160 已核实）。所以 **v0.1 单场对战不需要 Campaign Rules**。
 
 ### 9.2 v0.2+ Backlog（按优先级）
 

@@ -1,0 +1,225 @@
+# Trench Crusade — match-state.yaml schema template
+#
+# 此为 schema 模板，profile 字段引用的单位（lieutenant / yeoman / heretic-priest /
+# heretic-trooper 等）需在 warbands/ 完成（Pass 8-9）后才能实际玩。
+# v0.1 阶段仅用于：MCP server 接口契约、web UI 数据模型、AI 对手解析。
+#
+# 引用契约：output/TrenchCrusade/matches/coordinate-system.md
+# 版本：v0.1 (PDF v1.0.2 对齐)
+# 字段单位：除非另注，距离/坐标均以 "1 格 = 1 英寸" 为准。
+
+# -----------------------------------------------------------------------------
+# 1. 战场定义
+# -----------------------------------------------------------------------------
+battlefield:
+  size: [36, 36]            # [width, height] in 1" cells；默认 3'×3'
+  layer_height: 3           # 每个 z 层等多少英寸（垂直距离用，§2.3）；[v0.1 默认，可调]
+  deployment:
+    red: [0, 0, 12, 36]     # 红方部署区 [x_min, y_min, x_max, y_max]
+    blue: [24, 0, 36, 36]   # 蓝方部署区
+
+# -----------------------------------------------------------------------------
+# 2. 地形列表（七类示例，参见 coordinate-system.md §7.3）
+# -----------------------------------------------------------------------------
+terrain:
+  # A. 战壕（Trench）— z=-1 凹陷
+  - id: trench_central
+    type: trench
+    bounds: [4, 17, 32, 19]
+    base_z: -1
+    height: 1
+    blocks_los: false
+    cover: partial
+    movement_cost: 1
+
+  # B. 废墟（Ruins）
+  - id: ruin_north
+    type: ruins
+    bounds: [10, 28, 16, 34]
+    base_z: 0
+    height: 2
+    blocks_los: partial
+    cover: full
+    climbable: true
+    movement_cost: 1
+
+  # C. 废弃角落（Abandoned Corner）
+  - id: junk_pile_a
+    type: abandoned_corner
+    bounds: [22, 8, 24, 10]
+    base_z: 0
+    height: 1
+    blocks_los: partial
+    cover: partial
+    movement_cost: 1
+
+  # D. 山丘（Hill）
+  - id: hill_east
+    type: hill
+    bounds: [28, 12, 34, 22]
+    base_z: 0
+    height: 1
+    blocks_los: false
+    cover: none
+    climbable: true
+    movement_cost: 1
+
+  # E. 危险地形（Dangerous Terrain）— 铁丝网
+  - id: barbed_wire_north
+    type: dangerous
+    subtype: barbed_wire
+    bounds: [12, 16, 20, 18]
+    base_z: 0
+    height: 0
+    blocks_los: false
+    cover: none
+    movement_cost: 2
+    dangerous: true
+
+  # F. 崎岖地形（Difficult Terrain）— 弹坑群
+  - id: crater_field
+    type: difficult
+    subtype: craters
+    bounds: [16, 8, 24, 14]
+    base_z: 0
+    height: 0
+    blocks_los: false
+    cover: partial
+    movement_cost: 2
+
+  # G. 地标（Landmark）— 剧本目标点（圣物）
+  - id: relic_objective
+    type: landmark
+    subtype: relic
+    bounds: [17, 17, 19, 19]
+    base_z: 0
+    height: 0
+    blocks_los: false
+    cover: none
+    movement_cost: 1
+    scenario_tag: claim_objective
+
+# -----------------------------------------------------------------------------
+# 3. 剧本与回合状态
+# -----------------------------------------------------------------------------
+scenario: claim-no-mans-land    # 剧本标识，对应 rules/08-scenarios.md
+turn: 1                          # 当前回合数（从 1 起）
+phase: initiative                # 当前阶段：initiative | activation | morale
+initiative: red                  # 本回合 initiative 归属（red | blue）
+glory_points:                    # 单场用简化 VP（PDF p.144 Scenario Format）
+  red: 0
+  blue: 0
+glorious_deeds_completed:        # 已完成的 Glorious Deeds（每项 10 VP）
+  red: []
+  blue: []
+
+# -----------------------------------------------------------------------------
+# 4. 模型列表（双方各 3 个占位；profile 在 warbands/ 完成后回填实际 stats）
+# -----------------------------------------------------------------------------
+models:
+  # ───────────────────── 红方：New Antioch ─────────────────────
+  - id: red.lieutenant
+    side: red
+    profile: lieutenant            # → warbands/01-new-antioch.md 待回填
+    pos: [6, 18, 0]
+    base_size: [1, 1]
+    hp: 3
+    markers: []                    # blood / blessing / down / shaken / out
+    activated: false
+    equipment:
+      ranged: blessed-revolver     # → rules/05-battlekit.md 待回填
+      melee: blessed-sabre
+      armour: standard
+      shield: null
+      grenade: null
+
+  - id: red.yeoman_1
+    side: red
+    profile: yeoman
+    pos: [7, 16, 0]
+    base_size: [1, 1]
+    hp: 1
+    markers: []
+    activated: false
+    equipment:
+      ranged: bolt-action-rifle
+      melee: bayonet
+      armour: none
+      shield: null
+      grenade: null
+
+  - id: red.yeoman_2
+    side: red
+    profile: yeoman
+    pos: [7, 20, 0]
+    base_size: [1, 1]
+    hp: 1
+    markers: []
+    activated: false
+    equipment:
+      ranged: bolt-action-rifle
+      melee: bayonet
+      armour: none
+      shield: trench-shield
+      grenade: null
+
+  # ───────────────────── 蓝方：Heretic Legions ─────────────────────
+  - id: blue.heretic_priest
+    side: blue
+    profile: heretic-priest
+    pos: [30, 18, 0]
+    base_size: [1, 1]
+    hp: 3
+    markers: []
+    activated: false
+    equipment:
+      ranged: infernal-pistol
+      melee: tank-splitter-sword
+      armour: standard
+      shield: null
+      grenade: null
+
+  - id: blue.heretic_trooper_1
+    side: blue
+    profile: heretic-trooper
+    pos: [29, 16, 0]
+    base_size: [1, 1]
+    hp: 1
+    markers: []
+    activated: false
+    equipment:
+      ranged: musket
+      melee: trench-knife
+      armour: none
+      shield: null
+      grenade: null
+
+  - id: blue.heretic_trooper_2
+    side: blue
+    profile: heretic-trooper
+    pos: [29, 20, 0]
+    base_size: [1, 1]
+    hp: 1
+    markers: []
+    activated: false
+    equipment:
+      ranged: musket
+      melee: trench-knife
+      armour: none
+      shield: null
+      grenade: infernal-bomb
+
+# -----------------------------------------------------------------------------
+# 5. 战斗事件日志（可选，AI 描述 flavor 用）
+# -----------------------------------------------------------------------------
+events: []                       # 每次成功 / 失败 / Down / Out / Bloodbath 由 MCP 追加
+                                 # 格式：{turn, phase, actor, action, target, result, narrative}
+
+# -----------------------------------------------------------------------------
+# 6. 元信息
+# -----------------------------------------------------------------------------
+meta:
+  schema_version: "0.1"
+  rule_version: "1.0.2"
+  created_at: null               # ISO 8601 timestamp，MCP 写入
+  last_updated: null

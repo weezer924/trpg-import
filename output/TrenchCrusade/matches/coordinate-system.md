@@ -1,0 +1,456 @@
+# matches/coordinate-system: 坐标系 / 距离 / LOS / 地形 契约
+
+> 源：本项目自创契约（Trench Crusade v1.0.2 PDF 未规定数字坐标系）
+> 语义映射：`Rule Books/Trench Crusade/Trench Crusade - Digital Rulebook v1.0.2.pdf` p.30-49
+> 版本：v0.1（与 PDF v1.0.2 配套）
+
+## Index
+
+- [1. 范围与用途](#1-范围与用途)
+- [2. 坐标系统](#2-坐标系统)
+- [3. 距离测量](#3-距离测量)
+- [4. 战场默认](#4-战场默认)
+- [5. 棋子基座](#5-棋子基座)
+- [6. 视线判定算法规约（LOS）](#6-视线判定算法规约los)
+- [7. 地形模型](#7-地形模型)
+- [8. MCP server 接口草案](#8-mcp-server-接口草案)
+- [9. 实施 checklist（给 Pass 2+ rules 作者）](#9-实施-checklistgive-pass-2-rules-作者)
+
+---
+
+## 1. 范围与用途
+
+本文件是 **MCP server / web UI / AI 对手** 三方对战场状态的**契约**，先于 `rules/*` 任何章节导入。
+
+为什么先写：
+
+- PDF v1.0.2 用**实体卷尺测距 + 蹲下检查视线**作为裁判方式（p.30-31「stoop down and take a look」）；
+  数字化对战必须用**数学规约**替代这两个动作，否则 MCP 没法仲裁、AI 没法计算。
+- 所有 `rules/*` 章节里的"12 英寸内冲锋""半射程 long range""−1 dice cover"等数值，
+  最终都要落到本文件定义的 `get_distance` / `get_los` / `is_in_range` 上。
+- 任何后续规则文件若与本契约语义冲突，**以 PDF v1.0.2 为准修正本契约**，
+  本文件被改后所有引用它的 rules 章节需重新校对。
+
+**适用范围**：
+
+| 消费者 | 用本契约的什么 |
+|---|---|
+| MCP server | §8 的 6 个接口签名（实现层依据） |
+| Web UI（玩家拖动棋子） | §4 战场默认 + §5 基座 + §7 地形 schema |
+| AI 对手 | §3 距离 + §6 LOS 三态 → 决策时不心算，调 MCP |
+| 战场存档 `matches/{name}/match-state.yaml` | §7 terrain schema + §4 battlefield 顶层字段 |
+
+---
+
+## 2. 坐标系统
+
+### 2.1 单位尺度
+
+- **1 格 = 1 英寸（inch）**。PDF 所有距离数值（M / 武器射程 / charge 12" / cover ½" 等）直接套用，无需换算。
+- 位置用整数三元组 `(x, y, z)`。**亚格位置（如 0.5 格）不允许**——所有移动/部署落到整数格中心点。
+  > 损失少量精度，换取 LOS 算法与战场可视化的稳定性。PDF p.30「Within」定义距离用最近点测量，整数离散化后误差 ≤ 0.5 格。
+
+### 2.2 原点与轴向
+
+- 原点 `(0, 0, 0)` 在**战场左下角，z=0 层（地面）**。
+- `x` 轴向右、`y` 轴向上、`z` 轴向上（垂直方向）。
+- 默认战场范围：`x ∈ [0, 35]`、`y ∈ [0, 35]`（36×36 格）。
+
+### 2.3 z 轴：离散层级（非连续高度）
+
+| z 值 | 含义 | 默认高度差（"） |
+|---:|---|---:|
+| `2` | 屋顶（多层建筑顶） | 6 |
+| `1` | 二楼 / 丘陵顶 | 3 |
+| `0` | 地面（默认） | 0 |
+| `-1` | 战壕凹陷 / 弹坑底 | -3 |
+
+- 每个 z 层级对应的实际英寸高度由顶层字段 `layer_height` 控制，**默认 3"**，[v0.1 默认，可调]。
+- 单个地形（如双层建筑）可在自身 yaml 中用 `layer_height` 字段 override：
+
+  ```yaml
+  - type: building
+    bounds: [10, 10, 16, 16]
+    height: 2          # 顶部在 z=2
+    layer_height: 4    # 这栋楼每层 4"（不是默认的 3"）
+  ```
+
+- **为什么离散**：PDF 没有连续高度概念，只用"½" 高""3" 高""6" 高"等离散坎。把 z 离散化让 MCP 可以稳定计算高低差，且匹配 PDF "elevated +1 DICE 要求高 3"+ "（p.43）的判定。
+
+### 2.4 坐标合法性
+
+- 模型 `pos = (x, y, z)` 合法当且仅当：
+  - `0 ≤ x < battlefield.size[0]`、`0 ≤ y < battlefield.size[1]`
+  - z 存在对应的可站立表面（地面 z=0 永远可站；z=1/2 需有 building/hill 在该 (x,y) 提供；z=-1 需有 trench 在该 (x,y) 提供）
+- 基座占多格时，**所有占据格**都必须满足上述条件。
+
+---
+
+## 3. 距离测量
+
+### 3.1 算法：3D 欧几里得
+
+```
+distance(A, B) = √((Bx - Ax)² + (By - Ay)² + ((Bz - Az) · layer_height)²)
+```
+
+- 结果保留 **1 位小数**（向下截断到 0.1）。
+- z 层差乘以 `layer_height`（默认 3"）换算成英寸后参与欧式距离。
+- 模型基座 > 1×1 时，**取双方基座间最近点距离**（PDF p.30「distance between the nearest points」）。
+  → 在数字网格上落地为：`min(distance(a, b) for a in A.cells for b in B.cells)`。
+- 完全相同的 (x, y, z) → 距离 0；同格不同 z → 距离 = `layer_height`。
+
+### 3.2 与 PDF 的语义映射
+
+| PDF 术语 | 本契约 |
+|---|---|
+| Within X" of（p.30）| `get_distance(A, B) ≤ X` |
+| In contact（p.30）| `get_distance(A, B) ≤ 0` 或基座格相邻且距离 ≤ 1.0（基座间隙） |
+| Within 1" of enemy（locked in melee，p.36）| `get_distance ≤ 1.0` |
+| Short Range（≤ 半射程，p.43）| `get_distance ≤ weapon.range / 2` |
+| Long Range（> 半射程，p.43）| `get_distance > weapon.range / 2` |
+| Elevated +1 DICE（高 3"+，p.43）| `(attacker.z - target.z) · layer_height ≥ 3` |
+
+### 3.3 测试用例
+
+| # | 用例 | 输入 A | 输入 B | 期望距离 | 备注 |
+|---|---|---|---|---:|---|
+| 1 | 纯平面相邻 | `(5, 5, 0)` | `(8, 5, 0)` | `3.0` | 横向 3 格 |
+| 2 | 平面对角 | `(0, 0, 0)` | `(3, 4, 0)` | `5.0` | 3-4-5 三角 |
+| 3 | 同列上下 | `(10, 10, 0)` | `(10, 10, 1)` | `3.0` | z 差 1 × layer_height 3 |
+| 4 | 立体复合 | `(0, 0, 0)` | `(4, 0, 1)` | `5.0` | √(16+0+9) = 5 |
+| 5 | Charge 12" 临界 | `(6, 6, 0)` | `(15, 14, 1)` | `12.4` | √(81+64+9)≈12.4 → **不可冲锋**（PDF p.36 「visible and within 12」） |
+| 6 | 战壕下射上方 | `(5, 5, -1)` | `(5, 12, 1)` | `9.2` | z 差 2 层 = 6"，平面 7"，√(49+0+36)≈9.2 |
+
+> **注意用例 5**：M6 模型 charge 总移动可达 6 + d6（最大 12"），但 `is_in_range(..., 12)` 在距离 12.4" 时返回 false，**不能宣告冲锋目标**。
+> 这是离散化的代价；PDF 用卷尺实测会有类似的边缘案例。AI 若想 charge 应优先调 `is_in_range(target, 12)` 而不是心算。
+
+---
+
+## 4. 战场默认
+
+| 字段 | v0.1 默认 | 备注 |
+|---|---:|---|
+| `battlefield.size` | `[36, 36]` | 3'×3' 入门战场，PDF 推荐尺寸 |
+| `battlefield.size`（扩展） | `[48, 48]` | 4'×4'，多人或大战团用 |
+| `battlefield.layer_height` | `3` | 每个 z 层等多少英寸 [v0.1 默认，可调] |
+| 单方模型数 | 6–10 | 控制状态复杂度；PDF Warbands 章节标准战团规模 |
+| 部署区 | 战场左右 12" 内 | 实际由 scenario 决定，本字段仅作默认 |
+
+战场顶层 yaml schema：
+
+```yaml
+battlefield:
+  size: [36, 36]       # [width, height] in 1" cells
+  layer_height: 3      # inches per z level
+  deployment:
+    red: [0, 0, 12, 36]   # 左侧 12 格
+    blue: [24, 0, 36, 36] # 右侧 12 格
+```
+
+`deployment` 的 bounds 是 `[x_min, y_min, x_max, y_max]`，与地形 `bounds` 字段同格式。
+
+---
+
+## 5. 棋子基座（base size）
+
+### 5.1 默认规则
+
+| 模型类型 | base_size | 说明 |
+|---|:---:|---|
+| 步兵 / 普通人形 | `[1, 1]` | 默认 |
+| 大型生物 / 载具 / 重型机甲 | `[2, 2]` | 占 4 格 |
+| 非常巨大（如龙、Brazen Bull 巨像） | `[3, 3]` | 罕见 |
+
+### 5.2 待定（**TODO**：Pass 8-9 标注）
+
+PDF v1.0.2 没有"基座尺寸表"，需在导入各单位 profile 时确认。已知需标 `[2, 2]` 的候选：
+
+- **Anchorite Shrine**（New Antioch 特殊大型支援单位，参见 Warbands p.21+）
+- **Brazen Bull**（Heretic Legions 的活体熔炉，参见 Warbands p.103+）
+- **Mechanized 系列**（机械教士、装甲构造体——具体见各 faction）
+
+> **Pass 8-9 工作**：每个 unit profile 的 yaml 块若 base_size 非 `[1, 1]`，必须显式写出。本节列表回填后更新。
+
+### 5.3 占格规则
+
+- 基座 `[w, h]` 的模型在 `pos = (x, y, z)` 占据格 `(x..x+w-1, y..y+h-1, z)`。
+- 这些格不能与另一模型基座或 `IMPASSABLE` 地形重叠（PDF p.31「Model Placement」）。
+- 1×1 模型的"contact"（PDF p.30）= 基座相邻（曼哈顿距离 1）。
+  2×2 及以上的"contact" = 任意一个占据格相邻。
+
+---
+
+## 6. 视线判定算法规约（LOS）
+
+### 6.1 接口契约
+
+```
+get_los(from_pos, to_pos) -> { state: "clear" | "partial_cover" | "blocked", blockers: [terrain_id, ...] }
+```
+
+- 输入：两个 `(x, y, z)` 三元组。PDF 规定测量 line of sight 时**不算 target 的 base / hands / feet / 武器**（p.30）——
+  数字化简化为：from = 攻击方基座中心，to = 目标基座中心。
+- 输出三态对应 PDF 语义：
+
+| 输出 state | PDF 映射 | TC ranged attack 修正 |
+|---|---|---|
+| `clear` | 射线沿途无任何 terrain.blocks_los | 无修正 |
+| `partial_cover` | 射线擦过 `blocks_los: partial` 的地形 / 目标 in cover | **−1 DICE**（PDF p.43 Cover 修正） |
+| `blocked` | 射线被 `blocks_los: true` 的实体阻断 | **不可射**（PDF p.42「target must be in the Line of Sight」） |
+
+### 6.2 算法描述（射线遍历 + 高度比较）
+
+```
+def get_los(A, B):
+    blockers = []
+    # 1. 沿 A→B 在 xy 平面用 Bresenham（或 DDA）取经过的格序列
+    cells = bresenham_xy(A.xy, B.xy)
+    # 2. 对每个中间格 c（不含 A、B 自身格），查该格 (cx, cy) 处所有 terrain
+    for c in cells[1:-1]:
+        for t in terrain_at(c):
+            if not t.blocks_los:
+                continue
+            # 3. 高度比较：地形是否伸到射线在该格的高度？
+            #    射线高度 = lerp(A.z, B.z, progress) × layer_height
+            ray_z_inches = interpolate_z(A, B, c) * layer_height
+            terrain_top_inches = (t.base_z + t.height) * layer_height
+            terrain_bottom_inches = t.base_z * layer_height
+            if terrain_bottom_inches < ray_z_inches < terrain_top_inches:
+                blockers.append(t.id)
+                if t.blocks_los == True:
+                    return { state: "blocked", blockers }
+                # blocks_los == "partial" → 继续遍历，但记下
+    # 4. 检查 target 是否 in cover（PDF p.38 三问改造）
+    if any(t.blocks_los == "partial" for t in blockers):
+        return { state: "partial_cover", blockers }
+    # 5. 也要看 target 本身是否站在 cover 地形里（PDF p.38）
+    if target_in_cover(B):
+        return { state: "partial_cover", blockers: cover_pieces_around(B) }
+    return { state: "clear", blockers: [] }
+```
+
+**target_in_cover(B)** 实现 PDF p.38 的"三问"：
+
+1. B 是否触碰至少 ½" 高的 terrain piece？（接触 = B 占据格与 terrain 占据格相邻或重叠）
+2. 该 terrain piece 是否与 B 基座等宽或更宽？（terrain bounds 宽度 ≥ B 基座宽度）
+3. 该 terrain piece 是否位于 B 与攻击方之间？（terrain 中心点在 A→B 线段附近，垂直距离 ≤ 1 格）
+
+三问全 yes → `partial_cover`。
+
+### 6.3 测试用例
+
+| # | 场景 | A | B | 地形 | 期望 state | 备注 |
+|---|---|---|---|---|---|---|
+| 1 | 穿过双层楼 | `(2, 5, 0)` | `(20, 5, 0)` | `building bounds=[10,3,14,7], height=2, blocks_los=true` | `blocked` | 楼挡死 |
+| 2 | 跨过低矮丘陵 | `(2, 5, 0)` | `(20, 5, 1)` | `hill bounds=[10,3,14,7], height=1, blocks_los=true` | `clear` | A 在 z=0 看 B 在 z=1（丘陵顶），射线终点高过丘陵顶 |
+| 3 | 烟雾（partial） | `(2, 5, 0)` | `(20, 5, 0)` | `smoke bounds=[10,3,14,7], height=2, blocks_los=partial` | `partial_cover` | 烟挡视线但允许射，−1 DICE |
+| 4 | 目标在战壕（cover） | `(2, 5, 1)` | `(20, 5, -1)` | `trench bounds=[18,3,22,7], height=-1` 在 B 周围 | `partial_cover` | target_in_cover 三问 yes |
+
+---
+
+## 7. 地形模型
+
+### 7.1 bounds 两种格式
+
+- **矩形（rect）**：`bounds: [x_min, y_min, x_max, y_max]`（4 个整数）→ 默认假设矩形地形。
+- **多边形（polygon）**：`bounds_polygon: [[x1,y1], [x2,y2], ...]` → 非矩形（如不规则废墟）用此。
+
+矩形是首选；polygon 仅在矩形拟合损失太大时用。
+
+### 7.2 通用属性表
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `type` | enum | 见 §7.3 七类 |
+| `bounds` 或 `bounds_polygon` | rect/polygon | 占据格范围 |
+| `base_z` | int（默认 0）| 地形底面 z 层 |
+| `height` | int | 地形顶面与底面的 z 层差（如 building height=2 意为 2 层楼高） |
+| `layer_height` | int（可选 override）| 该地形每层 z 等多少英寸；缺省继承 `battlefield.layer_height` |
+| `blocks_los` | `true` / `false` / `partial` | 三态视线规约（§6） |
+| `cover` | `none` / `partial` / `full` | 是否给在其内/旁的模型提供 cover keyword |
+| `movement_cost` | float（默认 1）| 进入此地形每格消耗的移动力；`DIFFICULT TERRAIN` 通常 2 |
+| `dangerous` | bool（默认 false）| 触发 PDF p.38 「DANGEROUS TERRAIN」keyword（移动时风险判定） |
+| `impassable` | bool（默认 false）| 触发 PDF p.38 「IMPASSABLE TERRAIN」keyword（不能进入） |
+| `climbable` | bool（默认 false）| 是否允许从此地形侧面 Climb（PDF p.39） |
+
+### 7.3 七类地形（对应 PDF p.38 + Battlefield archetype 章节）
+
+> 中英对照 + 一行 PDF 语义 + yaml 例。
+
+#### A. 战壕（Trench）
+
+凹陷 z=-1 的长条结构，进入提供 cover。
+
+```yaml
+- id: trench_central
+  type: trench
+  bounds: [4, 17, 32, 19]      # 横贯战场的战壕
+  base_z: -1
+  height: 1                    # 顶面回到地面 z=0
+  blocks_los: false            # 战壕本身不挡视线（只挡里面的人）
+  cover: partial               # 在内或紧贴的模型获 cover
+  movement_cost: 1
+```
+
+#### B. 废墟（Ruins）
+
+破损建筑残骸，多层可攀爬，部分挡视线。
+
+```yaml
+- id: ruin_north
+  type: ruins
+  bounds: [10, 28, 16, 34]
+  height: 2                    # 残存两层楼
+  blocks_los: partial          # 透过窗洞能看见
+  cover: full
+  climbable: true
+  movement_cost: 1
+```
+
+#### C. 废弃角落（Abandoned Corner）
+
+无主物件堆（破车、铁丝团、弹药箱），通常 1 层。
+
+```yaml
+- id: junk_pile_a
+  type: abandoned_corner
+  bounds: [22, 8, 24, 10]
+  height: 1
+  blocks_los: partial
+  cover: partial
+  movement_cost: 1
+```
+
+#### D. 山丘（Hill）
+
+高地，无遮挡但提供 high ground +1 DICE（PDF p.43）。
+
+```yaml
+- id: hill_east
+  type: hill
+  bounds: [28, 12, 34, 22]
+  height: 1                    # 丘顶 z=1
+  blocks_los: false            # 开阔丘陵不挡视线
+  cover: none
+  climbable: true              # 边坡可爬
+  movement_cost: 1
+```
+
+#### E. 危险地形（Dangerous Terrain）
+
+铁丝网 / 雷区 / 毒气 / 烈焰，触发 PDF `DANGEROUS TERRAIN` keyword。
+
+```yaml
+- id: barbed_wire_north
+  type: dangerous
+  subtype: barbed_wire         # 备选：minefield / poison_gas / fire
+  bounds: [12, 16, 20, 18]
+  height: 0
+  blocks_los: false
+  cover: none
+  movement_cost: 2
+  dangerous: true              # 移动进入时触发 Injury Roll
+```
+
+#### F. 崎岖地形（Difficult Terrain）
+
+弹坑、泥潭、岩石堆，触发 PDF `DIFFICULT TERRAIN` keyword（移动减半）。
+
+```yaml
+- id: crater_field
+  type: difficult
+  subtype: craters             # 备选：mud / rocks / swamp
+  bounds: [16, 8, 24, 14]
+  height: 0
+  blocks_los: false
+  cover: partial               # 弹坑内可蹲
+  movement_cost: 2
+```
+
+#### G. 地标（Landmark）
+
+剧本目标点（旗、圣物、补给箱），通常无碰撞但有 scenario 意义。
+
+```yaml
+- id: relic_objective
+  type: landmark
+  subtype: relic               # 备选：flag / supply_crate / shrine
+  bounds: [17, 17, 19, 19]     # 中央 2×2 区域
+  height: 0
+  blocks_los: false
+  cover: none
+  movement_cost: 1
+  scenario_tag: claim_objective
+```
+
+---
+
+## 8. MCP server 接口草案
+
+仅函数签名 + 一行语义，**不写实现**。Pass v0.2 实际建 MCP server 时（参考 Mothership Python MCP）按此签名搭。
+
+```python
+# 1. 距离查询：欧氏 3D 距离（§3 算法），用于 within/range 判定
+def get_distance(from_pos: tuple, to_pos: tuple) -> float: ...
+
+# 2. 视线查询：返回三态 + 阻挡物列表（§6 算法）
+def get_los(from_pos: tuple, to_pos: tuple) -> dict:
+    # returns: {"state": "clear"|"partial_cover"|"blocked", "blockers": [str, ...]}
+    ...
+
+# 3. 射程内判定：组合距离 + 武器 short/long 信息
+def is_in_range(from_pos: tuple, to_pos: tuple, weapon_range: int) -> dict:
+    # returns: {"in_range": bool, "band": "short"|"long"|"out_of_range"}
+    # 用于 PDF p.43 Short/Long Range 判定
+    ...
+
+# 4. 合法冲锋路径：枚举从 model 到 target 的可达路径（PDF p.36-37 charge 规则）
+def valid_charge_paths(model_id: str, target_id: str) -> list:
+    # returns: [path, ...]; path = [(x,y,z), ...]
+    # 检查 LOS + 12" + interposing enemy（PDF p.36）+ shortest direct route（p.37）
+    # 若无合法路径返回 []
+    ...
+
+# 5. 地形查询：返回某格上叠加的所有地形
+def get_terrain_at(pos: tuple) -> list:
+    # returns: [terrain_dict, ...]
+    # 用于 cover / dangerous / movement_cost / impassable 检查
+    ...
+
+# 6. 移动合法性：给定起点 + 目标 + 移动类型，返回是否合法 + 实际消耗
+def validate_move(model_id: str, to_pos: tuple, move_type: str) -> dict:
+    # move_type ∈ {"move", "charge", "retreat", "dash"}
+    # returns: {"valid": bool, "reason": str, "movement_used": float, "triggers": [...]}
+    # triggers 含：dangerous_terrain_injury / fall_3plus / risky_success_needed 等
+    ...
+```
+
+**实现优先级（v0.2 MCP server 建立时）**：
+`get_distance` > `get_terrain_at` > `is_in_range` > `get_los` > `validate_move` > `valid_charge_paths`
+
+---
+
+## 9. 实施 checklist（给 Pass 2+ rules 作者）
+
+写各 rules 章节时**必须引用**本文件对应节，不要重复定义、不要心算距离：
+
+| 你要写的章节 | 涉及概念 | 引本文件哪节 | 提醒 |
+|---|---|---|---|
+| `rules/01-core-rules.md` | 基础回合 / 移动概览 | §3.2 PDF 术语映射表 | 用 `get_distance` / `is_in_range` 而非散文"测量距离" |
+| `rules/02-comprehensive-rules.md` Movement 段 | Move / Charge / Retreat / Dash | §3、§5（基座占格）、§8 (`validate_move`) | Charge 12" 临界、interposing enemy 全靠 MCP 仲裁 |
+| `rules/02` Ranged Combat | LOS / Short-Long Range / Cover / Elevated | §3.2 映射表、§6 LOS 三态、§6 target_in_cover 三问 | **绝对不要重复定义 LOS**，引 §6；Cover −1 DICE 来自 `state=partial_cover` |
+| `rules/02` Melee Combat | within 1" / defended obstacle | §3.2（within 1" = `get_distance ≤ 1.0`）、§7 地形 height ≥ ½" | Defended obstacle 需查 §7 地形 height |
+| `rules/02` Climbing & Jumping | 3" 高度坎、Falling | §2.3 z 层级、§3 距离 | Jumping Down ≥ 3" 触发 falling injury → PDF p.40-41 |
+| `rules/03-keywords-glossary.md` | DIFFICULT / DANGEROUS / IMPASSABLE / COVER keywords | §7.2 通用属性表的字段语义 | keyword 定义里直接写"`movement_cost: 2`""`dangerous: true`"映射 |
+| `rules/04-battlefield-terrain.md` | 七类地形 + battlefield archetype | §7.3 完整七类 yaml 例 | **直接引用本文件 §7.3**，不要重写 yaml 例；本节只写战场摆放规则 |
+| `rules/05-battlekit.md` | 武器 range 字段 | §3.2 short/long range 映射 | YAML 武器块的 range.short / range.long 字段意义来自 PDF p.43 一半射程定义 |
+| `rules/08-scenarios.md` | 部署区 / 地标 / VP | §4 battlefield.deployment / §7.3.G landmark | Scenario 用 landmark + scenario_tag 表示目标 |
+| `warbands/*.md` | 单位 base_size | §5.1 默认表 / §5.2 待定列表 | 非 1×1 单位必须在 yaml 块写 `base_size: [2, 2]` 并回填 §5.2 |
+| `narrative/event-triggers.md` | LOS 阻挡时的 flavor | §6 三态 | "blocked" → 描述模型被掩体遮挡；"partial_cover" → 描述子弹擦过 |
+
+**校验**：写完任一 rules 文件后，搜索文中是否包含"距离 / line of sight / cover 三问"等概念散文复述。若有，**改为引用本文件 §X**，避免规则漂移。
+
+---
+
+> 本文件后续若有数值调整（如 `layer_height` 默认值改变、第八个地形类引入），需同步更新所有引用本文件的 rules/* 章节。变更日志写入本文件顶部 `> 版本：` 行。
