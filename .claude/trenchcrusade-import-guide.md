@@ -103,12 +103,17 @@ output/TrenchCrusade/
 ```yaml
 profile: yeoman
 stats:
-  movement: 6
-  ac: 12
-  hp: 1
-keywords: [Trooper, Mortal, Faithful]
-base_size: [1, 1]
+  movement: 6      # M（英寸，PDF Profile 第一字段）
+ranged: 0          # +/- DICE 修正（PDF Profile 第二字段）
+melee: 0           # +/- DICE 修正
+armour: 0          # -INJURY MODIFIER（无装甲为 0）
+keywords: [NEW ANTIOCH, FIRETEAM]    # 单位 keyword 列表（ALL-CAPS 保留）
+base_size: [1, 1]                    # grid 占用（仅正方形 v0.1）
+base_shape: circle                   # 视觉：circle / oval / square（默认 circle 可省）
+base_dimensions_mm: [25, 25]         # 视觉：实际基座尺寸 mm（默认 [28,28] 可省）
 ```
+
+> **重要**：TC 用 Injury Roll 决胜负，**没有 HP / AC**——曾经的示例字段是误导，已按 PDF v1.0.2 Profile 字段修正。详见 [[Pass 1 base 契约 §5]] 三层基座语义。
 
 **Equipment slots**:
 - 1× ranged (from Armoury Tier 1-2)

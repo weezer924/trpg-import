@@ -190,19 +190,23 @@ base 的描述**分两层**，解耦 grid 占用与视觉形状：
 1. UI 渲染基座圆/椭圆（让玩家一眼分辨步兵/骑兵/怪物）
 2. 未来 edge-to-edge 精确判定扩展（如骑兵 charge 12" 临界，可选升级到边到边而非中心到中心）
 
-### 5.4 待定（Pass 8-9 回填）
+### 5.4 实际基座归档（Pass 8-9 已回填）
 
-PDF v1.0.2 没有"基座尺寸表"，各单位实际基座需在导入 unit profile 时确认。已知候选：
+PDF v1.0.2 没有"基座尺寸表"，各单位实际基座按 PDF Warbands 章节侧写中的 mm 标注归档。v0.1 已确认：
 
-| 单位 | Faction | 预测 `base_size` | 预测 `base_shape` | 来源 |
-|---|---|:---:|---|---|
-| Anchorite Shrine | New Antioch | `[2, 2]` | `circle` | Warbands p.21+ |
-| Brazen Bull | Heretic Legions / Iron Sultanate | `[2, 2]` | `circle` | Warbands p.103+ |
-| War Wolf Assault Beast | Heretic Legions | `[1, 1]` 或 `[2, 2]` | `oval` | Warbands p.113，骑兵 |
-| Mechanized Heavy Infantry | NA / Heretic | `[1, 1]`（40mm？） | `circle` | 各 faction，待 Pass 8-9 确认 |
-| Lord of Tumours | Black Grail（v0.2+） | `[2, 2]` | `circle` | v0.2+ |
+| 单位 | Faction | `base_size` | `base_shape` | `base_dimensions_mm` | 来源 |
+|---|---|:---:|---|:---:|---|
+| Mechanized Heavy Infantry | New Antioch | `[1, 1]` | `circle` | `[40, 40]` | PDF Warbands p.33；40mm 仍在 1.5" 阈值内（§5.2） |
+| War Wolf Assault Beast | Heretic Legions | `[2, 2]` | `oval` | `[50, 50]` | PDF Warbands p.113；50mm 椭圆 → §5.2 升 `[2,2]` |
+| Tank Palanquin rig (Heretic Priest, Trench Ghosts variant) | Heretic Legions | `[2, 2]` | `circle` | `[50, 50]` | PDF Warbands p.119 "Bulky: 50mm base" |
 
-> **Pass 8-9 工作**：每个 unit profile yaml 块若 `base_size` 非 `[1, 1]` 或 `base_shape` 非 `circle`，必须显式写出。完成后回填本节列表。
+**v0.1 仅以上 3 个单位 base 非默认 `[1, 1]` 28mm**；其余主战团（NA 9 单位 + HL 8 单位 + variants）全部 `[1, 1]` circle，差别只在 dimensions（25mm Trooper / 32mm Elite）。
+
+**v0.2+ 候选**（Warbands 扩展导入时回填）：
+- Brazen Bull（Iron Sultanate v0.2.B） — 预测 `[2, 2]` circle
+- Lord of Tumours（Black Grail v0.2.B） — 预测 `[2, 2]` circle
+
+> **注**：导入前曾预测 Anchorite Shrine 为 `[2, 2]` 候选，Pass 8 实际导入发现 PDF Warbands p.21 仅在 lore 段提到 "wall-embedded battle shrines"，**v1.0.2 NA Warbands p.21-46 范围内没有可玩 Anchorite Shrine 单位**——预测错误已剔除。
 
 ### 5.5 占格规则
 
