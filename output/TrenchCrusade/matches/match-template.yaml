@@ -122,7 +122,9 @@ models:
     side: red
     profile: lieutenant            # → warbands/01-new-antioch.md 待回填
     pos: [6, 18, 0]
-    base_size: [1, 1]
+    base_size: [1, 1]              # grid 占用（逻辑层，仅正方形）
+    base_shape: circle             # 视觉层：UI 渲染基座
+    base_dimensions_mm: [32, 32]   # 视觉层：精英常用 32mm 圆基座
     hp: 3
     markers: []                    # blood / blessing / down / shaken / out
     activated: false
@@ -169,6 +171,8 @@ models:
     profile: heretic-priest
     pos: [30, 18, 0]
     base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [32, 32]
     hp: 3
     markers: []
     activated: false
@@ -208,6 +212,32 @@ models:
       armour: none
       shield: null
       grenade: infernal-bomb
+
+# -----------------------------------------------------------------------------
+# 4.1 base 字段使用范例（仅注释；coordinate-system.md §5 是 SSoT）
+# -----------------------------------------------------------------------------
+# 简略写法（默认 base，省略视觉字段）：
+#   - id: red.yeoman_n
+#     base_size: [1, 1]
+#     # base_shape: circle           ← 省略 = circle
+#     # base_dimensions_mm: [28, 28] ← 省略 = [28, 28]
+#
+# 椭圆基座骑兵（视觉 oval + grid 仍 [1, 1]，不引入 facing）：
+#   - id: blue.war_wolf
+#     profile: war-wolf-assault-beast
+#     pos: [22, 12, 0]
+#     base_size: [1, 1]              # 25×50mm 椭圆按最大边判，但 50mm > 32mm → 见 §5.2，
+#                                    #   若严格 >1.5" 阈值应升 [2, 2]；War Wolf 实际归档待 Pass 9 确认
+#     base_shape: oval
+#     base_dimensions_mm: [25, 50]   # 视觉椭圆，UI 渲染为长椭圆
+#
+# 大型怪物（[2, 2] + 60mm 实际视觉）：
+#   - id: red.anchorite_shrine
+#     profile: anchorite-shrine
+#     pos: [10, 10, 0]
+#     base_size: [2, 2]
+#     base_shape: circle
+#     base_dimensions_mm: [60, 60]
 
 # -----------------------------------------------------------------------------
 # 5. 战斗事件日志（可选，AI 描述 flavor 用）

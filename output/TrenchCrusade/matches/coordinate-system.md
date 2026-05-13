@@ -154,30 +154,71 @@ battlefield:
 
 ## 5. 棋子基座（base size）
 
-### 5.1 默认规则
+### 5.1 两层语义（grid 占用 vs 视觉/物理）
 
-| 模型类型 | base_size | 说明 |
-|---|:---:|---|
-| 步兵 / 普通人形 | `[1, 1]` | 默认 |
-| 大型生物 / 载具 / 重型机甲 | `[2, 2]` | 占 4 格 |
-| 非常巨大（如龙、Brazen Bull 巨像） | `[3, 3]` | 罕见 |
+base 的描述**分两层**，解耦 grid 占用与视觉形状：
 
-### 5.2 待定（**TODO**：Pass 8-9 标注）
+| 层 | 字段 | 用途 |
+|---|---|---|
+| **Grid 占用** | `base_size: [w, h]` | 决定占哪些格 / snap / 不可重叠判定 / 距离中心点 |
+| **视觉与物理** | `base_shape` + `base_dimensions_mm` | UI 渲染基座 + 未来 edge-to-edge 精确判定（v0.1 不强制） |
 
-PDF v1.0.2 没有"基座尺寸表"，需在导入各单位 profile 时确认。已知需标 `[2, 2]` 的候选：
+**v0.1 grid 占用仅正方形** —— `[1, 1]` 或 `[2, 2]`。引入长方形（`[1, 2]` 等）会强制 facing 朝向规则；TC 原版允许 free pivot（PDF p.35「Moves」），v0.1 不引入 facing。详见 §5.6 Open Questions。
 
-- **Anchorite Shrine**（New Antioch 特殊大型支援单位，参见 Warbands p.21+）
-- **Brazen Bull**（Heretic Legions 的活体熔炉，参见 Warbands p.103+）
-- **Mechanized 系列**（机械教士、装甲构造体——具体见各 faction）
+### 5.2 三档分类表（按实际基座尺寸）
 
-> **Pass 8-9 工作**：每个 unit profile 的 yaml 块若 base_size 非 `[1, 1]`，必须显式写出。本节列表回填后更新。
+| 实际 base | `base_size` | `base_shape` | 典型单位 |
+|---|:---:|---|---|
+| ≤32mm 圆 | `[1, 1]` | `circle` | 步兵、精英 |
+| 40mm 圆 / 25×50mm 椭圆 | `[1, 1]` 或 `[2, 2]`（按最大边） | `circle` / `oval` | 重型步兵、骑兵、机械化重装 |
+| ≥50mm 圆 / 30×60mm 椭圆 | `[2, 2]` | `circle` / `oval` | 大型怪物、构造体 |
 
-### 5.3 占格规则
+**40mm 归档判断**：单边超过 1.5"（约 38mm）则升 `[2, 2]`，避免占用过紧。具体单位由 Pass 8-9 在各 warband profile 中标注。
 
-- 基座 `[w, h]` 的模型在 `pos = (x, y, z)` 占据格 `(x..x+w-1, y..y+h-1, z)`。
-- 这些格不能与另一模型基座或 `IMPASSABLE` 地形重叠（PDF p.31「Model Placement」）。
-- 1×1 模型的"contact"（PDF p.30）= 基座相邻（曼哈顿距离 1）。
-  2×2 及以上的"contact" = 任意一个占据格相邻。
+**取消 `[3, 3]` 一档**：Brazen Bull 等"非常巨大"单位实际基座约 60mm = 2.36"，2×2 (2") 已能容纳（视觉层用 `base_dimensions_mm: [60, 60]` 表达精确大小）。3×3 是过度设计。
+
+### 5.3 字段定义
+
+| 字段 | 类型 | 默认 | 说明 |
+|---|---|---|---|
+| `base_size` | `[int, int]` | `[1, 1]` | grid 占用宽 × 深；v0.1 仅正方形 |
+| `base_shape` | enum `circle` / `oval` / `square` | `circle` | 视觉形状 |
+| `base_dimensions_mm` | `[int, int]` | `[28, 28]` | 实际基座宽 × 深，mm；圆形时 W=D=直径 |
+
+**`base_shape` 与 `base_dimensions_mm` 是可选视觉字段** —— v0.1 逻辑判定（距离、LOS、近战触发、占格）**只看 `base_size`**。视觉字段供：
+
+1. UI 渲染基座圆/椭圆（让玩家一眼分辨步兵/骑兵/怪物）
+2. 未来 edge-to-edge 精确判定扩展（如骑兵 charge 12" 临界，可选升级到边到边而非中心到中心）
+
+### 5.4 待定（Pass 8-9 回填）
+
+PDF v1.0.2 没有"基座尺寸表"，各单位实际基座需在导入 unit profile 时确认。已知候选：
+
+| 单位 | Faction | 预测 `base_size` | 预测 `base_shape` | 来源 |
+|---|---|:---:|---|---|
+| Anchorite Shrine | New Antioch | `[2, 2]` | `circle` | Warbands p.21+ |
+| Brazen Bull | Heretic Legions / Iron Sultanate | `[2, 2]` | `circle` | Warbands p.103+ |
+| War Wolf Assault Beast | Heretic Legions | `[1, 1]` 或 `[2, 2]` | `oval` | Warbands p.113，骑兵 |
+| Mechanized Heavy Infantry | NA / Heretic | `[1, 1]`（40mm？） | `circle` | 各 faction，待 Pass 8-9 确认 |
+| Lord of Tumours | Black Grail（v0.2+） | `[2, 2]` | `circle` | v0.2+ |
+
+> **Pass 8-9 工作**：每个 unit profile yaml 块若 `base_size` 非 `[1, 1]` 或 `base_shape` 非 `circle`，必须显式写出。完成后回填本节列表。
+
+### 5.5 占格规则
+
+- 基座 `[w, h]` 的模型在 `pos = (x, y, z)` 占据格 `(x..x+w-1, y..y+h-1, z)`
+- 这些格不能与另一模型基座或 `IMPASSABLE` 地形重叠（PDF p.31「Model Placement」）
+- 1×1 模型的"contact"（PDF p.30）= 基座相邻（曼哈顿距离 1）
+- 2×2 模型的"contact" = 任意一个占据格相邻
+
+### 5.6 Open Questions（v0.1.5+）
+
+- **长方形 / 椭圆精确占用**：v0.1 椭圆基座视为最大边等效正方形（25×50mm 椭圆按 50mm 归档）。v0.2+ 引入骑兵冲锋专属规则时再决定：
+  - 是否引入 `facing: 0/90/180/270` 字段
+  - 是否支持 `base_size: [1, 2]` 长方形 grid 占用
+  - 自由旋转 vs 离散 4 方向的取舍
+- **40mm 边缘归档阈值**：当前 1.5" 是经验值。Pass 8-9 实测后调整
+- **edge-to-edge 距离判定**：v0.1 用中心到中心距离（简洁）。若 charge 12" / 近战 1" 临界场景出现误差感，未来可升级到使用 `base_dimensions_mm` 的边到边距离
 
 ---
 
@@ -446,7 +487,7 @@ def validate_move(model_id: str, to_pos: tuple, move_type: str) -> dict:
 | `rules/04-battlefield-terrain.md` | 七类地形 + battlefield archetype | §7.3 完整七类 yaml 例 | **直接引用本文件 §7.3**，不要重写 yaml 例；本节只写战场摆放规则 |
 | `rules/05-battlekit.md` | 武器 range 字段 | §3.2 short/long range 映射 | YAML 武器块的 range.short / range.long 字段意义来自 PDF p.43 一半射程定义 |
 | `rules/08-scenarios.md` | 部署区 / 地标 / VP | §4 battlefield.deployment / §7.3.G landmark | Scenario 用 landmark + scenario_tag 表示目标 |
-| `warbands/*.md` | 单位 base_size | §5.1 默认表 / §5.2 待定列表 | 非 1×1 单位必须在 yaml 块写 `base_size: [2, 2]` 并回填 §5.2 |
+| `warbands/*.md` | 单位 base_size + 视觉字段 | §5.2 三档分类 / §5.3 字段定义 / §5.4 待定回填 | 非 `[1, 1]` 或非 `circle` 时 yaml 块必须显式写出；回填 §5.4 候选表；遇骑兵/椭圆基座按"视觉 oval + grid 最大边等效"处理（不引入 facing） |
 | `narrative/event-triggers.md` | LOS 阻挡时的 flavor | §6 三态 | "blocked" → 描述模型被掩体遮挡；"partial_cover" → 描述子弹擦过 |
 
 **校验**：写完任一 rules 文件后，搜索文中是否包含"距离 / line of sight / cover 三问"等概念散文复述。若有，**改为引用本文件 §X**，避免规则漂移。
