@@ -125,8 +125,7 @@ models:
     base_size: [1, 1]              # grid 占用（逻辑层，仅正方形）
     base_shape: circle             # 视觉层：UI 渲染基座
     base_dimensions_mm: [32, 32]   # 视觉层：精英常用 32mm 圆基座
-    hp: 3
-    markers: []                    # blood / blessing / down / shaken / out
+    markers: []                    # blood (count) / blessing (count) / down / shaken / out
     activated: false
     equipment:
       ranged: blessed-revolver     # → rules/05-battlekit.md 待回填
@@ -140,7 +139,6 @@ models:
     profile: yeoman
     pos: [7, 16, 0]
     base_size: [1, 1]
-    hp: 1
     markers: []
     activated: false
     equipment:
@@ -155,7 +153,6 @@ models:
     profile: yeoman
     pos: [7, 20, 0]
     base_size: [1, 1]
-    hp: 1
     markers: []
     activated: false
     equipment:
@@ -173,7 +170,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [32, 32]
-    hp: 3
     markers: []
     activated: false
     equipment:
@@ -183,12 +179,11 @@ models:
       shield: null
       grenade: null
 
-  - id: blue.heretic_trooper_1
+  - id: blue.heretic_trooper_A
     side: blue
     profile: heretic-trooper
     pos: [29, 16, 0]
     base_size: [1, 1]
-    hp: 1
     markers: []
     activated: false
     equipment:
@@ -198,12 +193,11 @@ models:
       shield: null
       grenade: null
 
-  - id: blue.heretic_trooper_2
+  - id: blue.heretic_trooper_B
     side: blue
     profile: heretic-trooper
     pos: [29, 20, 0]
     base_size: [1, 1]
-    hp: 1
     markers: []
     activated: false
     equipment:

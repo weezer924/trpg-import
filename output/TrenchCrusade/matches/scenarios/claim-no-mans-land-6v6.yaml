@@ -144,7 +144,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [32, 32]
-    hp: 3
     markers: []
     activated: false
     pos: [6, 18, 0]
@@ -174,7 +173,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [25, 25]
-    hp: 2
     markers: []
     activated: false
     pos: [5, 22, 0]
@@ -204,7 +202,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [25, 25]
-    hp: 2
     markers: []
     activated: false
     pos: [7, 14, 0]
@@ -234,7 +231,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [25, 25]
-    hp: 1
     markers: []
     activated: false
     pos: [8, 16, 0]
@@ -264,7 +260,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [25, 25]
-    hp: 1
     markers: []
     activated: false
     pos: [8, 20, 0]
@@ -294,7 +289,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [25, 25]
-    hp: 1
     markers: []
     activated: false
     pos: [7, 12, 0]
@@ -337,7 +331,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [32, 32]
-    hp: 3
     markers: []
     activated: false
     pos: [30, 18, 0]
@@ -367,7 +360,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [32, 32]
-    hp: 2
     markers: []
     activated: false
     pos: [31, 22, 0]
@@ -385,7 +377,7 @@ models:
         injury_mod: 0
         keywords: ["-1 DICE"]
 
-  - id: blue.heretic_trooper_1
+  - id: blue.heretic_trooper_A
     side: blue
     profile: heretic-trooper
     M: 6
@@ -397,7 +389,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [25, 25]
-    hp: 1
     markers: []
     activated: false
     pos: [29, 16, 0]
@@ -415,7 +406,7 @@ models:
         injury_mod: 0
         keywords: [CUMBERSOME]
 
-  - id: blue.heretic_trooper_2
+  - id: blue.heretic_trooper_B
     side: blue
     profile: heretic-trooper
     M: 6
@@ -427,7 +418,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [25, 25]
-    hp: 1
     markers: []
     activated: false
     pos: [29, 20, 0]
@@ -445,7 +435,7 @@ models:
         injury_mod: 0
         keywords: [CUMBERSOME]
 
-  - id: blue.heretic_trooper_3
+  - id: blue.heretic_trooper_C
     side: blue
     profile: heretic-trooper
     M: 6
@@ -457,7 +447,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [25, 25]
-    hp: 1
     markers: []
     activated: false
     pos: [29, 14, 0]
@@ -487,7 +476,6 @@ models:
     base_size: [1, 1]
     base_shape: circle
     base_dimensions_mm: [25, 25]
-    hp: 1
     markers: []
     activated: false
     pos: [27, 12, 0]

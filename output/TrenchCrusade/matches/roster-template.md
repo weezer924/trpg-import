@@ -221,7 +221,7 @@ models:
       equipment: [combat-helmet, binoculars]
     equipment_cost: 35                   # Σ equipment 👑（不含 mandatory battlekit）
     total_cost: 105                      # base + equipment + upgrades
-    # 部署后由 match-state.yaml 填充：pos / hp / markers / activated
+    # 部署后由 match-state.yaml 填充：pos / markers / activated
 ```
 
 ### 5.2 跨字段约束
