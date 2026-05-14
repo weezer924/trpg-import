@@ -325,6 +325,22 @@ def get_los(A, B):
 
 > 中英对照 + 一行 PDF 语义 + yaml 例。
 
+#### 7 类地形对照表
+
+> 各类的**典型默认值**（每个 instance 可在 yaml 里 override 任一字段）。`mv_cost` 是每格基础移动消耗；`cover` 仅描述强度档，机制效果均为 -1 DICE（见 §7.2 命名警告）；`blocks_los` 三态见 §6。
+
+| Type | z / Height | blocks_los | cover | mv_cost | climbable | dangerous | impassable | 备注 |
+|---|---|---|---|---:|:---:|:---:|:---:|---|
+| **A. trench**（战壕）| z=-1 / h=1 | false | partial | 1 | — | — | — | 凹陷 1"；进入或贴边获 cover；高度差 ≤3" 不触发 fall_3in |
+| **B. ruins**（废墟）| z=0 / h=2 | partial | full | 1 | ✓ | — | — | 多层结构，可登顶；窗洞透视；登顶后从顶面射击算 high ground |
+| **C. abandoned_corner**（废弃角落）| z=0 / h=1 | partial | partial | 1 | — | — | — | 破车 / 铁丝团 / 弹药箱；可作 cover 但不可登顶 |
+| **D. hill**（山丘）| z=0 / h=1 | false | none | 1 | ✓ | — | — | 高地；丘顶赋 high ground +1 DICE（PDF p.43）|
+| **E. dangerous**（危险地形）| z=0 / h=0 | false | none | 2 | — | ✓ | — | 铁丝网 / 雷区 / 毒气 / 烈焰；进入或穿越触发 Injury Roll |
+| **F. difficult**（崎岖地形）| z=0 / h=0 | false | partial | **2** | — | — | — | 弹坑 / 泥潭 / 岩堆；触发 DIFFICULT TERRAIN（移动 2× 加权）|
+| **G. landmark**（地标）| z=0 / h=0 | false | none | 1 | — | — | — | 旗 / 圣物 / 补给箱；纯 scenario 用途，无机制效果 |
+
+> **混合地形提示**：同一格 cell 可叠多地形（例如 trench + dangerous_gas）。`get_terrain_at()` 返回全部，机制效果按各 keyword 叠加（见 [`tools/mcp-server/src/coord.py`](../../../../TrenchCrusade/tools/mcp-server/src/coord.py)）。
+
 #### A. 战壕（Trench）
 
 凹陷 z=-1 的长条结构，进入提供 cover。

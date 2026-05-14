@@ -75,7 +75,7 @@
 
 ## What You Need To Play
 
-> PDF p.22
+> PDF p.22 · **TL;DR**：双人对战；每方 1 战团（6-20 模型）；战场 36-48"² 方；测量单位英寸（数字化由 MCP 计算）；首场推荐 Scenario 1（Claim No Man's Land）。
 
 Comprehensive Rules 章节扩展 Core Rules，提供更深入的解释、附加规则和示例，但**不改变** Core Rules。
 
@@ -94,7 +94,7 @@ Comprehensive Rules 章节扩展 Core Rules，提供更深入的解释、附加�
 
 ## Core Concepts
 
-> PDF p.23-29
+> PDF p.23-29 · **TL;DR**：Success Roll = 2D6 ±DICE，取 2 个加权后骰；2-6 Failure / 7-11 Success / 12+ Critical（Critical 命中 +1 INJURY DICE）。Risky Success Roll 失败直接结束 Activation。BLOOD MARKERS 始终**不利于**持有者（仅对手可花，每个 ±1 DICE），BLESSING MARKERS 始终**有利于**持有者。
 
 本节解释支配 Trench Crusade 玩法的核心原则。
 
@@ -254,7 +254,7 @@ Profile 含字段：Cost（👑）/ Movement / Ranged / Melee / Armour / Base / 
 
 ## Other Rules Principles
 
-> PDF p.30-31
+> PDF p.30-31 · **TL;DR**：分数一律**向上取整**；测距走英寸（数字化由 MCP `get_distance` 计算，3D 欧氏）；LOS 三态 clear / partial_cover / blocked；同一骰子只能 re-roll 一次；Pre-Measuring 允许（任何时候可量）。
 
 ### Fractions
 
@@ -362,7 +362,7 @@ Profile 含字段：Cost（👑）/ Movement / Ranged / Melee / Armour / Base / 
 
 ## Game Turns
 
-> PDF p.32-34
+> PDF p.32-34 · **TL;DR**：每 Turn 三阶段 — ① **Initiative**（roll-off d6 决先手）→ ② **Activation**（双方轮流激活模型，每次激活可做多个 ACTION，但同类 ACTION 一激活只能做 1 次）→ ③ **Morale**（伤亡过半 take Morale Check）。Turn 总数 + 胜负条件由 scenario 定。
 
 Trench Crusade 游戏分为若干 Turn（回合）。剧本指定回合数与胜负判定（→ `rules/08-scenarios.md`）。
 
@@ -459,7 +459,7 @@ Dash 可与 Move / Charge / Retreat ACTION **同回合并用**，前后顺序任
 
 ## Movement
 
-> PDF p.35-37
+> PDF p.35-37 · **TL;DR**：4 个移动 ACTION — **Move**（基础，距离 ≤ M）/ **Dash**（前置 Risky Success → +½M）/ **Charge**（≤12"，roll Charge Bonus d6 接 Melee）/ **Retreat**（脱离 melee 触发 enemy 自由攻击）。地形 `movement_cost` 决定每格消耗。Difficult terrain 2× 加权。"Move"（大写 = ACTION），"move"（小写 = 动作）。
 
 Move、Charge、Retreat、Dash ACTION 都让你拿起一个模型移动它。Move 与 Dash 移动方式相同（Dash 多一个前置 Risky Success Roll）；Charge 与 Retreat 移动方式有特殊规则。
 
@@ -556,7 +556,7 @@ Retreat ACTION 让在敌方 1" 内的模型移开。
 
 ## Terrain（在 Movement 中的引用）
 
-> PDF p.38
+> PDF p.38 · **TL;DR**：4 个移动主类 — **Open**（默认）/ **Difficult**（2× mv_cost）/ **Dangerous**（进入或穿越触发 Injury Roll）/ **Impassable**（不可进入）+ **Cover** 修饰符（-1 DICE 对其内/旁模型的攻击）。Schema 详见 [`matches/coordinate-system.md`](../matches/coordinate-system.md) §7 七类对照表。
 
 地形类型完整规则在 `→ rules/04-battlefield-terrain.md`（Pass 5）。本节仅给出 Movement 视角下需引用的概念：
 
@@ -576,7 +576,7 @@ Retreat ACTION 让在敌方 1" 内的模型移开。
 
 ## Climbing & Jumping
 
-> PDF p.39-40
+> PDF p.39-40 · **TL;DR**：**Climb sheer surface** 需 Risky Success Roll（失败 fall 回起点）；**Jump across** 距离 ≤ Movement，作为正常移动一部分；**Jump down** 是 free movement（不耗 M），但落差 ≥3" 触发 Falling Injury Roll。Climbing 距离按垂直高度算入总 Movement。
 
 ### Climbing Sheer Surfaces
 
@@ -631,7 +631,7 @@ Retreat ACTION 让在敌方 1" 内的模型移开。
 
 ## Falling
 
-> PDF p.41
+> PDF p.41 · **TL;DR**：模型落到下方第一个可占据平面；按下落距离做 Injury Roll，**每 3" +1 INJURY DICE**；落点被占则推到最近空格。MCP `roll_falling(distance_inches, modifier?)` 自动计算 dice 数。
 
 当模型 Fall 时：
 
@@ -648,7 +648,7 @@ Retreat ACTION 让在敌方 1" 内的模型移开。
 
 ## Combat — Ranged Attacks
 
-> PDF p.42-44
+> PDF p.42-44 · **TL;DR**：Shoot ACTION → 选 in-range（short ≤ R_short，long > R_short 且 ≤ R_long，-1 DICE）+ LOS 目标 → Success Roll（cover -1 / high-ground +1 / 射入混战时 1d6 随机选目标）→ 命中 → Injury Roll。Critical Success → Injury Roll +1 INJURY DICE。
 
 Shoot ACTION 让模型做 Ranged Attack；Fight ACTION 让模型做 Melee Attack。本节规则讲解各类攻击如何进行。
 
@@ -749,7 +749,7 @@ Shoot ACTION 让模型做 Ranged Attack；Fight ACTION 让模型做 Melee Attack
 
 ## Combat — Melee Attacks
 
-> PDF p.45
+> PDF p.45 · **TL;DR**：Fight ACTION（前提：已贴脸 1" 内）→ Success Roll → 命中 → Injury Roll。Down 目标 +1 INJURY DICE。**Multiple Melee Weapons**：同 Activation 内每件 melee weapon 只能用一次，但可用多件（含 chainsaw / bayonet 等额外 INJURY DICE 武器）。
 
 **Melee Attack 前提**：
 
@@ -818,7 +818,7 @@ Shoot ACTION 让模型做 Ranged Attack；Fight ACTION 让模型做 Melee Attack
 
 ## Injuries
 
-> PDF p.46-49
+> PDF p.46-49 · **TL;DR**：**Injury Roll** = 2D6 ±INJURY DICE ± modifier → ≤1 **No Effect** / 2-6 **Minor Wound**（+1 BLOOD MARKER）/ 7-8 **Down** / 9+ **Out of Action**。**Bloodbath**：对 Down 目标再受伤、或攻击方花 ≥3 BLOOD MARKERS / 触发 Concentrated Attack → 升级为 3D6（DEADLY 武器 4D6）。Armour 提供负 INJURY MODIFIER；IGNORE ARMOUR 无视之。
 
 游戏中模型可能因攻击、坠落、穿越 Dangerous terrain 受伤。无论来源，**敌方模型受伤时**你必须为该模型做 **Injury Roll**。
 
@@ -946,7 +946,7 @@ Down 状态规则：
 
 ## 3. Morale Phase
 
-> PDF p.50
+> PDF p.50 · **TL;DR**：战团 **½ 或以上模型 Down/OoA**（向上取整）→ take **Morale Check**（Success Roll；LEADER 在场 +1 DICE）。Failure → 战团进入 **Shaken** 状态（次 Turn 起激活数受限）。**连续 2 Turn Morale 失败 → 直接输掉游戏**。
 
 战团可能因伤亡过重撤离战场。Morale Phase 中：
 
@@ -990,7 +990,7 @@ Shaken 战团的所有规则：
 
 ## Winning the Game
 
-> PDF p.51
+> PDF p.51 · **TL;DR**：对手战团逃跑（连续 2 Turn Morale 失败 / 全 OoA） → **立即胜利**；否则最终 Turn 末按 scenario 判定（Turn 数、Glorious Deeds、VP / objective control 等）。
 
 - 若对手战团逃跑 → **立即胜利**
 - 否则在最终回合结束后判定胜负

@@ -51,6 +51,36 @@
 
 ---
 
+## 数值速查表（Model Profiles at a Glance）
+
+> 单位：M / Ranged / Melee = DICE 修正；Armour = INJURY MODIFIER；Base = 逻辑 base_size × 视觉 mm；Limit = warband 招募上限。
+> 详细 special rules / battlekit slots / lore 见下方对应章节。Variant warband（Trench Ghosts / Knights of Avarice / Heretic Naval Raiders）不在此表（详见 [Warband Variants](#warband-variants)）。
+
+### Elite（精英）
+
+| Model | Cost | M | R | Me | Armour | Base | Keywords | Limit |
+|---|---:|---:|---:|---:|---:|---|---|---|
+| [Heretic Priest](#heretic-priest) | 80 👑 | 6 | +2 | +2 | 0 | 1×1 / 32mm | HERETIC, ELITE, LEADER, TOUGH | **1（required）** |
+| [Death Commando](#death-commando) | 90 👑 | 6 | +1 | +2 | 0 | 1×1 / 32mm | HERETIC, ELITE, INFILTRATOR | 0–1 |
+| [Chorister](#chorister) | 65 👑 | 6 | -2 | +2 | 0 | 1×1 / 32mm | HERETIC, ELITE, FEAR | 0–1 |
+
+### Troops（部队）
+
+| Model | Cost | M | R | Me | Armour | Base | Keywords | Limit |
+|---|---:|---:|---:|---:|---:|---|---|---|
+| [Heretic Trooper / Legionnaire](#heretic-trooper--heretic-legionnaire) | 30 / 40 👑 | 6 | 0 | 0 | 0 | 1×1 / 25mm | HERETIC | 无上限 |
+| [War Wolf Assault Beast](#war-wolf-assault-beast) | 145 👑 | **8** | — | +2 | -3 | **2×2 / 50mm** | HERETIC, ARTIFICIAL, FEAR, NEGATE DIFFICULT TERRAIN, TOUGH | 0–1 |
+| [Wretched](#wretched) | 25 👑 | 6 | -1 | -1 | 0 | 1×1 / 25mm | HERETIC | 无上限 |
+| [Anointed Heavy Infantry](#anointed-heavy-infantry) | 95 👑 | 6 | +1 | +1 | -2 | 1×1 / 32mm | HERETIC, STRONG | 0–5 |
+| [Artillery Witch](#artillery-witch) | 100 👑 | 6 | 0 | -1 | 0 | 1×1 / 32mm | HERETIC, ARTIFICIAL, NEGATE FEAR, NEGATE GAS | 0–1（≥1000👑 时 0–2）|
+
+> **特殊数值提示**：
+> - **War Wolf** 不能 Ranged Attack（`ranged: null`），Movement = 8，base = 2×2 逻辑格（与 [`matches/coordinate-system.md`](../matches/coordinate-system.md) §1 base 渲染相关）。
+> - **Heretic Legionnaire**（40 👑）是 Heretic Trooper 的 upgrade，profile = `heretic-legionnaire`，stats 与 Trooper 同表但 battlekit 选项不同。
+> - **Mandatory battlekit**：Anointed = Reinforced Armour + Infernal Brand；Artillery Witch = Infernal Bomb。
+
+---
+
 ## Faction Overview
 
 > *A shroud of darkness blankets the world. Smoke and brimstone spew from the yawning Gates of Inferno, enveloping the lands where people have abandoned God and openly wage war against His Creation. ... The main satanic military force on Earth are the Heretic Legions, raised from amongst these citizens of the damned.*

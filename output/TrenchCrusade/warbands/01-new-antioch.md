@@ -31,6 +31,34 @@
 
 ---
 
+## 数值速查表（Model Profiles at a Glance）
+
+> 单位：M / Ranged / Melee = DICE 修正；Armour = INJURY MODIFIER；Base = 逻辑 base_size × 视觉 mm；Limit = warband 招募上限。
+> 详细 special rules / battlekit slots / lore 见下方对应章节。Variant warband 不在此表（详见 [Warband Variants](#warband-variants)）。
+
+### Elite（精英）
+
+| Model | Cost | M | R | Me | Armour | Base | Keywords | Limit |
+|---|---:|---:|---:|---:|---:|---|---|---|
+| [Lieutenant](#lieutenant) | 70 👑 | 6 | +2 | +2 | 0 | 1×1 / 32mm | NEW ANTIOCH, ELITE, LEADER, TOUGH | **1（mandatory）** |
+| [Sniper Priest](#sniper-priest) | 50 👑 | 6 | +2 | -1 | 0 | 1×1 / 25mm | NEW ANTIOCH, ELITE | 0–2 |
+| [Trench Cleric](#trench-cleric) | 60 👑 | 6 | +1 | +1 | 0 | 1×1 / 32mm | NEW ANTIOCH, ELITE, NEGATE FEAR | 0–1（Éire 0–2）|
+
+### Troops（部队）
+
+| Model | Cost | M | R | Me | Armour | Base | Keywords | Limit |
+|---|---:|---:|---:|---:|---:|---|---|---|
+| [Yeoman](#yeoman) | 30 👑 | 6 | 0 | 0 | 0 | 1×1 / 25mm | NEW ANTIOCH | 无上限 |
+| [Trench Mole](#trench-mole) | 40 👑 | 6 | 0 | 0 | 0 | 1×1 / 25mm | NEW ANTIOCH, INFILTRATOR | ≤2（1000👑+ 可第 3）|
+| [Shock Trooper](#shock-trooper) | 45 👑 | 6 | 0 | +1 | 0 | 1×1 / 25mm | NEW ANTIOCH | 0–5 |
+| [Combat Engineer](#combat-engineer) | 80 👑 | 6 | 0 | +1 | -2 | 1×1 / 25mm | NEW ANTIOCH, NEGATE MINED | 0–2 |
+| [Mechanized Heavy Infantry](#mechanized-heavy-infantry) | 85/95 👑 | 6 | +1 | 0 | -2/-3 | 1×1 / 40mm | NEW ANTIOCH, STRONG | 0–3 |
+| [Combat Medic](#combat-medic) | 65 👑 | 6 | 0 | 0 | -1 | 1×1 / 25mm | NEW ANTIOCH, NEGATE FEAR | 0–1（Abyssinia 0–2）|
+
+> **Mandatory battlekit 提示**：Combat Engineer = Engineer Body Armour + Shovel；Mechanized Heavy Infantry = Reinforced Armour 或 Machine Armour；Combat Medic = Standard Armour + Gas Mask + Medi-Kit + Misericordia。Mechanized Heavy Infantry 的 cost / armour 双选取决于护甲选择。
+
+---
+
 ## Faction Overview
 
 > PDF p.21-22
