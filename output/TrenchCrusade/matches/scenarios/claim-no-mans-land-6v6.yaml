@@ -1,0 +1,514 @@
+# Trench Crusade — Playable match: Claim No Man's Land, 6v6
+#
+# Inline-stats variant of match-template.yaml. Each model carries its full
+# profile + equipment stats so CLI/AI never have to look up the warband file
+# during play. Schema additions vs match-template.yaml:
+#   - model.M / RC / CC / defense_mod / keywords  (flat inline stat block)
+#   - model.weapons.{ranged, melee, melee_off_hand}  (structured weapon dicts)
+#   - model.armour_note  (free-text reminder of what got baked into defense_mod)
+#
+# Reference: matches/roster-template.md §7 (Red) + §8 (Blue) trimmed to 6+6
+# (the legal minimum, plan §B.5 #2). Stats sourced from:
+#   - warbands/01-new-antioch.md §Lieutenant / Sniper Priest / Shock Trooper / Yeoman
+#   - warbands/02-heretic-legions.md §Heretic Priest / Death Commando / Heretic Trooper / Wretched
+#   - rules/05-battlekit.md §Bolt-Action Rifle / Shotgun / Sniper Rifle / Silenced Pistol /
+#                          Sword/Axe / Bayonet / Trench Knife / Trench Club /
+#                          Standard Armour / Combat Helmet / Trench Shield / Infernal Brand
+#
+# DEFENSE_MOD COMPUTATION (PDF p.46-48):
+#   defense_mod = profile.AC + sum(armour.injury_mod) + sum(shield.injury_mod)
+#   (Combat Engineer's profile.AC=-2 already bakes in Engineer Body Armour;
+#    similar Anointed Heavy Infantry. The PDF p.80 caveat — "do not apply
+#    twice" — is honored by pre-aggregating here.)
+#   Sign: negative = harder to wound. AI passes weapon.injury_mod + target.defense_mod
+#         to roll_injury(modifier=...).
+
+# -----------------------------------------------------------------------------
+# 1. 战场（同 match-template.yaml — Claim No Man's Land scenario）
+# -----------------------------------------------------------------------------
+battlefield:
+  size: [36, 36]
+  layer_height: 3
+  deployment:
+    red: [0, 0, 12, 36]
+    blue: [24, 0, 36, 36]
+
+terrain:
+  - id: trench_central
+    type: trench
+    bounds: [4, 17, 32, 19]
+    base_z: -1
+    height: 1
+    blocks_los: false
+    cover: partial
+    movement_cost: 1
+
+  - id: ruin_north
+    type: ruins
+    bounds: [10, 28, 16, 34]
+    base_z: 0
+    height: 2
+    blocks_los: partial
+    cover: full
+    climbable: true
+    movement_cost: 1
+
+  - id: junk_pile_a
+    type: abandoned_corner
+    bounds: [22, 8, 24, 10]
+    base_z: 0
+    height: 1
+    blocks_los: partial
+    cover: partial
+    movement_cost: 1
+
+  - id: hill_east
+    type: hill
+    bounds: [28, 12, 34, 22]
+    base_z: 0
+    height: 1
+    blocks_los: false
+    cover: none
+    climbable: true
+    movement_cost: 1
+
+  - id: barbed_wire_north
+    type: dangerous
+    subtype: barbed_wire
+    bounds: [12, 16, 20, 18]
+    base_z: 0
+    height: 0
+    blocks_los: false
+    cover: none
+    movement_cost: 2
+    dangerous: true
+
+  - id: crater_field
+    type: difficult
+    subtype: craters
+    bounds: [16, 8, 24, 14]
+    base_z: 0
+    height: 0
+    blocks_los: false
+    cover: partial
+    movement_cost: 2
+
+  - id: relic_objective
+    type: landmark
+    subtype: relic
+    bounds: [17, 17, 19, 19]
+    base_z: 0
+    height: 0
+    blocks_los: false
+    cover: none
+    movement_cost: 1
+    scenario_tag: claim_objective
+
+# -----------------------------------------------------------------------------
+# 2. 剧本 / 回合
+# -----------------------------------------------------------------------------
+scenario: claim-no-mans-land
+turn: 1
+phase: initiative
+initiative: red
+glory_points:
+  red: 0
+  blue: 0
+glorious_deeds_completed:
+  red: []
+  blue: []
+
+# -----------------------------------------------------------------------------
+# 3. 模型 — 红方 New Antioch "Duke's Forlorn Hope"（6/10 sample）
+# -----------------------------------------------------------------------------
+# 招募明细（roster-template §7.1 前 6 行 + Yeoman+shotgun+shield 凑数）：
+#   1 Lieutenant       100 👑   (Bolt-Action + Bayonet + Standard Armour + Combat Helmet)
+#   2 Sniper Priest     86 👑   (Sniper Rifle + Trench Knife)
+#   3 Shock Trooper     72 👑   (Bolt-Action + Bayonet + Standard Armour)
+#   4 Yeoman            37 👑   (Bolt-Action + Bayonet)
+#   5 Yeoman            37 👑   (Bolt-Action + Bayonet)
+#   6 Yeoman (S+S)      52 👑   (Shotgun + Bayonet + Trench Shield)
+#   总成本 ≈ 384 / 700 👑（远 < 上限，是 6/10 简化版）
+# -----------------------------------------------------------------------------
+
+models:
+  - id: red.lieutenant
+    side: red
+    profile: lieutenant
+    M: 6
+    RC: 2
+    CC: 2
+    defense_mod: -1            # profile.AC 0 + standard-armour -1
+    keywords: [NEW ANTIOCH, ELITE, LEADER, TOUGH, NEGATE SHRAPNEL]
+    armour_note: "Standard Armour + Combat Helmet baked into defense_mod + keywords"
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [32, 32]
+    hp: 3
+    markers: []
+    activated: false
+    pos: [6, 18, 0]
+    weapons:
+      ranged:
+        name: bolt-action-rifle
+        range_short: 12
+        range_long: 24
+        injury_dice: 0
+        injury_mod: 0
+        keywords: []
+      melee:
+        name: bayonet
+        injury_dice: 0
+        injury_mod: 0
+        keywords: [CUMBERSOME]
+
+  - id: red.sniper_priest
+    side: red
+    profile: sniper-priest
+    M: 6
+    RC: 2
+    CC: -1
+    defense_mod: 0             # no armour in this loadout
+    keywords: [NEW ANTIOCH, ELITE]
+    armour_note: null
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [25, 25]
+    hp: 2
+    markers: []
+    activated: false
+    pos: [5, 22, 0]
+    weapons:
+      ranged:
+        name: sniper-rifle
+        range_short: 24
+        range_long: 48
+        injury_dice: 0
+        injury_mod: 0
+        keywords: ["+1 DICE", CRITICAL, RISKY]
+      melee:
+        name: trench-knife
+        injury_dice: 0
+        injury_mod: 0
+        keywords: ["-1 DICE"]
+
+  - id: red.shock_trooper
+    side: red
+    profile: shock-trooper
+    M: 6
+    RC: 0
+    CC: 1
+    defense_mod: -1            # standard-armour -1
+    keywords: [NEW ANTIOCH]
+    armour_note: "Standard Armour baked into defense_mod"
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [25, 25]
+    hp: 2
+    markers: []
+    activated: false
+    pos: [7, 14, 0]
+    weapons:
+      ranged:
+        name: bolt-action-rifle
+        range_short: 12
+        range_long: 24
+        injury_dice: 0
+        injury_mod: 0
+        keywords: []
+      melee:
+        name: bayonet
+        injury_dice: 0
+        injury_mod: 0
+        keywords: [CUMBERSOME]
+
+  - id: red.yeoman_1
+    side: red
+    profile: yeoman
+    M: 6
+    RC: 0
+    CC: 0
+    defense_mod: 0
+    keywords: [NEW ANTIOCH]
+    armour_note: null
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [25, 25]
+    hp: 1
+    markers: []
+    activated: false
+    pos: [8, 16, 0]
+    weapons:
+      ranged:
+        name: bolt-action-rifle
+        range_short: 12
+        range_long: 24
+        injury_dice: 0
+        injury_mod: 0
+        keywords: []
+      melee:
+        name: bayonet
+        injury_dice: 0
+        injury_mod: 0
+        keywords: [CUMBERSOME]
+
+  - id: red.yeoman_2
+    side: red
+    profile: yeoman
+    M: 6
+    RC: 0
+    CC: 0
+    defense_mod: 0
+    keywords: [NEW ANTIOCH]
+    armour_note: null
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [25, 25]
+    hp: 1
+    markers: []
+    activated: false
+    pos: [8, 20, 0]
+    weapons:
+      ranged:
+        name: bolt-action-rifle
+        range_short: 12
+        range_long: 24
+        injury_dice: 0
+        injury_mod: 0
+        keywords: []
+      melee:
+        name: bayonet
+        injury_dice: 0
+        injury_mod: 0
+        keywords: [CUMBERSOME]
+
+  - id: red.yeoman_3
+    side: red
+    profile: yeoman
+    M: 6
+    RC: 0
+    CC: 0
+    defense_mod: -1            # trench-shield -1
+    keywords: [NEW ANTIOCH]
+    armour_note: "Trench Shield baked into defense_mod"
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [25, 25]
+    hp: 1
+    markers: []
+    activated: false
+    pos: [7, 12, 0]
+    weapons:
+      ranged:
+        name: shotgun
+        range_short: 6
+        range_long: 12
+        injury_dice: 0
+        injury_mod: 0
+        keywords: ["+1 DICE", SHOTGUN]
+      melee:
+        name: bayonet
+        injury_dice: 0
+        injury_mod: 0
+        keywords: [CUMBERSOME]
+
+  # ---------------------------------------------------------------------------
+  # 4. 模型 — 蓝方 Heretic Legions "The Sevenfold Maw"（6/10 sample）
+  # ---------------------------------------------------------------------------
+  # 招募明细（roster-template §8.1 前 6 行精简）：
+  #   1 Heretic Priest    114 👑  (Bolt-Action + Sword/Axe + Standard Armour + Infernal Brand)
+  #   2 Death Commando    106 👑  (Silenced Pistol + Trench Knife)
+  #   3 Heretic Trooper    42 👑  (Bolt-Action + Bayonet)
+  #   4 Heretic Trooper    42 👑  (Bolt-Action + Bayonet)
+  #   5 Heretic Trooper    41 👑  (Shotgun + Trench Knife)
+  #   6 Wretched           28 👑  (Trench Club)
+  #   总成本 ≈ 373 / 700 👑
+  # ---------------------------------------------------------------------------
+
+  - id: blue.heretic_priest
+    side: blue
+    profile: heretic-priest
+    M: 6
+    RC: 2
+    CC: 2
+    defense_mod: -1            # profile.AC 0 + standard-armour -1
+    keywords: [HERETIC, ELITE, LEADER, TOUGH, NEGATE FIRE]
+    armour_note: "Standard Armour + Infernal Brand baked into defense_mod + keywords"
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [32, 32]
+    hp: 3
+    markers: []
+    activated: false
+    pos: [30, 18, 0]
+    weapons:
+      ranged:
+        name: bolt-action-rifle
+        range_short: 12
+        range_long: 24
+        injury_dice: 0
+        injury_mod: 0
+        keywords: []
+      melee:
+        name: sword-axe
+        injury_dice: 0
+        injury_mod: 0
+        keywords: [CRITICAL]
+
+  - id: blue.death_commando
+    side: blue
+    profile: death-commando
+    M: 6
+    RC: 1
+    CC: 2
+    defense_mod: 0
+    keywords: [HERETIC, ELITE, INFILTRATOR, STEALTH GENERATOR]
+    armour_note: "Stealth Generator → -1 DICE for ranged attacks targeting this model (apply manually)"
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [32, 32]
+    hp: 2
+    markers: []
+    activated: false
+    pos: [31, 22, 0]
+    weapons:
+      ranged:
+        name: silenced-pistol
+        range_short: 6
+        range_long: 12
+        injury_dice: 0
+        injury_mod: 0
+        keywords: [ASSAULT, PISTOL]
+      melee:
+        name: trench-knife
+        injury_dice: 0
+        injury_mod: 0
+        keywords: ["-1 DICE"]
+
+  - id: blue.heretic_trooper_1
+    side: blue
+    profile: heretic-trooper
+    M: 6
+    RC: 0
+    CC: 0
+    defense_mod: 0
+    keywords: [HERETIC]
+    armour_note: null
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [25, 25]
+    hp: 1
+    markers: []
+    activated: false
+    pos: [29, 16, 0]
+    weapons:
+      ranged:
+        name: bolt-action-rifle
+        range_short: 12
+        range_long: 24
+        injury_dice: 0
+        injury_mod: 0
+        keywords: []
+      melee:
+        name: bayonet
+        injury_dice: 0
+        injury_mod: 0
+        keywords: [CUMBERSOME]
+
+  - id: blue.heretic_trooper_2
+    side: blue
+    profile: heretic-trooper
+    M: 6
+    RC: 0
+    CC: 0
+    defense_mod: 0
+    keywords: [HERETIC]
+    armour_note: null
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [25, 25]
+    hp: 1
+    markers: []
+    activated: false
+    pos: [29, 20, 0]
+    weapons:
+      ranged:
+        name: bolt-action-rifle
+        range_short: 12
+        range_long: 24
+        injury_dice: 0
+        injury_mod: 0
+        keywords: []
+      melee:
+        name: bayonet
+        injury_dice: 0
+        injury_mod: 0
+        keywords: [CUMBERSOME]
+
+  - id: blue.heretic_trooper_3
+    side: blue
+    profile: heretic-trooper
+    M: 6
+    RC: 0
+    CC: 0
+    defense_mod: 0
+    keywords: [HERETIC]
+    armour_note: null
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [25, 25]
+    hp: 1
+    markers: []
+    activated: false
+    pos: [29, 14, 0]
+    weapons:
+      ranged:
+        name: shotgun
+        range_short: 6
+        range_long: 12
+        injury_dice: 0
+        injury_mod: 0
+        keywords: ["+1 DICE", SHOTGUN]
+      melee:
+        name: trench-knife
+        injury_dice: 0
+        injury_mod: 0
+        keywords: ["-1 DICE"]
+
+  - id: blue.wretched
+    side: blue
+    profile: wretched
+    M: 6
+    RC: -1
+    CC: -1
+    defense_mod: 0
+    keywords: [HERETIC]
+    armour_note: "Dark Blessing: when taken Out → 1 BLESSING MARKER to nearest friendly ELITE+HERETIC"
+    base_size: [1, 1]
+    base_shape: circle
+    base_dimensions_mm: [25, 25]
+    hp: 1
+    markers: []
+    activated: false
+    pos: [27, 12, 0]
+    weapons:
+      ranged: null
+      melee:
+        name: trench-club
+        injury_dice: 0
+        injury_mod: 0
+        keywords: []
+
+# -----------------------------------------------------------------------------
+# 5. 事件日志 + meta
+# -----------------------------------------------------------------------------
+events: []
+
+meta:
+  schema_version: "0.2"        # inline-stats variant
+  rule_version: "1.0.2"
+  scenario_pack: "claim-no-mans-land-6v6"
+  red_warband: "Duke's Forlorn Hope (NA 6/10)"
+  blue_warband: "The Sevenfold Maw (HL 6/10)"
+  created_at: null
+  last_updated: null
