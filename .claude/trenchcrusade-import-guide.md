@@ -504,18 +504,18 @@ TrenchCrusade/
 
 #### v0.2.A — Campaign Rules（战团长线进化）
 
-PDF p.87-143（56 页），新增 2 个 rules 文件：
+PDF p.87-143（56 页），新增 2 个 rules 文件。**进度**：**v0.2.A 全部完成**（2026-05-14，Pass 14 主对话 + Pass 15-19 并行 4 agents）。
 
-| 子系统 | PDF 页码 | 内容 |
-|---|---|---|
-| Patrons（赞助人） | p.87-94 | 8 种赞助人（Temporal Lord / Warrior Saint / Learned Saint / Infernal Noble / Sublime Gate / Order of the Fly / Mammon / Antipope of Avignon） |
-| Campaign Games | p.95-99 | 战役框架下的 scenario 选择 + Glory Points 完整规则 |
-| Trauma Step | p.101-103 | 战后伤亡判定（永久损伤/死亡/恢复表） |
-| Promotions & Experience | p.104-111 | 单位升级 4 类技能：Melee&Strength / Ranged / Stealth&Speed / Wildcard |
-| Reinforcements | p.112 | 补充新单位 |
-| Exploration | p.113-122 | 3 张地点表：Common / Rare / Legendary |
-| Quartermaster | p.123-124 | 战间补给采购 |
-| Glory Items | p.125-143 | 晋升装备完整表（19 页） |
+| 子系统 | PDF 页码 | 内容 | 状态 |
+|---|---|---|---|
+| Patrons（赞助人） | p.87-94 | 8 种赞助人（Temporal Lord / Warrior Saint / Learned Saint / Infernal Noble / Sublime Gate / Order of the Fly / Mammon / Antipope of Avignon） | ✅ Pass 14 |
+| Campaign Games | p.95-99 | 战役框架下的 scenario 选择 + Glory Points 完整规则 | ✅ Pass 15 (Agent A) |
+| Trauma Step | p.101-103 | 战后伤亡判定（D66 Trauma Table 22 行 + Survival Roll） | ✅ Pass 15 (Agent A) |
+| Promotions & Experience | p.104-111 | 单位升级 5 张 Skill Tables × 12 行 = 48 通用 skills + Patron Skill 引用 | ✅ Pass 16 (Agent B) |
+| Reinforcements | p.112 | 补充新单位（6 步 Reinforcements Sequence） | ✅ Pass 16 (Agent B) |
+| Exploration | p.113-122 | 3 张地点表：Common(11) / Rare(11) / Legendary(12) = 34 locations | ✅ Pass 17 (Agent C) |
+| Quartermaster | p.123-124 | 战间补给采购（8 步 Quartermaster Sequence） | ✅ Pass 17 (Agent C) |
+| Glory Items | p.125-143 | 晋升装备完整表（34 unique items 跨 6 factions） | ✅ Pass 18-19 (Agent D) |
 
 输出文件：`rules/06-campaign-rules.md` + `rules/07-glory-items.md`
 

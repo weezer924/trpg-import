@@ -74,12 +74,14 @@ AI **不做**：
 | `rules/00-overview.md` | **本文件**。v0.1 总索引 + 阅读引导 | 新接触者 (AI / 人) | — |
 | `→ ./01-core-rules.md` | 速览：三阶段回合 / 成功判定 / 移动 / 战斗 / 受伤 / 士气 | 玩家上手 / AI 快速回顾 | p.14-21 |
 | `→ ./02-comprehensive-rules.md` | 详细：核心概念 / 骰子规则 / 标记 / 全部 ACTION / 战斗修正 / Injury Roll Table / Bloodbath / Morale Phase | AI 决策 / 规则查询 | p.22-51 |
-| `→ ./03-keywords-glossary.md` | 关键词词典（`PENETRATING` / `CLEAVE` / `TOUGH` / `DEADLY` / `BLOOD MARKER` 等） | AI / MCP 引用 | p.52-64 |
-| `→ ./04-battlefield-terrain.md` | 战场原型 + 7 类地形规则 | MCP（地形 schema 消费）/ AI | p.60-67 |
+| `→ ./03-keywords-glossary.md` | 关键词词典（`PENETRATING` / `CLEAVE` / `TOUGH` / `DEADLY` / `BLOOD MARKER` 等） | AI / MCP 引用 | p.52-57 |
+| `→ ./04-battlefield-terrain.md` | 战场原型 + 7 类地形规则 | MCP（地形 schema 消费）/ AI | p.58-67 |
 | `→ ./05-battlekit.md` | 全武器 / 装备 / 护甲数据（yaml 结构化） | AI / MCP（cost & profile） | p.68-86 |
+| `→ ./06-campaign-rules.md` | **战役规则**（Patrons / Campaign Phase / Trauma / Promotion / Exploration / Quartermaster）。v0.2.A 渐进导入，**单场对战不需要** | 跨场战役玩家 / 跨场 AI | p.87-124 |
+| `→ ./07-glory-items.md` | 战役晋升装备完整表 | 跨场玩家 / AI | p.125-143 |
 | `→ ./08-scenarios.md` | Scenario Format 框架 + Scenario I (Claim No Man's Land) + Scenario II (Hunt for Heroes) | 玩家选剧本 / AI 知胜负条件 | p.144-157 |
 
-> **缺位说明**：`06-campaign-rules.md` 和 `07-glory-items.md` 是 v0.2.A backlog（Campaign Rules，56 页）；v0.1 不含。文件编号留空即占位。
+> **v0.2.A 渐进式导入进度**：`06-campaign-rules.md` 已完成 **§1 Patrons**（Pass 14, p.87-94）；§2-§7 占位中，Pass 15-17 渐进补完。`07-glory-items.md` Pass 18-19 待写。**单场对战不需要任何 Campaign Rules 内容**——AI 仅在跨场战役模式下需要读 06/07。
 
 ### 3.2 战团 `warbands/`
 
