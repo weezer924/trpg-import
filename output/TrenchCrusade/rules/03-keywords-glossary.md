@@ -179,6 +179,13 @@
 
 **跨文件引用**：`→ matches/coordinate-system.md` §6（Line of Sight 三态规约）、`→ rules/02-comprehensive-rules.md#ranged-attack-sequence`、`→ rules/03-keywords-glossary.md#scatter`
 
+> **Errata 裁决**（5 条，全部围绕 BLAST 实战细节）：
+> - **Q1（目标点高度）**：BLAST 的目标点**不可**设在模型基座之下——必须是 1mm 高的"点"，攻击方对该点有 LOS。（→ `errata/rules-commentaries.md` Keywords Q1）
+> - **Q6（半径量起点）**：BLAST 半径从**被选目标模型的基座最近点**（或所选可见点）量起，**不是**模型中心。（→ `errata/rules-commentaries.md` Keywords Q6）
+> - **Q7（LOS 到点判定）**：检测 LOS 到点时，**能看到该点的任何部分**即算 LOS；该点视作 1mm 高。（→ `errata/rules-commentaries.md` Keywords Q7）
+> - **Q8（战壕沿 / 台阶波及范围）**：手雷扔到 trench wall / 台阶时，BLAST 半径**穿越垂直地形**——半径以 3D 空间球面计算，不阻于地形垂直面。（→ `errata/rules-commentaries.md` Keywords Q8）
+> - **Q9（接触链不传染）**：BLAST 命中的"1" 内友军"**不再**继续向 1" 外的更远模型传染——接触链**只展开一层**。（→ `errata/rules-commentaries.md` Keywords Q9）
+
 ### `BLESSED (X)`
 
 **类型**：Effect
@@ -375,6 +382,8 @@
 
 **跨文件引用**：`→ rules/01-core-rules.md#activation-phase`、`→ matches/roster-template.md`、`→ Campaign Rules / Quartermaster Step`（v0.2+）
 
+> **Errata 裁决（Q2，激活顺序）**：可以**先单独激活** Fireteam 的一名成员（按普通 Activation 流程），随后**当回合**再以 Fireteam 同时激活的方式激活第二名成员——**前提是后者尚未激活**。但一旦选择"同时激活"模式启动两者，则不可再回到独立流程。（→ `errata/rules-commentaries.md` Keywords Q2）
+
 ### `FLAMETHROWER`
 
 **类型**：Effect
@@ -476,6 +485,8 @@
 
 **跨文件引用**：`→ rules/02-comprehensive-rules.md#injury-rolls`、`→ rules/03-keywords-glossary.md#impervious`（豁免规则）
 
+> **Errata 裁决（Q3）**：`IGNORE ARMOUR` 与 `IGNORE (MODIFIER)` **只忽略数值修正**——**不**忽略 Armour Battlekit 附带的**特殊规则**（如 Machine Armour 的 Standfast、Heavy Ballistic Shield 的 BLOCK 等）。例：War Wolf 的 IGNORE ARMOUR 攻击 Lieutenant 时，仍受 Machine Armour 的 Standfast 改写 Down → Minor Wound 等独立规则约束。（→ `errata/rules-commentaries.md` Keywords Q3）
+
 ### `IGNORE [MODIFIER]`
 
 **类型**：Effect
@@ -485,6 +496,8 @@
 **触发时机**：Success Roll 或 Injury Roll 结算时；按括号内具体修正名匹配跳过。
 
 **跨文件引用**：`→ rules/02-comprehensive-rules.md#combat-modifiers`
+
+> **Errata 裁决（Q3）**：同 `IGNORE ARMOUR` —— `IGNORE (MODIFIER)` 只跳过数值修正（-1 DICE / -1 INJURY DICE 等），**不**绕过赋予该修正的 Battlekit / Keyword 自带的**独立特殊规则**。（→ `errata/rules-commentaries.md` Keywords Q3）
 
 ### `IMPASSABLE TERRAIN`
 
@@ -603,6 +616,11 @@
 
 **跨文件引用**：`→ rules/05-battlekit.md`（具体 pistol 型号）、`→ rules/02-comprehensive-rules.md#off-hand-weapon`
 
+> **Errata 裁决（3 条，PISTOL / Off-Hand 实战）**：
+> - **Q4（近战时弹药效果）**：`PISTOL` 在 Melee 模式下做攻击时，仍**保留其 Ranged Weapon 弹药相关特性**（如 `RELOAD` / `BLESSED (X)` 等需消耗/产生标记的关键词），按 Ranged 攻击同样的方式触发/耗用。（→ `errata/rules-commentaries.md` Keywords Q4）
+> - **Camp Q2（Gunslinger + 双自动手枪）**：装备两把带 `AUTOMATIC (X)` 的 PISTOL 的 Gunslinger 模型，**两把武器各自独立享有 AUTOMATIC 的额外攻击**——每把先做自身完整 Shoot ACTION（含 AUTOMATIC 额外攻击）再切到另一把。（→ `errata/rules-commentaries.md` Camp Q2）
+> - **Camp Q6（双 PISTOL 中途换近战）**：Gunslinger 在 Activation 中先用双 PISTOL 做 Ranged，再切到 Melee Weapon 时，**先前的 PISTOL 不再作为 Off-Hand Weapon 参与近战**——同一 Activation 内 Off-Hand 槽位的占用按攻击宣告时刻判定。（→ `errata/rules-commentaries.md` Camp Q6）
+
 ### `REGENERATE (X)`
 
 **类型**：Effect
@@ -686,6 +704,8 @@
 - Charge ACTION 规则 → `rules/02-comprehensive-rules.md#charge-action`
 - 距离测量（≤ 1" / 模型间距）→ `matches/coordinate-system.md` §3
 - Interposing model 与合法 Charge 路径 → `matches/coordinate-system.md` §8 (`valid_charge_paths`)
+
+> **Errata 裁决（Q10）**：SKIRMISHER 模型若**闪避后离开 charging 模型的 LOS**，charging 模型**仍按已宣告的 Charge 流程**继续——即可继续 Charge Move 到原 SKIRMISHER 现位置，并可能在 Move 结束后无目标可击（视为 charge 失败但移动已发生）。Charge 宣告与 LOS 锁定**仅在宣告瞬间检查**，之后 SKIRMISHER 移出 LOS 不取消 Charge。（→ `errata/rules-commentaries.md` Keywords Q10）
 
 ### `STRONG`
 

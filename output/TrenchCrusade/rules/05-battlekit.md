@@ -98,6 +98,8 @@ This chapter catalogues all **common Battlekit** (装备/战具) defined in the 
 
 ## General Rules
 
+> **Errata 裁决（BK Q1，为何不列 stipulation）**：本章及 `rules/07-glory-items.md`（Glory Items）**故意不列 stipulation 字段**（如 `ELITE only` / `Limit: X` 等）——这些 stipulation **由每个 Faction 的 Armoury Table 单独定义**，相同 Battlekit 在不同 Faction 下可能 stipulation 不同（例：Bolt-Action Rifle 在 New Antioch 有 Bayonet Lug，在 Heretic Legions 无此限）。stipulation 数据**位于 `warbands/*.md` 的 Armoury 章节**。（→ `errata/rules-commentaries.md` BK Q1）
+
 ### Battlekit Profile Fields
 
 Each piece of Battlekit (PDF p.68) has:
@@ -1026,6 +1028,8 @@ armoury_tier: null
 Battlefield shovels allow troops to dig in and fight from cover in virtually any battlefield.
 
 - **Dug In**: A model equipped with a Shovel that starts the game on **Open terrain** has the `COVER` Keyword until it moves away from its starting position. In addition, a model equipped with a Shovel can use it as a **2-Handed Melee Weapon** instead of using any other Melee Weapons it has.
+
+> **Errata 裁决（BK Q2，STRONG + Shovel 单手化）**：拥有 `STRONG` 关键词的模型**仍不能**将 Shovel 当作 1-Handed Melee Weapon——`STRONG` 允许把 2H Weapon 当 1H 使用的优惠**不适用于** Shovel，因为 Shovel 的"2H Melee Weapon"形态是 *Dug In* 特殊规则赋予的替代用法，并非武器本身的标称类型。Shovel 在槽位规则中始终按 Equipment 计。（→ `errata/rules-commentaries.md` BK Q2）
 
 ### Tracer Bullets
 
