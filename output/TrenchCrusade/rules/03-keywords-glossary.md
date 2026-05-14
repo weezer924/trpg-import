@@ -491,7 +491,13 @@
 
 **类型**：Effect
 
-**定义**：忽略所指定的 Success Roll 或 Injury Roll 修正。例：带 `IGNORE COVER` 的 Ranged Weapon 进行攻击的 Success Roll 不受目标 Cover 提供的 `-1 DICE` 修正影响。
+**定义**：忽略所指定的 Success Roll 或 Injury Roll 修正。
+
+**常见实例**：
+- `IGNORE COVER` → 带此关键词的 Ranged Weapon 攻击不受目标 Cover `-1 DICE` 影响
+- `IGNORE LONG RANGE` → 不受 long range `-1 DICE` 影响
+- `IGNORE OFF-HAND WEAPON` → 模型用 Off-Hand Weapon 做 Melee Attack 时不受 `-1 DICE` 影响（PDF p.45 Melee Attack Modifiers；由 Berserker / Gunslinger 等 Promotion Skill 赋予，详见 `→ rules/06-campaign-rules.md` §4 Skill Tables）
+- `IGNORE ELEVATED POSITION` → 不受目标 high-ground `+1 DICE`（对自己不利）影响
 
 **触发时机**：Success Roll 或 Injury Roll 结算时；按括号内具体修正名匹配跳过。
 
@@ -614,7 +620,7 @@
 
 **触发时机**：装备与攻击宣告时。
 
-**跨文件引用**：`→ rules/05-battlekit.md`（具体 pistol 型号）、`→ rules/02-comprehensive-rules.md#off-hand-weapon`
+**跨文件引用**：`→ rules/05-battlekit.md`（具体 pistol 型号）、`→ rules/02-comprehensive-rules.md#multiple-melee-weapons`（Off-Hand Weapon 机制定义在 PDF p.45 该段）
 
 > **Errata 裁决（3 条，PISTOL / Off-Hand 实战）**：
 > - **Q4（近战时弹药效果）**：`PISTOL` 在 Melee 模式下做攻击时，仍**保留其 Ranged Weapon 弹药相关特性**（如 `RELOAD` / `BLESSED (X)` 等需消耗/产生标记的关键词），按 Ranged 攻击同样的方式触发/耗用。（→ `errata/rules-commentaries.md` Keywords Q4）

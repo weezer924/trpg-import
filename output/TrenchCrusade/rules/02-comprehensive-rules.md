@@ -783,6 +783,8 @@ Shoot ACTION 让模型做 Ranged Attack；Fight ACTION 让模型做 Melee Attack
 
 > **Defended Obstacle 触发条件**：地形 height ≥ ½"，且其位于攻防之间。完整地形 height 字段语义 → `matches/coordinate-system.md` §7.2。
 
+> **跳过 Off-Hand 修正的途径**：模型若带 `IGNORE OFF-HAND WEAPON` 关键词（由 Promotion Skill **Berserker** / **Gunslinger** 赋予，→ `rules/06-campaign-rules.md` §4 Skill Tables），则用 Off-Hand Weapon 做 Melee Attack 时**不**受 `-1 DICE` 修正。该关键词是 `IGNORE [MODIFIER]` 的实例（→ `rules/03-keywords-glossary.md#ignore-modifier`）。
+
 ### Multiple Melee Weapons
 
 > PDF p.45
