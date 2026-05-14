@@ -24,6 +24,7 @@
   - [Measuring Distances](#measuring-distances)
   - [Line of Sight](#line-of-sight)
   - [Points on the Battlefield or Terrain Pieces](#points-on-the-battlefield-or-terrain-pieces)
+  - [Model Accuracy](#model-accuracy)
   - [Model Placement](#model-placement)
   - [Pre-Measuring](#pre-measuring)
   - [Re-rolls](#re-rolls)
@@ -109,10 +110,7 @@ Comprehensive Rules 章节扩展 Core Rules，提供更深入的解释、附加�
 
 游戏中常需为模型做 **Success Roll（成功判定）** 并在表上查结果，以判断模型是否成功执行任务（如远程攻击是否命中）。规则会说明何时需做 Success Roll，以及结果含义。
 
-例如：
-- Ranged Attack Success Roll = **Failure** → 攻击落空
-- = **Success** → 命中，做 Injury Roll
-- = **Critical Success** → 命中且 Injury Roll **+1 INJURY DICE**
+例如：Ranged Attack 的 Success Roll 结果 = **Failure** → 攻击落空；= **Success** → 命中，做 Injury Roll；= **Critical Success** → 命中且额外加成（见下方 Success Roll Table 12+ 行）。
 
 #### Success Roll 流程
 
@@ -128,7 +126,7 @@ Comprehensive Rules 章节扩展 Core Rules，提供更深入的解释、附加�
 |---:|---|
 | 2-6 | **Failure**（失败） |
 | 7-11 | **Success**（成功） |
-| 12+ | **Critical Success**（大成功） |
+| 12+ | **Critical Success**（大成功）。Ranged Attack 或 Melee Attack 时，Injury Roll **+1 INJURY DICE** |
 
 > **Errata 裁决**：并非所有 ACTION 都要做 Success Roll。**需要 Success Roll 的 ACTION 在该 ACTION 的规则正文中明确说明**（如 Dash / Shoot / Fight 等通用 ACTION 在本章 Comprehensive Rules 段中说明）。（→ `errata/rules-commentaries.md` Core Rules Q8）
 
@@ -300,6 +298,21 @@ Profile 含字段：Cost（👑）/ Movement / Ranged / Melee / Armour / Base / 
 - 该点视作 **1mm × 1mm × 1mm 高**（→ coord §6 的 partial-cover 判定按此尺寸处理）
 
 > **Errata 裁决**：检测 LOS 到点时，**能看到该点的任何部分**即算 LOS。**该点视作 1mm 高**。（→ `errata/rules-commentaries.md` Keywords Q7）
+
+### Model Accuracy
+
+> PDF p.30
+
+确保战场上的模型与其声明的尺寸、实际装备（武器、护甲）一致时，遵循这一格言：
+
+> *"Be strict with yourself but lenient with others."*（对自己严格，对他人宽容。）
+
+实操含义：
+
+- 自己的模型应当与所选 profile / battlekit **视觉一致**（装备槽体现在 miniature 上）
+- 对手模型若视觉与 profile 略有出入，**默认按 profile 数据处理**，不要纠缠
+
+> **数字化对战项目说明**：本项目以 `match-state.yaml` 为权威——模型 profile / equipment 字段就是裁决依据，无视觉一致性问题。该条 PDF 规则在实体桌游中相关，数字化场景下作为历史背景保留。
 
 ### Model Placement
 
@@ -681,7 +694,7 @@ Shoot ACTION 让模型做 Ranged Attack；Fight ACTION 让模型做 Melee Attack
 
 > **Errata 裁决**：当射入混战、掷出 1-3 须以友军为目标时，**只能**选**对攻击模型可见、且在所用武器射程内**的友军。若无这样的友军，攻击**作废**。（→ `errata/rules-commentaries.md` Core Rules Q5）
 
-#### Measuring the Range
+### Measuring the Range
 
 > PDF p.43
 
@@ -689,7 +702,7 @@ Shoot ACTION 让模型做 Ranged Attack；Fight ACTION 让模型做 Melee Attack
 - 目标 in range ⟺ 该距离 **≤ 武器 Range**
 - 数字化映射 → `→ matches/coordinate-system.md` §3.2
 
-#### Short Range & Long Range
+### Short Range & Long Range
 
 > PDF p.43
 
@@ -701,7 +714,7 @@ Shoot ACTION 让模型做 Ranged Attack；Fight ACTION 让模型做 Melee Attack
 
 数字化映射 → `→ matches/coordinate-system.md` §3.2（`is_in_range` 返回 `band: short / long / out_of_range`）
 
-#### Ranged Attack Modifiers
+### Ranged Attack Modifiers
 
 > PDF p.43
 
@@ -722,7 +735,7 @@ Shoot ACTION 让模型做 Ranged Attack；Fight ACTION 让模型做 Melee Attack
 
 > Trench Pilgrim 用 Musket 射击 Heretic Trooper（in cover）。Cover 加 -1 DICE。投 3D6 = 5、5、1，取 2 低 = **6**。失败（< 7），未命中。
 
-#### Ranged Attack Success Roll
+### Ranged Attack Success Roll
 
 > PDF p.44
 
@@ -916,6 +929,8 @@ Down 状态规则：
   - 在标记为 Down **之前**为模型做 Success Roll
   - Success → 标记 Down，**不** Fall
   - Failure → 模型从最近 ledge **Fall**，然后标记为 Down（→ [Falling](#falling)）
+
+> **注**：Down 模型在被激活时（≥ ① 选模型这一步），down marker 立即移除，模型站起。本激活内的任何 Success Roll / Risky Success Roll 都**不**再适用 Down 模型 -1 DICE 修正（因为 down 状态已解除）。Activation 期间被打回 Down 才重新生效。
 
 **视觉表示**：可在模型旁放 marker，或将模型**侧躺**（侧躺时模型中心应在原基座中心位置）。测距时 Down 模型可从模型任何部分量起（不限基座）。
 

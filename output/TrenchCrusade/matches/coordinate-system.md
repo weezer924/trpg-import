@@ -319,6 +319,8 @@ def get_los(A, B):
 | `impassable` | bool（默认 false）| 触发 PDF p.38 「IMPASSABLE TERRAIN」keyword（不能进入） |
 | `climbable` | bool（默认 false）| 是否允许从此地形侧面 Climb（PDF p.39） |
 
+> **⚠ 命名警告**：`cover: full / partial / none` 是描述地形给 in/on 模型提供的 cover **强度档**，但 v1.0.2 PDF 中 cover 关键词的**唯一机制效果**是 -1 DICE（不论 full/partial）。命名继承 PDF 表述，不代表数值差异。'full cover' 不等于'阻断射击'——阻断由 blocks_los: true 控制。
+
 ### 7.3 七类地形（对应 PDF p.38 + Battlefield archetype 章节）
 
 > 中英对照 + 一行 PDF 语义 + yaml 例。

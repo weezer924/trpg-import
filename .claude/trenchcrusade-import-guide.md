@@ -392,7 +392,7 @@ models:
 | Pass 1 | `matches/coordinate-system.md` + `matches/match-template.yaml` | 本指南 §4 | 先写契约，rules 章节会引用 |
 | Pass 2 | `rules/01-core-rules.md` | PDF p.14-21 | 速览版；遵守 Pass 2-12 硬性规范（见上方框） |
 | Pass 3 | `rules/02-comprehensive-rules.md` | PDF p.22-51 | 详细规则（长，分 2 节做） |
-| Pass 4 | `rules/03-keywords-glossary.md` | PDF p.52-64 | 关键词词典 |
+| Pass 4 | `rules/03-keywords-glossary.md` | PDF p.52-57 | 关键词词典（PDF p.58+ 已是 Terrain 章节） |
 | Pass 5 | `rules/04-battlefield-terrain.md` | PDF p.60-67 | 地形规则 |
 | Pass 6 | `rules/05-battlekit.md` | PDF p.68-86 | 武器/装备全表（结构化） |
 | Pass 7 | `errata/rules-commentaries.md` | Commentaries PDF | 整本 8 页 |

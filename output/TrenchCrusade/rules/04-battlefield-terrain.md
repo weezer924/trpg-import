@@ -444,6 +444,10 @@ PDF 定义 3 种战场原型，scenario 会明确指定使用哪种。
 
 ---
 
+> **PDF 省略说明**：PDF p.64 *"Trench Crusade Gaming Boards"* 一节为实体游戏板制作教程（如何用 MDF / 胶合板 / 喷漆 / foam 雕刻战壕等），对数字化对战项目无价值，本文件不收录。若需实体桌游参考，见 PDF 原文。
+
+---
+
 ## 8. 地形 yaml schema 引用
 
 数字化战场存档（`matches/{name}/match-state.yaml`）使用 7 类地形 yaml schema：
