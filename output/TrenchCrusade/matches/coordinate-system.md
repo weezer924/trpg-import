@@ -13,6 +13,8 @@
 - [5. 棋子基座](#5-棋子基座)
 - [6. 视线判定算法规约（LOS）](#6-视线判定算法规约los)
 - [7. 地形模型](#7-地形模型)
+  - [7.1-7.3 v0.4 bounds-based（语义参考 + 7 类对照）](#71-bounds-两种格式)
+  - [**7.4 v0.5 cell-keyed schema（实际 yaml + edge 模型）**](#74-v05-cell-keyed-schema实际-yaml-形式)
 - [8. MCP server 接口草案](#8-mcp-server-接口草案)
 - [9. 实施 checklist（给 Pass 2+ rules 作者）](#9-实施-checklistgive-pass-2-rules-作者)
 
@@ -296,6 +298,8 @@ def get_los(A, B):
 
 ## 7. 地形模型
 
+> **导读**：§7.1-7.3 是 v0.4 bounds-based 的 PDF 语义对照（7 类地形 + 7 字段），保留作历史参考。**实际 yaml 是 v0.5 cell-keyed**：直接跳 [§7.4](#74-v05-cell-keyed-schema实际-yaml-形式)。adapter 层（match.py::cells_to_legacy_terrain）让 coord.py 仍按 §7.2 的 bounds-shape 工作。
+
 ### 7.1 bounds 两种格式
 
 - **矩形（rect）**：`bounds: [x_min, y_min, x_max, y_max]`（4 个整数）→ 默认假设矩形地形。
@@ -446,6 +450,166 @@ def get_los(A, B):
   movement_cost: 1
   scenario_tag: claim_objective
 ```
+
+---
+
+### 7.4 v0.5 cell-keyed schema（实际 yaml 形式）
+
+> v0.4 用 `terrain[]` + bounds 矩形；v0.5 改为 `battlefield.cells[]` per-cell 字典 + 顶层 `objectives[]`。本节是 **实际 yaml 形式 + edge 模型**，§7.1-7.3 仍保留作 PDF 语义参考。
+
+#### 7.4.1 动因：cover 有两个来源
+
+PDF Cover 规则（v1.0.2 p.38，见 `rules/04-battlefield-terrain.md` §3）混合了两个机制：
+
+| 来源 | 触发 | 方向 | yaml 字段 |
+|---|---|---|---|
+| **Area cover**（在地形里） | 模型 base >50% 在 terrain bounds 内 → COVER keyword | **不分方向** | `cell.cover_area` |
+| **Edge cover**（掩体在攻击线上） | terrain piece ≥½" 高 + ≥ base 宽 + 在 ray 上 + partially blocks LOS | **按攻击方向分** | `cell.edges.{N,E,S,W}` |
+
+两者机械效果都是 **-1 DICE**，但触发条件完全不同。v0.4 把所有 cover 塞进单一 `cover:` 字段，无法表达 "沙袋只挡南面" 或 "Wolf 整体在掩体里"。v0.5 把两者拆开。
+
+#### 7.4.2 yaml schema
+
+```yaml
+battlefield:
+  size: [36, 36]
+  layer_height: 3
+  deployment: {...}
+  cells:                          # ← 新：per-cell 字典列表（替代 terrain[]）
+    - pos: [9, 4]                 # (x, y) 单格坐标
+      stack: 0                    # 地面叠加层（hill=1-2, ruins=1, trench=0）
+      depth: 1                    # 下沉深度（trench=1, 否则 0）
+      types: [trench]             # 该 cell 上叠加的原始 type 列表
+      subtypes: []                # 可选：[poison_gas, barbed_wire, pillbox, ...]
+      cover_area: half            # area cover 强度（half / none）
+      blocks_los: none            # ray 穿过此 cell 的 LOS 影响（none / partial / full）
+      atmospheric: gas            # 可选：smoke / gas（穿过即 partial LOS）
+      edges:                      # 四条边的"线性掩体"高度
+        N: none                   # none / half / full
+        E: none
+        S: none
+        W: none
+      mv_cost: 1                  # 进入该 cell 每格消耗（PDF DIFFICULT TERRAIN 用 2）
+      dangerous: false            # 标志位（barbed wire / poison gas → true）
+      difficult: false
+      climbable: false
+      impassable: false
+      source_ids: [red_front_line]  # 追溯：本 cell 来自哪些 v0.4 terrain instance
+
+objectives:                       # ← 新：landmark 从 terrain 提出来
+  - id: objective_relic
+    pos: [17, 17]
+    type: relic
+    holder: null
+    scenario_tag: claim_objective
+    bounds_note: [17, 17, 18, 18]  # 可选：原 bounds 留作参考
+```
+
+**开阔地**：不在 `cells[]` 里（节省 36×36=1296 cell 的常见情况）。`get_terrain_at()` 对未在 cells 的 pos 返回 open 默认。
+
+#### 7.4.3 type → preset 映射表（migration 用）
+
+| v0.4 type | stack | depth | cover_area | blocks_los | 标志 | 备注 |
+|---|---:|---:|---|---|---|---|
+| `trench` | 0 | 1 | `half` | `none` | — | 战壕沉 -1"，模型在内获 cover |
+| `ruins` | 1 | 0 | `half` | `partial` | climbable | 残墙模型透视 |
+| `ruins`+subtype=`pillbox` | 1 | 0 | `half` | `partial` | climbable | **外缘 edges 自动 `full`**（碉堡墙，邻格不是 pillbox 时） |
+| `abandoned_corner` | 1 | 0 | `half` | `partial` | — | 破车 / 弹药箱 |
+| `dangerous` | 0 | 0 | `none` | `none` | dangerous | barbed wire 默认 |
+| `dangerous`+subtype=`poison_gas` | 0 | 0 | `none` | `partial` | dangerous, **atmospheric:gas** | 穿过 ray 衰减 |
+| `difficult` | 0 | 0 | `half` | `none` | difficult | crater 蹲身 cover |
+| `hill` | 1-2 | 0 | `none` | `none` | climbable | 高地无遮蔽 |
+| `landmark` | — | — | — | — | — | 不进 cells，进 `objectives[]` |
+
+> **z 转换**：v0.4 `base_z`/`height` 与 v0.5 `stack`/`depth` 满足 `base_z = -depth`、`height = stack + depth`。adapter 双向无损。
+
+#### 7.4.4 edge model：facing cover for 线性掩体
+
+> 这一节是 v0.5 的核心新增能力。Phase 1 只 pillbox 用；沙袋 / 半墙等线性 feature 是未来的扩展点。
+
+**契约**：边是 **cell 的属性**，不是 model 的属性。每个 cell 存 4 条边的高度（`none` / `half` / `full`），与邻 cell **物理共享**（cell A 的 E 边 = cell B 的 W 边，迁移脚本保证两侧一致）。
+
+**结算算法**（攻击方 A → 目标 B）：
+
+1. **取 ray 主方向**（8 离散方向 N/NE/E/SE/S/SW/W/NW）
+2. **取 B 的投影边集合**（B's base 在主方向外缘的边集）：
+   - B 单格 25mm → 投影 1 条边（正方向）或 2 条边（斜方向）
+   - B 多格 2×2 50mm → 投影 2 条边（正方向）或 4 条边（斜方向）—— `coordinate-system.md` §5.5 多格 base 外缘
+3. **判定**：
+   - 全部 `none` → no cover（投影空）
+   - 至少一条 `half` 且无 `full` → cover (-1 DICE)
+   - 至少一条 `full` 且其余 ≥ `half` → cover (-1 DICE)（**松裁决**：见 §7.4.5）
+   - 全部 `full` → blocks LOS（不能瞄准）
+
+**Wolf 2×2 base × edges**：Wolf 占 4 cell，外缘 8 条边，内边 4 条。**内边对自己的攻击结算无效**——内边只在 Wolf 移走后影响别的模型。
+
+**攻击发起**：Wolf 射击时，**任一占用 cell 能画出 clear LOS 即可**（攻击端取最宽，对偶防御端取最严）。
+
+#### 7.4.5 边角裁决（约定俗成）
+
+| 情形 | 裁决 | 备注 |
+|---|---|---|
+| 投影一边 `full` 一边 `half` | **算 cover**（松） | 与 PDF "见到一部分就 cover" 精神一致 |
+| Ray 恰好穿过 cell 顶点（45° / 135° 之类） | **取较严** 的相邻边 | 占位裁决，未来查 PDF errata 可调 |
+| 攻击方向夹在两个 8-方向区间正中（如 22.5°） | 取**更严**的那个 facing | 同上 |
+
+#### 7.4.6 模型高度
+
+**规则数据**：模型自己多高 **不进 yaml**。PDF Cover 规则只引用 base 宽度 + 掩体高度，不引用模型高度。
+
+**视觉数据**：渲染层按 `model.profile` 查表得视觉高度（圆柱高），**纯美术**。
+
+**eye_height**：高地视野 LOS（Phase 2 才做）统一用 `eye_height = 1.0"`，不分模型。Phase 1 只用 `edges` 档位结算 cover/blocks，不算 ray-vs-height。
+
+#### 7.4.7 atmospheric (smoke / gas)
+
+`cell.atmospheric ∈ {gas, smoke}` 是 cell 内的雾气体积，**不是边上的墙**。LOS ray 穿过 atmospheric cell 即按 `blocks_los: partial` 处理（已在 migration 脚本里固化为 cell.blocks_los=partial）。Phase 1 不区分穿过 1 vs 2 vs 3 cell 的累计衰减，Phase 2+ 再考虑。
+
+#### 7.4.8 adapter 层（coord.py 不动）
+
+`tools/mcp-server/src/match.py::cells_to_legacy_terrain(state)`：
+
+```python
+def cells_to_legacy_terrain(state: dict) -> list[dict]:
+    """v0.5 cell-keyed → v0.4 bounds-shape（per-cell 单格 bounds [x,y,x,y]）"""
+    if "terrain" in state:                       # idempotent：测试 fixture 用 v0.4 直接返回
+        return list(state["terrain"] or [])
+    for c in state["battlefield"]["cells"]:
+        yield {
+            "id": c["source_ids"][0],
+            "type": c["types"][0],
+            "bounds": [x, y, x, y],
+            "base_z": -c["depth"],
+            "height": c["stack"] + c["depth"],
+            "blocks_los": {"none": False, "partial": "partial", "full": True}[c["blocks_los"]],
+            "cover": c["cover_area"],
+            "movement_cost": c["mv_cost"],
+            # ... 标志位
+        }
+```
+
+调用点：`server.py` 4 处 + `match_cli.py` 5 处 + `render_html.py` 1 处。 coord.py 完全不知道有 v0.5——它继续按 v0.4 bounds-based 算法跑。
+
+> 当我们要真正用 edges / atmospheric / facing-cover（Phase 2 重写 coord.py）时,把 adapter 退役。
+
+#### 7.4.9 migration 工具
+
+一次性脚本：`tools/migrate_terrain_v2.py`（已 commit `9c804aa`）。
+
+```bash
+.venv/bin/python tools/migrate_terrain_v2.py matches/{name}/match-state.yaml
+# 输出: matches/{name}/match-state.v2.yaml（不动原文件）
+```
+
+逻辑：
+1. 展开 `bounds` → cells list
+2. 按 type preset（§7.4.3）填字段
+3. 同 type 邻格之间的内边 = `none`
+4. pillbox 外缘自动 = `full`
+5. landmark → 顶层 `objectives[]`
+6. 多个 instance 叠到同 cell → merge（stack/depth 取 max，cover/blocks_los 取 max 档位，flags 取 OR，types/subtypes 取 union）
+
+已迁移：first-blood / second-blood / third-blood（commit `9c804aa`）。
 
 ---
 
