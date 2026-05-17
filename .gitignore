@@ -10,3 +10,6 @@ source
 # Python
 __pycache__/
 *.pyc
+
+# Claude Code worktrees (per-agent dev sandboxes)
+.claude/worktrees/
