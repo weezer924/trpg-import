@@ -380,9 +380,9 @@ weapon: pistol
 type: ranged
 hands: 1
 range:
-  short: 6
-  long: 12
-melee: true                  # 12"/Melee (dual-purpose)
+  short: 6      # PDF lists only max Range (12"); short = max/2 = 6 per PDF p.43
+  long: 12      # max range. PISTOL keyword: can also fire in melee
+melee: true
 keywords: ["PISTOL"]
 cost: null
 armoury_tier: null
@@ -452,7 +452,7 @@ weapon: sniper-rifle
 type: ranged
 hands: 2
 range:
-  short: 24
+  short: 24     # PDF lists only max Range (48"); short = max/2 = 24 per PDF p.43
   long: 48
 melee: false
 keywords: ["+1 DICE", "CRITICAL", "RISKY"]

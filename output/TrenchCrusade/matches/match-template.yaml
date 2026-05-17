@@ -127,6 +127,10 @@ models:
     base_dimensions_mm: [32, 32]   # 视觉层：精英常用 32mm 圆基座
     markers: []                    # blood (count) / blessing (count) / down / shaken / out
     activated: false
+    tough_consumed: false          # 仅当 profile 有 TOUGH keyword 时存在。Once-per-game 标志：
+                                   # 第一次 Injury Roll 出 OoA → TOUGH 降为 Down + 永久消耗
+                                   # （PDF p.49 / rules/03-keywords-glossary.md#tough）→ flip true
+                                   # 之后再 OoA = 真出局，无救命
     equipment:
       ranged: blessed-revolver     # → rules/05-battlekit.md 待回填
       melee: blessed-sabre
@@ -172,6 +176,7 @@ models:
     base_dimensions_mm: [32, 32]
     markers: []
     activated: false
+    tough_consumed: false          # heretic-priest profile 含 TOUGH keyword（once-per-game）
     equipment:
       ranged: infernal-pistol
       melee: tank-splitter-sword
