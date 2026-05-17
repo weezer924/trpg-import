@@ -2,8 +2,23 @@
 
 > **前置**：v0.1 已完成（13/13 Pass，~14000 行 markdown 规则文档 + 数字化契约 + 战团数据）。详见 [[trenchcrusade-import-guide]]。
 > **v0.2 目标**：把 v0.1 文档转成**最小可玩对战环境**——完成一局完整的 Claim No Man's Land（New Antioch vs Heretic Legions）。
-> **本文版本**：v0.2 plan v0.1（与 import guide §9.2 配套，扩展工程化部分）
-> **总估时**：5-7 个工作日
+> **本文版本**：v0.2 plan v0.2（Phase D 路线变更 + Phase B 实际产出修正）
+> **总估时**：5-7 个工作日（实际超出，Phase D 路线变更 + 试玩持续）
+> **后续**：v0.3 在 [[trenchcrusade-v0.3-continuous-coords-plan]]
+
+---
+
+## 实际完成状态（v0.2 plan v0.2 更新）
+
+| Phase | 计划 | 实际 |
+|---|---|---|
+| A | sibling + symlinks + .mcp.json | ✅ 已交付 |
+| B | 6 coord + 6 dice + 7 yaml + 1 roster = 20 工具 / 85 tests | ✅ **20 工具 / 146 tests**（超额） |
+| C | AI prompt 300-500 行 | ✅ `tools/ai-opponent-prompt.md` 425 行 / 8 节 |
+| **D** | **ASCII match-cli 8 命令** | 🔀 **路线变更**：未做 CLI；改为 **HTML 3D viewer**（`render_three.py` + Three.js）。玩家用 chat 报操作 + 浏览器查看。CLI 不再需要 |
+| E | 试玩 + 5 条 friction 回填 | 🟡 **进行中**：third-blood T2 中段；已回填 8 条 friction 到 sibling `CLAUDE.md` "v0.2 实操陷阱"段 |
+
+**Phase D 路线变更说明**：原计划 ASCII CLI 是为了让玩家有最小可视化。试玩中发现 chat-based 操作 + 浏览器 3D 视图组合体验远好于纯 CLI（彩色 / 3D 几何 / 鼠标查询模型卡），CLI 投入产出比低。HTML viewer 原本规划在 v0.3+ 暂缓项（见 §4），提前到 v0.2 落地。**这条路线变更使 v0.3 plan 重心从"加 UI"转为"几何精度升级"**（trimesh raycast + 连续坐标）。
 
 ---
 
@@ -265,7 +280,9 @@ match-cli ai-turn   # 触发 AI 激活，观察输出
 
 ## Phase D — match-cli（CLI 文本 UI，1 工作日）
 
-**目标**：最小命令行工具让玩家能完整跑完一局。
+> ⚠️ **未实施 — 路线变更**：CLI 未做。改为直接交付 **HTML 3D viewer**（`tools/mcp-server/src/render_three.py` + Three.js / OrbitControls / localStorage 持久 / OoA 隐藏 / 模型 panel / 跨链点击）。玩家用 chat 报操作 + 浏览器查看。下面 D.1-D.4 仅留作历史参照，不再执行。
+
+**目标**（原）：最小命令行工具让玩家能完整跑完一局。
 
 ### D.1 命令集
 
@@ -379,14 +396,16 @@ mcp.call("append_event", ...)
 
 ---
 
-## 4. v0.3+ Backlog（暂缓）
+## 4. v0.3+ Backlog（更新：HTML UI 已提前交付）
 
-- HTML 战场 UI（web-ui/）
+- ~~HTML 战场 UI（web-ui/）~~ ✅ **已在 v0.2 Phase D 提前交付**（render_three.py / Three.js）
+- 连续坐标 + mesh raycast（v0.3 主线，见 [[trenchcrusade-v0.3-continuous-coords-plan]]）
 - 4 个待导 faction（Trench Pilgrims / Iron Sultanate / Black Grail / Court of Seven-Headed Serpent，import guide §9.2.B）
 - Campaign Rules（Patrons / Trauma / Promotions / Glory Items，§9.2.A）
 - 剩余 10 个 scenarios（§9.2.D）
 - Mercenaries（§9.2.C）
 - 多 AI 对战（红 vs 蓝双 AI 测试压力）
+- UI → MCP 直驱 / WebSocket bridge（v0.4+）
 
 ---
 
